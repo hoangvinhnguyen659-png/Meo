@@ -1,4 +1,4 @@
-// --- 1. KHAI BÁO BIẾN ---
+// --- 1. KHAI BÁO BIẾN & PHẦN TỬ ---
 const loadingScreen = document.getElementById('loading-screen');
 const quizScreen = document.getElementById('quiz-screen');
 const resultScreen = document.getElementById('result-screen');
@@ -21,12 +21,13 @@ const liveScoreSpan = document.getElementById('live-score');
 const progressBar = document.getElementById('progress-bar');
 
 let quizData = [];
+let originalData = [];
 let userAnswers = [];
 let currentQuiz = 0;
 let score = 0;
 let isAnswered = false;
 
-// --- 2. TRỘN ĐỀ ---
+// --- 2. HÀM TRỘN ĐỀ (SHUFFLE) ---
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -34,26 +35,37 @@ function shuffleArray(array) {
     }
 }
 
-// --- 3. TẢI DỮ LIỆU ---
+// --- 3. TẢI DỮ LIỆU JSON (CHỊU TẢI CAO) ---
 async function loadQuestions() {
     try {
         const response = await fetch('questions.json');
-        quizData = await response.json();
+        originalData = await response.json();
+        quizData = [...originalData]; 
         statusText.innerText = `Đã sẵn sàng ${quizData.length} câu hỏi`;
         document.getElementById('setup-options').classList.remove('hidden');
     } catch (error) {
-        statusText.innerText = "Lỗi: Không tìm thấy questions.json!";
+        statusText.innerText = "Lỗi: Không tải được dữ liệu!";
     }
 }
 loadQuestions();
 
-// --- 4. BẮT ĐẦU THI ---
-startBtn.addEventListener('click', () => {
+// --- 4. BẮT ĐẦU VÀ LÀM LẠI ---
+function startQuiz() {
+    currentQuiz = 0;
+    score = 0;
+    userAnswers = [];
+    liveScoreSpan.innerText = "0";
+    
+    quizData = [...originalData];
     if (shuffleCheckbox.checked) shuffleArray(quizData);
+    
     loadingScreen.classList.add('hidden');
+    resultScreen.classList.add('hidden');
     quizScreen.classList.remove('hidden');
     loadQuiz();
-});
+}
+
+startBtn.addEventListener('click', startQuiz);
 
 function loadQuiz() {
     isAnswered = false;
@@ -77,10 +89,11 @@ function loadQuiz() {
         const li = el.parentElement;
         li.style.background = "#fff";
         li.style.borderColor = "#eee";
+        li.style.color = "#333";
     });
 }
 
-// --- 5. CHẤM ĐIỂM TỨC THÌ (XỬ LÝ MƯỢT) ---
+// --- 5. CHẤM ĐIỂM XANH ĐỎ & CHỐNG LAG ---
 answerEls.forEach(el => {
     el.addEventListener('click', function() {
         if (isAnswered) return;
@@ -89,9 +102,6 @@ answerEls.forEach(el => {
         const selectedAnswer = this.id; 
         const correctAnswer = quizData[currentQuiz].answer.toLowerCase();
         
-        const selectedLi = this.parentElement;
-        const correctLi = document.getElementById(correctAnswer).parentElement;
-
         userAnswers.push({
             question: quizData[currentQuiz].question,
             selected: selectedAnswer,
@@ -99,8 +109,11 @@ answerEls.forEach(el => {
             options: quizData[currentQuiz].options
         });
 
-        // Đổi màu Xanh/Đỏ ngay khi chọn
+        // Kỹ thuật requestAnimationFrame giúp tránh lag khi nhiều người click
         requestAnimationFrame(() => {
+            const selectedLi = this.parentElement;
+            const correctLi = document.getElementById(correctAnswer).parentElement;
+
             if (selectedAnswer === correctAnswer) {
                 selectedLi.style.background = "#d4edda";
                 selectedLi.style.borderColor = "#28a745";
@@ -128,41 +141,36 @@ submitBtn.addEventListener('click', () => {
     }
 });
 
-// --- 6. XEM LẠI: CHỈ HIỆN CÂU SAI ---
+// --- 6. KẾT QUẢ & CHỈ XEM CÂU SAI ---
 function showFinalResults() {
     quizScreen.classList.add('hidden');
     resultScreen.classList.remove('hidden');
     document.getElementById('final-score').innerText = `${score}/${quizData.length}`;
     
     const fragment = document.createDocumentFragment();
-    const title = document.createElement('h3');
-    title.innerText = "Những câu bạn cần xem lại:";
-    fragment.appendChild(title);
-
     let hasWrong = false;
+
     userAnswers.forEach((item, index) => {
         if (item.selected !== item.correct) {
             hasWrong = true;
             const div = document.createElement('div');
-            div.className = "review-item";
-            div.style.cssText = "padding:15px; margin-bottom:12px; background:#fff5f5; border-left:5px solid #e74c3c; border-radius:8px;";
+            div.style.cssText = "padding:15px; margin-bottom:12px; background:#fff5f5; border-left:5px solid #e74c3c; border-radius:8px; border:1px solid #fbd3d3;";
             
             div.innerHTML = `
                 <p><strong>Câu ${index + 1}:</strong> ${item.question}</p>
-                <p style="color:red">Bạn chọn: ${item.selected.toUpperCase()}. ${item.options[item.selected]}</p>
-                <p style="color:green">Đáp án đúng: ${item.correct.toUpperCase()}. ${item.options[item.correct]}</p>
+                <p style="color:#c53030; font-weight:bold;">Bạn chọn: ${item.selected.toUpperCase()}. ${item.options[item.selected]}</p>
+                <p style="color:#276749; font-weight:bold;">Đáp án đúng: ${item.correct.toUpperCase()}. ${item.options[item.correct]}</p>
             `;
             fragment.appendChild(div);
         }
     });
 
-    if(!hasWrong) {
-        const p = document.createElement('p');
-        p.innerText = "Bạn thật xuất sắc! Không làm sai câu nào.";
-        p.style.color = "green";
-        fragment.appendChild(p);
-    }
+    const restartBtn = document.createElement('button');
+    restartBtn.innerText = "LÀM LẠI BÀI THI";
+    restartBtn.style.cssText = "width:100%; padding:15px; background:#3498db; color:white; border:none; border-radius:8px; cursor:pointer; font-weight:bold; margin-top:20px;";
+    restartBtn.onclick = () => location.reload(); // Reset sạch sẽ mọi thứ
+    fragment.appendChild(restartBtn);
 
-    reviewContainer.innerHTML = "";
+    reviewContainer.innerHTML = hasWrong ? "<h3>Các câu bạn đã làm sai:</h3>" : "<h3>Chúc mừng! Bạn đúng hết 100%.</h3>";
     reviewContainer.appendChild(fragment);
 }
