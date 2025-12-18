@@ -16,7 +16,7 @@
             --radius: 14px;
         }
 
-        /* TỐI ƯU CƠ BẢN & KHỬ LAG MOBILE */
+        /* 1. TỐI ƯU CƠ BẢN & KHỬ LAG MOBILE */
         * { 
             box-sizing: border-box; 
             margin: 0; padding: 0; 
@@ -42,11 +42,11 @@
         @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
         .hidden { display: none !important; }
 
-        /* 1. MÀN HÌNH CHỜ */
+        /* 2. MÀN HÌNH CHỜ (SETUP) */
         #loading-screen { padding: 40px; text-align: center; }
         .setup-group { margin: 20px 0; padding: 15px; background: #f8fafc; border-radius: 10px; }
 
-        /* 2. THANH TIẾN TRÌNH GRADIENT */
+        /* 3. THANH TIẾN TRÌNH GRADIENT */
         .quiz-header { padding: 20px 20px 10px; border-bottom: 1px solid #f0f0f0; }
         .progress-container { background: #edf2f7; height: 10px; border-radius: 10px; margin-bottom: 15px; overflow: hidden; }
         #progress-bar { 
@@ -54,7 +54,7 @@
             height: 100%; width: 0%; transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
         }
 
-        /* 3. CÂU HỎI & ĐÁP ÁN (HIỆU ỨNG TRANSLATE X) */
+        /* 4. CÂU HỎI & ĐÁP ÁN (HIỆU ỨNG TRANSLATE X) */
         .quiz-body { padding: 20px; }
         #question { font-size: 1.25rem; font-weight: 700; margin-bottom: 25px; color: #1a202c; line-height: 1.5; }
         
@@ -65,6 +65,7 @@
             font-weight: 500;
         }
 
+        /* Hover nhích sang phải 5px */
         @media (hover: hover) {
             .option-item:hover {
                 border-color: var(--primary);
@@ -75,11 +76,11 @@
 
         .option-item input { margin-right: 15px; width: 20px; height: 20px; flex-shrink: 0; }
         
-        /* Màu đúng/sai (dùng Class cho mượt) */
+        /* Hiển thị màu Đúng/Sai ngay lập tức */
         .option-item.correct { background-color: #defadb !important; border-color: var(--success) !important; color: #1c451d; }
         .option-item.wrong { background-color: #fff5f5 !important; border-color: var(--error) !important; color: #611b1b; }
 
-        /* 4. NÚT BẤM 3D */
+        /* 5. NÚT BẤM 3D & FOOTER */
         .quiz-footer { padding: 15px 20px; background: #f8fafc; text-align: right; }
         #submit, .btn-start {
             background: var(--primary); color: white; border: none;
@@ -89,10 +90,11 @@
             transition: all 0.1s ease; position: relative;
         }
 
+        /* Hiệu ứng lún xuống khi nhấn */
         #submit:active, .btn-start:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--primary-dark); }
         #submit:disabled { background: #cbd5e0; box-shadow: 0 5px 0 #a0aec0; cursor: not-allowed; transform: none; }
 
-        /* 5. MÀN HÌNH KẾT QUẢ & SCROLLBAR CÂU SAI */
+        /* 6. KẾT QUẢ & CUSTOM SCROLLBAR */
         #result-screen { padding: 30px; text-align: center; }
         #final-score { font-size: 4rem; color: var(--primary); font-weight: 800; margin: 10px 0; }
         #review-container { 
@@ -100,15 +102,17 @@
             padding-right: 10px; margin-top: 20px;
         }
 
-        /* Custom Scrollbar */
+        /* Custom Scrollbar cho vùng câu sai */
         #review-container::-webkit-scrollbar { width: 6px; }
+        #review-container::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
         #review-container::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 10px; }
+        #review-container::-webkit-scrollbar-thumb:hover { background: var(--primary); }
 
         /* MOBILE RESPONSIVE */
         @media (max-width: 480px) {
             .quiz-body { padding: 15px; }
             #question { font-size: 1.1rem; }
-            #submit, .btn-start { width: 100%; }
+            #submit, .btn-start { width: 100%; text-align: center; }
         }
     </style>
 </head>
@@ -116,16 +120,16 @@
 
     <div class="container">
         <div id="loading-screen">
-            <h1 style="color: var(--primary); font-weight: 800;">ONTHI PRO</h1>
-            <p id="status-text" style="margin: 10px 0;">Đang chuẩn bị dữ liệu...</p>
+            <h1 style="color: var(--primary); font-weight: 800; letter-spacing: -1px;">QUICK QUIZ PRO</h1>
+            <p id="status-text" style="margin: 10px 0; color: #636e72;">Đang tải dữ liệu từ questions.json...</p>
             <div id="setup-options" class="hidden">
                 <div class="setup-group">
-                    <label style="cursor: pointer; display: flex; align-items: center; justify-content: center;">
+                    <label style="cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 600;">
                         <input type="checkbox" id="shuffle-checkbox" style="width: 20px; height: 20px; margin-right: 10px;">
                         <span>Trộn ngẫu nhiên câu hỏi</span>
                     </label>
                 </div>
-                <button class="btn-start" id="start-btn">BẮT ĐẦU THI</button>
+                <button class="btn-start" id="start-btn">BẮT ĐẦU NGAY</button>
             </div>
         </div>
 
@@ -139,7 +143,7 @@
             </div>
             
             <div class="quiz-body">
-                <h2 id="question">Đang tải câu hỏi...</h2>
+                <h2 id="question">Vui lòng đợi...</h2>
                 <div class="option-list">
                     <label class="option-item" id="label-a">
                         <input type="radio" name="answer" id="a" class="answer">
@@ -166,11 +170,11 @@
         </div>
 
         <div id="result-screen" class="hidden">
-            <h2 style="color: #2d3436;">Hoàn Thành!</h2>
+            <h2 style="color: #2d3436; font-weight: 800;">KẾT QUẢ</h2>
             <div id="final-score">0/0</div>
-            <p style="color: #636e72;">Xem lại các câu trả lời sai:</p>
+            <p style="color: #636e72; font-weight: 600;">Chi tiết các câu trả lời sai:</p>
             <div id="review-container"></div>
-            <button class="btn-start" onclick="location.reload()" style="margin-top: 20px;">THI LẠI</button>
+            <button class="btn-start" onclick="location.reload()" style="margin-top: 25px;">THI LẠI</button>
         </div>
     </div>
 
