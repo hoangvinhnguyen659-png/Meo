@@ -8,10 +8,11 @@
     --radius: 14px;
 }
 
+/* 1. KHỬ LAG & TỐI ƯU CƠ BẢN */
 * { 
     box-sizing: border-box; 
     margin: 0; padding: 0; 
-    /* 1. KHỬ KHUNG XANH KHI CHẠM (TOUCH) TRÊN MOBILE */
+    /* Khử khung xanh/xám khi chạm trên điện thoại */
     -webkit-tap-highlight-color: transparent; 
 }
 
@@ -31,81 +32,103 @@ body {
     animation: fadeIn 0.5s ease-out;
 }
 
-@keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(15px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
 
 .hidden { display: none !important; }
 
-/* 2. PROGRESS BAR VỚI LINEAR GRADIENT SINH ĐỘNG */
+/* 2. THANH TIẾN TRÌNH GRADIENT */
+.quiz-header { padding: 20px 20px 10px; border-bottom: 1px solid #f0f0f0; }
 .progress-container { 
     background: #edf2f7; height: 10px; border-radius: 10px; 
-    margin: 20px; overflow: hidden;
+    margin-bottom: 15px; overflow: hidden;
 }
 #progress-bar { 
     background: linear-gradient(90deg, var(--primary), #a29bfe, var(--success)); 
     height: 100%; width: 0%; 
+    /* Hiệu ứng thanh chạy mượt mà */
     transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
 }
 
-.quiz-body { padding: 0 25px 25px; }
+/* 3. CÂU HỎI & ĐÁP ÁN */
+.quiz-body { padding: 20px; }
+#question { font-size: 1.25rem; font-weight: 700; margin-bottom: 25px; color: #1a202c; line-height: 1.5; }
 
-#question { font-size: 1.25rem; font-weight: 700; margin-bottom: 25px; color: #1a202c; }
-
-/* 3. ĐÁP ÁN VỚI HIỆU ỨNG TRANSFORM TRANSLATE X (5PX) KHI HOVER */
 .option-item {
     border: 2px solid #e2e8f0; border-radius: var(--radius); 
-    padding: 18px; margin-bottom: 12px; cursor: pointer; 
+    padding: 16px; margin-bottom: 12px; cursor: pointer; 
     display: flex; align-items: center; transition: all 0.3s ease;
     font-weight: 500;
 }
 
+/* Hiệu ứng Hover nhích sang phải 5px */
 @media (hover: hover) {
     .option-item:hover {
         border-color: var(--primary);
         background-color: #f0f7ff;
-        transform: translateX(5px); /* Nhích nhẹ sang phải */
+        transform: translateX(5px);
     }
 }
 
-.option-item input { margin-right: 15px; width: 22px; height: 22px; flex-shrink: 0; }
+.option-item input { margin-right: 15px; width: 20px; height: 20px; flex-shrink: 0; }
 
-/* 4. NÚT BẤM VỚI BOX-SHADOW KIỂU 3D VÀ HIỆU ỨNG LÚN (ACTIVE) */
+/* 4. MÀU SẮC ĐÚNG/SAI PHẢN HỒI TỨC THÌ */
+/* Màu Xanh khi chọn đúng hoặc hiện đáp án đúng */
+.option-item.correct { 
+    background-color: #defadb !important; 
+    border-color: var(--success) !important; 
+    color: #1c451d;
+    transform: scale(1.02); /* Phóng nhẹ để nhấn mạnh */
+}
+
+/* Màu Đỏ khi chọn sai */
+.option-item.wrong { 
+    background-color: #fff5f5 !important; 
+    border-color: var(--error) !important; 
+    color: #611b1b;
+}
+
+/* 5. NÚT BẤM 3D VÀ HIỆU ỨNG LÚN XUỐNG (ACTIVE) */
+.quiz-footer { padding: 15px 20px; background: #f8fafc; text-align: right; }
 #submit, .btn-start {
     background: var(--primary); color: white; border: none;
-    padding: 15px 35px; border-radius: 10px; cursor: pointer;
+    padding: 14px 30px; border-radius: 10px; cursor: pointer;
     font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
-    transition: all 0.1s ease;
-    box-shadow: 0 5px 0 var(--primary-dark); /* Bóng đổ 3D */
-    position: relative;
-    display: inline-block;
+    box-shadow: 0 5px 0 var(--primary-dark); /* Bóng đổ tạo khối 3D */
+    transition: all 0.1s ease; position: relative;
 }
 
-#submit:active, .btn-start:active {
-    transform: translateY(3px); /* Nút lún xuống khi bấm */
-    box-shadow: 0 2px 0 var(--primary-dark); /* Bóng ngắn lại */
+/* Nút lún xuống khi nhấn chuột hoặc chạm */
+#submit:active, .btn-start:active { 
+    transform: translateY(3px); 
+    box-shadow: 0 2px 0 var(--primary-dark); 
 }
 
-#submit:disabled {
-    background: #cbd5e0; box-shadow: 0 5px 0 #a0aec0;
-    cursor: not-allowed; transform: none;
+#submit:disabled { 
+    background: #cbd5e0; box-shadow: 0 5px 0 #a0aec0; 
+    cursor: not-allowed; transform: none; 
 }
 
-/* 5. SCROLLBAR TÙY CHỈNH (CUSTOM SCROLLBAR) CHO CÂU SAI */
+/* 6. MÀN HÌNH KẾT QUẢ & CUSTOM SCROLLBAR */
+#result-screen { padding: 30px; text-align: center; }
+#final-score { font-size: 4rem; color: var(--primary); font-weight: 800; margin: 10px 0; }
+
 #review-container { 
-    max-height: 380px; overflow-y: auto; 
+    max-height: 350px; overflow-y: auto; text-align: left;
     padding-right: 10px; margin-top: 20px;
 }
 
-#review-container::-webkit-scrollbar { width: 8px; }
+/* Thiết kế thanh cuộn riêng cho vùng câu sai */
+#review-container::-webkit-scrollbar { width: 6px; }
 #review-container::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-#review-container::-webkit-scrollbar-thumb { 
-    background: #cbd5e0; border-radius: 10px; border: 2px solid #f1f1f1; 
-}
+#review-container::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 10px; }
 #review-container::-webkit-scrollbar-thumb:hover { background: var(--primary); }
 
-/* RESPONSIVE: TỐI ƯU CHO ĐIỆN THOẠI */
+/* 7. MOBILE RESPONSIVE: TỐI ƯU CHO ĐIỆN THOẠI */
 @media (max-width: 480px) {
-    body { padding: 10px; }
-    .quiz-body { padding: 0 15px 15px; }
-    #question { font-size: 1.15rem; }
-    #submit, .btn-start { width: 100%; } /* Nút dàn hàng ngang trên mobile */
+    .quiz-body { padding: 15px; }
+    #question { font-size: 1.1rem; }
+    #submit, .btn-start { width: 100%; text-align: center; }
 }
