@@ -1,10 +1,11 @@
 {
-  "name": "web-trac-nghiem-120-cau",
+  "name": "trac-nghiem-120-cau",
   "version": "1.0.0",
-  "description": "Quiz App deployment on Cloudflare Pages",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/user/repo.git"
+  "description": "Ứng dụng trắc nghiệm tự động chấm điểm xanh đỏ trên Cloudflare Pages",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Đang khởi chạy ứng dụng...'"
   },
+  "author": "Của bạn",
   "license": "MIT"
 }
