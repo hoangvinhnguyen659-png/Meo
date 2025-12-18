@@ -158,6 +158,6 @@ function showResults() {
             </div>
         `).join('');
     } else {
-        reviewContainer.innerHTML = "<p style='color: var(--success); font-weight:bold; text-align:center;'>Xuất sắc! Bạn không làm sai câu nào.</p>";
+        reviewContainer.innerHTML = "<p style='color: var(--success); font-weight:bold; text-align:center;'>Xuất sắc! Bạn không làm sai câu nào! Ngon luôn!.</p>";
     }
 }
