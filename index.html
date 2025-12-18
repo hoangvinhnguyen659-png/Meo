@@ -2,70 +2,102 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trắc Nghiệm 120 Câu - Ôn Tập</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Luyện Tập Trắc Nghiệm</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f0f2f5; }
+        .question-card { background: white; padding: 25px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .question-text { font-size: 1.1em; font-weight: bold; color: #1c1e21; margin-bottom: 15px; }
+        .options-list { list-style: none; padding: 0; }
+        .option-item { margin-bottom: 10px; padding: 12px; border: 1px solid #e4e6eb; border-radius: 8px; transition: all 0.2s; cursor: pointer; display: flex; align-items: center; }
+        .option-item:hover { background-color: #f2f3f5; border-color: #ccd0d5; }
+        .option-item input { margin-right: 15px; transform: scale(1.2); cursor: pointer; }
+        .controls { margin-top: 15px; display: flex; gap: 10px; }
+        .btn { border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: 600; transition: opacity 0.2s; }
+        .btn-check { background-color: #007bff; color: white; }
+        .btn-check:hover { opacity: 0.9; }
+        .result-box { margin-top: 15px; padding: 12px; border-radius: 6px; display: none; font-weight: bold; }
+        .correct { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .wrong { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+    </style>
 </head>
 <body>
 
-    <div class="quiz-container" id="loading-screen">
-        <div class="quiz-header" style="text-align: center; padding: 2rem;">
-            <h2 id="status-text">Đang tải dữ liệu từ GitHub...</h2>
-            <div id="setup-options" class="hidden">
-                <div style="margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 8px; border: 1px solid #ddd;">
-                    <input type="checkbox" id="shuffle-checkbox" style="transform: scale(1.5); cursor: pointer;">
-                    <label for="shuffle-checkbox" style="margin-left: 10px; cursor: pointer; font-weight: 500;">Xáo trộn thứ tự câu hỏi</label>
-                </div>
-                <button id="start-btn">Bắt đầu làm bài</button>
-            </div>
-        </div>
-    </div>
+    <h1 style="text-align: center; color: #007bff;">ÔN TẬP TRẮC NGHIỆM TIN HỌC</h1>
+    <div id="quiz-container">Đang tải dữ liệu câu hỏi...</div>
 
-    <div class="quiz-container hidden" id="quiz-screen">
-        <div class="quiz-header">
-            <h2 id="question">Đang tải câu hỏi...</h2>
-            <div class="progress-container">
-                <div class="progress-bar" id="progress-bar"></div>
-            </div>
-            <p class="question-count">
-                Câu: <span id="current-count">0</span> / <span id="total-count">0</span> | 
-                Đúng: <span id="live-score" style="color: #2ecc71; font-weight: bold;">0</span>
-            </p>
-        </div>
+    <script>
+        // Dữ liệu trích xuất từ file của bạn
+        const quizData = [
+            {
+                id: 1,
+                question: "Thuật ngữ 'Trí tuệ nhân tạo' (AI) chính thức được đưa ra tại sự kiện nào?",
+                options: { "A": "Phép thử Turing năm 1950.", "B": "Hội thảo Dartmouth năm 1956.", "C": "Sự ra đời của Robot Sophia năm 2016.", "D": "Khi ChatGPT ra mắt năm 2022." },
+                answer: "B"
+            },
+            {
+                id: 2,
+                question: "Hệ chuyên gia MYCIN (1970) là ví dụ điển hình của loại AI nào?",
+                options: { "A": "AI mạnh.", "B": "AI tổng quát.", "C": "AI yếu (AI hẹp).", "D": "Siêu trí tuệ nhân tạo." },
+                answer: "C"
+            },
+            {
+                id: 3,
+                question: "Đặc trưng 'Khả năng học' của AI được thể hiện rõ nhất qua ví dụ nào?",
+                options: { "A": "Robot Sophia có khả năng biểu hiện cảm xúc.", "B": "ChatGPT đưa ra phản hồi bằng ngôn ngữ tự nhiên.", "C": "Youtube đề xuất video dựa trên lịch sử tìm kiếm.", "D": "Phép thử Turing kiểm tra trí thông minh." },
+                answer: "C"
+            }
+        ];
 
-        <ul class="options-list">
-            <li class="option-item">
-                <input type="radio" name="answer" id="a" class="answer">
-                <label for="a" id="a_text">Đáp án A</label>
-            </li>
-            <li class="option-item">
-                <input type="radio" name="answer" id="b" class="answer">
-                <label for="b" id="b_text">Đáp án B</label>
-            </li>
-            <li class="option-item">
-                <input type="radio" name="answer" id="c" class="answer">
-                <label for="c" id="c_text">Đáp án C</label>
-            </li>
-            <li class="option-item">
-                <input type="radio" name="answer" id="d" class="answer">
-                <label for="d" id="d_text">Đáp án D</label>
-            </li>
-        </ul>
+        function renderQuiz() {
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = '';
 
-        <button id="submit" disabled>Tiếp tục</button>
-    </div>
+            quizData.forEach((q, index) => {
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                
+                let optionsHtml = '';
+                for (let key in q.options) {
+                    optionsHtml += `
+                        <label class="option-item">
+                            <input type="radio" name="q${q.id}" value="${key}">
+                            <span><strong>${key}.</strong> ${q.options[key]}</span>
+                        </label>
+                    `;
+                }
 
-    <div class="quiz-container hidden" id="result-screen">
-        <div class="result-header" style="text-align: center; padding: 2rem; border-bottom: 2px solid #eee;">
-            <h2>Kết Quả Cuối Cùng</h2>
-            <div id="final-score" style="font-size: 3rem; color: #1565c0; font-weight: bold; margin: 10px 0;">0/0</div>
-            <button onclick="location.reload()" style="width: auto; display: inline-block; padding: 10px 30px; margin-bottom: 10px;">Làm lại bài mới</button>
-        </div>
-        <div id="review-container" style="padding: 1rem; max-height: 400px; overflow-y: auto; background: #fafafa;">
-            </div>
-    </div>
+                card.innerHTML = `
+                    <div class="question-text">Câu ${index + 1}: ${q.question}</div>
+                    <div class="options-list">${optionsHtml}</div>
+                    <div class="controls">
+                        <button class="btn btn-check" onclick="checkAnswer(${q.id}, '${q.answer}')">Kiểm tra đáp án</button>
+                    </div>
+                    <div id="result-${q.id}" class="result-box"></div>
+                `;
+                container.appendChild(card);
+            });
+        }
 
-    <script src="script.js"></script>
+        function checkAnswer(id, correctAnswer) {
+            const selected = document.querySelector(`input[name="q${id}"]:checked`);
+            const resultBox = document.getElementById(`result-${id}`);
+            
+            if (!selected) {
+                alert("Vui lòng chọn một đáp án!");
+                return;
+            }
+
+            resultBox.style.display = "block";
+            if (selected.value === correctAnswer) {
+                resultBox.className = "result-box correct";
+                resultBox.innerHTML = `Chính xác! Đáp án đúng là ${correctAnswer}.`;
+            } else {
+                resultBox.className = "result-box wrong";
+                resultBox.innerHTML = `Sai rồi! Đáp án đúng là ${correctAnswer}. Bạn chọn ${selected.value}.`;
+            }
+        }
+
+        renderQuiz();
+    </script>
 </body>
 </html>
