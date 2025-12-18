@@ -1,11 +1,11 @@
-// 1. KHAI BÁO BIẾN
+// 1. KHAI BÁO BIẾN TOÀN CỤC
 let quizData = []; 
 let currentQuiz = 0;
 let score = 0;
 let userQuestions = []; 
 let wrongAnswers = [];
 
-// 2. LẤY CÁC PHẦN TỬ DOM
+// 2. TRUY XUẤT CÁC PHẦN TỬ DOM
 const loadingScreen = document.getElementById('loading-screen');
 const quizScreen = document.getElementById('quiz-screen');
 const resultScreen = document.getElementById('result-screen');
@@ -17,6 +17,8 @@ const shuffleCheckbox = document.getElementById('shuffle-checkbox');
 const questionEl = document.getElementById('question');
 const answerEls = document.querySelectorAll('.answer');
 const optionLabels = document.querySelectorAll('.option-item');
+const submitBtn = document.getElementById('submit');
+
 const progressBar = document.getElementById('progress-bar');
 const currentCountEl = document.getElementById('current-count');
 const totalCountEl = document.getElementById('total-count');
@@ -40,10 +42,12 @@ async function loadQuestions() {
 
 loadQuestions();
 
-// 4. BẮT ĐẦU THI
+// 4. LOGIC BẮT ĐẦU THI
 startBtn.addEventListener('click', () => {
-    // Trộn đề nếu checkbox được tích
-    userQuestions = shuffleCheckbox.checked ? [...quizData].sort(() => Math.random() - 0.5) : [...quizData];
+    // Trộn câu hỏi nếu checkbox được tích
+    userQuestions = shuffleCheckbox.checked 
+        ? [...quizData].sort(() => Math.random() - 0.5) 
+        : [...quizData];
     
     loadingScreen.classList.add('hidden');
     quizScreen.classList.remove('hidden');
@@ -52,9 +56,7 @@ startBtn.addEventListener('click', () => {
 
 // 5. HIỂN THỊ CÂU HỎI
 function loadQuiz() {
-    deselectAnswers();
-    resetLabelColors();
-    enableOptions(); // Mở khóa cho câu mới
+    resetUIState(); // Reset trạng thái trước khi sang câu mới
 
     const currentQuizData = userQuestions[currentQuiz];
 
@@ -72,91 +74,90 @@ function loadQuiz() {
     liveScoreEl.innerText = score;
 }
 
-// 6. PHẢN HỒI TỨC THÌ KHI CHỌN ĐÁP ÁN
+// 6. PHẢN HỒI MÀU SẮC NGAY KHI CHỌN ĐÁP ÁN
 answerEls.forEach(el => {
     el.addEventListener('change', () => {
-        const answer = el.id; // Lấy đáp án người dùng vừa chọn (a, b, c, hoặc d)
+        const selectedId = el.id; // Lấy a, b, c hoặc d
         const currentQuizData = userQuestions[currentQuiz];
-        
-        const selectedLabel = document.getElementById(`label-${answer}`);
-        const correctLabel = document.getElementById(`label-${currentQuizData.answer}`);
+        const correctId = currentQuizData.answer;
 
-        // KHÓA CÁC ĐÁP ÁN KHÁC (Chống chọn lại khi đang hiện kết quả)
-        disableOptions();
+        // HIỆN MÀU NGAY LẬP TỨC
+        const selectedLabel = document.getElementById(`label-${selectedId}`);
+        const correctLabel = document.getElementById(`label-${correctId}`);
 
-        // HIỂN THỊ MÀU XANH/ĐỎ NGAY LẬP TỨC
-        if (answer === currentQuizData.answer) {
+        if (selectedId === correctId) {
             score++;
             selectedLabel.classList.add('correct');
         } else {
             selectedLabel.classList.add('wrong');
-            correctLabel.classList.add('correct'); // Gợi ý đáp án đúng
+            correctLabel.classList.add('correct'); // Gợi ý đáp án đúng cho người dùng học tập
             
             wrongAnswers.push({
                 q: currentQuizData.question,
-                userAns: currentQuizData.options[answer],
-                correctAns: currentQuizData.options[currentQuizData.answer]
+                userAns: currentQuizData.options[selectedId],
+                correctAns: currentQuizData.options[correctId]
             });
         }
 
-        // TỰ ĐỘNG CHUYỂN CÂU SAU 1 GIÂY (Để học sinh kịp nhìn đáp án)
-        setTimeout(() => {
-            currentQuiz++;
-            if (currentQuiz < userQuestions.length) {
-                loadQuiz();
-            } else {
-                showResults();
-            }
-        }, 1000); 
+        // KHÓA LỰA CHỌN (Không cho chọn lại sau khi đã hiện màu)
+        lockOptions();
+
+        // MỞ KHÓA NÚT "TIẾP TỤC" (Chỉ sau khi chọn mới cho nhấn tiếp)
+        submitBtn.disabled = false;
     });
 });
 
-// 7. CÁC HÀM HỖ TRỢ GIAO DIỆN
-function deselectAnswers() {
-    answerEls.forEach(el => el.checked = false);
+// 7. NHẤN NÚT "TIẾP TỤC" ĐỂ QUA CÂU
+submitBtn.addEventListener('click', () => {
+    currentQuiz++;
+    if (currentQuiz < userQuestions.length) {
+        loadQuiz();
+    } else {
+        showResults();
+    }
+});
+
+// 8. CÁC HÀM HỖ TRỢ GIAO DIỆN
+function resetUIState() {
+    submitBtn.disabled = true; // Khóa nút tiếp tục cho câu mới
+    answerEls.forEach(el => {
+        el.checked = false;
+        el.disabled = false;
+        el.parentElement.style.pointerEvents = 'auto'; // Cho phép click lại
+        el.parentElement.classList.remove('correct', 'wrong');
+    });
 }
 
-function resetLabelColors() {
-    optionLabels.forEach(label => label.classList.remove('correct', 'wrong'));
-}
-
-function disableOptions() {
+function lockOptions() {
     answerEls.forEach(el => {
         el.disabled = true;
-        el.parentElement.style.pointerEvents = 'none'; // Khóa click
+        el.parentElement.style.pointerEvents = 'none'; // Khóa click vào label
     });
 }
 
-function enableOptions() {
-    answerEls.forEach(el => {
-        el.disabled = false;
-        el.parentElement.style.pointerEvents = 'auto'; // Mở click
-    });
-}
-
-// 8. HIỂN THỊ KẾT QUẢ & PHÁO HOA
+// 9. HIỂN THỊ KẾT QUẢ CUỐI CÙNG
 function showResults() {
     quizScreen.classList.add('hidden');
     resultScreen.classList.remove('hidden');
     progressBar.style.width = `100%`;
     document.getElementById('final-score').innerText = `${score} / ${userQuestions.length}`;
 
-    // Bắn pháo hoa nếu đạt trên 80%
+    // Hiệu ứng pháo hoa khi hoàn thành xuất sắc (>80%)
     if (score / userQuestions.length >= 0.8) {
         confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
     }
 
-    // Hiển thị danh sách câu sai
+    // Hiển thị danh sách câu trả lời sai
     const reviewContainer = document.getElementById('review-container');
     if (wrongAnswers.length > 0) {
         reviewContainer.innerHTML = wrongAnswers.map((item, index) => `
             <div style="margin-bottom: 12px; padding: 12px; border-left: 4px solid var(--error); background: #fff5f5; border-radius: 8px;">
                 <p><strong>Câu hỏi:</strong> ${item.q}</p>
                 <p style="color: var(--error);">✘ Bạn chọn: ${item.userAns}</p>
-                <p style="color: var(--success);">✔ Đúng là: ${item.correctAns}</p>
+                <p style="color: var(--success);">✔ Đáp án đúng: ${item.correctAns}</p>
             </div>
         `).join('');
     } else {
-        reviewContainer.innerHTML = "<p style='color: var(--success); font-weight:bold;'>Bạn thật xuất sắc, không sai câu nào!</p>";
+        reviewContainer.innerHTML = "<p style='color: var(--success); font-weight:bold; text-align:center;'>Xuất sắc! Bạn không làm sai câu nào.</p>";
     }
 }
