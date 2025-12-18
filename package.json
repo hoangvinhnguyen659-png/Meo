@@ -1,0 +1,10 @@
+{
+  "name": "web-trac-nghiem-120-cau",
+  "version": "1.0.0",
+  "description": "Quiz App deployment on Cloudflare Pages",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/user/repo.git"
+  },
+  "license": "MIT"
+}
