@@ -1,0 +1,18 @@
+[
+    {
+        "question": "1 + 1 bằng mấy?",
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4",
+        "correct": "b"
+    },
+    {
+        "question": "Thủ đô Việt Nam?",
+        "a": "Hà Nội",
+        "b": "Huế",
+        "c": "Đà Nẵng",
+        "d": "HCM",
+        "correct": "a"
+    }
+]
