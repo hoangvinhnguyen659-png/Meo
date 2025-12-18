@@ -1,18 +1,26 @@
 [
-    {
-        "question": "1 + 1 bằng mấy?",
-        "a": "1",
-        "b": "2",
-        "c": "3",
-        "d": "4",
-        "correct": "b"
-    },
-    {
-        "question": "Thủ đô Việt Nam?",
-        "a": "Hà Nội",
-        "b": "Huế",
-        "c": "Đà Nẵng",
-        "d": "HCM",
-        "correct": "a"
-    }
+  {
+    "question": "Câu 1: Thủ đô của Việt Nam là gì?",
+    "a": "TP. Hồ Chí Minh",
+    "b": "Đà Nẵng",
+    "c": "Hà Nội",
+    "d": "Cần Thơ",
+    "correct": "c"
+  },
+  {
+    "question": "Câu 2: Số nào sau đây là số nguyên tố?",
+    "a": "4",
+    "b": "7",
+    "c": "9",
+    "d": "10",
+    "correct": "b"
+  },
+  {
+    "question": "Câu 3: Đơn vị đo cường độ dòng điện là gì?",
+    "a": "Vôn (V)",
+    "b": "Oát (W)",
+    "c": "Ampe (A)",
+    "d": "Ôm (Ω)",
+    "correct": "c"
+  }
 ]
