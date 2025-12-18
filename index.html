@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ôn Thi Trắc Nghiệm</title>
+    <title>Trắc Nghiệm 120 Câu - Ôn Tập</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -11,9 +11,9 @@
 
     <div class="quiz-container" id="loading-screen">
         <div class="quiz-header" style="text-align: center; padding: 2rem;">
-            <h2 id="status-text">Đang kết nối dữ liệu...</h2>
+            <h2 id="status-text">Đang tải dữ liệu từ GitHub...</h2>
             <div id="setup-options" class="hidden">
-                <div style="margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                <div style="margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 8px; border: 1px solid #ddd;">
                     <input type="checkbox" id="shuffle-checkbox" style="transform: scale(1.5); cursor: pointer;">
                     <label for="shuffle-checkbox" style="margin-left: 10px; cursor: pointer; font-weight: 500;">Xáo trộn thứ tự câu hỏi</label>
                 </div>
@@ -24,25 +24,41 @@
 
     <div class="quiz-container hidden" id="quiz-screen">
         <div class="quiz-header">
-            <h2 id="question">Đang tải...</h2>
+            <h2 id="question">Đang tải câu hỏi...</h2>
             <div class="progress-container">
                 <div class="progress-bar" id="progress-bar"></div>
             </div>
-            <p class="question-count">Câu: <span id="current-count">0</span> / <span id="total-count">0</span></p>
+            <p class="question-count">
+                Câu: <span id="current-count">0</span> / <span id="total-count">0</span> | 
+                Đúng: <span id="live-score" style="color: #2ecc71; font-weight: bold;">0</span>
+            </p>
         </div>
 
         <ul class="options-list">
-            <li><input type="radio" name="answer" id="a" class="answer"><label for="a" id="a_text"></label></li>
-            <li><input type="radio" name="answer" id="b" class="answer"><label for="b" id="b_text"></label></li>
-            <li><input type="radio" name="answer" id="c" class="answer"><label for="c" id="c_text"></label></li>
-            <li><input type="radio" name="answer" id="d" class="answer"><label for="d" id="d_text"></label></li>
+            <li class="option-item">
+                <input type="radio" name="answer" id="a" class="answer">
+                <label for="a" id="a_text">Đáp án A</label>
+            </li>
+            <li class="option-item">
+                <input type="radio" name="answer" id="b" class="answer">
+                <label for="b" id="b_text">Đáp án B</label>
+            </li>
+            <li class="option-item">
+                <input type="radio" name="answer" id="c" class="answer">
+                <label for="c" id="c_text">Đáp án C</label>
+            </li>
+            <li class="option-item">
+                <input type="radio" name="answer" id="d" class="answer">
+                <label for="d" id="d_text">Đáp án D</label>
+            </li>
         </ul>
-        <button id="submit">Tiếp tục</button>
+
+        <button id="submit" disabled>Tiếp tục</button>
     </div>
 
     <div class="quiz-container hidden" id="result-screen">
         <div class="result-header" style="text-align: center; padding: 2rem; border-bottom: 2px solid #eee;">
-            <h2>Kết Quả Bài Làm</h2>
+            <h2>Kết Quả Cuối Cùng</h2>
             <div id="final-score" style="font-size: 3rem; color: #1565c0; font-weight: bold; margin: 10px 0;">0/0</div>
             <button onclick="location.reload()" style="width: auto; display: inline-block; padding: 10px 30px; margin-bottom: 10px;">Làm lại bài mới</button>
         </div>
