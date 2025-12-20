@@ -1,163 +1,163 @@
-// 1. KHAI BÁO BIẾN TOÀN CỤC
-let quizData = []; 
-let currentQuiz = 0;
+let quizData = [];
+let userQuestions = [];
 let score = 0;
-let userQuestions = []; 
-let wrongAnswers = [];
+let correctCount = 0;
 
-// 2. TRUY XUẤT CÁC PHẦN TỬ DOM
+const statusText = document.getElementById('status-text');
+const setupOptions = document.getElementById('setup-options');
 const loadingScreen = document.getElementById('loading-screen');
 const quizScreen = document.getElementById('quiz-screen');
 const resultScreen = document.getElementById('result-screen');
-const statusText = document.getElementById('status-text');
-const setupOptions = document.getElementById('setup-options');
-const startBtn = document.getElementById('start-btn');
-const shuffleCheckbox = document.getElementById('shuffle-checkbox');
-
-const questionEl = document.getElementById('question');
-const answerEls = document.querySelectorAll('.answer');
-const optionLabels = document.querySelectorAll('.option-item');
-const submitBtn = document.getElementById('submit');
-
 const progressBar = document.getElementById('progress-bar');
-const currentCountEl = document.getElementById('current-count');
-const totalCountEl = document.getElementById('total-count');
-const liveScoreEl = document.getElementById('live-score');
 
-// 3. TẢI DỮ LIỆU TỪ FILE JSON NGOÀI
-async function loadQuestions() {
+function escapeHtml(text) {
+    if (!text) return "";
+    return String(text)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+async function init() {
     try {
         const response = await fetch('questions.json');
-        if (!response.ok) throw new Error('Không thể tải file dữ liệu');
-        quizData = await response.json();
-        
-        statusText.innerText = "Dữ liệu đã sẵn sàng!";
+        if (response.ok) {
+            statusText.innerText = "Sẵn sàng!";
+            setupOptions.classList.remove('hidden');
+        } else {
+            throw new Error("File missing");
+        }
+    } catch (e) {
+        statusText.innerText = "Kiểm tra file questions.json!";
         setupOptions.classList.remove('hidden');
-    } catch (error) {
-        statusText.style.color = "red";
-        statusText.innerText = "Lỗi: Không tìm thấy file questions.json!";
-        console.error(error);
     }
 }
+init();
 
-loadQuestions();
+async function startGame(fileName) {
+    statusText.innerText = "Đang tải dữ liệu...";
+    setupOptions.classList.add('hidden');
 
-// 4. LOGIC BẮT ĐẦU THI
-startBtn.addEventListener('click', () => {
-    // Trộn câu hỏi nếu checkbox được tích
-    userQuestions = shuffleCheckbox.checked 
-        ? [...quizData].sort(() => Math.random() - 0.5) 
-        : [...quizData];
+    setTimeout(async () => {
+        try {
+            const res = await fetch(fileName);
+            quizData = await res.json();
+            
+            const isShuffle = document.getElementById('shuffle-checkbox').checked;
+            userQuestions = isShuffle ? [...quizData].sort(() => Math.random() - 0.5) : [...quizData];
+            
+            resetAndRender();
+        } catch (err) {
+            alert("Không tìm thấy file câu hỏi!");
+            location.reload();
+        }
+    }, 200);
+}
+
+function resetAndRender() {
+    score = 0;
+    correctCount = 0;
     
     loadingScreen.classList.add('hidden');
+    resultScreen.classList.add('hidden');
     quizScreen.classList.remove('hidden');
-    loadQuiz();
-});
-
-// 5. HIỂN THỊ CÂU HỎI
-function loadQuiz() {
-    resetUIState(); // Reset trạng thái trước khi sang câu mới
-
-    const currentQuizData = userQuestions[currentQuiz];
-
-    questionEl.innerText = `Câu ${currentQuiz + 1}: ${currentQuizData.question}`;
-    document.getElementById('a_text').innerText = currentQuizData.options.a;
-    document.getElementById('b_text').innerText = currentQuizData.options.b;
-    document.getElementById('c_text').innerText = currentQuizData.options.c;
-    document.getElementById('d_text').innerText = currentQuizData.options.d;
-
-    // Cập nhật thanh tiến trình & số liệu
-    const progressPercent = (currentQuiz / userQuestions.length) * 100;
-    progressBar.style.width = `${progressPercent}%`;
-    currentCountEl.innerText = currentQuiz + 1;
-    totalCountEl.innerText = userQuestions.length;
-    liveScoreEl.innerText = score;
+    
+    renderAllQuestions();
+    
+    // Reset thanh cuộn về đầu
+    document.querySelector('.quiz-scroll-area').scrollTop = 0;
 }
 
-// 6. PHẢN HỒI MÀU SẮC NGAY KHI CHỌN ĐÁP ÁN
-answerEls.forEach(el => {
-    el.addEventListener('change', () => {
-        const selectedId = el.id; // Lấy a, b, c hoặc d
-        const currentQuizData = userQuestions[currentQuiz];
-        const correctId = currentQuizData.answer;
+function restartQuiz() {
+    resetAndRender();
+}
 
-        // HIỆN MÀU NGAY LẬP TỨC
-        const selectedLabel = document.getElementById(`label-${selectedId}`);
-        const correctLabel = document.getElementById(`label-${correctId}`);
+document.getElementById('btn-tracnghiem').onclick = () => startGame('questions.json');
+document.getElementById('btn-dungsai').onclick = () => startGame('dungsai.json');
 
-        if (selectedId === correctId) {
-            score++;
-            selectedLabel.classList.add('correct');
+function renderAllQuestions() {
+    const feed = document.getElementById('quiz-feed');
+    feed.innerHTML = "";
+    
+    userQuestions.forEach((data, index) => {
+        const qBlock = document.createElement('div');
+        qBlock.className = 'question-block';
+        qBlock.id = `q-block-${index}`;
+
+        const questionTitle = escapeHtml(data.question);
+        let optionsHtml = "";
+        const opts = data.options;
+
+        if (Array.isArray(opts)) {
+            optionsHtml = `
+                <div class="option-item" onclick="handleSelect(this, ${index}, 'a')">
+                    <input type="radio" name="q${index}"><span>${escapeHtml(opts[0])}</span>
+                </div>
+                <div class="option-item" onclick="handleSelect(this, ${index}, 'b')">
+                    <input type="radio" name="q${index}"><span>${escapeHtml(opts[1])}</span>
+                </div>`;
         } else {
-            selectedLabel.classList.add('wrong');
-            correctLabel.classList.add('correct'); // Gợi ý đáp án đúng cho người dùng học tập
-            
-            wrongAnswers.push({
-                q: currentQuizData.question,
-                userAns: currentQuizData.options[selectedId],
-                correctAns: currentQuizData.options[correctId]
-            });
+            optionsHtml = Object.entries(opts).map(([key, val]) => `
+                <div class="option-item" onclick="handleSelect(this, ${index}, '${key}')">
+                    <input type="radio" name="q${index}"><span>${escapeHtml(val)}</span>
+                </div>`).join('');
         }
 
-        // KHÓA LỰA CHỌN (Không cho chọn lại sau khi đã hiện màu)
-        lockOptions();
-
-        // MỞ KHÓA NÚT "TIẾP TỤC" (Chỉ sau khi chọn mới cho nhấn tiếp)
-        submitBtn.disabled = false;
+        qBlock.innerHTML = `
+            <div class="question-text">Câu ${index + 1}: ${questionTitle}</div>
+            <div class="option-list">${optionsHtml}</div>`;
+        feed.appendChild(qBlock);
     });
-});
 
-// 7. NHẤN NÚT "TIẾP TỤC" ĐỂ QUA CÂU
-submitBtn.addEventListener('click', () => {
-    currentQuiz++;
-    if (currentQuiz < userQuestions.length) {
-        loadQuiz();
+    document.getElementById('total-count').innerText = userQuestions.length;
+    updateProgress();
+}
+
+function handleSelect(element, qIndex, selectedKey) {
+    const block = document.getElementById(`q-block-${qIndex}`);
+    if (block.classList.contains('completed')) return;
+
+    const allOptions = block.querySelectorAll('.option-item');
+    allOptions.forEach(opt => opt.classList.remove('wrong'));
+
+    element.querySelector('input').checked = true;
+    const data = userQuestions[qIndex];
+
+    let correctKey = "";
+    if (Array.isArray(data.options)) {
+        correctKey = (data.answer === data.options[0]) ? "a" : "b";
     } else {
-        showResults();
+        const entry = Object.entries(data.options).find(([k, v]) => v === data.answer);
+        correctKey = entry ? entry[0] : String(data.answer).toLowerCase();
     }
-});
 
-// 8. CÁC HÀM HỖ TRỢ GIAO DIỆN
-function resetUIState() {
-    submitBtn.disabled = true; // Khóa nút tiếp tục cho câu mới
-    answerEls.forEach(el => {
-        el.checked = false;
-        el.disabled = false;
-        el.parentElement.style.pointerEvents = 'auto'; // Cho phép click lại
-        el.parentElement.classList.remove('correct', 'wrong');
-    });
+    if (selectedKey === correctKey) {
+        element.classList.add('correct');
+        block.classList.add('completed'); 
+        score++;
+        correctCount++;
+    } else {
+        element.classList.add('wrong');
+    }
+
+    updateProgress();
+
+    if (correctCount === userQuestions.length) {
+        setTimeout(showFinalResults, 500);
+    }
 }
 
-function lockOptions() {
-    answerEls.forEach(el => {
-        el.disabled = true;
-        el.parentElement.style.pointerEvents = 'none'; // Khóa click vào label
-    });
+function updateProgress() {
+    const percent = userQuestions.length > 0 ? (correctCount / userQuestions.length) * 100 : 0;
+    progressBar.style.width = percent + "%";
+    document.getElementById('current-count').innerText = correctCount;
+    document.getElementById('live-score').innerText = score;
 }
 
-// 9. HIỂN THỊ KẾT QUẢ CUỐI CÙNG
-function showResults() {
+function showFinalResults() {
     quizScreen.classList.add('hidden');
     resultScreen.classList.remove('hidden');
-    progressBar.style.width = `100%`;
-    document.getElementById('final-score').innerText = `${score} / ${userQuestions.length}`;
-
-    // Hiệu ứng pháo hoa khi hoàn thành xuất sắc (>80%)
-    if (score / userQuestions.length >= 0.8) {
-        confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 } });
-    }
-
-    // Hiển thị danh sách câu trả lời sai
-    const reviewContainer = document.getElementById('review-container');
-    if (wrongAnswers.length > 0) {
-        reviewContainer.innerHTML = wrongAnswers.map((item, index) => `
-            <div style="margin-bottom: 12px; padding: 12px; border-left: 4px solid var(--error); background: #fff5f5; border-radius: 8px;">
-                <p><strong>Câu hỏi:</strong> ${item.q}</p>
-                <p style="color: var(--error);">✘ Bạn chọn: ${item.userAns}</p>
-                <p style="color: var(--success);">✔ Đáp án đúng: ${item.correctAns}</p>
-            </div>
-        `).join('');
-    } else {
-        reviewContainer.innerHTML = "<p style='color: var(--success); font-weight:bold; text-align:center;'>Xuất sắc! Bạn không làm sai câu nào! Ngon luôn!.</p>";
-    }
+    document.getElementById('final-score').innerText = score + "/" + userQuestions.length;
 }
