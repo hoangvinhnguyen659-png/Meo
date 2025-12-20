@@ -151,25 +151,37 @@ input:checked + .slider:before { transform: translateX(20px); }
 .score-label { color: var(--text-light); font-weight: 500; font-size: 1rem; }
 .score-box { font-size: 4rem; font-weight: 800; color: var(--primary); margin: 20px 0 40px; }
 .result-actions { display: flex; flex-direction: column; gap: 12px; }
-/* Định dạng cho mã QR */
+/* Khung tổng thể: Giới hạn độ rộng để không bị quá bự */
 .qr-container {
-    margin-top: 30px;
+    margin: 25px auto; /* auto giúp căn giữa toàn bộ khối */
     text-align: center;
     border-top: 1px solid #eee;
     padding-top: 20px;
+    max-width: 280px;  /* Đặt giới hạn bự nhất của khung là 280px */
 }
 
+/* Chữ tiêu đề */
 .qr-container p {
-    font-size: 0.85rem;
-    color: var(--text-light);
-    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
-.qr-image {
-    width: 120px; /* Độ rộng của mã QR */
-    height: 120px;
-    border-radius: 8px;
-    padding: 5px;
+/* Khung card trắng: Ôm khít ảnh */
+.qr-card-wrapper {
+    display: inline-block;
     background: #fff;
-    box-shadow: var(--shadow-sm);
-    }
+    padding: 10px;        /* Giảm padding một chút cho đỡ bự */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    line-height: 0;
+}
+
+/* Ảnh QR: Chỉnh lại kích thước vừa phải */
+.qr-card-wrapper img {
+    width: 180px;         /* GIẢM TỪ 230px XUỐNG 180px cho nhỏ gọn */
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
