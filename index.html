@@ -2,184 +2,82 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Trắc Nghiệm Pro</title>
-    <meta property="og:title" content="Trắc Nghiệm Tin"> 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #3498db;
-            --primary-dark: #2980b9;
-            --success: #2ecc71;
-            --error: #e74c3c;
-            --bg: #f0f4f8;
-            --text: #2d3436;
-            --radius: 14px;
-        }
-
-        /* 1. TỐI ƯU CƠ BẢN & KHỬ LAG MOBILE */
-        * { 
-            box-sizing: border-box; 
-            margin: 0; padding: 0; 
-            -webkit-tap-highlight-color: transparent; 
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            display: flex; justify-content: center; align-items: center;
-            min-height: 100vh; padding: 15px;
-        }
-
-        .container {
-            background: #fff; width: 100%; max-width: 600px;
-            border-radius: var(--radius);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-            overflow: hidden;
-            animation: fadeIn 0.5s ease-out;
-        }
-
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
-        .hidden { display: none !important; }
-
-        /* 2. MÀN HÌNH CHỜ (SETUP) */
-        #loading-screen { padding: 40px; text-align: center; }
-        .setup-group { margin: 20px 0; padding: 15px; background: #f8fafc; border-radius: 10px; }
-
-        /* 3. THANH TIẾN TRÌNH GRADIENT */
-        .quiz-header { padding: 20px 20px 10px; border-bottom: 1px solid #f0f0f0; }
-        .progress-container { background: #edf2f7; height: 10px; border-radius: 10px; margin-bottom: 15px; overflow: hidden; }
-        #progress-bar { 
-            background: linear-gradient(90deg, var(--primary), #a29bfe, var(--success)); 
-            height: 100%; width: 0%; transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-        }
-
-        /* 4. CÂU HỎI & ĐÁP ÁN (HIỆU ỨNG TRANSLATE X) */
-        .quiz-body { padding: 20px; }
-        #question { font-size: 1.25rem; font-weight: 700; margin-bottom: 25px; color: #1a202c; line-height: 1.5; }
-        
-        .option-item {
-            border: 2px solid #e2e8f0; border-radius: var(--radius); 
-            padding: 16px; margin-bottom: 12px; cursor: pointer; 
-            display: flex; align-items: center; transition: all 0.3s ease;
-            font-weight: 500;
-        }
-
-        /* Hover nhích sang phải 5px */
-        @media (hover: hover) {
-            .option-item:hover {
-                border-color: var(--primary);
-                background-color: #f0f7ff;
-                transform: translateX(5px);
-            }
-        }
-
-        .option-item input { margin-right: 15px; width: 20px; height: 20px; flex-shrink: 0; }
-        
-        /* Hiển thị màu Đúng/Sai ngay lập tức */
-        .option-item.correct { background-color: #defadb !important; border-color: var(--success) !important; color: #1c451d; }
-        .option-item.wrong { background-color: #fff5f5 !important; border-color: var(--error) !important; color: #611b1b; }
-
-        /* 5. NÚT BẤM 3D & FOOTER */
-        .quiz-footer { padding: 15px 20px; background: #f8fafc; text-align: right; }
-        #submit, .btn-start {
-            background: var(--primary); color: white; border: none;
-            padding: 14px 30px; border-radius: 10px; cursor: pointer;
-            font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
-            box-shadow: 0 5px 0 var(--primary-dark);
-            transition: all 0.1s ease; position: relative;
-        }
-
-        /* Hiệu ứng lún xuống khi nhấn */
-        #submit:active, .btn-start:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--primary-dark); }
-        #submit:disabled { background: #cbd5e0; box-shadow: 0 5px 0 #a0aec0; cursor: not-allowed; transform: none; }
-
-        /* 6. KẾT QUẢ & CUSTOM SCROLLBAR */
-        #result-screen { padding: 30px; text-align: center; }
-        #final-score { font-size: 4rem; color: var(--primary); font-weight: 800; margin: 10px 0; }
-        #review-container { 
-            max-height: 350px; overflow-y: auto; text-align: left;
-            padding-right: 10px; margin-top: 20px;
-        }
-
-        /* Custom Scrollbar cho vùng câu sai */
-        #review-container::-webkit-scrollbar { width: 6px; }
-        #review-container::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-        #review-container::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 10px; }
-        #review-container::-webkit-scrollbar-thumb:hover { background: var(--primary); }
-
-        /* MOBILE RESPONSIVE */
-        @media (max-width: 480px) {
-            .quiz-body { padding: 15px; }
-            #question { font-size: 1.1rem; }
-            #submit, .btn-start { width: 100%; text-align: center; }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <div id="loading-screen">
-            <h1 style="color: var(--primary); font-weight: 800; letter-spacing: -1px;">Trắc Nghiệm Pro</h1>
-            <p id="status-text" style="margin: 10px 0; color: #636e72;">Đang tải dữ liệu từ questions.json...</p>
-            <div id="setup-options" class="hidden">
-                <div class="setup-group">
-                    <label style="cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 600;">
-                        <input type="checkbox" id="shuffle-checkbox" style="width: 20px; height: 20px; margin-right: 10px;">
-                        <span>Trộn câu hỏi</span>
-                    </label>
+    <div class="app-container">
+        
+        <div id="loading-screen" class="screen active">
+            <div class="welcome-card">
+                
+                <h1 class="app-title">Trắc Nghiệm Pro</h1>
+                <p id="status-text">Đang kết nối dữ liệu...</p>
+                
+                <div id="setup-options" class="hidden">
+                    <div class="toggle-wrapper">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="shuffle-checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        <span class="label-text">Trộn câu hỏi</span>
+                    </div>
+
+                    <div class="mode-buttons">
+                        <button class="btn-start btn-primary" id="btn-tracnghiem">
+                            Trắc nghiệm
+                        </button>
+                        <button class="btn-start btn-secondary" id="btn-dungsai">
+                            Đúng / Sai
+                        </button>
+                    </div>
                 </div>
-                <button class="btn-start" id="start-btn">Trắc Nghiệm</button>
             </div>
         </div>
 
-        <div id="quiz-screen" class="hidden">
-            <div class="quiz-header">
-                <div class="progress-container"><div id="progress-bar"></div></div>
-                <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 800; color: #7f8c8d;">
-                    <span>CÂU: <span id="current-count">0</span> / <span id="total-count">0</span></span>
-                    <span>ĐÚNG: <span id="live-score" style="color: var(--success);">0</span></span>
+        <div id="quiz-screen" class="screen hidden">
+            <div class="quiz-header sticky-header">
+                <div class="header-info">
+                    <div class="info-item left">Câu <span id="current-count">0</span>/<span id="total-count">0</span></div>
+                    <div class="info-item center">Điểm: <span id="live-score">0</span></div>
+                    <div class="info-item right">
+                        <button id="btn-home-nav" onclick="location.reload()">Trang chủ</button>
+                    </div>
                 </div>
+                <div class="progress-bg"><div id="progress-bar"></div></div>
             </div>
             
-            <div class="quiz-body">
-                <h2 id="question">Vui lòng đợi...</h2>
-                <div class="option-list">
-                    <label class="option-item" id="label-a">
-                        <input type="radio" name="answer" id="a" class="answer">
-                        <span id="a_text"></span>
-                    </label>
-                    <label class="option-item" id="label-b">
-                        <input type="radio" name="answer" id="b" class="answer">
-                        <span id="b_text"></span>
-                    </label>
-                    <label class="option-item" id="label-c">
-                        <input type="radio" name="answer" id="c" class="answer">
-                        <span id="c_text"></span>
-                    </label>
-                    <label class="option-item" id="label-d">
-                        <input type="radio" name="answer" id="d" class="answer">
-                        <span id="d_text"></span>
-                    </label>
+            <div class="quiz-scroll-area">
+                <div id="quiz-feed" class="quiz-body">
+                    </div>
+                <div style="height: 60px;"></div> 
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <div class="result-card">
+                <h2 class="result-title">Hoàn Thành!</h2>
+                <div class="score-label">Điểm số của bạn</div>
+                <div class="score-box">
+                    <span id="final-score">0/0</span>
+                </div>
+                
+                <div class="result-actions">
+                    <button class="btn-start btn-primary" onclick="restartQuiz()">
+                        Làm Lại Đề Này
+                    </button>
+                    <button class="btn-start btn-outline" onclick="location.reload()">
+                        Về Trang Chủ
+                    </button>
                 </div>
             </div>
-
-            <div class="quiz-footer">
-                <button id="submit" disabled>Tiếp tục &raquo;</button>
-            </div>
         </div>
 
-        <div id="result-screen" class="hidden">
-            <h2 style="color: #2d3436; font-weight: 800;">KẾT QUẢ</h2>
-            <div id="final-score">0/0</div>
-            <p style="color: #636e72; font-weight: 600;">Câu trả lời sai:</p>
-            <div id="review-container"></div>
-            <button class="btn-start" onclick="location.reload()" style="margin-top: 25px;">Vô Lại</button>
-        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
+        </html>
