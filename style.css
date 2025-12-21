@@ -180,7 +180,7 @@ input:checked + .slider:before { transform: translateX(20px); }
 
 /* Ảnh QR: Chỉnh lại kích thước vừa phải */
 .qr-card-wrapper img {
-    width: 220px;         /* GIẢM TỪ 230px XUỐNG 180px cho nhỏ gọn */
+    width: 210px;         /* GIẢM TỪ 230px XUỐNG 180px cho nhỏ gọn */
     height: auto;
     border-radius: 8px;
     display: block;
