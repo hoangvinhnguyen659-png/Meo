@@ -1,15 +1,158 @@
 [
   {
     "id": 1,
-    "topic": "Trí tuệ nhân tạo (AI)",
+    "topic": "Định dạng khung",
     "level": "Biết",
-    "question": "Ai là người đã đưa ra phép thử để kiểm tra khả năng thông minh của máy tính vào năm 1950?",
+    "question": "Trong HTML, các thẻ được chia làm hai loại chính là gì?",
     "options": {
-      "a": "John McCarthy",
-      "b": "Alan Turing",
-      "c": "Sophia",
-      "d": "MYCIN"
+      "a": "Thẻ đơn và thẻ kép.",
+      "b": "Thẻ nội dung và thẻ định dạng.",
+      "c": "Phần tử khối (block level) và phần tử nội tuyến (inline level).",
+      "d": "Phần tử tĩnh và phần tử động."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 2,
+    "topic": "Định dạng khung",
+    "level": "Biết",
+    "question": "Đặc điểm của phần tử khối (block level) là gì?",
+    "options": {
+      "a": "Luôn nằm trên cùng một hàng với các phần tử khác.",
+      "b": "Thường bắt đầu từ đầu hàng và kéo dài suốt chiều rộng của trang web.",
+      "c": "Chỉ chiếm chiều rộng vừa đủ với nội dung bên trong.",
+      "d": "Không thể thiết lập chiều cao và chiều rộng bằng CSS."
     },
     "answer": "b"
   },
+  {
+    "id": 3,
+    "topic": "Định dạng khung",
+    "level": "Biết",
+    "question": "Các thẻ nào sau đây thuộc loại phần tử khối?",
+    "options": {
+      "a": "<span>, <a>, <img>.",
+      "b": "<strong>, <em>, <b>.",
+      "c": "<h1>, <p>, <div>, <li>.",
+      "d": "<br>, <input>, <label>."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 4,
+    "topic": "Định dạng khung",
+    "level": "Biết",
+    "question": "Thuộc tính CSS nào dùng để thay đổi loại phần tử (ví dụ từ nội tuyến sang khối)?",
+    "options": {
+      "a": "type",
+      "b": "format",
+      "c": "display",
+      "d": "position"
+    },
+    "answer": "c"
+  },
+  {
+    "id": 5,
+    "topic": "Định dạng khung",
+    "level": "Hiểu",
+    "question": "Thành phần nào trong mô hình hộp (box model) nằm giữa vùng nội dung và khung (border)?",
+    "options": {
+      "a": "Margin",
+      "b": "Padding (Vùng đệm)",
+      "c": "Width",
+      "d": "Height"
+    },
+    "answer": "b"
+  },
+  {
+    "id": 6,
+    "topic": "Định dạng khung",
+    "level": "Hiểu",
+    "question": "Thuộc tính nào dùng để thiết lập khoảng cách từ khung của phần tử đến các phần tử xung quanh?",
+    "options": {
+      "a": "padding",
+      "b": "margin (Lề khung)",
+      "c": "border-spacing",
+      "d": "outline"
+    },
+    "answer": "b"
+  },
+  {
+    "id": 7,
+    "topic": "Định dạng khung",
+    "level": "Hiểu",
+    "question": "Cách viết 'border: 2px solid red;' là cách viết tắt cho những thuộc tính nào?",
+    "options": {
+      "a": "border-width, border-style, border-color.",
+      "b": "border-top, border-left, border-right.",
+      "c": "margin, padding, border.",
+      "d": "width, height, border-style."
+    },
+    "answer": "a"
+  },
+  {
+    "id": 8,
+    "topic": "Định dạng khung",
+    "level": "Hiểu",
+    "question": "Các thuộc tính liên quan đến khung (width, height, padding, margin, border) có tính chất nào sau đây?",
+    "options": {
+      "a": "Có tính kế thừa (phần tử con tự động nhận từ cha).",
+      "b": "Không có tính kế thừa.",
+      "c": "Chỉ áp dụng được cho phần tử nội tuyến.",
+      "d": "Tự động thay đổi theo độ phân giải màn hình."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 9,
+    "topic": "Định dạng khung",
+    "level": "Vận dụng",
+    "question": "Để định dạng cho một nhóm phần tử có cùng ý nghĩa bằng lớp (class), trong file CSS ta sử dụng ký hiệu nào trước tên lớp?",
+    "options": {
+      "a": "Dấu thăng (#)",
+      "b": "Dấu chấm (.)",
+      "c": "Dấu phẩy (,)",
+      "d": "Dấu sao (*)"
+    },
+    "answer": "b"
+  },
+  {
+    "id": 10,
+    "topic": "Định dạng khung",
+    "level": "Vận dụng",
+    "question": "Khi muốn định dạng cho một phần tử duy nhất có mã định danh ID, ta sử dụng ký hiệu nào trong CSS?",
+    "options": {
+      "a": "Dấu thăng (#)",
+      "b": "Dấu chấm (.)",
+      "c": "Dấu ngoặc vuông ([])",
+      "d": "Dấu gạch chéo (/)"
+    },
+    "answer": "a"
+  },
+  {
+    "id": 11,
+    "topic": "Định dạng khung",
+    "level": "Vận dụng",
+    "question": "Một phần tử HTML có thể thuộc nhiều lớp khác nhau không? Và cách khai báo như thế nào?",
+    "options": {
+      "a": "Không, chỉ được thuộc một lớp duy nhất.",
+      "b": "Có, ngăn cách các tên lớp bằng dấu phẩy.",
+      "c": "Có, ngăn cách các tên lớp bằng dấu cách (khoảng trống).",
+      "d": "Có, ngăn cách các tên lớp bằng dấu chấm phẩy."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 12,
+    "topic": "Định dạng khung",
+    "level": "Vận dụng",
+    "question": "Quy tắc nào sau đây SAI khi đặt tên cho ID và Class?",
+    "options": {
+      "a": "Phân biệt chữ hoa và chữ thường.",
+      "b": "Phải có ít nhất một ký tự.",
+      "c": "Có thể bắt đầu bằng một chữ số.",
+      "d": "Không được chứa dấu cách."
+    },
+    "answer": "c"
+  }
 ]
