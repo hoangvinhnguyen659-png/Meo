@@ -1,1 +1,302 @@
-
+[
+  {
+    "question": "Xét về đặc điểm của phần tử khối (Block) và nội tuyến (Inline) trong HTML:",
+    "subQuestions": [
+      {
+        "content": "Các phần tử khối như <div>, <h1>, <p> luôn bắt đầu trên một dòng mới.",
+        "answer": "Đúng",
+        "explanation": "Phần tử khối (block) mặc định chiếm toàn bộ chiều rộng vùng chứa nên luôn tự động xuống dòng."
+      },
+      {
+        "content": "Các phần tử nội tuyến như <span>, <a> sẽ chiếm toàn bộ chiều rộng của trang web.",
+        "answer": "Sai",
+        "explanation": "Phần tử nội tuyến (inline) chỉ chiếm không gian vừa đủ theo nội dung bên trong nó."
+      },
+      {
+        "content": "Thẻ <img> là một phần tử nội tuyến đặc biệt vì nó có thể thiết lập được chiều rộng và chiều cao.",
+        "answer": "Đúng",
+        "explanation": "<img> là thẻ nội tuyến đặc biệt (replaced element) cho phép tùy chỉnh kích thước vật lý."
+      },
+      {
+        "content": "Một phần tử nội tuyến có thể chứa một phần tử khối bên trong nó.",
+        "answer": "Sai",
+        "explanation": "Theo quy chuẩn HTML, phần tử nội tuyến không được phép chứa phần tử khối bên trong."
+      }
+    ]
+  },
+  {
+    "question": "Về thuộc tính display và cách tổ chức các thành phần:",
+    "subQuestions": [
+      {
+        "content": "Thuộc tính display: block; có thể biến một thẻ <span> từ nội tuyến thành phần tử khối.",
+        "answer": "Đúng",
+        "explanation": "CSS có thể ghi đè và thay đổi đặc tính hiển thị mặc định của bất kỳ thẻ HTML nào."
+      },
+      {
+        "content": "Giá trị display: inline-block; giúp phần tử vừa nằm cùng hàng với phần tử khác, vừa có thể chỉnh kích thước.",
+        "answer": "Đúng",
+        "explanation": "Inline-block kết hợp tính chất nằm cùng hàng của inline và khả năng chỉnh kích thước của block."
+      },
+      {
+        "content": "Khi sử dụng display: none;, phần tử sẽ bị ẩn đi nhưng vẫn giữ lại vị trí chiếm chỗ trên trang web.",
+        "answer": "Sai",
+        "explanation": "display: none loại bỏ hoàn toàn phần tử khỏi luồng hiển thị và không giữ lại khoảng trống."
+      },
+      {
+        "content": "Thẻ <div> thường được dùng làm 'thùng chứa' để gom nhóm các phần tử nhằm mục đích dàn trang.",
+        "answer": "Đúng",
+        "explanation": "<div> là thẻ khối không mang ý nghĩa nội dung, chuyên dùng để bao bọc và phân chia bố cục."
+      }
+    ]
+  },
+  {
+    "question": "Về khả năng chứa nhau và các thuộc tính kích thước của phần tử:",
+    "subQuestions": [
+      {
+        "content": "Các phần tử nội tuyến (Inline) như <a>, <span> không thể thiết lập trực tiếp thuộc tính width và height.",
+        "answer": "Đúng",
+        "explanation": "Kích thước của phần tử nội tuyến phụ thuộc hoàn toàn vào nội dung văn bản bên trong."
+      },
+      {
+        "content": "Một phần tử khối (Block) có thể chứa nhiều phần tử khối khác và nhiều phần tử nội tuyến bên trong nó.",
+        "answer": "Đúng",
+        "explanation": "Thẻ khối được thiết kế để bao bọc mọi loại thành phần khác (trừ một số thẻ đặc biệt như <p>)."
+      },
+      {
+        "content": "Thuộc tính margin và padding phía trên và phía dưới luôn có tác dụng đầy đủ với các phần tử nội tuyến.",
+        "answer": "Sai",
+        "explanation": "Margin/padding trên-dưới của thẻ nội tuyến không đẩy được các phần tử khác ra xa."
+      },
+      {
+        "content": "Thẻ <p> là phần tử khối nhưng nó không nên chứa các phần tử khối khác như <div> bên trong theo tiêu chuẩn HTML.",
+        "answer": "Đúng",
+        "explanation": "Thẻ <p> chỉ dùng cho văn bản; việc chứa thẻ khối bên trong là sai cấu trúc ngữ nghĩa."
+      }
+    ]
+  },
+  {
+    "question": "Khi nói về Lớp giả (Pseudo-class) và Phần tử giả (Pseudo-element):",
+    "subQuestions": [
+      {
+        "content": "Lớp giả được sử dụng để định dạng phần tử dựa trên trạng thái (như di chuột qua, đã click).",
+        "answer": "Đúng",
+        "explanation": "Lớp giả giúp thay đổi kiểu dáng phần tử theo tương tác người dùng như :hover, :active."
+      },
+      {
+        "content": "Lớp giả :hover chỉ có tác dụng khi người dùng bôi đen đoạn văn bản.",
+        "answer": "Sai",
+        "explanation": ":hover kích hoạt khi di chuyển con trỏ chuột vào vùng phần tử, không phải là bôi đen."
+      },
+      {
+        "content": "Theo chuẩn CSS3, phần tử giả (như ::first-line) nên được bắt đầu bằng dấu hai chấm kép ::.",
+        "answer": "Đúng",
+        "explanation": "Dấu :: giúp phân biệt phần tử giả (chọn 1 phần của thẻ) với lớp giả (chọn trạng thái)."
+      },
+      {
+        "content": "Phần tử giả ::selection dùng để thay đổi định dạng của phần văn bản được người dùng lựa chọn (bôi đen).",
+        "answer": "Đúng",
+        "explanation": "Đây là selector chuyên biệt dùng để định dạng phần chữ đang được người dùng quét chuột chọn."
+      }
+    ]
+  },
+  {
+    "question": "Xét về mức độ ưu tiên và trọng số của các bộ chọn CSS:",
+    "subQuestions": [
+      {
+        "content": "Nếu một phần tử có cả ID và Class, các quy tắc trong bộ chọn ID sẽ được ưu tiên áp dụng hơn.",
+        "answer": "Đúng",
+        "explanation": "ID có tính cụ thể cao hơn nên có trọng số (100) mạnh hơn nhiều so với Class (10)."
+      },
+      {
+        "content": "Bộ chọn toàn cục (ký hiệu *) có mức ưu tiên cao hơn bộ chọn phần tử (thẻ HTML).",
+        "answer": "Sai",
+        "explanation": "Bộ chọn toàn cục (*) có trọng số bằng 0, là mức ưu tiên thấp nhất trong CSS."
+      },
+      {
+        "content": "Khi hai bộ chọn có cùng trọng số, trình duyệt sẽ ưu tiên quy tắc nào được viết ở vị trí sớm hơn trong file CSS.",
+        "answer": "Sai",
+        "explanation": "Khi cùng trọng số, trình duyệt áp dụng quy tắc xuất hiện muộn hơn (viết ở dòng dưới)."
+      },
+      {
+        "content": "Từ khóa !important sẽ ghi đè mọi mức ưu tiên khác, kể cả mã định danh ID.",
+        "answer": "Đúng",
+        "explanation": "!important là chỉ thị mạnh nhất, phá vỡ mọi quy trình tính toán trọng số thông thường."
+      }
+    ]
+  },
+  {
+    "question": "Về sự xung đột CSS và cách trình duyệt áp dụng quy tắc ưu tiên:",
+    "subQuestions": [
+      {
+        "content": "Thuộc tính CSS viết trực tiếp trong thẻ (Inline Style) có mức ưu tiên cao hơn mã định danh (ID).",
+        "answer": "Đúng",
+        "explanation": "Style trực tiếp (inline style) có trọng số là 1000, cao hơn bộ chọn ID trong file ngoài."
+      },
+      {
+        "content": "Bộ chọn lớp (Class) và bộ chọn thuộc tính có mức ưu tiên ngang bằng nhau.",
+        "answer": "Đúng",
+        "explanation": "Theo bảng tính trọng số, Class, Selector thuộc tính và Pseudo-class đều bằng điểm nhau."
+      },
+      {
+        "content": "Việc sử dụng quá nhiều !important giúp mã nguồn CSS trở nên sạch sẽ và dễ bảo trì hơn.",
+        "answer": "Sai",
+        "explanation": "Lạm dụng !important gây khó khăn cho việc quản lý mã và ghi đè các định dạng sau này."
+      },
+      {
+        "content": "Khi một phần tử nhận thuộc tính màu sắc từ cả tệp CSS ngoài và thẻ <style> trong trang, quy tắc nào nằm xa phần tử đó hơn sẽ thắng.",
+        "answer": "Sai",
+        "explanation": "Trình duyệt ưu tiên quy tắc được nạp sau cùng (theo thứ tự từ trên xuống dưới)."
+      }
+    ]
+  },
+  {
+    "question": "Về các nhiệm vụ chuyên môn trong nghề dịch vụ máy tính:",
+    "subQuestions": [
+      {
+        "content": "Việc thay thế ổ cứng HDD bằng ổ cứng SSD được xếp vào nhóm nâng cấp thiết bị phần cứng.",
+        "answer": "Đúng",
+        "explanation": "Mọi thay đổi liên quan đến linh kiện vật lý của máy tính đều thuộc nhóm công việc phần cứng."
+      },
+      {
+        "content": "Cài đặt trình điều khiển (driver) cho máy in là một nhiệm vụ liên quan đến phần mềm.",
+        "answer": "Đúng",
+        "explanation": "Driver là các tệp phần mềm trung gian giúp hệ điều hành nhận diện và điều khiển phần cứng."
+      },
+      {
+        "content": "Quét mã độc và cập nhật các bản vá lỗi cho hệ điều hành là một phần của công việc bảo trì phần mềm.",
+        "answer": "Đúng",
+        "explanation": "Bảo trì phần mềm tập trung vào việc vá lỗi, bảo mật và tối ưu hóa hoạt động của hệ thống."
+      },
+      {
+        "content": "Sửa chữa bo mạch chủ (Mainboard) là nhiệm vụ thuộc nhóm hỗ trợ người dùng (Help Desk).",
+        "answer": "Sai",
+        "explanation": "Sửa chữa linh kiện điện tử chuyên sâu cần kỹ thuật viên sửa chữa, không phải Help Desk."
+      }
+    ]
+  },
+  {
+    "question": "Về kỹ năng, phẩm chất và đào tạo trong nghề:",
+    "subQuestions": [
+      {
+        "content": "Kỹ năng giải quyết vấn đề (Problem-solving) giúp thợ kỹ thuật tìm ra nguyên nhân sự cố một cách logic.",
+        "answer": "Đúng",
+        "explanation": "Tư duy logic giúp khoanh vùng và xác định đúng thành phần gây ra lỗi trong hệ thống phức tạp."
+      },
+      {
+        "content": "Người thợ sửa chữa máy tính không cần trung thực vì khách hàng thường không am hiểu về kỹ thuật.",
+        "answer": "Sai",
+        "explanation": "Trung thực là đạo đức cốt lõi để bảo mật dữ liệu khách hàng và duy trì uy tín nghề nghiệp."
+      },
+      {
+        "content": "Tại Việt Nam, nghề sửa chữa và bảo trì máy tính được đào tạo ở nhiều bậc như Sơ cấp, Trung cấp, Cao đẳng và Đại học.",
+        "answer": "Đúng",
+        "explanation": "Đây là ngành nghề có lộ trình đào tạo đa dạng từ cấp độ nghề đến chuyên gia kỹ sư."
+      },
+      {
+        "content": "Kỹ năng quản lý thời gian giúp đảm bảo hoàn thành việc sửa chữa đúng hạn cho khách hàng.",
+        "answer": "Đúng",
+        "explanation": "Giúp tối ưu hóa quy trình làm việc và đảm bảo sự hài lòng của khách hàng về tiến độ."
+      }
+    ]
+  },
+  {
+    "question": "Về quy trình và đạo đức nghề nghiệp trong dịch vụ máy tính:",
+    "subQuestions": [
+      {
+        "content": "Quy trình sửa chữa máy tính luôn bắt đầu bằng việc tháo rời tất cả linh kiện trước khi kiểm tra lỗi.",
+        "answer": "Sai",
+        "explanation": "Luôn cần chẩn đoán bằng phần mềm và kiểm tra sơ bộ trước khi thực hiện tháo lắp phần cứng."
+      },
+      {
+        "content": "Bảo trì máy tính định kỳ bao gồm cả việc vệ sinh bụi bẩn phần cứng và dọn dẹp tập tin rác phần mềm.",
+        "answer": "Đúng",
+        "explanation": "Bảo trì cần thực hiện song song việc vệ sinh vật lý và tối ưu hóa phần mềm hệ thống."
+      },
+      {
+        "content": "Thợ sửa chữa có quyền truy cập và thay đổi mật khẩu cá nhân của khách hàng mà không cần hỏi ý kiến.",
+        "answer": "Sai",
+        "explanation": "Hành vi tự ý truy cập mật khẩu cá nhân là vi phạm nghiêm trọng quyền riêng tư."
+      },
+      {
+        "content": "Nghề dịch vụ máy tính đòi hỏi người làm phải liên tục cập nhật kiến thức về các dòng linh kiện và công nghệ mới.",
+        "answer": "Đúng",
+        "explanation": "Công nghệ thay đổi rất nhanh, đòi hỏi người làm nghề phải học hỏi liên tục để không bị lạc hậu."
+      }
+    ]
+  },
+  {
+    "question": "Về các vị trí quản trị cụ thể trong doanh nghiệp:",
+    "subQuestions": [
+      {
+        "content": "Quản trị viên hệ thống (System Admin) tập trung vào việc quản lý máy chủ và hệ điều hành.",
+        "answer": "Đúng",
+        "explanation": "Trách nhiệm chính là đảm bảo sự hoạt động ổn định của server và các dịch vụ phần mềm."
+      },
+      {
+        "content": "Quản trị viên mạng (Network Admin) chịu trách nhiệm chính về các kết nối LAN, WAN và Internet.",
+        "answer": "Đúng",
+        "explanation": "Tập trung quản lý hạ tầng truyền dẫn, thiết bị mạng và tính thông suốt của kết nối."
+      },
+      {
+        "content": "Quản trị viên cơ sở dữ liệu (DBA) có nhiệm vụ đi lắp đặt dây cáp mạng cho văn phòng.",
+        "answer": "Sai",
+        "explanation": "DBA chỉ làm việc với dữ liệu; lắp đặt hạ tầng mạng là nhiệm vụ của kỹ thuật viên mạng."
+      },
+      {
+        "content": "Quản trị an ninh mạng có vai trò bảo vệ hệ thống khỏi các cuộc tấn công và truy cập trái phép.",
+        "answer": "Đúng",
+        "explanation": "Đảm nhận việc thiết lập bảo mật, giám sát và ngăn chặn các mối đe dọa từ mạng."
+      }
+    ]
+  },
+  {
+    "question": "Về đặc điểm công việc và xu hướng hiện nay:",
+    "subQuestions": [
+      {
+        "content": "Công việc quản trị CNTT thường đòi hỏi sự cẩn trọng và khả năng làm việc dưới áp lực cao khi có sự cố.",
+        "answer": "Đúng",
+        "explanation": "Áp lực duy trì tính liên tục của hệ thống yêu cầu quản trị viên phải có thần kinh thép."
+      },
+      {
+        "content": "Sao lưu dữ liệu (Backup) định kỳ là một hoạt động không bắt buộc trong quản trị hệ thống.",
+        "answer": "Sai",
+        "explanation": "Sao lưu dữ liệu là quy trình bắt buộc để đảm bảo an toàn và phục hồi hệ thống khi có sự cố."
+      },
+      {
+        "content": "Xu hướng quản trị hiện đại ngày nay đang chuyển dịch mạnh sang điện toán đám mây (Cloud) và ảo hóa.",
+        "answer": "Đúng",
+        "explanation": "Điện toán đám mây và ảo hóa giúp tăng tính linh hoạt và tối ưu chi phí vận hành doanh nghiệp."
+      },
+      {
+        "content": "Người làm nghề quản trị CNTT cần có kỹ năng giao tiếp tốt để hỗ trợ người dùng và làm việc nhóm.",
+        "answer": "Đúng",
+        "explanation": "Kỹ năng mềm giúp quản trị viên hiểu nhu cầu khách hàng và phối hợp hiệu quả trong dự án."
+      }
+    ]
+  },
+  {
+    "question": "Về quản trị dịch vụ và quyền hạn trong hệ thống:",
+    "subQuestions": [
+      {
+        "content": "Quản trị dịch vụ CNTT (ITSM) chỉ quan tâm đến việc máy tính chạy nhanh hay chậm, không cần quan tâm đến sự hài lòng của người dùng.",
+        "answer": "Sai",
+        "explanation": "ITSM lấy sự hài lòng của người dùng làm trọng tâm và mục tiêu đo lường chất lượng."
+      },
+      {
+        "content": "Việc phân quyền (Authorization) giúp đảm bảo nhân viên chỉ truy cập được vào đúng những dữ liệu cần thiết cho công việc của họ.",
+        "answer": "Đúng",
+        "explanation": "Đây là nguyên tắc bảo mật cơ bản để bảo vệ dữ liệu nội bộ không bị rò rỉ hoặc lạm dụng."
+      },
+      {
+        "content": "Hạ tầng điện toán đám mây (Cloud) giúp doanh nghiệp giảm bớt gánh nặng về việc quản lý máy chủ vật lý tại chỗ.",
+        "answer": "Đúng",
+        "explanation": "Hạ tầng vật lý do nhà cung cấp quản lý, doanh nghiệp chỉ tập trung vào việc sử dụng dịch vụ."
+      },
+      {
+        "content": "Một quản trị viên hệ thống giỏi cần có khả năng lập kế hoạch dự phòng để ứng phó với các thảm họa mất dữ liệu.",
+        "answer": "Đúng",
+        "explanation": "Kế hoạch khắc phục sau thảm họa là chỉ số quan trọng đánh giá năng lực của quản trị viên."
+      }
+    ]
+  }
+    ]
