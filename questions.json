@@ -92,45 +92,6 @@
   },
   {
     "id": 8,
-    "topic": "CSS Display",
-    "level": "Biết",
-    "question": "Thuộc tính CSS nào dùng để thay đổi cách hiển thị của một phần tử (ví dụ biến Inline thành Block)?",
-    "options": {
-      "a": "visibility",
-      "b": "position",
-      "c": "float",
-      "d": "display"
-    },
-    "answer": "d"
-  },
-  {
-    "id": 9,
-    "topic": "CSS Display",
-    "level": "Hiểu",
-    "question": "Khi thiết lập display: none; cho một phần tử, kết quả sẽ như thế nào?",
-    "options": {
-      "a": "Phần tử biến mất hoàn toàn và không để lại khoảng trống trên trang web.",
-      "b": "Phần tử mờ đi nhưng vẫn chiếm chỗ.",
-      "c": "Phần tử chỉ bị ẩn nội dung bên trong, khung vẫn giữ nguyên.",
-      "d": "Phần tử chuyển sang màu trắng."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 10,
-    "topic": "CSS Display",
-    "level": "Hiểu",
-    "question": "Giá trị nào của thuộc tính display giúp phần tử vừa có thể nằm cùng hàng, vừa có thể thiết lập chiều rộng và chiều cao?",
-    "options": {
-      "a": "block",
-      "b": "inline",
-      "c": "inline-block",
-      "d": "flex"
-    },
-    "answer": "c"
-  },
-  {
-    "id": 11,
     "topic": "HTML Elements",
     "level": "Vận dụng",
     "question": "Thẻ nào sau đây được sử dụng để định dạng một phần nhỏ văn bản trong cùng một dòng mà không làm thay đổi cấu trúc dòng đó?",
@@ -143,7 +104,7 @@
     "answer": "c"
   },
   {
-    "id": 12,
+    "id": 9,
     "topic": "HTML Elements",
     "level": "Hiểu",
     "question": "Thẻ <img> (hình ảnh) có đặc điểm đặc biệt gì trong cách hiển thị?",
@@ -156,7 +117,7 @@
     "answer": "b"
   },
   {
-    "id": 13,
+    "id": 10,
     "topic": "HTML Elements",
     "level": "Biết",
     "question": "Các thẻ tiêu đề từ <h1> đến <h6> thuộc loại phần tử nào?",
@@ -169,20 +130,7 @@
     "answer": "b"
   },
   {
-    "id": 14,
-    "topic": "CSS Display",
-    "level": "Vận dụng",
-    "question": "Để hai thẻ <div> nằm cùng một hàng với nhau, ta cần thực hiện điều gì?",
-    "options": {
-      "a": "Không cần làm gì vì mặc định chúng đã nằm cùng hàng.",
-      "b": "Thay đổi thuộc tính display của chúng thành inline hoặc inline-block.",
-      "c": "Sử dụng thẻ <span> bao quanh chúng.",
-      "d": "Xóa bỏ nội dung bên trong thẻ <div>."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 15,
+    "id": 11,
     "topic": "HTML Elements",
     "level": "Biết",
     "question": "Phần tử khối có thể chứa những gì bên trong nó?",
@@ -195,7 +143,7 @@
     "answer": "c"
   },
   {
-    "id": 16,
+    "id": 12,
     "topic": "HTML Elements",
     "level": "Hiểu",
     "question": "Khi một thẻ <p> (đoạn văn) được tạo ra, nó sẽ hiển thị như thế nào so với đoạn văn trước đó?",
@@ -208,20 +156,7 @@
     "answer": "b"
   },
   {
-    "id": 17,
-    "topic": "CSS Display",
-    "level": "Hiểu",
-    "question": "Mục đích chính của việc hiểu rõ Block và Inline trong thiết kế web là gì?",
-    "options": {
-      "a": "Để biết cách tô màu cho đẹp.",
-      "b": "Để kiểm soát bố cục và cách sắp xếp các thành phần trên trang web.",
-      "c": "Để máy tính chạy nhanh hơn.",
-      "d": "Để bảo mật thông tin tốt hơn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 18,
+    "id": 13,
     "topic": "HTML Elements",
     "level": "Biết",
     "question": "Thẻ <li> (danh sách) mặc định là phần tử gì?",
@@ -234,20 +169,7 @@
     "answer": "a"
   },
   {
-    "id": 19,
-    "topic": "CSS Display",
-    "level": "Vận dụng",
-    "question": "Nếu ta đặt chiều rộng width: 50% cho một phần tử nội tuyến (Inline), điều gì sẽ xảy ra?",
-    "options": {
-      "a": "Chiều rộng của nó sẽ bằng một nửa trình duyệt.",
-      "b": "Thuộc tính width sẽ bị trình duyệt bỏ qua (không có tác dụng).",
-      "c": "Nó sẽ tự động biến thành phần tử khối.",
-      "d": "Văn bản bên trong sẽ bị mất một nửa."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 20,
+    "id": 14,
     "topic": "HTML Elements",
     "level": "Vận dụng",
     "question": "Thẻ nào thường được dùng để tạo ra các khu vực lớn (như Banner, Sidebar, Footer) trên một trang web?",
@@ -260,7 +182,124 @@
     "answer": "c"
   },
   {
+    "id": 15,
+    "topic": "CSS Display",
+    "level": "Biết",
+    "question": "Thuộc tính CSS nào dùng để thay đổi cách hiển thị của một phần tử (ví dụ biến Inline thành Block)?",
+    "options": {
+      "a": "visibility",
+      "b": "position",
+      "c": "float",
+      "d": "display"
+    },
+    "answer": "d"
+  },
+  {
+    "id": 16,
+    "topic": "CSS Display",
+    "level": "Hiểu",
+    "question": "Khi thiết lập display: none; cho một phần tử, kết quả sẽ như thế nào?",
+    "options": {
+      "a": "Phần tử biến mất hoàn toàn và không để lại khoảng trống trên trang web.",
+      "b": "Phần tử mờ đi nhưng vẫn chiếm chỗ.",
+      "c": "Phần tử chỉ bị ẩn nội dung bên trong, khung vẫn giữ nguyên.",
+      "d": "Phần tử chuyển sang màu trắng."
+    },
+    "answer": "a"
+  },
+  {
+    "id": 17,
+    "topic": "CSS Display",
+    "level": "Hiểu",
+    "question": "Giá trị nào của thuộc tính display giúp phần tử vừa có thể nằm cùng hàng, vừa có thể thiết lập chiều rộng và chiều cao?",
+    "options": {
+      "a": "block",
+      "b": "inline",
+      "c": "inline-block",
+      "d": "flex"
+    },
+    "answer": "c"
+  },
+  {
+    "id": 18,
+    "topic": "CSS Display",
+    "level": "Vận dụng",
+    "question": "Để hai thẻ <div> nằm cùng một hàng với nhau, ta cần thực hiện điều gì?",
+    "options": {
+      "a": "Không cần làm gì vì mặc định chúng đã nằm cùng hàng.",
+      "b": "Thay đổi thuộc tính display của chúng thành inline hoặc inline-block.",
+      "c": "Sử dụng thẻ <span> bao quanh chúng.",
+      "d": "Xóa bỏ nội dung bên trong thẻ <div>."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 19,
+    "topic": "CSS Display",
+    "level": "Hiểu",
+    "question": "Mục đích chính của việc hiểu rõ Block và Inline trong thiết kế web là gì?",
+    "options": {
+      "a": "Để biết cách tô màu cho đẹp.",
+      "b": "Để kiểm soát bố cục và cách sắp xếp các thành phần trên trang web.",
+      "c": "Để máy tính chạy nhanh hơn.",
+      "d": "Để bảo mật thông tin tốt hơn."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 20,
+    "topic": "CSS Display",
+    "level": "Vận dụng",
+    "question": "Nếu ta đặt chiều rộng width: 50% cho một phần tử nội tuyến (Inline), điều gì sẽ xảy ra?",
+    "options": {
+      "a": "Chiều rộng của nó sẽ bằng một nửa trình duyệt.",
+      "b": "Thuộc tính width sẽ bị trình duyệt bỏ qua (không có tác dụng).",
+      "c": "Nó sẽ tự động biến thành phần tử khối.",
+      "d": "Văn bản bên trong sẽ bị mất một nửa."
+    },
+    "answer": "b"
+  },
+  {
     "id": 21,
+    "topic": "CSS Properties",
+    "level": "Biết",
+    "question": "Trong CSS, thuộc tính nào được dùng để thay đổi khoảng cách giữa các chữ cái bên trong nội dung của một hộp?",
+    "options": {
+      "a": "padding-left.",
+      "b": "letter-spacing.",
+      "c": "margin-right.",
+      "d": "line-height."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 22,
+    "topic": "CSS Basics",
+    "level": "Biết",
+    "question": "\"External CSS\" thường được nhúng vào trang HTML thông qua thẻ nào và nằm ở đâu?",
+    "options": {
+      "a": "Thẻ <link> nằm trong thẻ <head>.",
+      "b": "Thẻ <style> nằm trong thẻ <body>.",
+      "c": "Thẻ <a> nằm trong thẻ <head>.",
+      "d": "Thẻ <script> nằm cuối trang."
+    },
+    "answer": "a"
+  },
+  {
+    "id": 23,
+    "topic": "CSS Selectors",
+    "level": "Vận dụng",
+    "question": "Để xóa bỏ hoàn toàn khoảng cách mặc định giữa các phần tử trên toàn bộ trang web, người ta thường dùng bộ chọn nào?",
+    "options": {
+      "a": "body { margin: 0; padding: 0; }",
+      "b": "* { margin: 0; padding: 0; }",
+      "c": "#all { margin: 0; }",
+      "d": ".container { margin: 0; }"
+    },
+    "answer": "b"
+  },
+  {
+    "id": 24,
     "topic": "CSS Pseudo-classes",
     "level": "Hiểu",
     "question": "Lớp giả (Pseudo-class) trong CSS được dùng để làm gì?",
@@ -273,7 +312,7 @@
     "answer": "b"
   },
   {
-    "id": 22,
+    "id": 25,
     "topic": "CSS Pseudo-classes",
     "level": "Biết",
     "question": "Ký hiệu nào dùng để bắt đầu một lớp giả (Pseudo-class)?",
@@ -286,7 +325,7 @@
     "answer": "c"
   },
   {
-    "id": 23,
+    "id": 26,
     "topic": "CSS Pseudo-classes",
     "level": "Vận dụng",
     "question": "Để thay đổi màu sắc của một liên kết khi người dùng di chuột qua, ta dùng lớp giả nào?",
@@ -299,7 +338,7 @@
     "answer": "c"
   },
   {
-    "id": 24,
+    "id": 27,
     "topic": "CSS Pseudo-classes",
     "level": "Hiểu",
     "question": "Lớp giả :active đại diện cho trạng thái nào của phần tử?",
@@ -312,176 +351,7 @@
     "answer": "b"
   },
   {
-    "id": 25,
-    "topic": "CSS Pseudo-elements",
-    "level": "Hiểu",
-    "question": "Phần tử giả (Pseudo-element) khác lớp giả ở điểm nào về mặt ý nghĩa?",
-    "options": {
-      "a": "Lớp giả dùng để tạo hiệu ứng, phần tử giả dùng để tính toán.",
-      "b": "Lớp giả định dạng trạng thái, phần tử giả định dạng một phần cụ thể của phần tử (như dòng đầu, chữ đầu).",
-      "c": "Lớp giả có độ ưu tiên cao hơn phần tử giả.",
-      "d": "Không có sự khác biệt nào."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 26,
-    "topic": "CSS Pseudo-elements",
-    "level": "Biết",
-    "question": "Theo chuẩn CSS3, ký hiệu nào thường được dùng để phân biệt Phần tử giả với Lớp giả?",
-    "options": {
-      "a": "Dấu hai chấm kép (::)",
-      "b": "Dấu chấm phẩy (;)",
-      "c": "Dấu gạch ngang (-)",
-      "d": "Dấu ngoặc nhọn ({})"
-    },
-    "answer": "a"
-  },
-  {
-    "id": 27,
-    "topic": "CSS Pseudo-elements",
-    "level": "Vận dụng",
-    "question": "Muốn định dạng riêng cho chữ cái đầu tiên của một đoạn văn, ta sử dụng phần tử giả nào?",
-    "options": {
-      "a": "::first-line",
-      "b": "::first-letter",
-      "c": "::before",
-      "d": "::selection"
-    },
-    "answer": "b"
-  },
-  {
     "id": 28,
-    "topic": "CSS Pseudo-elements",
-    "level": "Hiểu",
-    "question": "Phần tử giả ::selection có tác dụng gì?",
-    "options": {
-      "a": "Định dạng phần văn bản khi người dùng bôi đen (chọn).",
-      "b": "Định dạng phần văn bản khi người dùng nhấn nút xóa.",
-      "c": "Chọn ngẫu nhiên một phần tử để định dạng.",
-      "d": "Định dạng phần tử nằm cuối cùng của trang."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 29,
-    "topic": "CSS Specificity",
-    "level": "Hiểu",
-    "question": "Độ ưu tiên (trọng số) của bộ chọn được trình duyệt dùng để làm gì?",
-    "options": {
-      "a": "Để xác định thẻ nào chạy trước, thẻ nào chạy sau.",
-      "b": "Để quyết định quy tắc CSS nào sẽ được áp dụng khi có nhiều quy tắc cùng tác động lên một phần tử.",
-      "c": "Để nén dung lượng file CSS.",
-      "d": "Để kiểm tra lỗi cú pháp trong HTML."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 30,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Trong các bộ chọn sau, bộ chọn nào có trọng số (độ ưu tiên) CAO NHẤT?",
-    "options": {
-      "a": "Bộ chọn phần tử (Element selector - ví dụ: p).",
-      "b": "Bộ chọn lớp (Class selector - ví dụ: .text).",
-      "c": "Bộ chọn mã định danh (ID selector - ví dụ: #header).",
-      "d": "Bộ chọn toàn cục (Universal selector - ví dụ: *)."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 31,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Trọng số của bộ chọn Lớp (Class) thường được quy ước là bao nhiêu điểm?",
-    "options": {
-      "a": "1 điểm.",
-      "b": "10 điểm.",
-      "c": "100 điểm.",
-      "d": "0 điểm."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 32,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Bộ chọn phần tử (như thẻ div, p, h1) có trọng số là bao nhiêu?",
-    "options": {
-      "a": "1 điểm.",
-      "b": "10 điểm.",
-      "c": "100 điểm.",
-      "d": "1000 điểm."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 33,
-    "topic": "CSS Specificity",
-    "level": "Hiểu",
-    "question": "Từ khóa !important có ý nghĩa gì trong CSS?",
-    "options": {
-      "a": "Làm cho dòng code đó không hoạt động.",
-      "b": "Ép buộc trình duyệt ưu tiên thuộc tính đó ở mức cao nhất, bất chấp mọi trọng số.",
-      "c": "Dùng để đánh dấu các dòng code quan trọng để lập trình viên dễ đọc.",
-      "d": "Chỉ có tác dụng khi dùng với thẻ <div>."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 34,
-    "topic": "CSS Specificity",
-    "level": "Hiểu",
-    "question": "Nếu hai bộ chọn có CÙNG trọng số cùng trỏ đến một phần tử, quy tắc nào sẽ được áp dụng?",
-    "options": {
-      "a": "Quy tắc nào viết trước sẽ thắng.",
-      "b": "Quy tắc nào viết sau (cuối cùng) sẽ thắng.",
-      "c": "Trình duyệt sẽ bỏ qua cả hai.",
-      "d": "Trình duyệt chọn ngẫu nhiên."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 35,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Thứ tự ưu tiên ĐÚNG từ thấp đến cao của các bộ chọn là gì?",
-    "options": {
-      "a": "ID < Class < Thẻ.",
-      "b": "Thẻ < Class < ID.",
-      "c": "Class < ID < Thẻ.",
-      "d": "Thẻ < ID < Class."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 36,
-    "topic": "CSS Specificity",
-    "level": "Vận dụng",
-    "question": "Tổng trọng số của bộ chọn phức hợp nav .menu-item a là bao nhiêu?",
-    "options": {
-      "a": "3",
-      "b": "12",
-      "c": "21",
-      "d": "102"
-    },
-    "answer": "b"
-  },
-  {
-    "id": 37,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Khi tính trọng số, bộ chọn toàn cục (ký hiệu *) đóng góp bao nhiêu điểm?",
-    "options": {
-      "a": "0 điểm.",
-      "b": "1 điểm.",
-      "c": "10 điểm.",
-      "d": "100 điểm."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 38,
     "topic": "CSS Pseudo-classes",
     "level": "Biết",
     "question": "Lớp giả :visited thường được áp dụng cho loại thẻ nào?",
@@ -494,7 +364,319 @@
     "answer": "b"
   },
   {
+    "id": 29,
+    "topic": "CSS Pseudo-elements",
+    "level": "Hiểu",
+    "question": "Phần tử giả (Pseudo-element) khác lớp giả ở điểm nào về mặt ý nghĩa?",
+    "options": {
+      "a": "Lớp giả dùng để tạo hiệu ứng, phần tử giả dùng để tính toán.",
+      "b": "Lớp giả định dạng trạng thái, phần tử giả định dạng một phần cụ thể của phần tử (như dòng đầu, chữ đầu).",
+      "c": "Lớp giả có độ ưu tiên cao hơn phần tử giả.",
+      "d": "Không có sự khác biệt nào."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 30,
+    "topic": "CSS Pseudo-elements",
+    "level": "Biết",
+    "question": "Theo chuẩn CSS3, ký hiệu nào thường được dùng để phân biệt Phần tử giả với Lớp giả?",
+    "options": {
+      "a": "Dấu hai chấm kép (::)",
+      "b": "Dấu chấm phẩy (;)",
+      "c": "Dấu gạch ngang (-)",
+      "d": "Dấu ngoặc nhọn ({})"
+    },
+    "answer": "a"
+  },
+  {
+    "id": 31,
+    "topic": "CSS Pseudo-elements",
+    "level": "Vận dụng",
+    "question": "Muốn định dạng riêng cho chữ cái đầu tiên của một đoạn văn, ta sử dụng phần tử giả nào?",
+    "options": {
+      "a": "::first-line",
+      "b": "::first-letter",
+      "c": "::before",
+      "d": "::selection"
+    },
+    "answer": "b"
+  },
+  {
+    "id": 32,
+    "topic": "CSS Pseudo-elements",
+    "level": "Hiểu",
+    "question": "Phần tử giả ::selection có tác dụng gì?",
+    "options": {
+      "a": "Định dạng phần văn bản khi người dùng bôi đen (chọn).",
+      "b": "Định dạng phần văn bản khi người dùng nhấn nút xóa.",
+      "c": "Chọn ngẫu nhiên một phần tử để định dạng.",
+      "d": "Định dạng phần tử nằm cuối cùng của trang."
+    },
+    "answer": "a"
+  },
+  {
+    "id": 33,
+    "topic": "CSS Box Model",
+    "level": "Hiểu",
+    "question": "Nếu một phần tử có khai báo margin: 20px 10px;, giá trị 10px sẽ được áp dụng cho những hướng nào?",
+    "options": {
+      "a": "Chỉ hướng bên phải.",
+      "b": "Chỉ hướng bên trái.",
+      "c": "Hai hướng trái và phải.",
+      "d": "Hai hướng trên và dưới."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 34,
+    "topic": "CSS Box Model",
+    "level": "Biết",
+    "question": "Để viền của phần tử có nét đứt, ta sử dụng giá trị nào cho thuộc tính border-style?",
+    "options": {
+      "a": "solid.",
+      "b": "double.",
+      "c": "dashed.",
+      "d": "dotted."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 35,
+    "topic": "CSS Box Model",
+    "level": "Hiểu",
+    "question": "Thuộc tính box-sizing: border-box; có tác dụng gì quan trọng nhất?",
+    "options": {
+      "a": "Làm cho viền của hộp biến mất.",
+      "b": "Tính toán chiều rộng của hộp bao gồm cả padding và border, giúp kiểm soát kích thước chính xác hơn.",
+      "c": "Chỉ áp dụng màu nền cho phần nội dung (content).",
+      "d": "Làm cho margin tự động căn giữa."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 36,
+    "topic": "CSS Box Model",
+    "level": "Hiểu",
+    "question": "Khi thiết lập margin: auto; cho một khối (block) đã có chiều rộng cố định, kết quả sẽ là gì?",
+    "options": {
+      "a": "Khối đó sẽ biến mất khỏi trang web.",
+      "b": "Khối đó sẽ được căn giữa theo chiều ngang trong phần tử cha.",
+      "c": "Khoảng cách bên trong khối sẽ tự động tăng lên.",
+      "d": "Khối đó sẽ tràn ra ngoài màn hình."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 37,
+    "topic": "CSS Box Model",
+    "level": "Biết",
+    "question": "Khai báo nào sau đây là đúng để đặt màu viền là màu đỏ, độ dày 2px và nét liền?",
+    "options": {
+      "a": "border: 2px red solid;",
+      "b": "border: red 2px;",
+      "c": "border-style: 2px solid;",
+      "d": "border-color: 2px solid red;"
+    },
+    "answer": "a"
+  },
+  {
+    "id": 38,
+    "topic": "CSS Box Model",
+    "level": "Hiểu",
+    "question": "Vùng nào trong Box Model sẽ hiển thị hình ảnh nền (background-image) của phần tử?",
+    "options": {
+      "a": "Chỉ vùng Content.",
+      "b": "Vùng Content và vùng Padding.",
+      "c": "Vùng Content, Padding và Border.",
+      "d": "Cả 4 vùng: Content, Padding, Border và Margin."
+    },
+    "answer": "b"
+  },
+  {
     "id": 39,
+    "topic": "CSS Box Model",
+    "level": "Hiểu",
+    "question": "Thuộc tính padding có thể nhận giá trị là số âm không?",
+    "options": {
+      "a": "Có, để thu nhỏ nội dung.",
+      "b": "Không, giá trị padding phải luôn lớn hơn hoặc bằng 0.",
+      "c": "Chỉ có padding-top là được dùng số âm.",
+      "d": "Tùy thuộc vào trình duyệt sử dụng."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 40,
+    "topic": "CSS Box Model",
+    "level": "Biết",
+    "question": "Trong mô hình hộp (Box Model), khoảng cách từ nội dung (content) đến viền (border) được gọi là gì?",
+    "options": {
+      "a": "Margin.",
+      "b": "Padding.",
+      "c": "Spacing.",
+      "d": "Outline."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 41,
+    "topic": "CSS Box Model",
+    "level": "Biết",
+    "question": "Đặc điểm chính của Margin trong CSS là gì?",
+    "options": {
+      "a": "Tạo khoảng cách giữa viền và nội dung bên trong.",
+      "b": "Tạo khoảng cách giữa phần tử này với các phần tử khác xung quanh (bên ngoài viền).",
+      "c": "Thay đổi độ dày của đường viền phần tử.",
+      "d": "Làm cho nội dung bên trong hộp to hơn."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 42,
+    "topic": "CSS Box Model",
+    "level": "Hiểu",
+    "question": "Nếu thiết lập padding: 5px; border: 1px solid black;, phát biểu nào sau đây là ĐÚNG?",
+    "options": {
+      "a": "Khoảng cách từ nội dung tới viền là 5px.",
+      "b": "Khoảng cách giữa hai thẻ div cạnh nhau là 5px.",
+      "c": "Viền sẽ nằm sát vào nội dung.",
+      "d": "Tổng chiều rộng phần tử không thay đổi."
+    },
+    "answer": "a"
+  },
+  {
+    "id": 43,
+    "topic": "CSS Box Model",
+    "level": "Biết",
+    "question": "Thứ tự các giá trị trong thuộc tính viết tắt padding: 10px 20px 30px 40px; tương ứng với các hướng nào?",
+    "options": {
+      "a": "Trái - Phải - Trên - Dưới.",
+      "b": "Trên - Phải - Dưới - Trái (Theo chiều kim đồng hồ).",
+      "c": "Trên - Dưới - Trái - Phải.",
+      "d": "Dưới - Trái - Trên - Phải."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 44,
+    "topic": "CSS Specificity",
+    "level": "Hiểu",
+    "question": "Độ ưu tiên (trọng số) của bộ chọn được trình duyệt dùng để làm gì?",
+    "options": {
+      "a": "Để xác định thẻ nào chạy trước, thẻ nào chạy sau.",
+      "b": "Để quyết định quy tắc CSS nào sẽ được áp dụng khi có nhiều quy tắc cùng tác động lên một phần tử.",
+      "c": "Để nén dung lượng file CSS.",
+      "d": "Để kiểm tra lỗi cú pháp trong HTML."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 45,
+    "topic": "CSS Specificity",
+    "level": "Biết",
+    "question": "Trong các bộ chọn sau, bộ chọn nào có trọng số (độ ưu tiên) CAO NHẤT?",
+    "options": {
+      "a": "Bộ chọn phần tử (Element selector - ví dụ: p).",
+      "b": "Bộ chọn lớp (Class selector - ví dụ: .text).",
+      "c": "Bộ chọn mã định danh (ID selector - ví dụ: #header).",
+      "d": "Bộ chọn toàn cục (Universal selector - ví dụ: *)."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 46,
+    "topic": "CSS Specificity",
+    "level": "Biết",
+    "question": "Trọng số của bộ chọn Lớp (Class) thường được quy ước là bao nhiêu điểm?",
+    "options": {
+      "a": "1 điểm.",
+      "b": "10 điểm.",
+      "c": "100 điểm.",
+      "d": "0 điểm."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 47,
+    "topic": "CSS Specificity",
+    "level": "Biết",
+    "question": "Bộ chọn phần tử (như thẻ div, p, h1) có trọng số là bao nhiêu?",
+    "options": {
+      "a": "1 điểm.",
+      "b": "10 điểm.",
+      "c": "100 điểm.",
+      "d": "1000 điểm."
+    },
+    "answer": "a"
+  },
+  {
+    "id": 48,
+    "topic": "CSS Specificity",
+    "level": "Hiểu",
+    "question": "Từ khóa !important có ý nghĩa gì trong CSS?",
+    "options": {
+      "a": "Làm cho dòng code đó không hoạt động.",
+      "b": "Ép buộc trình duyệt ưu tiên thuộc tính đó ở mức cao nhất, bất chấp mọi trọng số.",
+      "c": "Dùng để đánh dấu các dòng code quan trọng để lập trình viên dễ đọc.",
+      "d": "Chỉ có tác dụng khi dùng với thẻ <div>."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 49,
+    "topic": "CSS Specificity",
+    "level": "Hiểu",
+    "question": "Nếu hai bộ chọn có CÙNG trọng số cùng trỏ đến một phần tử, quy tắc nào sẽ được áp dụng?",
+    "options": {
+      "a": "Quy tắc nào viết trước sẽ thắng.",
+      "b": "Quy tắc nào viết sau (cuối cùng) sẽ thắng.",
+      "c": "Trình duyệt sẽ bỏ qua cả hai.",
+      "d": "Trình duyệt chọn ngẫu nhiên."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 50,
+    "topic": "CSS Specificity",
+    "level": "Biết",
+    "question": "Thứ tự ưu tiên ĐÚNG từ thấp đến cao của các bộ chọn là gì?",
+    "options": {
+      "a": "ID < Class < Thẻ.",
+      "b": "Thẻ < Class < ID.",
+      "c": "Class < ID < Thẻ.",
+      "d": "Thẻ < ID < Class."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 51,
+    "topic": "CSS Specificity",
+    "level": "Vận dụng",
+    "question": "Tổng trọng số của bộ chọn phức hợp nav .menu-item a là bao nhiêu?",
+    "options": {
+      "a": "3",
+      "b": "12",
+      "c": "21",
+      "d": "102"
+    },
+    "answer": "b"
+  },
+  {
+    "id": 52,
+    "topic": "CSS Specificity",
+    "level": "Biết",
+    "question": "Khi tính trọng số, bộ chọn toàn cục (ký hiệu *) đóng góp bao nhiêu điểm?",
+    "options": {
+      "a": "0 điểm.",
+      "b": "1 điểm.",
+      "c": "10 điểm.",
+      "d": "100 điểm."
+    },
+    "answer": "a"
+  },
+  {
+    "id": 53,
     "topic": "CSS Specificity",
     "level": "Hiểu",
     "question": "Tại sao việc lạm dụng !important được coi là một thói quen không tốt khi viết CSS?",
@@ -507,7 +689,7 @@
     "answer": "c"
   },
   {
-    "id": 40,
+    "id": 54,
     "topic": "CSS Specificity",
     "level": "Hiểu",
     "question": "Quy tắc \"Thứ tự cuối cùng\" (Rule Order) chỉ có ý nghĩa khi nào?",
@@ -520,7 +702,85 @@
     "answer": "b"
   },
   {
-    "id": 41,
+    "id": 55,
+    "topic": "CSS Specificity",
+    "level": "Biết",
+    "question": "Trong CSS Specificity (Trọng số ưu tiên), bộ chọn (selector) nào dưới đây có độ ưu tiên cao nhất?",
+    "options": {
+      "a": "Class selector (Ví dụ: .noidung).",
+      "b": "Element selector (Ví dụ: p, div).",
+      "c": "ID selector (Ví dụ: #header).",
+      "d": "Universal selector (Ví dụ: *)."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 56,
+    "topic": "CSS Specificity",
+    "level": "Hiểu",
+    "question": "Nếu một phần tử <p> vừa được định nghĩa màu chữ trong file .css bên ngoài, vừa được định nghĩa trong thẻ <style> ở đầu trang HTML với cùng độ ưu tiên, trình duyệt sẽ chọn màu nào?",
+    "options": {
+      "a": "Luôn chọn màu trong file .css bên ngoài.",
+      "b": "Luôn chọn màu trong thẻ <style>.",
+      "c": "Chọn màu của quy tắc nào xuất hiện sau cùng trong tài liệu HTML.",
+      "d": "Trình duyệt sẽ chọn màu mặc định là đen."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 57,
+    "topic": "CSS Specificity",
+    "level": "Vận dụng",
+    "question": "Cho đoạn mã: <div style=\"color: blue !important;\"> và trong file CSS có .box { color: red; }. Màu của div sẽ là gì?",
+    "options": {
+      "a": "Màu đỏ.",
+      "b": "Màu xanh (blue).",
+      "c": "Màu đen mặc định.",
+      "d": "Cả hai màu trộn lại."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 58,
+    "topic": "CSS Specificity",
+    "level": "Biết",
+    "question": "Khi cùng một phần tử được định nghĩa bởi nhiều nguồn CSS khác nhau, thứ tự ưu tiên nào sau đây là ĐÚNG (từ cao xuống thấp)?",
+    "options": {
+      "a": "External CSS > Internal CSS > Inline CSS.",
+      "b": "Inline CSS > Internal CSS > External CSS.",
+      "c": "Browser default > External CSS > Inline CSS.",
+      "d": "Internal CSS > Inline CSS > External CSS."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 59,
+    "topic": "CSS Specificity",
+    "level": "Biết",
+    "question": "Từ khóa nào được dùng để ép buộc trình duyệt ưu tiên một quy tắc CSS tuyệt đối, bất kể trọng số của bộ chọn?",
+    "options": {
+      "a": "@priority",
+      "b": "#important",
+      "c": "!important",
+      "d": ":force"
+    },
+    "answer": "c"
+  },
+  {
+    "id": 60,
+    "topic": "CSS Specificity",
+    "level": "Hiểu",
+    "question": "Nếu file CSS ngoài (External) và thẻ <style> (Internal) có cùng trọng số và cùng trỏ vào một thẻ <h1>, trình duyệt sẽ ưu tiên cái nào?",
+    "options": {
+      "a": "Luôn ưu tiên file CSS ngoài.",
+      "b": "Luôn ưu tiên thẻ <style>.",
+      "c": "Ưu tiên cái nào được viết/khai báo sau cùng trong tệp HTML.",
+      "d": "Trình duyệt sẽ tự động bỏ qua cả hai."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 61,
     "topic": "Dịch vụ CNTT",
     "level": "Hiểu",
     "question": "Mục tiêu chung của các nghề dịch vụ trong ngành CNTT là gì?",
@@ -533,7 +793,7 @@
     "answer": "b"
   },
   {
-    "id": 42,
+    "id": 62,
     "topic": "Dịch vụ máy tính",
     "level": "Biết",
     "question": "Công việc nào sau đây thuộc nhóm nhiệm vụ \"Liên quan đến phần cứng\"?",
@@ -546,7 +806,7 @@
     "answer": "c"
   },
   {
-    "id": 43,
+    "id": 63,
     "topic": "Dịch vụ máy tính",
     "level": "Hiểu",
     "question": "Việc nâng cấp ổ cứng từ HDD lên SSD để máy tính chạy nhanh hơn được xếp vào loại công việc nào?",
@@ -559,7 +819,7 @@
     "answer": "b"
   },
   {
-    "id": 44,
+    "id": 64,
     "topic": "Dịch vụ máy tính",
     "level": "Biết",
     "question": "Nhiệm vụ \"Cài đặt và cập nhật các trình điều khiển (driver) cho thiết bị ngoại vi\" thuộc nhóm nào?",
@@ -572,7 +832,7 @@
     "answer": "a"
   },
   {
-    "id": 45,
+    "id": 65,
     "topic": "Dịch vụ máy tính",
     "level": "Hiểu",
     "question": "Hoạt động \"Kiểm tra, rà soát an toàn hệ thống và quét mã độc định kỳ\" nhằm mục đích gì?",
@@ -585,124 +845,7 @@
     "answer": "b"
   },
   {
-    "id": 46,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Tại sao người làm nghề sửa chữa máy tính cần có kiến thức cơ bản về mạng máy tính?",
-    "options": {
-      "a": "Để có thể tự xây dựng website cho riêng mình.",
-      "b": "Để biết cách kết nối, cấu hình IP và xử lý sự cố mạng Internet cho người dùng.",
-      "c": "Để thay thế cho nhân viên lắp đặt điện lưới quốc gia.",
-      "d": "Để có thể chơi trò chơi trực tuyến nhanh hơn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 47,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Kỹ năng \"Giải quyết vấn đề\" (Problem-solving) quan trọng như thế nào trong nghề này?",
-    "options": {
-      "a": "Giúp thợ sửa chữa đoán mò lỗi mà không cần kiểm tra.",
-      "b": "Giúp phân tích nguyên nhân sự cố một cách logic và tìm ra giải pháp khắc phục hiệu quả nhất.",
-      "c": "Giúp hoàn thành công việc nhanh hơn mà không cần quy trình.",
-      "d": "Chỉ cần thiết khi máy tính bị hỏa hoạn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 48,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Người thợ sửa chữa cần kỹ năng giao tiếp tốt để làm gì?",
-    "options": {
-      "a": "Để thuyết phục khách hàng mua máy mới với giá cao hơn.",
-      "b": "Để lắng nghe yêu cầu và giải thích các vấn đề kỹ thuật cho khách hàng một cách dễ hiểu.",
-      "c": "Để có thể làm việc một mình mà không cần đồng nghiệp hỗ trợ.",
-      "d": "Để viết các chương trình quảng cáo tự động trên mạng."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 49,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Kỹ năng \"Quản lý thời gian\" đóng vai trò gì trong dịch vụ bảo trì máy tính?",
-    "options": {
-      "a": "Giúp thợ sửa chữa có thêm thời gian để nghỉ ngơi.",
-      "b": "Giúp hoàn thành công việc đúng thời hạn cam kết và đáp ứng kịp thời nhu cầu khách hàng.",
-      "c": "Chỉ dùng để tính tiền công dựa trên số giờ làm việc.",
-      "d": "Để báo cáo lịch trình với các cơ quan quản lý lao động."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 50,
-    "topic": "Hướng nghiệp CNTT",
-    "level": "Hiểu",
-    "question": "Cuộc Cách mạng công nghiệp 4.0 có tác hưởng như thế nào đến nhu cầu nhân lực của nghề này?",
-    "options": {
-      "a": "Làm cho nghề này trở nên lỗi thời và bị thay thế.",
-      "b": "Làm tăng nhu cầu về nhân lực chất lượng cao do sự bùng nổ của các thiết bị kết nối.",
-      "c": "Giúp máy tính tự động sửa chữa mà không cần con người.",
-      "d": "Làm giảm số lượng thiết bị cần được bảo trì."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 51,
-    "topic": "Hỗ trợ kỹ thuật",
-    "level": "Biết",
-    "question": "Nhóm công việc \"Hỗ trợ người dùng\" (Help Desk) thường thực hiện nhiệm vụ gì?",
-    "options": {
-      "a": "Lập trình ra các hệ điều hành mới.",
-      "b": "Giải đáp thắc mắc và hướng dẫn khách hàng sử dụng các ứng dụng, thiết bị công nghệ.",
-      "c": "Giao hàng linh kiện từ kho đến cửa hàng bán lẻ.",
-      "d": "Thiết kế các mạch điện tử tích hợp trên CPU."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 52,
-    "topic": "Đạo đức nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Phẩm chất quan trọng nhất của một thợ bảo trì máy tính chuyên nghiệp là gì?",
-    "options": {
-      "a": "Sự vội vàng để sửa được thật nhiều máy trong ngày.",
-      "b": "Sự tỉ mỉ, cẩn thận, trung thực và tính kiên nhẫn khi tìm lỗi.",
-      "c": "Chỉ chọn làm những việc dễ và bỏ qua những lỗi khó.",
-      "d": "Không cần quan tâm đến các quy tắc an toàn về điện."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 53,
-    "topic": "Hướng nghiệp CNTT",
-    "level": "Biết",
-    "question": "Đâu là tên một ngành đào tạo phổ biến tại Việt Nam liên quan trực tiếp đến nghề này?",
-    "options": {
-      "a": "Kỹ thuật sửa chữa, lắp ráp máy tính.",
-      "b": "Quản trị kinh doanh du lịch.",
-      "c": "Ngôn ngữ học ứng dụng.",
-      "d": "Tâm lý học hành vi."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 54,
-    "topic": "Hướng nghiệp CNTT",
-    "level": "Biết",
-    "question": "Tại Việt Nam, người theo nghề sửa chữa máy tính có thể học tập ở những cấp bậc nào?",
-    "options": {
-      "a": "Chỉ học ở các trung tâm dạy nghề ngắn hạn.",
-      "b": "Chỉ học ở bậc Đại học.",
-      "c": "Đa dạng các bậc: Sơ cấp nghề, Trung cấp, Cao đẳng và Đại học.",
-      "d": "Chỉ học theo hình thức tự học tại nhà."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 55,
+    "id": 66,
     "topic": "Dịch vụ máy tính",
     "level": "Vận dụng",
     "question": "Công việc \"Thay thế màn hình có độ phân giải cao hơn\" cho nhân viên thiết kế thuộc nhóm nào?",
@@ -715,33 +858,7 @@
     "answer": "b"
   },
   {
-    "id": 56,
-    "topic": "Đạo đức nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Một người thợ sửa chữa máy tính \"có tâm\" cần lưu ý điều gì về dữ liệu của khách hàng?",
-    "options": {
-      "a": "Có thể tự ý xem và sao chép dữ liệu của khách hàng.",
-      "b": "Phải tôn trọng quyền riêng tư và đảm bảo an toàn dữ liệu cho khách hàng trong quá trình sửa chữa.",
-      "c": "Xóa hết dữ liệu của khách hàng cho máy chạy nhanh hơn.",
-      "d": "Chia sẻ dữ liệu của khách hàng lên mạng xã hội."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 57,
-    "topic": "Hướng nghiệp CNTT",
-    "level": "Hiểu",
-    "question": "Tại sao nhân lực nghề sửa chữa máy tính ngày nay cần trình độ chuyên môn cao hơn trước?",
-    "options": {
-      "a": "Vì các thiết bị ngày càng rẻ và dễ hỏng.",
-      "b": "Vì sự phức tạp của các hệ thống máy tính hiện đại và các yêu cầu khắt khe về bảo mật.",
-      "c": "Vì người dùng không còn muốn tự học cách sử dụng máy tính.",
-      "d": "Vì luật pháp yêu cầu thợ sửa máy phải có bằng đại học."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 58,
+    "id": 67,
     "topic": "Dịch vụ máy tính",
     "level": "Biết",
     "question": "Công việc nào dưới đây thuộc về \"Bảo trì phần mềm\"?",
@@ -754,7 +871,7 @@
     "answer": "c"
   },
   {
-    "id": 59,
+    "id": 68,
     "topic": "Dịch vụ máy tính",
     "level": "Hiểu",
     "question": "Sự khác biệt giữa \"Sửa chữa\" và \"Bảo trì\" máy tính là gì?",
@@ -767,20 +884,20 @@
     "answer": "a"
   },
   {
-    "id": 60,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Việc nắm vững kiến thức về an toàn điện có ý nghĩa gì đối với người thợ sửa chữa?",
+    "id": 69,
+    "topic": "Hỗ trợ kỹ thuật",
+    "level": "Biết",
+    "question": "Nhóm công việc \"Hỗ trợ người dùng\" (Help Desk) thường thực hiện nhiệm vụ gì?",
     "options": {
-      "a": "Để có thể sửa chữa cả các đồ điện gia dụng khác.",
-      "b": "Đảm bảo an toàn tính mạng cho chính mình và tránh gây cháy nổ thiết bị của khách hàng.",
-      "c": "Để tăng giá thành dịch vụ sửa chữa.",
-      "d": "Không thực sự cần thiết vì nguồn điện máy tính rất thấp."
+      "a": "Lập trình ra các hệ điều hành mới.",
+      "b": "Giải đáp thắc mắc và hướng dẫn khách hàng sử dụng các ứng dụng, thiết bị công nghệ.",
+      "c": "Giao hàng linh kiện từ kho đến cửa hàng bán lẻ.",
+      "d": "Thiết kế các mạch điện tử tích hợp trên CPU."
     },
     "answer": "b"
   },
   {
-    "id": 61,
+    "id": 70,
     "topic": "Quản trị CNTT",
     "level": "Biết",
     "question": "Mục tiêu chính của nhóm nghề quản trị trong ngành CNTT là gì?",
@@ -793,7 +910,7 @@
     "answer": "b"
   },
   {
-    "id": 62,
+    "id": 71,
     "topic": "Quản trị hệ thống",
     "level": "Biết",
     "question": "Vị trí \"Quản trị hệ thống\" (System Administrator) chịu trách nhiệm chính về công việc nào?",
@@ -806,137 +923,7 @@
     "answer": "b"
   },
   {
-    "id": 63,
-    "topic": "Quản trị mạng",
-    "level": "Biết",
-    "question": "Nhiệm vụ nào sau đây thuộc về người làm \"Quản trị mạng\" (Network Administrator)?",
-    "options": {
-      "a": "Chỉnh sửa nội dung hình ảnh trên trang web công ty.",
-      "b": "Thiết kế, triển khai và quản lý các kết nối mạng nội bộ (LAN) và mạng diện rộng (WAN).",
-      "c": "Viết mã nguồn cho các phần mềm ứng dụng văn phòng.",
-      "d": "Sửa chữa lỗi vật lý của màn hình máy tính."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 64,
-    "topic": "Quản trị cơ sở dữ liệu",
-    "level": "Biết",
-    "question": "\"Quản trị cơ sở dữ liệu\" (Database Administrator) đóng vai trò gì trong doanh nghiệp?",
-    "options": {
-      "a": "Soạn thảo các văn bản hành chính cho bộ phận kỹ thuật.",
-      "b": "Lưu trữ, tổ chức, bảo mật và đảm bảo tính toàn vẹn của dữ liệu.",
-      "c": "Cài đặt các phần mềm giải trí cho nhân viên trong công ty.",
-      "d": "Chụp ảnh và quản lý kho hình ảnh sản phẩm."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 65,
-    "topic": "An ninh mạng",
-    "level": "Biết",
-    "question": "Công việc bảo vệ hệ thống thông tin khỏi các truy cập trái phép và các cuộc tấn công mạng là nhiệm vụ của ai?",
-    "options": {
-      "a": "Quản trị viên dịch vụ (Service Administrator).",
-      "b": "Quản trị viên an ninh mạng (Security Administrator).",
-      "c": "Chuyên viên thiết kế web (Web Designer).",
-      "d": "Nhân viên hỗ trợ bán hàng."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 66,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Kỹ năng \"Troubleshooting\" (Chẩn đoán và giải quyết sự cố) được coi là gì trong nghề quản trị?",
-    "options": {
-      "a": "Là một kỹ năng phụ, không bắt buộc phải có.",
-      "b": "Là kỹ năng \"xương sống\" để xác định nguyên nhân và khắc phục lỗi hệ thống kịp thời.",
-      "c": "Chỉ cần thiết đối với những người quản lý cấp cao nhất.",
-      "d": "Chỉ dùng khi cần cài đặt các máy tính mới hoàn toàn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 67,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Tại sao kỹ năng giao tiếp lại cần thiết đối với một người quản trị CNTT?",
-    "options": {
-      "a": "Để thuyết phục khách hàng mua thêm các thiết bị đắt tiền.",
-      "b": "Để giải thích các vấn đề kỹ thuật phức tạp cho người dùng và phối hợp với các bộ phận khác.",
-      "c": "Để viết các bài blog cá nhân về công nghệ hàng ngày.",
-      "d": "Để có thể làm việc độc lập mà không cần tương tác với ai."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 68,
-    "topic": "Quản trị mạng",
-    "level": "Biết",
-    "question": "Chứng chỉ quốc tế nào sau đây thường dành cho những người theo đuổi nghề quản trị mạng?",
-    "options": {
-      "a": "IELTS (International English Language Testing System).",
-      "b": "CCNA (Cisco Certified Network Associate).",
-      "c": "Chứng chỉ sư phạm hoặc tâm lý học.",
-      "d": "Chứng chỉ quản lý khách sạn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 69,
-    "topic": "Quản trị cơ sở dữ liệu",
-    "level": "Hiểu",
-    "question": "Hoạt động \"Sao lưu dữ liệu\" (Backup) thường xuyên được thực hiện nhằm mục đích gì?",
-    "options": {
-      "a": "Để chiếm hết dung lượng lưu trữ của máy chủ dự phòng.",
-      "b": "Đảm bảo có thể khôi phục hệ thống và dữ liệu khi gặp sự cố hoặc bị tấn công.",
-      "c": "Để xóa bỏ các dữ liệu cũ không còn giá trị sử dụng.",
-      "d": "Để chia sẻ dữ liệu mật của công ty ra bên ngoài."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 70,
-    "topic": "Quản trị dịch vụ",
-    "level": "Hiểu",
-    "question": "Vai trò của \"Quản trị dịch vụ CNTT\" (IT Service Management) là gì?",
-    "options": {
-      "a": "Đảm bảo các dịch vụ công nghệ đáp ứng đúng nhu cầu và sự hài lòng của người dùng.",
-      "b": "Chỉ tập trung vào việc đi giao thiết bị tận nhà cho khách.",
-      "c": "Tổ chức các sự kiện vui chơi giải trí cho phòng kỹ thuật.",
-      "d": "Dọn dẹp vệ sinh bụi bẩn cho các phòng máy tính."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 71,
-    "topic": "Đặc điểm nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Đặc điểm nào sau đây mô tả đúng về môi trường làm việc của nghề quản trị CNTT?",
-    "options": {
-      "a": "Công việc rất nhẹ nhàng, chỉ làm việc trong giờ hành chính.",
-      "b": "Đòi hỏi sự cẩn trọng, tỉ mỉ và sẵn sàng ứng trực xử lý sự cố bất kể thời gian.",
-      "c": "Không cần cập nhật kiến thức mới vì các hệ thống luôn giống nhau.",
-      "d": "Không cần quan tâm đến các quy định về bảo mật dữ liệu."
-    },
-    "answer": "b"
-  },
-  {
     "id": 72,
-    "topic": "Xu hướng công nghệ",
-    "level": "Hiểu",
-    "question": "Xu hướng quản trị hiện đại ngày nay tập trung mạnh mẽ vào lĩnh vực nào?",
-    "options": {
-      "a": "Quản trị các máy tính thế hệ cũ sử dụng đĩa mềm.",
-      "b": "Quản trị điện toán đám mây (Cloud Management) và hạ tầng ảo hóa.",
-      "c": "Chỉ quản trị các thiết bị máy đánh chữ điện tử đời đầu.",
-      "d": "Quay về sử dụng các phương thức lưu trữ dữ liệu bằng giấy tờ."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 73,
     "topic": "Quản trị hệ thống",
     "level": "Biết",
     "question": "Việc thiết lập quyền truy cập (phân quyền) cho từng nhân viên trong hệ thống là nhiệm vụ của:",
@@ -949,7 +936,7 @@
     "answer": "a"
   },
   {
-    "id": 74,
+    "id": 73,
     "topic": "Quản trị hệ thống",
     "level": "Hiểu",
     "question": "Thuật ngữ \"Hạ tầng CNTT\" (IT Infrastructure) bao gồm những gì?",
@@ -962,46 +949,7 @@
     "answer": "b"
   },
   {
-    "id": 75,
-    "topic": "An ninh mạng",
-    "level": "Hiểu",
-    "question": "\"Quản trị viên an ninh mạng\" cần cập nhật kiến thức về điều gì thường xuyên nhất?",
-    "options": {
-      "a": "Các mẫu thiết kế quần áo mới nhất.",
-      "b": "Các loại mã độc (malware) và lỗ hổng bảo mật mới xuất hiện.",
-      "c": "Các phương pháp nấu ăn công nghiệp.",
-      "d": "Các xu hướng văn học cổ điển."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 76,
-    "topic": "Quản trị cơ sở dữ liệu",
-    "level": "Hiểu",
-    "question": "Một người quản trị cơ sở dữ liệu cần đảm bảo \"tính toàn vẹn của dữ liệu\", nghĩa là:",
-    "options": {
-      "a": "Dữ liệu phải được in ra đầy đủ trên giấy.",
-      "b": "Dữ liệu phải chính xác, không bị thay đổi trái phép hoặc mất mát.",
-      "c": "Dữ liệu phải được chia sẻ cho tất cả mọi người cùng xem.",
-      "d": "Dữ liệu phải luôn được lưu dưới dạng hình ảnh."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 77,
-    "topic": "Quản trị CNTT",
-    "level": "Vận dụng",
-    "question": "Công việc nào sau đây KHÔNG thuộc nhóm nghề quản trị CNTT?",
-    "options": {
-      "a": "Cấu hình thiết bị phát sóng Wi-Fi cho công ty.",
-      "b": "Sửa chữa bo mạch chủ cho khách hàng lẻ tại cửa hàng.",
-      "c": "Cấp phát tài khoản email cho nhân viên mới.",
-      "d": "Giám sát hoạt động của máy chủ (Server)."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 78,
+    "id": 74,
     "topic": "Quản trị hệ thống",
     "level": "Hiểu",
     "question": "Tại sao nghề quản trị CNTT lại quan trọng đối với các ngân hàng?",
@@ -1014,7 +962,319 @@
     "answer": "b"
   },
   {
+    "id": 75,
+    "topic": "Quản trị mạng",
+    "level": "Biết",
+    "question": "Nhiệm vụ nào sau đây thuộc về người làm \"Quản trị mạng\" (Network Administrator)?",
+    "options": {
+      "a": "Chỉnh sửa nội dung hình ảnh trên trang web công ty.",
+      "b": "Thiết kế, triển khai và quản lý các kết nối mạng nội bộ (LAN) và mạng diện rộng (WAN).",
+      "c": "Viết mã nguồn cho các phần mềm ứng dụng văn phòng.",
+      "d": "Sửa chữa lỗi vật lý của màn hình máy tính."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 76,
+    "topic": "Quản trị mạng",
+    "level": "Biết",
+    "question": "Chứng chỉ quốc tế nào sau đây thường dành cho những người theo đuổi nghề quản trị mạng?",
+    "options": {
+      "a": "IELTS (International English Language Testing System).",
+      "b": "CCNA (Cisco Certified Network Associate).",
+      "c": "Chứng chỉ sư phạm hoặc tâm lý học.",
+      "d": "Chứng chỉ quản lý khách sạn."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 77,
+    "topic": "Quản trị cơ sở dữ liệu",
+    "level": "Biết",
+    "question": "\"Quản trị cơ sở dữ liệu\" (Database Administrator) đóng vai trò gì trong doanh nghiệp?",
+    "options": {
+      "a": "Soạn thảo các văn bản hành chính cho bộ phận kỹ thuật.",
+      "b": "Lưu trữ, tổ chức, bảo mật và đảm bảo tính toàn vẹn của dữ liệu.",
+      "c": "Cài đặt các phần mềm giải trí cho nhân viên trong công ty.",
+      "d": "Chụp ảnh và quản lý kho hình ảnh sản phẩm."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 78,
+    "topic": "Quản trị cơ sở dữ liệu",
+    "level": "Hiểu",
+    "question": "Hoạt động \"Sao lưu dữ liệu\" (Backup) thường xuyên được thực hiện nhằm mục đích gì?",
+    "options": {
+      "a": "Để chiếm hết dung lượng lưu trữ của máy chủ dự phòng.",
+      "b": "Đảm bảo có thể khôi phục hệ thống và dữ liệu khi gặp sự cố hoặc bị tấn công.",
+      "c": "Để xóa bỏ các dữ liệu cũ không còn giá trị sử dụng.",
+      "d": "Để chia sẻ dữ liệu mật của công ty ra bên ngoài."
+    },
+    "answer": "b"
+  },
+  {
     "id": 79,
+    "topic": "Quản trị cơ sở dữ liệu",
+    "level": "Hiểu",
+    "question": "Một người quản trị cơ sở dữ liệu cần đảm bảo \"tính toàn vẹn của dữ liệu\", nghĩa là:",
+    "options": {
+      "a": "Dữ liệu phải được in ra đầy đủ trên giấy.",
+      "b": "Dữ liệu phải chính xác, không bị thay đổi trái phép hoặc mất mát.",
+      "c": "Dữ liệu phải được chia sẻ cho tất cả mọi người cùng xem.",
+      "d": "Dữ liệu phải luôn được lưu dưới dạng hình ảnh."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 80,
+    "topic": "An ninh mạng",
+    "level": "Biết",
+    "question": "Công việc bảo vệ hệ thống thông tin khỏi các truy cập trái phép và các cuộc tấn công mạng là nhiệm vụ của ai?",
+    "options": {
+      "a": "Quản trị viên dịch vụ (Service Administrator).",
+      "b": "Quản trị viên an ninh mạng (Security Administrator).",
+      "c": "Chuyên viên thiết kế web (Web Designer).",
+      "d": "Nhân viên hỗ trợ bán hàng."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 81,
+    "topic": "An ninh mạng",
+    "level": "Hiểu",
+    "question": "\"Quản trị viên an ninh mạng\" cần cập nhật kiến thức về điều gì thường xuyên nhất?",
+    "options": {
+      "a": "Các mẫu thiết kế quần áo mới nhất.",
+      "b": "Các loại mã độc (malware) và lỗ hổng bảo mật mới xuất hiện.",
+      "c": "Các phương pháp nấu ăn công nghiệp.",
+      "d": "Các xu hướng văn học cổ điển."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 82,
+    "topic": "Quản trị dịch vụ",
+    "level": "Hiểu",
+    "question": "Vai trò của \"Quản trị dịch vụ CNTT\" (IT Service Management) là gì?",
+    "options": {
+      "a": "Đảm bảo các dịch vụ công nghệ đáp ứng đúng nhu cầu và sự hài lòng của người dùng.",
+      "b": "Chỉ tập trung vào việc đi giao thiết bị tận nhà cho khách.",
+      "c": "Tổ chức các sự kiện vui chơi giải trí cho phòng kỹ thuật.",
+      "d": "Dọn dẹp vệ sinh bụi bẩn cho các phòng máy tính."
+    },
+    "answer": "a"
+  },
+  {
+    "id": 83,
+    "topic": "Đặc điểm nghề nghiệp",
+    "level": "Hiểu",
+    "question": "Đặc điểm nào sau đây mô tả đúng về môi trường làm việc của nghề quản trị CNTT?",
+    "options": {
+      "a": "Công việc rất nhẹ nhàng, chỉ làm việc trong giờ hành chính.",
+      "b": "Đòi hỏi sự cẩn trọng, tỉ mỉ và sẵn sàng ứng trực xử lý sự cố bất kể thời gian.",
+      "c": "Không cần cập nhật kiến thức mới vì các hệ thống luôn giống nhau.",
+      "d": "Không cần quan tâm đến các quy định về bảo mật dữ liệu."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 84,
+    "topic": "Xu hướng công nghệ",
+    "level": "Hiểu",
+    "question": "Xu hướng quản trị hiện đại ngày nay tập trung mạnh mẽ vào lĩnh vực nào?",
+    "options": {
+      "a": "Quản trị các máy tính thế hệ cũ sử dụng đĩa mềm.",
+      "b": "Quản trị điện toán đám mây (Cloud Management) và hạ tầng ảo hóa.",
+      "c": "Chỉ quản trị các thiết bị máy đánh chữ điện tử đời đầu.",
+      "d": "Quay về sử dụng các phương thức lưu trữ dữ liệu bằng giấy tờ."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 85,
+    "topic": "Quản trị CNTT",
+    "level": "Vận dụng",
+    "question": "Công việc nào sau đây KHÔNG thuộc nhóm nghề quản trị CNTT?",
+    "options": {
+      "a": "Cấu hình thiết bị phát sóng Wi-Fi cho công ty.",
+      "b": "Sửa chữa bo mạch chủ cho khách hàng lẻ tại cửa hàng.",
+      "c": "Cấp phát tài khoản email cho nhân viên mới.",
+      "d": "Giám sát hoạt động của máy chủ (Server)."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 86,
+    "topic": "Kỹ năng nghề nghiệp",
+    "level": "Hiểu",
+    "question": "Tại sao người làm nghề sửa chữa máy tính cần có kiến thức cơ bản về mạng máy tính?",
+    "options": {
+      "a": "Để có thể tự xây dựng website cho riêng mình.",
+      "b": "Để biết cách kết nối, cấu hình IP và xử lý sự cố mạng Internet cho người dùng.",
+      "c": "Để thay thế cho nhân viên lắp đặt điện lưới quốc gia.",
+      "d": "Để có thể chơi trò chơi trực tuyến nhanh hơn."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 87,
+    "topic": "Kỹ năng nghề nghiệp",
+    "level": "Hiểu",
+    "question": "Kỹ năng \"Giải quyết vấn đề\" (Problem-solving) quan trọng như thế nào trong nghề này?",
+    "options": {
+      "a": "Giúp thợ sửa chữa đoán mò lỗi mà không cần kiểm tra.",
+      "b": "Giúp phân tích nguyên nhân sự cố một cách logic và tìm ra giải pháp khắc phục hiệu quả nhất.",
+      "c": "Giúp hoàn thành công việc nhanh hơn mà không cần quy trình.",
+      "d": "Chỉ cần thiết khi máy tính bị hỏa hoạn."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 88,
+    "topic": "Kỹ năng nghề nghiệp",
+    "level": "Hiểu",
+    "question": "Người thợ sửa chữa cần kỹ năng giao tiếp tốt để làm gì?",
+    "options": {
+      "a": "Để thuyết phục khách hàng mua máy mới với giá cao hơn.",
+      "b": "Để lắng nghe yêu cầu và giải thích các vấn đề kỹ thuật cho khách hàng một cách dễ hiểu.",
+      "c": "Để có thể làm việc một mình mà không cần đồng nghiệp hỗ trợ.",
+      "d": "Để viết các chương trình quảng cáo tự động trên mạng."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 89,
+    "topic": "Kỹ năng nghề nghiệp",
+    "level": "Hiểu",
+    "question": "Kỹ năng \"Quản lý thời gian\" đóng vai trò gì trong dịch vụ bảo trì máy tính?",
+    "options": {
+      "a": "Giúp thợ sửa chữa có thêm thời gian để nghỉ ngơi.",
+      "b": "Giúp hoàn thành công việc đúng thời hạn cam kết và đáp ứng kịp thời nhu cầu khách hàng.",
+      "c": "Chỉ dùng để tính tiền công dựa trên số giờ làm việc.",
+      "d": "Để báo cáo lịch trình với các cơ quan quản lý lao động."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 90,
+    "topic": "Kỹ năng nghề nghiệp",
+    "level": "Hiểu",
+    "question": "Việc nắm vững kiến thức về an toàn điện có ý nghĩa gì đối với người thợ sửa chữa?",
+    "options": {
+      "a": "Để có thể sửa chữa cả các đồ điện gia dụng khác.",
+      "b": "Đảm bảo an toàn tính mạng cho chính mình và tránh gây cháy nổ thiết bị của khách hàng.",
+      "c": "Để tăng giá thành dịch vụ sửa chữa.",
+      "d": "Không thực sự cần thiết vì nguồn điện máy tính rất thấp."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 91,
+    "topic": "Kỹ năng nghề nghiệp",
+    "level": "Hiểu",
+    "question": "Kỹ năng \"Troubleshooting\" (Chẩn đoán và giải quyết sự cố) được coi là gì trong nghề quản trị?",
+    "options": {
+      "a": "Là một kỹ năng phụ, không bắt buộc phải có.",
+      "b": "Là kỹ năng \"xương sống\" để xác định nguyên nhân và khắc phục lỗi hệ thống kịp thời.",
+      "c": "Chỉ cần thiết đối với những người quản lý cấp cao nhất.",
+      "d": "Chỉ dùng khi cần cài đặt các máy tính mới hoàn toàn."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 92,
+    "topic": "Kỹ năng nghề nghiệp",
+    "level": "Hiểu",
+    "question": "Tại sao kỹ năng giao tiếp lại cần thiết đối với một người quản trị CNTT?",
+    "options": {
+      "a": "Để thuyết phục khách hàng mua thêm các thiết bị đắt tiền.",
+      "b": "Để giải thích các vấn đề kỹ thuật phức tạp cho người dùng và phối hợp với các bộ phận khác.",
+      "c": "Để viết các bài blog cá nhân về công nghệ hàng ngày.",
+      "d": "Để có thể làm việc độc lập mà không cần tương tác với ai."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 93,
+    "topic": "Hướng nghiệp CNTT",
+    "level": "Hiểu",
+    "question": "Cuộc Cách mạng công nghiệp 4.0 có tác hưởng như thế nào đến nhu cầu nhân lực của nghề này?",
+    "options": {
+      "a": "Làm cho nghề này trở nên lỗi thời và bị thay thế.",
+      "b": "Làm tăng nhu cầu về nhân lực chất lượng cao do sự bùng nổ của các thiết bị kết nối.",
+      "c": "Giúp máy tính tự động sửa chữa mà không cần con người.",
+      "d": "Làm giảm số lượng thiết bị cần được bảo trì."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 94,
+    "topic": "Hướng nghiệp CNTT",
+    "level": "Biết",
+    "question": "Đâu là tên một ngành đào tạo phổ biến tại Việt Nam liên quan trực tiếp đến nghề này?",
+    "options": {
+      "a": "Kỹ thuật sửa chữa, lắp ráp máy tính.",
+      "b": "Quản trị kinh doanh du lịch.",
+      "c": "Ngôn ngữ học ứng dụng.",
+      "d": "Tâm lý học hành vi."
+    },
+    "answer": "a"
+  },
+  {
+    "id": 95,
+    "topic": "Hướng nghiệp CNTT",
+    "level": "Biết",
+    "question": "Tại Việt Nam, người theo nghề sửa chữa máy tính có thể học tập ở những cấp bậc nào?",
+    "options": {
+      "a": "Chỉ học ở các trung tâm dạy nghề ngắn hạn.",
+      "b": "Chỉ học ở bậc Đại học.",
+      "c": "Đa dạng các bậc: Sơ cấp nghề, Trung cấp, Cao đẳng và Đại học.",
+      "d": "Chỉ học theo hình thức tự học tại nhà."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 96,
+    "topic": "Hướng nghiệp CNTT",
+    "level": "Hiểu",
+    "question": "Tại sao nhân lực nghề sửa chữa máy tính ngày nay cần trình độ chuyên môn cao hơn trước?",
+    "options": {
+      "a": "Vì các thiết bị ngày càng rẻ và dễ hỏng.",
+      "b": "Vì sự phức tạp của các hệ thống máy tính hiện đại và các yêu cầu khắt khe về bảo mật.",
+      "c": "Vì người dùng không còn muốn tự học cách sử dụng máy tính.",
+      "d": "Vì luật pháp yêu cầu thợ sửa máy phải có bằng đại học."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 97,
+    "topic": "Đạo đức nghề nghiệp",
+    "level": "Hiểu",
+    "question": "Phẩm chất quan trọng nhất của một thợ bảo trì máy tính chuyên nghiệp là gì?",
+    "options": {
+      "a": "Sự vội vàng để sửa được thật nhiều máy trong ngày.",
+      "b": "Sự tỉ mỉ, cẩn thận, trung thực và tính kiên nhẫn khi tìm lỗi.",
+      "c": "Chỉ chọn làm những việc dễ và bỏ qua những lỗi khó.",
+      "d": "Không cần quan tâm đến các quy tắc an toàn về điện."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 98,
+    "topic": "Đạo đức nghề nghiệp",
+    "level": "Hiểu",
+    "question": "Một người thợ sửa chữa máy tính \"có tâm\" cần lưu ý điều gì về dữ liệu của khách hàng?",
+    "options": {
+      "a": "Có thể tự ý xem và sao chép dữ liệu của khách hàng.",
+      "b": "Phải tôn trọng quyền riêng tư và đảm bảo an toàn dữ liệu cho khách hàng trong quá trình sửa chữa.",
+      "c": "Xóa hết dữ liệu của khách hàng cho máy chạy nhanh hơn.",
+      "d": "Chia sẻ dữ liệu của khách hàng lên mạng xã hội."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 99,
     "topic": "Đạo đức nghề nghiệp",
     "level": "Hiểu",
     "question": "Phẩm chất \"trung thực\" đặc biệt quan trọng đối với nghề quản trị vì:",
@@ -1027,7 +1287,7 @@
     "answer": "a"
   },
   {
-    "id": 80,
+    "id": 100,
     "topic": "Đạo đức nghề nghiệp",
     "level": "Hiểu",
     "question": "Tầm quan trọng của việc học tập suốt đời đối với nghề quản trị CNTT là gì?",
