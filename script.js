@@ -34,22 +34,17 @@ if(themeToggle) {
 }
 
 // ==========================================
-// 2. LOGIC THÔNG BÁO CẬP NHẬT
+// 2. LOGIC THÔNG BÁO CẬP NHẬT (LUÔN HIỆN KHI F5)
 // ==========================================
-// MẸO: Nếu muốn hiện lại thông báo cho mọi người, hãy đổi "v2" thành "v3", "v4"...
-const UPDATE_VERSION = "v2_fixed_mode"; 
-
 function showUpdateNotification() {
     const toast = document.getElementById('update-toast');
-    const seenVersion = localStorage.getItem('seenUpdateVersion');
-
-    // Nếu toast tồn tại VÀ chưa từng ấn "Đã hiểu" cho phiên bản này
-    if (toast && seenVersion !== UPDATE_VERSION) { 
-        // Đảm bảo toast không bị ẩn bởi class hidden trước khi chạy hiệu ứng
+    
+    // Đã bỏ kiểm tra localStorage để thông báo luôn hiện khi load trang
+    if (toast) { 
         toast.classList.remove('toast-hidden'); 
         setTimeout(() => {
             toast.classList.add('show');
-        }, 500); // Đợi một chút sau khi load trang cho mượt
+        }, 800); 
     }
 }
 
@@ -67,9 +62,7 @@ function closeToast() {
     const toast = document.getElementById('update-toast');
     if(toast) {
         toast.classList.remove('show');
-        // Lưu vào máy người dùng để lần sau F5 KHÔNG hiện nữa
-        localStorage.setItem('seenUpdateVersion', UPDATE_VERSION);
-        
+        // Không lưu vào localStorage để lần sau F5 vẫn hiện
         setTimeout(() => {
             toast.classList.add('toast-hidden');
         }, 300);
@@ -94,7 +87,7 @@ function escapeHtml(text) {
 async function init() {
     initTheme();
     
-    // ƯU TIÊN: Luôn gọi thông báo cập nhật ngay khi vào trang
+    // Luôn hiện thông báo ngay khi vào trang
     showUpdateNotification();
 
     try {
@@ -118,7 +111,7 @@ init();
 // 4. LOGIC TRÒ CHƠI
 // ==========================================
 async function startGame(fileName) {
-    hideToastTemporarily(); // Vào game thì tạm ẩn đi cho đỡ vướng
+    hideToastTemporarily(); 
 
     statusText.innerText = "Đang tải dữ liệu...";
     setupOptions.classList.add('hidden');
