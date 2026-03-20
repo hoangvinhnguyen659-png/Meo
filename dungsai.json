@@ -150,6 +150,101 @@
     ]
   },
   {
+    "question": "Về đặc điểm của Box Model (Mô hình hộp) trong CSS:",
+    "subQuestions": [
+      {
+        "content": "Thuộc tính border-radius được sử dụng để bo tròn các góc của khung viền.",
+        "answer": "Đúng",
+        "explanation": "border-radius cho phép bo tròn góc của phần tử, có thể áp dụng cho từng góc riêng biệt."
+      },
+      {
+        "content": "Ta có thể thiết lập màu sắc riêng biệt cho từng cạnh của viền (ví dụ: border-top-color).",
+        "answer": "Đúng",
+        "explanation": "CSS cung cấp các thuộc tính chi tiết cho từng cạnh như border-top, border-right, border-bottom, border-left."
+      },
+      {
+        "content": "Khi thiết lập padding: 10px 20px 30px; thì giá trị 20px sẽ áp dụng cho cả cạnh trái và cạnh phải.",
+        "answer": "Đúng",
+        "explanation": "Với 3 giá trị, thứ tự áp dụng là: Trên (10px) - [Trái & Phải] (20px) - Dưới (30px)."
+      },
+      {
+        "content": "Nếu một phần tử không có nội dung và không có chiều cao, vùng padding vẫn sẽ hiển thị nếu có đặt màu nền.",
+        "answer": "Đúng",
+        "explanation": "Padding tạo ra không gian bên trong phần tử, màu nền sẽ phủ lên cả vùng nội dung và vùng padding."
+      }
+    ]
+  },
+  {
+    "question": "So sánh sự khác biệt giữa Margin và Padding:",
+    "subQuestions": [
+      {
+        "content": "margin: auto thường dùng để căn giữa khối theo chiều ngang, nhưng padding: auto không có tác dụng này.",
+        "answer": "Đúng",
+        "explanation": "margin: auto chia đều khoảng không gian trống bên ngoài, còn padding không hỗ trợ giá trị auto."
+      },
+      {
+        "content": "Khi hai phần tử nằm chồng lên nhau theo chiều dọc, khoảng cách margin giữa chúng có thể bị gộp lại.",
+        "answer": "Đúng",
+        "explanation": "Đây là hiện tượng Margin Collapse, trong đó lề trên và lề dưới của các khối sẽ gộp thành một khoảng lớn nhất."
+      },
+      {
+        "content": "Padding làm tăng kích thước vùng có thể nhấp chuột của một liên kết, còn Margin thì không.",
+        "answer": "Đúng",
+        "explanation": "Padding thuộc về diện tích bên trong phần tử, trong khi Margin là không gian bên ngoài phần tử."
+      },
+      {
+        "content": "Cả Margin và Padding đều có thể nhận giá trị đơn vị là % tính theo chiều rộng của phần tử cha.",
+        "answer": "Đúng",
+        "explanation": "Theo quy chuẩn, giá trị % của margin/padding (cả 4 hướng) đều dựa trên chiều rộng (width) của khối chứa."
+      }
+    ]
+  },
+  {
+    "question": "Về các thuộc tính đo lường và tính toán kích thước:",
+    "subQuestions": [
+      {
+        "content": "Thuộc tính letter-spacing được dùng để thay đổi khoảng cách giữa các chữ cái.",
+        "answer": "Đúng",
+        "explanation": "letter-spacing điều chỉnh khoảng trống giữa các ký tự văn bản trong phần tử."
+      },
+      {
+        "content": "Thuộc tính box-sizing: border-box giúp chiều rộng hộp bao gồm cả padding và border.",
+        "answer": "Đúng",
+        "explanation": "border-box giúp việc tính toán kích thước dễ dàng hơn bằng cách gói padding và border vào trong width đã định nghĩa."
+      },
+      {
+        "content": "Thuộc tính padding có thể nhận giá trị là số âm để thu nhỏ nội dung.",
+        "answer": "Sai",
+        "explanation": "Padding không bao giờ được phép nhận giá trị âm, chỉ có Margin mới có thể nhận giá trị âm."
+      },
+      {
+        "content": "Vùng Padding và Content là nơi sẽ hiển thị hình ảnh nền (background-image) của phần tử.",
+        "answer": "Đúng",
+        "explanation": "Màu nền và ảnh nền phủ từ mép trong của viền (border) trở vào, bao gồm cả Padding và Content."
+      }
+    ]
+  },
+  {
+    "question": "Về quy tắc ghi đè và tính toán thực tế:",
+    "subQuestions": [
+      {
+        "content": "Khoảng cách margin nằm bên trong vùng của màu nền (background-color) của phần tử đó.",
+        "answer": "Sai",
+        "explanation": "Margin nằm bên ngoài vùng Border và luôn trong suốt, màu nền không phủ tới vùng này."
+      },
+      {
+        "content": "Nếu một phần tử có border: 2px, padding: 10px và margin: 5px, tổng khoảng cách từ nội dung đến phần tử lân cận là 17px.",
+        "answer": "Đúng",
+        "explanation": "Tổng khoảng cách = 10px (padding) + 2px (border) + 5px (margin) = 17px."
+      },
+      {
+        "content": "Bộ chọn '*' (Universal selector) dùng để xóa bỏ khoảng cách mặc định trên toàn bộ trang web.",
+        "answer": "Đúng",
+        "explanation": "Dùng * { margin: 0; padding: 0; } là cách phổ biến để reset CSS mặc định của mọi trình duyệt."
+      }
+    ]
+  },
+  {
     "question": "Về các nhiệm vụ chuyên môn trong nghề dịch vụ máy tính:",
     "subQuestions": [
       {
@@ -183,7 +278,7 @@
         "explanation": "Tư duy logic giúp khoanh vùng và xác định đúng thành phần gây ra lỗi trong hệ thống phức tạp."
       },
       {
-        "content": "Người thợ sửa chữa máy tính không cần trung thực vì khách hàng thường không am hiểu về kỹ thuật.",
+        "content": "Người thợ sửa chữa máy tính không cần trung thực vì khách hàng thường không am hiệu về kỹ thuật.",
         "answer": "Sai",
         "explanation": "Trung thực là đạo đức cốt lõi để bảo mật dữ liệu khách hàng và duy trì uy tín nghề nghiệp."
       },
@@ -299,4 +394,4 @@
       }
     ]
   }
-    ]
+]
