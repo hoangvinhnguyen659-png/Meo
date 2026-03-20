@@ -30,12 +30,12 @@ if(themeToggle) {
     };
 }
 
-// 2. LOGIC THÔNG BÁO CẬP NHẬT (Chỉ tắt khi nhấn X)
+// 2. LOGIC THÔNG BÁO CẬP NHẬT (Luôn hiện mỗi khi load lại trang)
 const UPDATE_VERSION = "v2_fixed_mode"; 
 
 function showUpdateNotification() {
     const toast = document.getElementById('update-toast');
-    if (toast && localStorage.getItem('update_seen') !== UPDATE_VERSION) {
+    if (toast) { // Đã xóa điều kiện kiểm tra localStorage ở đây
         setTimeout(() => {
             toast.classList.remove('toast-hidden'); // Hiện diện trong DOM
             toast.classList.add('show');            // Chạy hiệu ứng CSS
@@ -47,7 +47,7 @@ function closeToast() {
     const toast = document.getElementById('update-toast');
     if(toast) {
         toast.classList.remove('show');
-        localStorage.setItem('update_seen', UPDATE_VERSION);
+        // Đã xóa dòng lưu localStorage ở đây để không lưu lại trạng thái đã đóng
     }
 }
 
@@ -240,4 +240,4 @@ function showFinalResults() {
     quizScreen.classList.add('hidden');
     resultScreen.classList.remove('hidden');
     document.getElementById('final-score').innerText = score + "/" + userQuestions.length;
-}
+    }
