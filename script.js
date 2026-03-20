@@ -36,25 +36,26 @@ if(themeToggle) {
 // ==========================================
 // 2. LOGIC THÔNG BÁO CẬP NHẬT
 // ==========================================
+// MẸO: Nếu muốn hiện lại thông báo cho mọi người, hãy đổi "v2" thành "v3", "v4"...
 const UPDATE_VERSION = "v2_fixed_mode"; 
 
 function showUpdateNotification() {
     const toast = document.getElementById('update-toast');
     const seenVersion = localStorage.getItem('seenUpdateVersion');
 
-    // Chỉ hiện nếu chưa xem bản cập nhật này
+    // Nếu toast tồn tại VÀ chưa từng ấn "Đã hiểu" cho phiên bản này
     if (toast && seenVersion !== UPDATE_VERSION) { 
+        // Đảm bảo toast không bị ẩn bởi class hidden trước khi chạy hiệu ứng
+        toast.classList.remove('toast-hidden'); 
         setTimeout(() => {
-            toast.classList.remove('toast-hidden'); // Hiện diện trong DOM
-            toast.classList.add('show');            // Chạy hiệu ứng CSS
-        }, 1000);
+            toast.classList.add('show');
+        }, 500); // Đợi một chút sau khi load trang cho mượt
     }
 }
 
-// Hàm này chỉ để ẨN thông báo khi vào game, KHÔNG LƯU vào localStorage
 function hideToastTemporarily() {
     const toast = document.getElementById('update-toast');
-    if(toast) {
+    if(toast && toast.classList.contains('show')) {
         toast.classList.remove('show');
         setTimeout(() => {
             toast.classList.add('toast-hidden');
@@ -62,12 +63,11 @@ function hideToastTemporarily() {
     }
 }
 
-// Hàm này giữ nguyên, dùng để gắn vào nút [X] hoặc nút [Đã hiểu] trên cái Toast
 function closeToast() {
     const toast = document.getElementById('update-toast');
     if(toast) {
         toast.classList.remove('show');
-        // Chỉ lưu trạng thái khi người dùng chủ động tắt thông báo
+        // Lưu vào máy người dùng để lần sau F5 KHÔNG hiện nữa
         localStorage.setItem('seenUpdateVersion', UPDATE_VERSION);
         
         setTimeout(() => {
@@ -93,12 +93,15 @@ function escapeHtml(text) {
 
 async function init() {
     initTheme();
+    
+    // ƯU TIÊN: Luôn gọi thông báo cập nhật ngay khi vào trang
+    showUpdateNotification();
+
     try {
         const response = await fetch('questions.json');
         if (response.ok) {
             statusText.innerText = "Sẵn sàng!";
             setupOptions.classList.remove('hidden');
-            showUpdateNotification();
         } else {
             throw new Error("File missing");
         }
@@ -108,26 +111,27 @@ async function init() {
     }
 }
 
-// Khởi chạy ngay khi trang load
+// Khởi chạy
 init();
 
 // ==========================================
 // 4. LOGIC TRÒ CHƠI
 // ==========================================
 async function startGame(fileName) {
-    hideToastTemporarily(); // Tạm thời ẩn thông báo, KHÔNG lưu vào localStorage
+    hideToastTemporarily(); // Vào game thì tạm ẩn đi cho đỡ vướng
 
     statusText.innerText = "Đang tải dữ liệu...";
     setupOptions.classList.add('hidden');
     setTimeout(async () => {
         try {
             const res = await fetch(fileName);
+            if (!res.ok) throw new Error();
             quizData = await res.json();
             const isShuffle = document.getElementById('shuffle-checkbox')?.checked || false;
             userQuestions = isShuffle ? [...quizData].sort(() => Math.random() - 0.5) : [...quizData];
             resetAndRender();
         } catch (err) {
-            alert("Không tìm thấy file câu hỏi!");
+            alert("Không tìm thấy file câu hỏi: " + fileName);
             location.reload();
         }
     }, 200);
@@ -147,7 +151,6 @@ function restartQuiz() {
     resetAndRender(); 
 }
 
-// Gán sự kiện cho các nút chọn chế độ
 document.getElementById('btn-tracnghiem')?.addEventListener('click', () => startGame('questions.json'));
 document.getElementById('btn-dungsai')?.addEventListener('click', () => startGame('dungsai.json'));
 
@@ -167,12 +170,10 @@ function renderAllQuestions() {
                 const explainHtml = sub.explanation ? `<div class="explanation explanation-box hidden"><strong>Giải thích:</strong> ${escapeHtml(sub.explanation)}</div>` : '';
                 return `<div class="sub-question-container" id="sub-container-${index}-${subIdx}" style="margin-bottom: 20px;">
                     <div style="margin-bottom: 12px; font-weight: 500; color: var(--text);"><strong>${subIdx + 1}.</strong> ${escapeHtml(sub.content)}</div>
-                    
                     <div class="sub-options-row">
                         <div class="option-item" onclick="handleSubSelect(this, ${index}, ${subIdx}, 'Đúng')"><span>Đúng</span></div>
                         <div class="option-item" onclick="handleSubSelect(this, ${index}, ${subIdx}, 'Sai')"><span>Sai</span></div>
                     </div>
-                    
                     ${explainHtml}
                 </div>`;
             }).join('');
@@ -192,7 +193,7 @@ function renderAllQuestions() {
         feed.appendChild(qBlock);
     });
     
-    document.getElementById('total-count').innerText = userQuestions.length;
+    if(document.getElementById('total-count')) document.getElementById('total-count').innerText = userQuestions.length;
     updateProgress();
 }
 
@@ -261,8 +262,8 @@ function updateProgress() {
     const percent = userQuestions.length > 0 ? (correctCount / userQuestions.length) * 100 : 0;
     if(progressBar) progressBar.style.width = percent + "%";
     
-    document.getElementById('current-count').innerText = correctCount;
-    document.getElementById('live-score').innerText = score;
+    if(document.getElementById('current-count')) document.getElementById('current-count').innerText = correctCount;
+    if(document.getElementById('live-score')) document.getElementById('live-score').innerText = score;
     
     if (correctCount === userQuestions.length && userQuestions.length > 0) {
         setTimeout(showFinalResults, 600);
