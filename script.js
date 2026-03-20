@@ -1,3 +1,4 @@
+// --- CÁC BIẾN TOÀN CỤC ---
 let quizData = [];
 let userQuestions = [];
 let score = 0;
@@ -10,7 +11,9 @@ const moonIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
+// ==========================================
 // 1. KHỞI TẠO GIAO DIỆN (DARK/LIGHT)
+// ==========================================
 function initTheme() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
@@ -30,7 +33,9 @@ if(themeToggle) {
     };
 }
 
+// ==========================================
 // 2. LOGIC THÔNG BÁO CẬP NHẬT
+// ==========================================
 const UPDATE_VERSION = "v2_fixed_mode"; 
 
 function showUpdateNotification() {
@@ -46,11 +51,23 @@ function showUpdateNotification() {
     }
 }
 
+// Hàm này chỉ để ẨN thông báo khi vào game, KHÔNG LƯU vào localStorage
+function hideToastTemporarily() {
+    const toast = document.getElementById('update-toast');
+    if(toast) {
+        toast.classList.remove('show');
+        setTimeout(() => {
+            toast.classList.add('toast-hidden');
+        }, 300);
+    }
+}
+
+// Hàm này giữ nguyên, dùng để gắn vào nút [X] hoặc nút [Đã hiểu] trên cái Toast
 function closeToast() {
     const toast = document.getElementById('update-toast');
     if(toast) {
         toast.classList.remove('show');
-        // Lưu lại trạng thái đã đóng
+        // Chỉ lưu trạng thái khi người dùng chủ động tắt thông báo
         localStorage.setItem('seenUpdateVersion', UPDATE_VERSION);
         
         setTimeout(() => {
@@ -59,7 +76,9 @@ function closeToast() {
     }
 }
 
-// 3. KHỞI TẠO DỮ LIỆU & TRÒ CHƠI
+// ==========================================
+// 3. KHỞI TẠO DỮ LIỆU & GIAO DIỆN CHÍNH
+// ==========================================
 const statusText = document.getElementById('status-text');
 const setupOptions = document.getElementById('setup-options');
 const loadingScreen = document.getElementById('loading-screen');
@@ -92,9 +111,11 @@ async function init() {
 // Khởi chạy ngay khi trang load
 init();
 
+// ==========================================
 // 4. LOGIC TRÒ CHƠI
+// ==========================================
 async function startGame(fileName) {
-    closeToast(); // Tự động đóng thông báo nếu người dùng bấm vào nút chọn chế độ chơi
+    hideToastTemporarily(); // Tạm thời ẩn thông báo, KHÔNG lưu vào localStorage
 
     statusText.innerText = "Đang tải dữ liệu...";
     setupOptions.classList.add('hidden');
@@ -122,7 +143,9 @@ function resetAndRender() {
     if(scrollArea) scrollArea.scrollTop = 0;
 }
 
-function restartQuiz() { resetAndRender(); }
+function restartQuiz() { 
+    resetAndRender(); 
+}
 
 // Gán sự kiện cho các nút chọn chế độ
 document.getElementById('btn-tracnghiem')?.addEventListener('click', () => startGame('questions.json'));
