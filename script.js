@@ -34,13 +34,14 @@ if(themeToggle) {
 }
 
 // ==========================================
-// 2. LOGIC THÔNG BÁO CẬP NHẬT (LUÔN HIỆN KHI F5)
+// 2. LOGIC THÔNG BÁO CẬP NHẬT (THÔNG MINH)
 // ==========================================
 function showUpdateNotification() {
     const toast = document.getElementById('update-toast');
-    
-    // Đã bỏ kiểm tra localStorage để thông báo luôn hiện khi load trang
-    if (toast) { 
+    // Kiểm tra xem trong phiên làm việc này người dùng đã nhấn đóng chưa
+    const isClosedThisSession = sessionStorage.getItem('closedUpdateToast');
+
+    if (toast && !isClosedThisSession) { 
         toast.classList.remove('toast-hidden'); 
         setTimeout(() => {
             toast.classList.add('show');
@@ -62,7 +63,10 @@ function closeToast() {
     const toast = document.getElementById('update-toast');
     if(toast) {
         toast.classList.remove('show');
-        // Không lưu vào localStorage để lần sau F5 vẫn hiện
+        // Lưu vào sessionStorage: Sẽ không hiện lại khi nhấn nút Trang chủ
+        // Nhưng F5 hoặc mở tab mới sẽ hiện lại.
+        sessionStorage.setItem('closedUpdateToast', 'true');
+        
         setTimeout(() => {
             toast.classList.add('toast-hidden');
         }, 300);
@@ -87,7 +91,7 @@ function escapeHtml(text) {
 async function init() {
     initTheme();
     
-    // Luôn hiện thông báo ngay khi vào trang
+    // Gọi hàm hiện thông báo (đã có check sessionStorage bên trong)
     showUpdateNotification();
 
     try {
