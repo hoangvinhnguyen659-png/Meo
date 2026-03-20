@@ -30,12 +30,15 @@ if(themeToggle) {
     };
 }
 
-// 2. LOGIC THÔNG BÁO CẬP NHẬT (Luôn hiện mỗi khi load lại trang)
+// 2. LOGIC THÔNG BÁO CẬP NHẬT
 const UPDATE_VERSION = "v2_fixed_mode"; 
 
 function showUpdateNotification() {
     const toast = document.getElementById('update-toast');
-    if (toast) { // Đã xóa điều kiện kiểm tra localStorage ở đây
+    const seenVersion = localStorage.getItem('seenUpdateVersion');
+
+    // Chỉ hiện nếu chưa xem bản cập nhật này
+    if (toast && seenVersion !== UPDATE_VERSION) { 
         setTimeout(() => {
             toast.classList.remove('toast-hidden'); // Hiện diện trong DOM
             toast.classList.add('show');            // Chạy hiệu ứng CSS
@@ -47,7 +50,12 @@ function closeToast() {
     const toast = document.getElementById('update-toast');
     if(toast) {
         toast.classList.remove('show');
-        // Đã xóa dòng lưu localStorage ở đây để không lưu lại trạng thái đã đóng
+        // Lưu lại trạng thái đã đóng
+        localStorage.setItem('seenUpdateVersion', UPDATE_VERSION);
+        
+        setTimeout(() => {
+            toast.classList.add('toast-hidden');
+        }, 300);
     }
 }
 
@@ -86,6 +94,8 @@ init();
 
 // 4. LOGIC TRÒ CHƠI
 async function startGame(fileName) {
+    closeToast(); // Tự động đóng thông báo nếu người dùng bấm vào nút chọn chế độ chơi
+
     statusText.innerText = "Đang tải dữ liệu...";
     setupOptions.classList.add('hidden');
     setTimeout(async () => {
@@ -240,4 +250,4 @@ function showFinalResults() {
     quizScreen.classList.add('hidden');
     resultScreen.classList.remove('hidden');
     document.getElementById('final-score').innerText = score + "/" + userQuestions.length;
-    }
+}
