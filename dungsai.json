@@ -493,5 +493,55 @@
         "explanation": "Giám sát giúp nhận diện các dòng dữ liệu bất thường tăng đột biến để kịp thời ngăn chặn."
       }
     ]
+  },
+  {
+    "question": "Câu 6: Xét về việc sử dụng và ưu tiên các bộ chọn đặc biệt:",
+    "subQuestions": [
+      {
+        "content": "Một phần tử HTML có thể chứa đồng thời cả thuộc tính class và id.",
+        "answer": "Đúng",
+        "explanation": "Một thẻ HTML có thể được định danh duy nhất bằng id và phân loại vào một hoặc nhiều nhóm bằng class."
+      },
+      {
+        "content": "Khi cùng định dạng cho một phần tử, bộ chọn lớp (Class) có mức độ ưu tiên cao hơn bộ chọn định danh (ID).",
+        "answer": "Sai",
+        "explanation": "Bộ chọn ID có trọng số (100) cao hơn nhiều so với bộ chọn Class (10)."
+      },
+      {
+        "content": "Tên Class .Lớp12 và .lớp12 được trình duyệt hiểu là cùng một lớp vì CSS không phân biệt chữ hoa chữ thường trong tên bộ chọn.",
+        "answer": "Sai",
+        "explanation": "Trong CSS, tên class và id có phân biệt chữ hoa chữ thường (case-sensitive)."
+      },
+      {
+        "content": "Để chọn các phần tử có thuộc tính href bắt đầu bằng \"https\", ta sử dụng bộ chọn thuộc tính.",
+        "answer": "Đúng",
+        "explanation": "Cú pháp [href^=\"https\"] là một bộ chọn thuộc tính (attribute selector) dùng để khớp với phần đầu của giá trị."
+      }
+    ]
+  },
+  {
+    "question": "Câu 7: Về quy tắc đặt tên và cú pháp:",
+    "subQuestions": [
+      {
+        "content": "Tên bộ chọn CSS có thể chứa dấu cách nếu được đặt trong dấu ngoặc kép.",
+        "answer": "Sai",
+        "explanation": "Tên class và id không được chứa dấu cách. Dấu cách trong CSS selector dùng để chỉ mối quan hệ cha-con (descendant selector)."
+      },
+      {
+        "content": "Ký hiệu [type=\"text\"] là một ví dụ của bộ chọn thuộc tính với giá trị xác định.",
+        "answer": "Đúng",
+        "explanation": "Đây là cú pháp chuẩn để chọn các phần tử có thuộc tính và giá trị chính xác tuyệt đối."
+      },
+      {
+        "content": "Trong file HTML, thuộc tính class=\"c1 c2\" nghĩa là phần tử đó đang sử dụng cùng lúc hai lớp định dạng khác nhau.",
+        "answer": "Đúng",
+        "explanation": "Các tên lớp (class) trong HTML được phân tách nhau bằng dấu cách."
+      },
+      {
+        "content": "Dấu chấm (.) trong CSS tương ứng với thuộc tính id trong HTML.",
+        "answer": "Sai",
+        "explanation": "Dấu chấm (.) dùng cho bộ chọn Class, còn dấu thăng (#) mới dùng cho bộ chọn ID."
+      }
+    ]
   }
 ]
