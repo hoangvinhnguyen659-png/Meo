@@ -393,5 +393,105 @@
         "explanation": "Kế hoạch khắc phục sau thảm họa là chỉ số quan trọng đánh giá năng lực của quản trị viên."
       }
     ]
+  },
+  {
+    "question": "Về các điểm lắt léo trong mô hình hộp (Box Model) và đơn vị CSS:",
+    "subQuestions": [
+      {
+        "content": "Nếu thiết lập padding: 10% cho một phần tử, giá trị này sẽ được tính dựa trên chiều rộng (width) của phần tử cha.",
+        "answer": "Đúng",
+        "explanation": "Trong CSS, phần trăm của margin và padding (cả 4 hướng) đều tính theo chiều rộng của khối chứa (container width)."
+      },
+      {
+        "content": "Phần tử có thuộc tính 'display: inline' vẫn có thể nhận giá trị chiều rộng (width) nếu ta dùng đơn vị px.",
+        "answer": "Sai",
+        "explanation": "Thẻ nội tuyến (inline) mặc định không thể thiết lập width/height, bất kể dùng đơn vị nào."
+      },
+      {
+        "content": "Khi sử dụng 'box-sizing: border-box', kích thước thực tế của phần tử trên trình duyệt sẽ bằng đúng giá trị width đã đặt.",
+        "answer": "Đúng",
+        "explanation": "Border-box gộp cả padding và border vào trong width, giúp kiểm soát kích thước chính xác hơn."
+      },
+      {
+        "content": "Hai phần tử nằm cạnh nhau theo chiều ngang sẽ xảy ra hiện tượng gộp lề (margin collapse).",
+        "answer": "Sai",
+        "explanation": "Gộp lề chỉ xảy ra với lề TRÊN và DƯỚI (chiều dọc) của các phần tử khối, không xảy ra theo chiều ngang."
+      }
+    ]
+  },
+  {
+    "question": "Về thứ tự ưu tiên và các bộ chọn đặc biệt (Pseudo):",
+    "subQuestions": [
+      {
+        "content": "Để hiệu ứng chuột hoạt động đúng cho thẻ <a>, bộ chọn :hover phải được viết sau :link và :visited trong tệp CSS.",
+        "answer": "Đúng",
+        "explanation": "Theo quy tắc LVHA (Link-Visited-Hover-Active), thứ tự này đảm bảo các trạng thái không đè lên nhau sai cách."
+      },
+      {
+        "content": "Bộ chọn '.container p' có mức độ ưu tiên ngang bằng với bộ chọn 'div .text'.",
+        "answer": "Đúng",
+        "explanation": "Cả hai đều gồm 1 Class (10 điểm) và 1 thẻ HTML (1 điểm), tổng trọng số là 11."
+      },
+      {
+        "content": "Phần tử giả ::before yêu cầu phải có thuộc tính 'content' để có thể hiển thị trên trang web.",
+        "answer": "Đúng",
+        "explanation": "Nếu không có thuộc tính content (kể cả content: '';), phần tử giả sẽ không được tạo ra."
+      },
+      {
+        "content": "Lớp giả :nth-child(3) sẽ chọn tất cả các thẻ là con thứ 3 của mọi phần tử cha trên trang.",
+        "answer": "Đúng",
+        "explanation": ":nth-child tìm kiếm theo vị trí thứ tự của phần tử con trong khối chứa nó."
+      }
+    ]
+  },
+  {
+    "question": "Về trách nhiệm chuyên môn và đạo đức nghề dịch vụ máy tính:",
+    "subQuestions": [
+      {
+        "content": "Khi bảo trì máy tính, việc cập nhật BIOS/UEFI là công việc bắt buộc phải thực hiện hàng tháng.",
+        "answer": "Sai",
+        "explanation": "Cập nhật BIOS chứa đựng rủi ro cao, chỉ thực hiện khi cần sửa lỗi phần cứng cụ thể hoặc hỗ trợ CPU mới."
+      },
+      {
+        "content": "Kỹ thuật viên cần yêu cầu khách hàng sao lưu dữ liệu quan trọng trước khi tiến hành sửa chữa liên quan đến ổ cứng.",
+        "answer": "Đúng",
+        "explanation": "Đây là quy trình bắt buộc để tránh tranh chấp và mất mát dữ liệu ngoài ý muốn."
+      },
+      {
+        "content": "Việc tự ý cài đặt các phần mềm bẻ khóa (crack) cho khách hàng là hành vi vi phạm luật sở hữu trí tuệ.",
+        "answer": "Đúng",
+        "explanation": "Người làm nghề dịch vụ máy tính phải tôn trọng bản quyền phần mềm và hướng dẫn khách hàng dùng phần mềm hợp pháp."
+      },
+      {
+        "content": "Trong nghề Help Desk, kỹ năng giao tiếp quan trọng tương đương với kỹ năng chuyên môn kỹ thuật.",
+        "answer": "Đúng",
+        "explanation": "Giúp người dùng bình tĩnh và mô tả đúng sự cố là chìa khóa để giải quyết vấn đề nhanh hơn."
+      }
+    ]
+  },
+  {
+    "question": "Về hạ tầng hiện đại và quản trị hệ thống (IT Management):",
+    "subQuestions": [
+      {
+        "content": "Hệ thống điện toán đám mây (Cloud) giúp doanh nghiệp loại bỏ hoàn toàn rủi ro về mất mát dữ liệu.",
+        "answer": "Sai",
+        "explanation": "Dù an toàn hơn nhưng vẫn có rủi ro (lỗi người dùng, sự cố nhà cung cấp), nên vẫn cần chiến lược sao lưu riêng."
+      },
+      {
+        "content": "Quản trị viên hệ thống (System Admin) có trách nhiệm cấp quyền truy cập dữ liệu cho nhân viên theo nguyên tắc 'vừa đủ'.",
+        "answer": "Đúng",
+        "explanation": "Nguyên tắc 'Least Privilege' giúp giảm thiểu rủi ro khi một tài khoản bị lộ mật khẩu."
+      },
+      {
+        "content": "Ảo hóa máy chủ giúp giảm chi phí tiền điện và không gian đặt máy chủ cho doanh nghiệp.",
+        "answer": "Đúng",
+        "explanation": "Vì có thể chạy nhiều máy chủ ảo trên 1 máy chủ vật lý duy nhất, giảm số lượng thiết bị phần cứng cần vận hành."
+      },
+      {
+        "content": "Việc giám sát lưu lượng mạng (Network Monitoring) giúp phát hiện sớm các dấu hiệu của một cuộc tấn công từ chối dịch vụ (DDoS).",
+        "answer": "Đúng",
+        "explanation": "Giám sát giúp nhận diện các dòng dữ liệu bất thường tăng đột biến để kịp thời ngăn chặn."
+      }
+    ]
   }
 ]
