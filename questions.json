@@ -1298,5 +1298,135 @@
       "d": "Để không phải làm việc với các hệ thống máy tính hiện đại."
     },
     "answer": "b"
+  },
+  {
+    "id": 101,
+    "topic": "CSS Selectors",
+    "level": "Biết",
+    "question": "Ký hiệu nào dùng để khai báo Bộ chọn định danh (ID Selector) trong CSS?",
+    "options": {
+      "a": "Dấu chấm (.)",
+      "b": "Dấu sao (*)",
+      "c": "Dấu thăng (#)",
+      "d": "Dấu ngoặc vuông ([ ])"
+    },
+    "answer": "c"
+  },
+  {
+    "id": 102,
+    "topic": "CSS Selectors",
+    "level": "Biết",
+    "question": "Bộ chọn lớp (Class Selector) được nhận diện bằng ký hiệu nào phía trước tên lớp?",
+    "options": {
+      "a": "Dấu chấm (.)",
+      "b": "Dấu phẩy (,)",
+      "c": "Dấu hai chấm (:)",
+      "d": "Dấu chấm phẩy (;)"
+    },
+    "answer": "a"
+  },
+  {
+    "id": 103,
+    "topic": "CSS Selectors",
+    "level": "Hiểu",
+    "question": "Quy tắc nào sau đây ĐÚNG khi đặt tên cho một Class hoặc ID?",
+    "options": {
+      "a": "Có thể bắt đầu bằng chữ số (ví dụ: .12A1).",
+      "b": "Không được chứa khoảng trắng (dấu cách).",
+      "c": "Không phân biệt chữ hoa và chữ thường.",
+      "d": "Có thể dùng các ký tự đặc biệt như @, $, %."
+    },
+    "answer": "b"
+  },
+  {
+    "id": 104,
+    "topic": "CSS Selectors",
+    "level": "Vận dụng",
+    "question": "Trong HTML, nếu muốn một phần tử có ID là \"logo\", ta viết như thế nào?",
+    "options": {
+      "a": "<div class=\"logo\">",
+      "b": "<div id=\"#logo\">",
+      "c": "<div id=\"logo\">",
+      "d": "<div select=\"logo\">"
+    },
+    "answer": "c"
+  },
+  {
+    "id": 105,
+    "topic": "CSS Selectors",
+    "level": "Hiểu",
+    "question": "Để chọn tất cả các thẻ <img> có thuộc tính alt (mô tả ảnh), ta dùng bộ chọn nào?",
+    "options": {
+      "a": "img.alt",
+      "b": "img#alt",
+      "c": "img[alt]",
+      "d": "img:alt"
+    },
+    "answer": "c"
+  },
+  {
+    "id": 106,
+    "topic": "CSS Selectors",
+    "level": "Hiểu",
+    "question": "Một phần tử HTML có thể thuộc về nhiều lớp (Class) khác nhau không?",
+    "options": {
+      "a": "Không, chỉ được chọn 1 lớp duy nhất.",
+      "b": "Có, các tên lớp viết cách nhau bởi dấu phẩy.",
+      "c": "Có, các tên lớp viết cách nhau bởi dấu cách.",
+      "d": "Có, mỗi lớp viết trong một thuộc tính class riêng."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 107,
+    "topic": "CSS Selectors",
+    "level": "Hiểu",
+    "question": "Điểm khác biệt lớn nhất giữa ID và Class là gì?",
+    "options": {
+      "a": "ID bắt đầu bằng dấu chấm, Class bắt đầu bằng dấu thăng.",
+      "b": "ID có thể dùng cho nhiều phần tử, Class chỉ dùng cho 1 phần tử.",
+      "c": "ID là duy nhất cho 1 phần tử trên trang, Class có thể dùng cho nhiều phần tử.",
+      "d": "Class có độ ưu tiên cao hơn ID."
+    },
+    "answer": "c"
+  },
+  {
+    "id": 108,
+    "topic": "CSS Selectors",
+    "level": "Vận dụng",
+    "question": "Bộ chọn nào sau đây chọn các thẻ input có thuộc tính type mang giá trị là \"password\"?",
+    "options": {
+      "a": "input(type=password)",
+      "b": "input[type=\"password\"]",
+      "c": "input.password",
+      "d": "input#password"
+    },
+    "answer": "b"
+  },
+  {
+    "id": 109,
+    "topic": "CSS Selectors",
+    "level": "Hiểu",
+    "question": "Tên bộ chọn nào sau đây là KHÔNG hợp lệ?",
+    "options": {
+      "a": ".menu_top",
+      "b": "#MainContent",
+      "c": ".nav-item",
+      "d": ".3-cot"
+    },
+    "answer": "d"
+  },
+  {
+    "id": 110,
+    "topic": "CSS Selectors",
+    "level": "Vận dụng",
+    "question": "Khi viết p.special { color: red; }, trình duyệt sẽ làm gì?",
+    "options": {
+      "a": "Tô đỏ tất cả các thẻ <p>.",
+      "b": "Tô đỏ tất cả các phần tử có lớp special.",
+      "c": "Chỉ tô đỏ những thẻ <p> có thuộc tính class=\"special\".",
+      "d": "Tô đỏ tất cả các thẻ <p> và tất cả các lớp special."
+    },
+    "answer": "c"
   }
 ]
