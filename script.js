@@ -148,9 +148,17 @@ function renderAllQuestions() {
         qBlock.className = 'question-block';
         qBlock.id = `q-block-${index}`;
         qBlock.dataset.subFinished = 0; 
-        const questionTitle = escapeHtml(data.question);
+        
+        let questionTitle = "";
+        // Bổ sung hiển thị Topic nếu có (giúp UI sinh động hơn)
+        if(data.topic) {
+            questionTitle = `<span style="color: #666; font-size: 0.85em; display: block; margin-bottom: 4px;">[${escapeHtml(data.topic)}]</span>`;
+        }
+        questionTitle += escapeHtml(data.question);
+
         let contentHtml = "";
         
+        // Vẫn giữ lại logic subQuestions đề phòng bạn có file dungsai.json dùng cấu trúc khác
         if (data.subQuestions && Array.isArray(data.subQuestions)) {
             contentHtml = data.subQuestions.map((sub, subIdx) => {
                 const explainHtml = sub.explanation ? `<div class="explanation explanation-box hidden"><strong>Giải thích:</strong> ${escapeHtml(sub.explanation)}</div>` : '';
@@ -167,8 +175,16 @@ function renderAllQuestions() {
             const opts = data.options;
             let optionsHtml = "";
             
-            // --- PHẦN SỬA: HIỂN THỊ TẤT CẢ ĐÁP ÁN TỪ MẢNG ---
-            if (Array.isArray(opts)) {
+            // --- CẬP NHẬT CHÍNH: Render Options từ dạng object {"a": "...", "b": "..."} ---
+            if (opts && typeof opts === 'object' && !Array.isArray(opts)) {
+                optionsHtml = Object.entries(opts).map(([key, val]) => {
+                    return `<div class="option-item" onclick="handleSelect(this, ${index}, '${key}')">
+                                <input type="radio" name="q${index}">
+                                <span><strong>${key.toUpperCase()}.</strong> ${escapeHtml(val)}</span>
+                            </div>`;
+                }).join('');
+            } else if (Array.isArray(opts)) {
+                // Fallback nếu bạn vẫn dùng mảng ở file khác
                 const keys = ['a', 'b', 'c', 'd', 'e', 'f'];
                 optionsHtml = opts.map((opt, i) => {
                     const key = keys[i] || 'z';
@@ -177,14 +193,13 @@ function renderAllQuestions() {
                                 <span>${escapeHtml(opt)}</span>
                             </div>`;
                 }).join('');
-            } else {
-                optionsHtml = Object.entries(opts).map(([key, val]) => `<div class="option-item" onclick="handleSelect(this, ${index}, '${key}')"><input type="radio" name="q${index}"><span>${escapeHtml(val)}</span></div>`).join('');
             }
             
             const explainHtml = data.explanation ? `<div class="explanation explanation-box hidden"><strong>Giải thích:</strong> ${escapeHtml(data.explanation)}</div>` : '';
             contentHtml = `<div class="option-list">${optionsHtml}</div>${explainHtml}`;
         }
-        qBlock.innerHTML = `<div class="question-text">Câu ${index + 1}: ${questionTitle}</div><div class="content-area">${contentHtml}</div>`;
+        
+        qBlock.innerHTML = `<div class="question-text">Câu ${index + 1}: <br>${questionTitle}</div><div class="content-area">${contentHtml}</div>`;
         feed.appendChild(qBlock);
     });
     
@@ -203,16 +218,10 @@ function handleSelect(element, qIndex, selectedKey) {
     if(radio) radio.checked = true;
     
     const data = userQuestions[qIndex];
-    let correctKey = "";
-
-    // --- PHẦN SỬA: LOGIC KIỂM TRA ĐÁP ÁN ĐÚNG ---
-    if (Array.isArray(data.options)) {
-        // Lấy giá trị answer (ví dụ "b") từ JSON để so sánh với selectedKey
-        correctKey = String(data.answer).toLowerCase();
-    } else {
-        const entry = Object.entries(data.options).find(([k, v]) => v === data.answer);
-        correctKey = entry ? entry[0] : String(data.answer).toLowerCase();
-    }
+    
+    // --- CẬP NHẬT CHÍNH: So sánh trực tiếp key ---
+    // Vì JSON mới đã lưu `answer: "b"` nên chỉ cần so sánh trực tiếp selectedKey với answer
+    const correctKey = String(data.answer).toLowerCase();
     
     if (selectedKey === correctKey) {
         element.classList.add('correct'); 
@@ -226,6 +235,7 @@ function handleSelect(element, qIndex, selectedKey) {
     }
 }
 
+// Hàm này giữ nguyên để tương thích với câu hỏi đúng/sai
 function handleSubSelect(element, qIndex, subIdx, selectedValue) {
     const subContainer = document.getElementById(`sub-container-${qIndex}-${subIdx}`);
     if (subContainer.classList.contains('sub-completed')) return;
