@@ -34,11 +34,10 @@ if(themeToggle) {
 }
 
 // ==========================================
-// 2. LOGIC THÔNG BÁO CẬP NHẬT (THÔNG MINH)
+// 2. LOGIC THÔNG BÁO CẬP NHẬT
 // ==========================================
 function showUpdateNotification() {
     const toast = document.getElementById('update-toast');
-    // Kiểm tra xem trong phiên làm việc này người dùng đã nhấn đóng chưa
     const isClosedThisSession = sessionStorage.getItem('closedUpdateToast');
 
     if (toast && !isClosedThisSession) { 
@@ -63,10 +62,7 @@ function closeToast() {
     const toast = document.getElementById('update-toast');
     if(toast) {
         toast.classList.remove('show');
-        // Lưu vào sessionStorage: Sẽ không hiện lại khi nhấn nút Trang chủ
-        // Nhưng F5 hoặc mở tab mới sẽ hiện lại.
         sessionStorage.setItem('closedUpdateToast', 'true');
-        
         setTimeout(() => {
             toast.classList.add('toast-hidden');
         }, 300);
@@ -90,8 +86,6 @@ function escapeHtml(text) {
 
 async function init() {
     initTheme();
-    
-    // Gọi hàm hiện thông báo (đã có check sessionStorage bên trong)
     showUpdateNotification();
 
     try {
@@ -108,7 +102,6 @@ async function init() {
     }
 }
 
-// Khởi chạy
 init();
 
 // ==========================================
@@ -144,10 +137,6 @@ function resetAndRender() {
     if(scrollArea) scrollArea.scrollTop = 0;
 }
 
-function restartQuiz() { 
-    resetAndRender(); 
-}
-
 document.getElementById('btn-tracnghiem')?.addEventListener('click', () => startGame('questions.json'));
 document.getElementById('btn-dungsai')?.addEventListener('click', () => startGame('dungsai.json'));
 
@@ -177,12 +166,21 @@ function renderAllQuestions() {
         } else {
             const opts = data.options;
             let optionsHtml = "";
+            
+            // --- PHẦN SỬA: HIỂN THỊ TẤT CẢ ĐÁP ÁN TỪ MẢNG ---
             if (Array.isArray(opts)) {
-                optionsHtml = `<div class="option-item" onclick="handleSelect(this, ${index}, 'a')"><input type="radio" name="q${index}"><span>${escapeHtml(opts[0])}</span></div>
-                               <div class="option-item" onclick="handleSelect(this, ${index}, 'b')"><input type="radio" name="q${index}"><span>${escapeHtml(opts[1])}</span></div>`;
+                const keys = ['a', 'b', 'c', 'd', 'e', 'f'];
+                optionsHtml = opts.map((opt, i) => {
+                    const key = keys[i] || 'z';
+                    return `<div class="option-item" onclick="handleSelect(this, ${index}, '${key}')">
+                                <input type="radio" name="q${index}">
+                                <span>${escapeHtml(opt)}</span>
+                            </div>`;
+                }).join('');
             } else {
                 optionsHtml = Object.entries(opts).map(([key, val]) => `<div class="option-item" onclick="handleSelect(this, ${index}, '${key}')"><input type="radio" name="q${index}"><span>${escapeHtml(val)}</span></div>`).join('');
             }
+            
             const explainHtml = data.explanation ? `<div class="explanation explanation-box hidden"><strong>Giải thích:</strong> ${escapeHtml(data.explanation)}</div>` : '';
             contentHtml = `<div class="option-list">${optionsHtml}</div>${explainHtml}`;
         }
@@ -206,8 +204,11 @@ function handleSelect(element, qIndex, selectedKey) {
     
     const data = userQuestions[qIndex];
     let correctKey = "";
+
+    // --- PHẦN SỬA: LOGIC KIỂM TRA ĐÁP ÁN ĐÚNG ---
     if (Array.isArray(data.options)) {
-        correctKey = (data.answer === data.options[0]) ? "a" : "b";
+        // Lấy giá trị answer (ví dụ "b") từ JSON để so sánh với selectedKey
+        correctKey = String(data.answer).toLowerCase();
     } else {
         const entry = Object.entries(data.options).find(([k, v]) => v === data.answer);
         correctKey = entry ? entry[0] : String(data.answer).toLowerCase();
