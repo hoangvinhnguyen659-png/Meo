@@ -1,902 +1,1082 @@
 [
   {
+    "id": 1,
+    "topic": "Phan Bội Châu & Phan Châu Trinh",
     "question": "Đầu năm 1905, Phan Bội Châu sang Nhật Bản nhằm mục đích chính là gì?",
-    "options": [
-      "a. Kêu gọi vốn đầu tư cho kinh tế Việt Nam.",
-      "b. Nhờ giúp đỡ về khí giới và đào tạo nhân lực cứu nước.",
-      "c. Tham quan mô hình giáo dục của Nhật Bản.",
-      "d. Thành lập chi bộ Đảng tại Tokyo."
-    ],
+    "options": {
+      "a": "Kêu gọi vốn đầu tư cho kinh tế Việt Nam.",
+      "b": "Nhờ giúp đỡ về khí giới và đào tạo nhân lực cứu nước.",
+      "c": "Tham quan mô hình giáo dục của Nhật Bản.",
+      "d": "Thành lập chi bộ Đảng tại Tokyo."
+    },
     "answer": "b"
   },
   {
+    "id": 2,
+    "topic": "Phan Bội Châu & Phan Châu Trinh",
     "question": "Phong trào \"Đông Du\" gắn liền với hoạt động của ai tại Nhật Bản?",
-    "options": [
-      "a. Phan Châu Trinh.",
-      "b. Nguyễn Ái Quốc.",
-      "c. Phan Bội Châu.",
-      "d. Huỳnh Thúc Kháng."
-    ],
+    "options": {
+      "a": "Phan Châu Trinh.",
+      "b": "Nguyễn Ái Quốc.",
+      "c": "Phan Bội Châu.",
+      "d": "Huỳnh Thúc Kháng."
+    },
     "answer": "c"
   },
   {
+    "id": 3,
+    "topic": "Phan Bội Châu & Phan Châu Trinh",
     "question": "Năm 1908, Phan Bội Châu tham gia thành lập tổ chức quốc tế nào để hợp sức chống đế quốc?",
-    "options": [
-      "a. Việt Nam Quang phục hội.",
-      "b. Hội Liên hiệp thuộc địa.",
-      "c. Đông Á đồng minh.",
-      "d. Hội Duy tân."
-    ],
+    "options": {
+      "a": "Việt Nam Quang phục hội.",
+      "b": "Hội Liên hiệp thuộc địa.",
+      "c": "Đông Á đồng minh.",
+      "d": "Hội Duy tân."
+    },
     "answer": "c"
   },
   {
+    "id": 4,
+    "topic": "Phan Bội Châu & Phan Châu Trinh",
     "question": "Tổ chức cách mạng nào được Phan Bội Châu thành lập tại Trung Quốc vào năm 1912?",
-    "options": [
-      "a. Hội Duy tân.",
-      "b. Việt Nam Quang phục hội.",
-      "c. Hội Liên hiệp các dân tộc bị áp bức Á Đông.",
-      "d. Việt Nam Thanh niên Cách mạng Đồng chí hội."
-    ],
+    "options": {
+      "a": "Hội Duy tân.",
+      "b": "Việt Nam Quang phục hội.",
+      "c": "Hội Liên hiệp các dân tộc bị áp bức Á Đông.",
+      "d": "Việt Nam Thanh niên Cách mạng Đồng chí hội."
+    },
     "answer": "b"
   },
   {
+    "id": 5,
+    "topic": "Phan Bội Châu & Phan Châu Trinh",
     "question": "Hoạt động đối ngoại của Phan Châu Trinh (từ năm 1911) chủ yếu diễn ra tại quốc gia nào?",
-    "options": [
-      "a. Nhật Bản.",
-      "b. Trung Quốc.",
-      "c. Pháp.",
-      "d. Thái Lan."
-    ],
+    "options": {
+      "a": "Nhật Bản.",
+      "b": "Trung Quốc.",
+      "c": "Pháp.",
+      "d": "Thái Lan."
+    },
     "answer": "c"
   },
   {
+    "id": 6,
+    "topic": "Phan Bội Châu & Phan Châu Trinh",
     "question": "Mục đích chính trong các hoạt động đối ngoại của Phan Châu Trinh là gì?",
-    "options": [
-      "a. Vận động cải cách cho Việt Nam và thức tỉnh dư luận Pháp.",
-      "b. Tìm kiếm sự hỗ trợ quân sự để lật đổ chính quyền thực dân.",
-      "c. Thành lập liên minh quân sự với các nước Đông Nam Á.",
-      "d. Truyền bá chủ nghĩa Mác - Lênin vào Việt Nam."
-    ],
+    "options": {
+      "a": "Vận động cải cách cho Việt Nam và thức tỉnh dư luận Pháp.",
+      "b": "Tìm kiếm sự hỗ trợ quân sự để lật đổ chính quyền thực dân.",
+      "c": "Thành lập liên minh quân sự với các nước Đông Nam Á.",
+      "d": "Truyền bá chủ nghĩa Mác - Lênin vào Việt Nam."
+    },
     "answer": "a"
   },
   {
+    "id": 7,
+    "topic": "Nguyễn Ái Quốc (1911-1930)",
     "question": "Trong giai đoạn 1911 - 1922, Nguyễn Ái Quốc đã có hoạt động đối ngoại nổi bật nào tại Pháp?",
-    "options": [
-      "a. Thành lập Việt Nam Quang phục hội.",
-      "b. Tham gia sáng lập Đảng Cộng sản Pháp (1920).",
-      "c. Thành lập Hội Việt Nam Cách mạng Thanh niên.",
-      "d. Tổ chức phong trào Đông Du."
-    ],
+    "options": {
+      "a": "Thành lập Việt Nam Quang phục hội.",
+      "b": "Tham gia sáng lập Đảng Cộng sản Pháp (1920).",
+      "c": "Thành lập Hội Việt Nam Cách mạng Thanh niên.",
+      "d": "Tổ chức phong trào Đông Du."
+    },
     "answer": "b"
   },
   {
+    "id": 8,
+    "topic": "Nguyễn Ái Quốc (1911-1930)",
     "question": "Hội Liên hiệp thuộc địa (sáng lập năm 1921) do Nguyễn Ái Quốc làm nòng cốt nhằm mục đích gì?",
-    "options": [
-      "a. Liên kết các dân tộc bị áp bức trong cuộc đấu tranh chống chủ nghĩa thực dân.",
-      "b. Xây dựng quân đội chung cho các nước Đông Dương.",
-      "c. Đào tạo cán bộ quân sự cho các nước Đông Nam Á.",
-      "d. Vận động chính phủ Pháp trao trả độc lập cho thuộc địa."
-    ],
+    "options": {
+      "a": "Liên kết các dân tộc bị áp bức trong cuộc đấu tranh chống chủ nghĩa thực dân.",
+      "b": "Xây dựng quân đội chung cho các nước Đông Dương.",
+      "c": "Đào tạo cán bộ quân sự cho các nước Đông Nam Á.",
+      "d": "Vận động chính phủ Pháp trao trả độc lập cho thuộc địa."
+    },
     "answer": "a"
   },
   {
+    "id": 9,
+    "topic": "Nguyễn Ái Quốc (1911-1930)",
     "question": "Tháng 6 - 1923, Nguyễn Ái Quốc rời Pháp để sang quốc gia nào?",
-    "options": [
-      "a. Nhật Bản.",
-      "b. Trung Quốc.",
-      "c. Liên Xô.",
-      "d. Thái Lan."
-    ],
+    "options": {
+      "a": "Nhật Bản.",
+      "b": "Trung Quốc.",
+      "c": "Liên Xô.",
+      "d": "Thái Lan."
+    },
     "answer": "c"
   },
   {
+    "id": 10,
+    "topic": "Nguyễn Ái Quốc (1911-1930)",
     "question": "Tại Liên Xô, Nguyễn Ái Quốc đã xác lập mối quan hệ gì cho cách mạng Việt Nam?",
-    "options": [
-      "a. Quan hệ đồng minh với Mỹ.",
-      "b. Quan hệ giữa cách mạng Việt Nam với Quốc tế Cộng sản và cách mạng thế giới.",
-      "c. Quan hệ ngoại giao chính thức với chính phủ Nga.",
-      "d. Quan hệ kinh tế với các nước Đông Âu."
-    ],
+    "options": {
+      "a": "Quan hệ đồng minh với Mỹ.",
+      "b": "Quan hệ giữa cách mạng Việt Nam với Quốc tế Cộng sản và cách mạng thế giới.",
+      "c": "Quan hệ ngoại giao chính thức với chính phủ Nga.",
+      "d": "Quan hệ kinh tế với các nước Đông Âu."
+    },
     "answer": "b"
   },
   {
+    "id": 11,
+    "topic": "Nguyễn Ái Quốc (1911-1930)",
     "question": "Tháng 7 - 1925, tại Quảng Châu (Trung Quốc), Nguyễn Ái Quốc đã tham gia thành lập tổ chức nào?",
-    "options": [
-      "a. Hội Liên hiệp các dân tộc bị áp bức Á Đông.",
-      "b. Việt Nam Quang phục hội.",
-      "c. Đảng Cộng sản Trung Quốc.",
-      "d. Tâm tâm xã."
-    ],
+    "options": {
+      "a": "Hội Liên hiệp các dân tộc bị áp bức Á Đông.",
+      "b": "Việt Nam Quang phục hội.",
+      "c": "Đảng Cộng sản Trung Quốc.",
+      "d": "Tâm tâm xã."
+    },
     "answer": "a"
   },
   {
+    "id": 12,
+    "topic": "Đảng Cộng sản Đông Dương (1930-1945)",
     "question": "Hoạt động đối ngoại của Đảng Cộng sản Đông Dương giai đoạn 1930 - 1945 nhằm mục đích chủ yếu là?",
-    "options": [
-      "a. Phục vụ cuộc đấu tranh chống thực dân, phát xít, giành độc lập.",
-      "b. Mở rộng giao thương với các nước tư bản phương Tây.",
-      "c. Tìm kiếm nguồn viện trợ tài chính từ các tổ chức quốc tế.",
-      "d. Kêu gọi các nước đầu tư vào công nghiệp khai khoáng."
-    ],
+    "options": {
+      "a": "Phục vụ cuộc đấu tranh chống thực dân, phát xít, giành độc lập.",
+      "b": "Mở rộng giao thương với các nước tư bản phương Tây.",
+      "c": "Tìm kiếm nguồn viện trợ tài chính từ các tổ chức quốc tế.",
+      "d": "Kêu gọi các nước đầu tư vào công nghiệp khai khoáng."
+    },
     "answer": "a"
   },
   {
+    "id": 13,
+    "topic": "Đảng Cộng sản Đông Dương (1930-1945)",
     "question": "Đảng Cộng sản Đông Dương là một bộ phận (phân bộ) của tổ chức nào?",
-    "options": [
-      "a. Hội Liên minh các dân tộc.",
-      "b. Quốc tế Cộng sản.",
-      "c. Khối Đồng minh chống phát xít.",
-      "d. Mặt trận nhân dân thế giới."
-    ],
+    "options": {
+      "a": "Hội Liên minh các dân tộc.",
+      "b": "Quốc tế Cộng sản.",
+      "c": "Khối Đồng minh chống phát xít.",
+      "d": "Mặt trận nhân dân thế giới."
+    },
     "answer": "b"
   },
   {
+    "id": 14,
+    "topic": "Đảng Cộng sản Đông Dương (1930-1945)",
     "question": "Trong giai đoạn chiến tranh thế giới thứ hai, Đảng Cộng sản Đông Dương đã có hoạt động nào để ủng hộ Liên Xô?",
-    "options": [
-      "a. Gửi quân đội sang giúp Liên Xô đánh Đức.",
-      "b. Tổ chức phong trào đấu tranh ủng hộ Liên Xô chống phát xít.",
-      "c. Cung cấp lương thực cho Hồng quân Liên Xô.",
-      "d. Thành lập chi bộ Đảng tại Mát-xcơ-va."
-    ],
+    "options": {
+      "a": "Gửi quân đội sang giúp Liên Xô đánh Đức.",
+      "b": "Tổ chức phong trào đấu tranh ủng hộ Liên Xô chống phát xít.",
+      "c": "Cung cấp lương thực cho Hồng quân Liên Xô.",
+      "d": "Thành lập chi bộ Đảng tại Mát-xcơ-va."
+    },
     "answer": "b"
   },
   {
+    "id": 15,
+    "topic": "Đảng Cộng sản Đông Dương (1930-1945)",
     "question": "Để chống lại quân phiệt Nhật ở Đông Nam Á, Đảng Cộng sản Đông Dương đã liên lạc với phong trào dân tộc ở các nước nào?",
-    "options": [
-      "a. Anh, Pháp, Đức.",
-      "b. Miến Điện, Mã Lai, Phi-líp-pin, Thái Lan, In-đô-nê-xi-a.",
-      "c. Ấn Độ, Ai Cập, Nam Phi.",
-      "d. Triều Tiên, Mông Cổ."
-    ],
+    "options": {
+      "a": "Anh, Pháp, Đức.",
+      "b": "Miến Điện, Mã Lai, Phi-líp-pin, Thái Lan, In-đô-nê-xi-a.",
+      "c": "Ấn Độ, Ai Cập, Nam Phi.",
+      "d": "Triều Tiên, Mông Cổ."
+    },
     "answer": "b"
   },
   {
+    "id": 16,
+    "topic": "Đảng Cộng sản Đông Dương (1930-1945)",
     "question": "Thông qua Mặt trận nào, Đảng Cộng sản Đông Dương đã thể hiện chủ trương đứng về phía lực lượng Đồng minh?",
-    "options": [
-      "a. Mặt trận Thống nhất nhân dân phản đế Đông Dương.",
-      "b. Mặt trận Việt Minh.",
-      "c. Mặt trận Dân chủ Đông Dương.",
-      "d. Mặt trận Liên Việt."
-    ],
+    "options": {
+      "a": "Mặt trận Thống nhất nhân dân phản đế Đông Dương.",
+      "b": "Mặt trận Việt Minh.",
+      "c": "Mặt trận Dân chủ Đông Dương.",
+      "d": "Mặt trận Liên Việt."
+    },
     "answer": "b"
   },
   {
+    "id": 17,
+    "topic": "Đảng Cộng sản Đông Dương (1930-1945)",
     "question": "Cuối tháng 4 - 1945, Việt Minh đã thiết lập quan hệ hợp tác với cơ quan nào của Mỹ tại châu Á?",
-    "options": [
-      "a. CIA.",
-      "b. FBI.",
-      "c. Cơ quan Tình báo chiến lược (OSS).",
-      "d. Bộ Ngoại giao Mỹ."
-    ],
+    "options": {
+      "a": "CIA.",
+      "b": "FBI.",
+      "c": "Cơ quan Tình báo chiến lược (OSS).",
+      "d": "Bộ Ngoại giao Mỹ."
+    },
     "answer": "c"
   },
   {
+    "id": 18,
+    "topic": "So sánh & Tổng hợp",
     "question": "Sự khác biệt về hướng đi tìm đường cứu nước của Phan Bội Châu và Phan Châu Trinh là?",
-    "options": [
-      "a. Phan Bội Châu dựa vào Nhật, Phan Châu Trinh dựa vào Pháp để cải cách.",
-      "b. Phan Bội Châu sang Pháp, Phan Châu Trinh sang Nhật.",
-      "c. Phan Bội Châu sang Mỹ, Phan Châu Trinh sang Trung Quốc.",
-      "d. Cả hai đều cùng sang Liên Xô tìm đường cứu nước."
-    ],
+    "options": {
+      "a": "Phan Bội Châu dựa vào Nhật, Phan Châu Trinh dựa vào Pháp để cải cách.",
+      "b": "Phan Bội Châu sang Pháp, Phan Châu Trinh sang Nhật.",
+      "c": "Phan Bội Châu sang Mỹ, Phan Châu Trinh sang Trung Quốc.",
+      "d": "Cả hai đều cùng sang Liên Xô tìm đường cứu nước."
+    },
     "answer": "a"
   },
   {
+    "id": 19,
+    "topic": "Nguyễn Ái Quốc (1911-1930)",
     "question": "Ý nghĩa của việc Nguyễn Ái Quốc tham dự các hội nghị của Quốc tế Cộng sản tại Liên Xô là gì?",
-    "options": [
-      "a. Để tìm kiếm việc làm tại Nga.",
-      "b. Trình bày quan điểm về vai trò cách mạng thuộc địa và gắn kết cách mạng Việt Nam với thế giới.",
-      "c. Để học cách sử dụng vũ khí hiện đại.",
-      "d. Để vận động Liên Xô đưa quân sang đánh Pháp."
-    ],
+    "options": {
+      "a": "Để tìm kiếm việc làm tại Nga.",
+      "b": "Trình bày quan điểm về vai trò cách mạng thuộc địa và gắn kết cách mạng Việt Nam với thế giới.",
+      "c": "Để học cách sử dụng vũ khí hiện đại.",
+      "d": "Để vận động Liên Xô đưa quân sang đánh Pháp."
+    },
     "answer": "b"
   },
   {
+    "id": 20,
+    "topic": "Đảng Cộng sản Đông Dương (1930-1945)",
     "question": "Việc Việt Minh hợp tác với \"Biệt đội Con Nai\" của Mỹ (1945) nhằm mục đích gì?",
-    "options": [
-      "a. Chuẩn bị cho cuộc kháng chiến chống Mỹ sau này.",
-      "b. Hợp tác huấn luyện quân sự và phối hợp chống phát xít Nhật.",
-      "c. Nhờ Mỹ công nhận nền độc lập của Việt Nam tại Liên Hợp Quốc.",
-      "d. Vay tiền để mua sắm vũ khí từ Anh."
-    ],
+    "options": {
+      "a": "Chuẩn bị cho cuộc kháng chiến chống Mỹ sau này.",
+      "b": "Hợp tác huấn luyện quân sự và phối hợp chống phát xít Nhật.",
+      "c": "Nhờ Mỹ công nhận nền độc lập của Việt Nam tại Liên Hợp Quốc.",
+      "d": "Vay tiền để mua sắm vũ khí từ Anh."
+    },
     "answer": "b"
   },
   {
+    "id": 21,
+    "topic": "Phan Bội Châu & Phan Châu Trinh",
     "question": "Trong giai đoạn ở Nhật (1905-1908), Phan Bội Châu đã đưa bao nhiêu thanh niên Việt Nam sang học tập tại các trường tư thục?",
-    "options": [
-      "a. 50 thanh niên.",
-      "b. 100 thanh niên.",
-      "c. 200 thanh niên.",
-      "d. 500 thanh niên."
-    ],
+    "options": {
+      "a": "50 thanh niên.",
+      "b": "100 thanh niên.",
+      "c": "200 thanh niên.",
+      "d": "500 thanh niên."
+    },
     "answer": "c"
   },
   {
+    "id": 22,
+    "topic": "Phan Bội Châu & Phan Châu Trinh",
     "question": "Tổ chức \"Điền - Quế - Việt liên minh\" do Phan Bội Châu tham gia thành lập năm 1908 là sự liên minh giữa Việt Nam với các tỉnh nào của Trung Quốc?",
-    "options": [
-      "a. Quảng Đông và Quảng Tây.",
-      "b. Vân Nam và Quảng Tây.",
-      "c. Vân Nam và Phúc Kiến.",
-      "d. Tứ Xuyên và Vân Nam."
-    ],
+    "options": {
+      "a": "Quảng Đông và Quảng Tây.",
+      "b": "Vân Nam và Quảng Tây.",
+      "c": "Vân Nam và Phúc Kiến.",
+      "d": "Tứ Xuyên và Vân Nam."
+    },
     "answer": "b"
   },
   {
+    "id": 23,
+    "topic": "Phan Bội Châu & Phan Châu Trinh",
     "question": "Năm 1912, ngoài Việt Nam Quang phục hội, Phan Bội Châu còn tham gia thành lập tổ chức nào tại Trung Quốc?",
-    "options": [
-      "a. Hội Phục Việt.",
-      "b. Chấn Hoa Hưng Á.",
-      "c. Đảng Lập hiến.",
-      "d. Hội Phản đế đồng minh."
-    ],
+    "options": {
+      "a": "Hội Phục Việt.",
+      "b": "Chấn Hoa Hưng Á.",
+      "c": "Đánh Lập hiến.",
+      "d": "Hội Phản đế đồng minh."
+    },
     "answer": "b"
   },
   {
+    "id": 24,
+    "topic": "Phan Bội Châu & Phan Châu Trinh",
     "question": "Phan Bội Châu đã cử người liên lạc với những cơ quan ngoại giao nào tại Trung Quốc để tìm sự giúp đỡ chống Pháp?",
-    "options": [
-      "a. Công sứ Đức và Đại sứ quán Nga.",
-      "b. Đại sứ quán Anh và Mỹ.",
-      "c. Tổng lãnh sự Nhật và Ý.",
-      "d. Phái đoàn Thái Lan."
-    ],
+    "options": {
+      "a": "Công sứ Đức và Đại sứ quán Nga.",
+      "b": "Đại sứ quán Anh và Mỹ.",
+      "c": "Tổng lãnh sự Nhật và Ý.",
+      "d": "Phái đoàn Thái Lan."
+    },
     "answer": "a"
   },
   {
+    "id": 25,
+    "topic": "Phan Bội Châu & Phan Châu Trinh",
     "question": "Phan Châu Trinh đã đóng vai trò quan trọng trong việc thành lập tổ chức nào tại Pháp?",
-    "options": [
-      "a. Hội người Việt Nam yêu nước tại Pháp.",
-      "b. Đảng Cộng sản Pháp.",
-      "c. Hội Liên hiệp thuộc địa.",
-      "d. Một số tổ chức yêu nước Việt Nam tại Pháp."
-    ],
+    "options": {
+      "a": "Hội người Việt Nam yêu nước tại Pháp.",
+      "b": "Đảng Cộng sản Pháp.",
+      "c": "Hội Liên hiệp thuộc địa.",
+      "d": "Một số tổ chức yêu nước Việt Nam tại Pháp."
+    },
     "answer": "d"
   },
   {
+    "id": 26,
+    "topic": "Nguyễn Ái Quốc (1911-1930)",
     "question": "Trên cương vị nào Nguyễn Ái Quốc đã tích cực xây dựng mối quan hệ giữa người cộng sản Pháp với nhân dân các thuộc địa?",
-    "options": [
-      "a. Trưởng ban Nghiên cứu về Đông Dương của Đảng Cộng sản Pháp.",
-      "b. Tổng thư ký Hội Liên hiệp thuộc địa.",
-      "c. Đại diện Quốc tế Cộng sản tại châu Á.",
-      "d. Chủ tịch Hội Liên hiệp các dân tộc bị áp bức."
-    ],
+    "options": {
+      "a": "Trưởng ban Nghiên cứu về Đông Dương của Đảng Cộng sản Pháp.",
+      "b": "Tổng thư ký Hội Liên hiệp thuộc địa.",
+      "c": "Đại diện Quốc tế Cộng sản tại châu Á.",
+      "d": "Chủ tịch Hội Liên hiệp các dân tộc bị áp bức."
+    },
     "answer": "a"
   },
   {
+    "id": 27,
+    "topic": "Nguyễn Ái Quốc (1911-1930)",
     "question": "Theo nội dung phần \"Em có biết\", Tuyên ngôn của Hội Liên hiệp các dân tộc bị áp bức (1925) khẳng định con đường duy nhất để xóa bỏ áp bức là gì?",
-    "options": [
-      "a. Kêu gọi sự giúp đỡ của các nước lớn.",
-      "b. Liên hiệp các dân tộc nhỏ yếu bị áp bức và giai cấp vô sản thế giới.",
-      "c. Chờ đợi sự cải cách từ chính quyền thực dân.",
-      "d. Đấu tranh nghị trường tại chính quốc."
-    ],
+    "options": {
+      "a": "Kêu gọi sự giúp đỡ của các nước lớn.",
+      "b": "Liên hiệp các dân tộc nhỏ yếu bị áp bức và giai cấp vô sản thế giới.",
+      "c": "Chờ đợi sự cải cách từ chính quyền thực dân.",
+      "d": "Đấu tranh nghị trường tại chính quốc."
+    },
     "answer": "b"
   },
   {
+    "id": 28,
+    "topic": "Nguyễn Ái Quốc (1911-1930)",
     "question": "Trong các bài giảng tại Quảng Châu (Trung Quốc), Nguyễn Ái Quốc nhấn mạnh sự cần thiết của điều gì?",
-    "options": [
-      "a. Phải mua thật nhiều vũ khí hiện đại.",
-      "b. Phải đoàn kết và tập hợp lực lượng quốc tế.",
-      "c. Phải sang Mỹ để học cách làm kinh tế.",
-      "d. Phải liên lạc với các nước phát xít."
-    ],
+    "options": {
+      "a": "Phải mua thật nhiều vũ khí hiện đại.",
+      "b": "Phải đoàn kết và tập hợp lực lượng quốc tế.",
+      "c": "Phải sang Mỹ để học cách làm kinh tế.",
+      "d": "Phải liên lạc với các nước phát xít."
+    },
     "answer": "b"
   },
   {
+    "id": 29,
+    "topic": "Đảng Cộng sản Đông Dương (1930-1945)",
     "question": "Đảng Cộng sản Đông Dương đã phối hợp với các tổ chức của người Pháp và người Hoa để làm gì trong giai đoạn 1930 - 1945?",
-    "options": [
-      "a. Quyên góp giúp đỡ nạn nhân chiến tranh ở Trung Quốc.",
-      "b. Thành lập chính phủ liên hiệp tại Pháp.",
-      "c. Buôn bán vũ khí xuyên quốc gia.",
-      "d. Tổ chức các cuộc thi văn hóa quốc tế."
-    ],
+    "options": {
+      "a": "Quyên góp giúp đỡ nạn nhân chiến tranh ở Trung Quốc.",
+      "b": "Thành lập chính phủ liên hiệp tại Pháp.",
+      "c": "Buôn bán vũ khí xuyên quốc gia.",
+      "d": "Tổ chức các cuộc thi văn hóa quốc tế."
+    },
     "answer": "a"
   },
   {
+    "id": 30,
+    "topic": "Đảng Cộng sản Đông Dương (1930-1945)",
     "question": "Địa điểm diễn ra sự hợp tác giữa Việt Minh và \"Biệt đội Con Nai\" của OSS Mỹ năm 1945 là ở đâu?",
-    "options": [
-      "a. Pác Bó (Cao Bằng).",
-      "b. Tân Trào (Tuyên Quang).",
-      "c. Đình Bảng (Bắc Ninh).",
-      "d. Ba Đình (Hà Nội)."
-    ],
+    "options": {
+      "a": "Pác Bó (Cao Bằng).",
+      "b": "Tân Trào (Tuyên Quang).",
+      "c": "Đình Bảng (Bắc Ninh).",
+      "d": "Ba Đình (Hà Nội)."
+    },
     "answer": "b"
   },
   {
+    "id": 31,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Chỉ thị \"Kháng chiến kiến quốc\" (25-11-1945) xác định nguyên tắc đối ngoại nào?",
-    "options": [
-      "a. Dựa hoàn toàn vào các nước lớn.",
-      "b. \"Bình đẳng và tương trợ\".",
-      "c. Đối đầu với tất cả các nước tư bản.",
-      "d. Chỉ quan hệ với các nước xã hội chủ nghĩa."
-    ],
+    "options": {
+      "a": "Dựa hoàn toàn vào các nước lớn.",
+      "b": "\"Bình đẳng và tương trợ\".",
+      "c": "Đối đầu với tất cả các nước tư bản.",
+      "d": "Chỉ quan hệ với các nước xã hội chủ nghĩa."
+    },
     "answer": "b"
   },
   {
+    "id": 32,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Thuật ngoại giao được nêu trong chỉ thị ngày 25-11-1945 là gì?",
-    "options": [
-      "a. Làm cho nước mình nhiều bạn đồng minh hơn hết.",
-      "b. Làm cho nước mình ít kẻ thù và nhiều bạn đồng minh hơn hết.",
-      "c. Sử dụng quân sự để gây áp lực ngoại giao.",
-      "d. Kêu gọi sự can thiệp của Liên Hợp Quốc."
-    ],
+    "options": {
+      "a": "Làm cho nước mình nhiều bạn đồng minh hơn hết.",
+      "b": "Làm cho nước mình ít kẻ thù và nhiều bạn đồng minh hơn hết.",
+      "c": "Sử dụng quân sự để gây áp lực ngoại giao.",
+      "d": "Kêu gọi sự can thiệp của Liên Hợp Quốc."
+    },
     "answer": "b"
   },
   {
+    "id": 33,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Mục đích của việc ký Hiệp định Sơ bộ (6-3-1946) với Pháp là gì?",
-    "options": [
-      "a. Để công nhận Việt Nam là quốc gia độc lập hoàn toàn.",
-      "b. Để quân Pháp thay quân Trung Hoa Dân quốc giải giáp quân Nhật và kéo dài thời gian hòa bình.",
-      "c. Để kết thúc cuộc kháng chiến chống Pháp.",
-      "d. Để nhờ Pháp đánh quân Trung Hoa Dân quốc."
-    ],
+    "options": {
+      "a": "Để công nhận Việt Nam là quốc gia độc lập hoàn toàn.",
+      "b": "Để quân Pháp thay quân Trung Hoa Dân quốc giải giáp quân Nhật và kéo dài thời gian hòa bình.",
+      "c": "Để kết thúc cuộc kháng chiến chống Pháp.",
+      "d": "Để nhờ Pháp đánh quân Trung Hoa Dân quốc."
+    },
     "answer": "b"
   },
   {
+    "id": 34,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Sau Hiệp định Sơ bộ, Chủ tịch Hồ Chí Minh đã ký bản tài liệu nào vào ngày 14-9-1946?",
-    "options": [
-      "a. Hiệp định Giơ-ne-vơ.",
-      "b. Hiệp định Pa-ri.",
-      "c. Tạm ước Việt - Pháp.",
-      "d. Lời kêu gọi toàn quốc kháng chiến."
-    ],
+    "options": {
+      "a": "Hiệp định Giơ-ne-vơ.",
+      "b": "Hiệp định Pa-ri.",
+      "c": "Tạm ước Việt - Pháp.",
+      "d": "Lời kêu gọi toàn quốc kháng chiến."
+    },
     "answer": "c"
   },
   {
+    "id": 35,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Ý nghĩa của việc ký Tạm ước (14-9-1946) là gì?",
-    "options": [
-      "a. Chấm dứt hoàn toàn chiến tranh.",
-      "b. Buộc Pháp phải rút quân về nước.",
-      "c. Kéo dài thời gian hòa bình để chuẩn bị kháng chiến.",
-      "d. Thiết lập quan hệ ngoại giao với Mỹ."
-    ],
+    "options": {
+      "a": "Chấm dứt hoàn toàn chiến tranh.",
+      "b": "Buộc Pháp phải rút quân về nước.",
+      "c": "Kéo dài thời gian hòa bình để chuẩn bị kháng chiến.",
+      "d": "Thiết lập quan hệ ngoại giao với Mỹ."
+    },
     "answer": "c"
   },
   {
+    "id": 36,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Bước ngoặt đối ngoại quan trọng nhất của Việt Nam vào năm 1950 là gì?",
-    "options": [
-      "a. Ký hiệp định với Mỹ.",
-      "b. Trung Quốc, Liên Xô và các nước xã hội chủ nghĩa thiết lập quan hệ ngoại giao với Việt Nam.",
-      "c. Việt Nam gia nhập Liên Hợp Quốc.",
-      "d. Pháp công nhận Việt Nam độc lập."
-    ],
+    "options": {
+      "a": "Ký hiệp định với Mỹ.",
+      "b": "Trung Quốc, Liên Xô và các nước xã hội chủ nghĩa thiết lập quan hệ ngoại giao với Việt Nam.",
+      "c": "Việt Nam gia nhập Liên Hợp Quốc.",
+      "d": "Pháp công nhận Việt Nam độc lập."
+    },
     "answer": "b"
   },
   {
+    "id": 37,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Liên minh nhân dân Việt - Miên - Lào được thành lập vào năm nào?",
-    "options": [
-      "a. 1945.",
-      "b. 1950.",
-      "c. 1951.",
-      "d. 1954."
-    ],
+    "options": {
+      "a": "1945.",
+      "b": "1950.",
+      "c": "1951.",
+      "d": "1954."
+    },
     "answer": "c"
   },
   {
+    "id": 38,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Hiệp định Giơ-ne-vơ về Đông Dương được ký kết vào ngày tháng năm nào?",
-    "options": [
-      "a. 6 - 3 - 1946.",
-      "b. 19 - 12 - 1946.",
-      "c. 7 - 5 - 1954.",
-      "d. 21 - 7 - 1954."
-    ],
+    "options": {
+      "a": "6 - 3 - 1946.",
+      "b": "19 - 12 - 1946.",
+      "c": "7 - 5 - 1954.",
+      "d": "21 - 7 - 1954."
+    },
     "answer": "d"
   },
   {
+    "id": 39,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Nội dung quan trọng nhất của Hiệp định Giơ-ne-vơ là gì?",
-    "options": [
-      "a. Chia cắt lâu dài đất nước Việt Nam.",
-      "b. Các nước tham dự cam kết tôn trọng các quyền dân tộc cơ bản của ba nước Đông Dương.",
-      "c. Quân đội Pháp được ở lại miền Bắc Việt Nam.",
-      "d. Việt Nam phải tham gia vào khối liên minh quân sự."
-    ],
+    "options": {
+      "a": "Chia cắt lâu dài đất nước Việt Nam.",
+      "b": "Các nước tham dự cam kết tôn trọng các quyền dân tộc cơ bản của ba nước Đông Dương.",
+      "c": "Quân đội Pháp được ở lại miền Bắc Việt Nam.",
+      "d": "Việt Nam phải tham gia vào khối liên minh quân sự."
+    },
     "answer": "b"
   },
   {
+    "id": 40,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Ý nghĩa pháp lý quốc tế của Hiệp định Giơ-ne-vơ (1954) là gì?",
-    "options": [
-      "a. Là văn bản đầu tiên ghi nhận các quyền dân tộc cơ bản của nhân dân các nước Đông Dương.",
-      "b. Là văn bản kết thúc hoàn toàn sự can thiệp của Mỹ.",
-      "c. Giúp Việt Nam gia nhập ASEAN.",
-      "d. Khẳng định chủ quyền của Việt Nam tại Biển Đông."
-    ],
+    "options": {
+      "a": "Là văn bản đầu tiên ghi nhận các quyền dân tộc cơ bản của nhân dân các nước Đông Dương.",
+      "b": "Là văn bản kết thúc hoàn toàn sự can thiệp của Mỹ.",
+      "c": "Giúp Việt Nam gia nhập ASEAN.",
+      "d": "Khẳng định chủ quyền của Việt Nam tại Biển Đông."
+    },
     "answer": "a"
   },
   {
+    "id": 41,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Sau năm 1954, hoạt động đối ngoại của Việt Nam tập trung vào mục tiêu nào?",
-    "options": [
-      "a. Đòi thi hành Hiệp định Giơ-ne-vơ và củng cố quan hệ với các nước xã hội chủ nghĩa.",
-      "b. Kêu gọi Mỹ đầu tư vào miền Bắc.",
-      "c. Gia nhập khối quân sự NATO.",
-      "d. Cắt đứt quan hệ với Trung Quốc."
-    ],
+    "options": {
+      "a": "Đòi thi hành Hiệp định Giơ-ne-vơ và củng cố quan hệ với các nước xã hội chủ nghĩa.",
+      "b": "Kêu gọi Mỹ đầu tư vào miền Bắc.",
+      "c": "Gia nhập khối quân sự NATO.",
+      "d": "Cắt đứt quan hệ với Trung Quốc."
+    },
     "answer": "a"
   },
   {
+    "id": 42,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Trong cuộc kháng chiến chống Mỹ, Việt Nam đã khéo léo cân bằng quan hệ với hai cường quốc nào?",
-    "options": [
-      "a. Mỹ và Anh.",
-      "b. Liên Xô và Trung Quốc.",
-      "c. Pháp và Đức.",
-      "d. Nhật Bản và Ấn Độ."
-    ],
+    "options": {
+      "a": "Mỹ và Anh.",
+      "b": "Liên Xô và Trung Quốc.",
+      "c": "Pháp và Đức.",
+      "d": "Nhật Bản và Ấn Độ."
+    },
     "answer": "b"
   },
   {
+    "id": 43,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Phương châm ngoại giao được Chính phủ Việt Nam Dân chủ Cộng hòa kết hợp với đấu tranh quân sự là gì?",
-    "options": [
-      "a. \"Đánh nhanh thắng nhanh\".",
-      "b. \"Vừa đánh, vừa đàm\".",
-      "c. \"Ngoại giao tâm công\".",
-      "d. \"Hòa hoãn vô điều kiện\"."
-    ],
+    "options": {
+      "a": "\"Đánh nhanh thắng nhanh\".",
+      "b": "\"Vừa đánh, vừa đàm\".",
+      "c": "\"Ngoại giao tâm công\".",
+      "d": "\"Hòa hoãn vô điều kiện\"."
+    },
     "answer": "b"
   },
   {
+    "id": 44,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Việt Nam đã tích cực vận động quốc tế công nhận tổ chức nào ở miền Nam Việt Nam?",
-    "options": [
-      "a. Việt Nam Quang phục hội.",
-      "b. Mặt trận Dân tộc giải phóng miền Nam Việt Nam.",
-      "c. Đảng Lập hiến.",
-      "d. Việt Nam Quốc dân Đảng."
-    ],
+    "options": {
+      "a": "Việt Nam Quang phục hội.",
+      "b": "Mặt trận Dân tộc giải phóng miền Nam Việt Nam.",
+      "c": "Đảng Lập hiến.",
+      "d": "Việt Nam Quốc dân Đảng."
+    },
     "answer": "b"
   },
   {
+    "id": 45,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Tại Hội nghị Pa-ri, phía Việt Nam gồm những đại diện nào tham gia đàm phán?",
-    "options": [
-      "a. Chỉ có Việt Nam Dân chủ Cộng hòa.",
-      "b. Chỉ có Chính phủ Cách mạng lâm thời Cộng hòa miền Nam Việt Nam.",
-      "c. Việt Nam Dân chủ Cộng hòa và Chính phủ Cách mạng lâm thời Cộng hòa miền Nam Việt Nam.",
-      "d. Mặt trận Việt Minh."
-    ],
+    "options": {
+      "a": "Chỉ có Việt Nam Dân chủ Cộng hòa.",
+      "b": "Chỉ có Chính phủ Cách mạng lâm thời Cộng hòa miền Nam Việt Nam.",
+      "c": "Việt Nam Dân chủ Cộng hòa và Chính phủ Cách mạng lâm thời Cộng hòa miền Nam Việt Nam.",
+      "d": "Mặt trận Việt Minh."
+    },
     "answer": "c"
   },
   {
+    "id": 46,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Hiệp định Pa-ri về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam được ký kết vào ngày nào?",
-    "options": [
-      "a. 21 - 7 - 1954.",
-      "b. 14 - 9 - 1946.",
-      "c. 27 - 1 - 1973.",
-      "d. 30 - 4 - 1975."
-    ],
+    "options": {
+      "a": "21 - 7 - 1954.",
+      "b": "14 - 9 - 1946.",
+      "c": "27 - 1 - 1973.",
+      "d": "30 - 4 - 1975."
+    },
     "answer": "c"
   },
   {
+    "id": 47,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Một trong những điều khoản quan trọng của Hiệp định Pa-ri (1973) là?",
-    "options": [
-      "a. Mỹ tiếp tục duy trì quân đội ở miền Nam Việt Nam.",
-      "b. Mỹ và các nước cam kết tôn trọng độc lập, chủ quyền, thống nhất và toàn vẹn lãnh thổ của Việt Nam.",
-      "c. Việt Nam phải bồi thường chiến phí cho Mỹ.",
-      "d. Miền Bắc phải giải tán quân đội."
-    ],
+    "options": {
+      "a": "Mỹ tiếp tục duy trì quân đội ở miền Nam Việt Nam.",
+      "b": "Mỹ và các nước cam kết tôn trọng độc lập, chủ quyền, thống nhất và toàn vẹn lãnh thổ của Việt Nam.",
+      "c": "Việt Nam phải bồi thường chiến phí cho Mỹ.",
+      "d": "Miền Bắc phải giải tán quân đội."
+    },
     "answer": "b"
   },
   {
+    "id": 48,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Theo phần \"Em có biết\", tại sao cuối cùng các bên lại chọn chiếc bàn tròn lớn để đàm phán tại Pa-ri?",
-    "options": [
-      "a. Vì nó rẻ tiền hơn bàn chữ nhật.",
-      "b. Để thể hiện tính bình đẳng, hai bên đi đến quyết định chọn chiếc bàn tròn lớn.",
-      "c. Vì phòng họp quá nhỏ.",
-      "d. Vì sở thích của đại diện phía Mỹ."
-    ],
+    "options": {
+      "a": "Vì nó rẻ tiền hơn bàn chữ nhật.",
+      "b": "Để thể hiện tính bình đẳng, hai bên đi đến quyết định chọn chiếc bàn tròn lớn.",
+      "c": "Vì phòng họp quá nhỏ.",
+      "d": "Vì sở thích của đại diện phía Mỹ."
+    },
     "answer": "b"
   },
   {
+    "id": 49,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Cuộc đấu tranh ngoại giao tại Hội nghị Pa-ri kéo dài bao nhiêu năm?",
-    "options": [
-      "a. 2 năm.",
-      "b. 3 năm.",
-      "c. gần 5 năm (1968-1973).",
-      "d. 10 năm."
-    ],
+    "options": {
+      "a": "2 năm.",
+      "b": "3 năm.",
+      "c": "gần 5 năm (1968-1973).",
+      "d": "10 năm."
+    },
     "answer": "c"
   },
   {
+    "id": 50,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Ý nghĩa lớn nhất của Hiệp định Pa-ri (1973) đối với cuộc kháng chiến chống Mỹ là gì?",
-    "options": [
-      "a. Giải phóng hoàn toàn miền Nam ngay lập tức.",
-      "b. Buộc Mỹ phải rút quân về nước, tạo điều kiện thuận lợi để tiến tới thắng lợi hoàn toàn.",
-      "c. Khiến Mỹ phải sụp đổ hoàn toàn về kinh tế.",
-      "d. Giúp Việt Nam nhận được viện trợ không hoàn lại từ Liên hợp quốc."
-    ],
+    "options": {
+      "a": "Giải phóng hoàn toàn miền Nam ngay lập tức.",
+      "b": "Buộc Mỹ phải rút quân về nước, tạo điều kiện thuận lợi để tiến tới thắng lợi hoàn toàn.",
+      "c": "Khiến Mỹ phải sụp đổ hoàn toàn về kinh tế.",
+      "d": "Giúp Việt Nam nhận được viện trợ không hoàn lại từ Liên hợp quốc."
+    },
     "answer": "b"
   },
   {
+    "id": 51,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Sau Cách mạng tháng Tám, Việt Nam gửi thư đến Liên hợp quốc và các nước lớn nhằm mục đích gì?",
-    "options": [
-      "a. Xin vay vốn phát triển kinh tế.",
-      "b. Đề nghị công nhận Nhà nước Việt Nam Dân chủ Cộng hòa.",
-      "c. Xin tham gia lực lượng giữ gìn hòa bình.",
-      "d. Yêu cầu Mỹ rút khỏi Nhật Bản."
-    ],
+    "options": {
+      "a": "Xin vay vốn phát triển kinh tế.",
+      "b": "Đề nghị công nhận Nhà nước Việt Nam Dân chủ Cộng hòa.",
+      "c": "Xin tham gia lực lượng giữ gìn hòa bình.",
+      "d": "Yêu cầu Mỹ rút khỏi Nhật Bản."
+    },
     "answer": "b"
   },
   {
+    "id": 52,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Đối với quân Trung Hoa Dân quốc ở miền Bắc sau 1945, Đảng ta chủ trương gì?",
-    "options": [
-      "a. Đấu tranh quân sự tiêu diệt ngay.",
-      "b. Chủ động bắt liên lạc và ký hiệp ước đồng minh.",
-      "c. Đấu tranh chính trị kết hợp vận động ngoại giao, thực hiện các hoạt động hữu nghị để tranh thủ thời gian.",
-      "d. Bỏ mặc không quan tâm."
-    ],
+    "options": {
+      "a": "Đấu tranh quân sự tiêu diệt ngay.",
+      "b": "Chủ động bắt liên lạc và ký hiệp ước đồng minh.",
+      "c": "Đấu tranh chính trị kết hợp vận động ngoại giao, thực hiện các hoạt động hữu nghị để tranh thủ thời gian.",
+      "d": "Bỏ mặc không quan tâm."
+    },
     "answer": "c"
   },
   {
+    "id": 53,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Hình ảnh Chủ tịch Hồ Chí Minh tiếp đoàn nhà báo của Đảng Cộng sản I-ta-li-a (1959) thể hiện điều gì?",
-    "options": [
-      "a. Việt Nam chỉ quan hệ với các nước châu Á.",
-      "b. Việt Nam tranh thủ sự ủng hộ của nhân dân tiến bộ trên thế giới.",
-      "c. Bác Hồ muốn sang I-ta-li-a du lịch.",
-      "d. Ngoại giao Việt Nam chỉ phục vụ mục đích thương mại."
-    ],
+    "options": {
+      "a": "Việt Nam chỉ quan hệ với các nước châu Á.",
+      "b": "Việt Nam tranh thủ sự ủng hộ của nhân dân tiến bộ trên thế giới.",
+      "c": "Bác Hồ muốn sang I-ta-li-a du lịch.",
+      "d": "Ngoại giao Việt Nam chỉ phục vụ mục đích thương mại."
+    },
     "answer": "b"
   },
   {
+    "id": 54,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Việt Nam Dân chủ Cộng hòa đã phối hợp với cơ quan quốc tế nào để yêu cầu chính quyền Sài Gòn hiệp thương tổng tuyển cử?",
-    "options": [
-      "a. WHO.",
-      "b. UNESCO.",
-      "c. Ủy ban Giám sát quốc tế về Hiệp định Giơ-ne-vơ.",
-      "d. Hội Chữ thập đỏ quốc tế."
-    ],
+    "options": {
+      "a": "WHO.",
+      "b": "UNESCO.",
+      "c": "Ủy ban Giám sát quốc tế về Hiệp định Giơ-ne-vơ.",
+      "d": "Hội Chữ thập đỏ quốc tế."
+    },
     "answer": "c"
   },
   {
+    "id": 55,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Trong kháng chiến chống Mỹ, Việt Nam thiết lập quan hệ ngoại giao với các nước nào ở khu vực khác?",
-    "options": [
-      "a. Chỉ các nước trong khối SEATO.",
-      "b. Các nước Á, Phi, Mỹ La-tinh.",
-      "c. Chỉ các nước Tây Âu.",
-      "d. Chỉ các nước thuộc địa của Anh."
-    ],
+    "options": {
+      "a": "Chỉ các nước trong khối SEATO.",
+      "b": "Các nước Á, Phi, Mỹ La-tinh.",
+      "c": "Chỉ các nước Tây Âu.",
+      "d": "Chỉ các nước thuộc địa của Anh."
+    },
     "answer": "b"
   },
   {
+    "id": 56,
+    "topic": "Tổng hợp",
     "question": "Nội dung nào sau đây KHÔNG phải là hoạt động đối ngoại trong kháng chiến chống Mỹ?",
-    "options": [
-      "a. Cân bằng quan hệ với Liên Xô và Trung Quốc.",
-      "b. Đấu tranh tại bàn đàm phán Pa-ri.",
-      "c. Ký Hiệp định Sơ bộ 6-3.",
-      "d. Vận động quốc tế công nhận Mặt trận Dân tộc giải phóng miền Nam Việt Nam."
-    ],
+    "options": {
+      "a": "Cân bằng quan hệ với Liên Xô và Trung Quốc.",
+      "b": "Đấu tranh tại bàn đàm phán Pa-ri.",
+      "c": "Ký Hiệp định Sơ bộ 6-3.",
+      "d": "Vận động quốc tế công nhận Mặt trận Dân tộc giải phóng miền Nam Việt Nam."
+    },
     "answer": "c"
   },
   {
+    "id": 57,
+    "topic": "Tổng hợp",
     "question": "Hoạt động đối ngoại của Việt Nam giai đoạn 1945 - 1975 có vai trò như thế nào?",
-    "options": [
-      "a. Là nhân tố duy nhất quyết định thắng lợi.",
-      "b. Góp phần quan trọng đưa cuộc kháng chiến đến thắng lợi cuối cùng.",
-      "c. Chỉ mang tính hình thức, không có tác dụng thực tế.",
-      "d. Làm suy yếu lực lượng quân sự trong nước."
-    ],
+    "options": {
+      "a": "Là nhân tố duy nhất quyết định thắng lợi.",
+      "b": "Góp phần quan trọng đưa cuộc kháng chiến đến thắng lợi cuối cùng.",
+      "c": "Chỉ mang tính hình thức, không có tác dụng thực tế.",
+      "d": "Làm suy yếu lực lượng quân sự trong nước."
+    },
     "answer": "b"
   },
   {
+    "id": 58,
+    "topic": "Kháng chiến chống Mỹ (1954-1975)",
     "question": "Tại Hội nghị Pa-ri, phía Mỹ ban đầu đòi dùng loại bàn nào?",
-    "options": [
-      "a. Bàn tròn lớn.",
-      "b. Bàn hình chữ nhật hoặc hình tròn chia đôi.",
-      "c. Bàn hình ngôi sao.",
-      "d. Không dùng bàn, chỉ đứng nói chuyện."
-    ],
+    "options": {
+      "a": "Bàn tròn lớn.",
+      "b": "Bàn hình chữ nhật hoặc hình tròn chia đôi.",
+      "c": "Bàn hình ngôi sao.",
+      "d": "Không dùng bàn, chỉ đứng nói chuyện."
+    },
     "answer": "b"
   },
   {
+    "id": 59,
+    "topic": "Ngoại giao 1945-1954",
     "question": "Việc ký kết Hiệp định Giơ-ne-vơ (1954) đã phản ánh điều gì trong quan hệ quốc tế?",
-    "options": [
-      "a. Mỹ hoàn toàn ủng hộ Việt Nam.",
-      "b. Xu thế giải quyết các tranh chấp bằng thương lượng hòa bình khi có điều kiện.",
-      "c. Sự sụp đổ hoàn toàn của chủ nghĩa tư bản.",
-      "d. Pháp muốn tiếp tục chiến tranh lâu dài."
-    ],
+    "options": {
+      "a": "Mỹ hoàn toàn ủng hộ Việt Nam.",
+      "b": "Xu thế giải quyết các tranh chấp bằng thương lượng hòa bình khi có điều kiện.",
+      "c": "Sự sụp đổ hoàn toàn của chủ nghĩa tư bản.",
+      "d": "Pháp muốn tiếp tục chiến tranh lâu dài."
+    },
     "answer": "b"
   },
   {
+    "id": 60,
+    "topic": "Trục thời gian",
     "question": "Trục thời gian nào sau đây đúng về các văn bản đối ngoại quan trọng?",
-    "options": [
-      "a. Tạm ước (1946) -> Hiệp định Pa-ri (1954) -> Hiệp định Giơ-ne-vơ (1973).",
-      "b. Hiệp định Sơ bộ (1946) -> Hiệp định Giơ-ne-vơ (1954) -> Hiệp định Pa-ri (1973).",
-      "c. Hiệp định Giơ-ne-vơ (1954) -> Tạm ước (1946) -> Hiệp định Pa-ri (1973).",
-      "d. Hiệp định Pa-ri (1973) -> Hiệp định Giơ-ne-vơ (1954) -> Hiệp định Sơ bộ (1946)."
-    ],
+    "options": {
+      "a": "Tạm ước (1946) -> Hiệp định Pa-ri (1954) -> Hiệp định Giơ-ne-vơ (1973).",
+      "b": "Hiệp định Sơ bộ (1946) -> Hiệp định Giơ-ne-vơ (1954) -> Hiệp định Pa-ri (1973).",
+      "c": "Hiệp định Giơ-ne-vơ (1954) -> Tạm ước (1946) -> Hiệp định Pa-ri (1973).",
+      "d": "Hiệp định Pa-ri (1973) -> Hiệp định Giơ-ne-vơ (1954) -> Hiệp định Sơ bộ (1946)."
+    },
     "answer": "b"
   },
   {
+    "id": 61,
+    "topic": "Ngoại giao 1975-1985",
     "question": "Việt Nam chính thức trở thành thành viên của Liên hợp quốc vào thời gian nào?",
-    "options": [
-      "a. Tháng 9 - 1945.",
-      "b. Tháng 7 - 1954.",
-      "c. Ngày 20 - 9 - 1977.",
-      "d. Tháng 12 - 1986."
-    ],
+    "options": {
+      "a": "Tháng 9 - 1945.",
+      "b": "Tháng 7 - 1954.",
+      "c": "Ngày 20 - 9 - 1977.",
+      "d": "Tháng 12 - 1986."
+    },
     "answer": "c"
   },
   {
+    "id": 62,
+    "topic": "Ngoại giao 1975-1985",
     "question": "Trong giai đoạn 1975 - 1985, Việt Nam thực hiện hợp tác toàn diện với các nước thuộc khối nào?",
-    "options": [
-      "a. Các nước tư bản chủ nghĩa.",
-      "b. Các nước xã hội chủ nghĩa.",
-      "c. Các nước trong khối ASEAN.",
-      "d. Các nước Tây Âu."
-    ],
+    "options": {
+      "a": "Các nước tư bản chủ nghĩa.",
+      "b": "Các nước xã hội chủ nghĩa.",
+      "c": "Các nước trong khối ASEAN.",
+      "d": "Các nước Tây Âu."
+    },
     "answer": "b"
   },
   {
+    "id": 63,
+    "topic": "Ngoại giao 1975-1985",
     "question": "Năm 1978, Việt Nam gia nhập tổ chức kinh tế nào dưới đây?",
-    "options": [
-      "a. Hội đồng Tương trợ kinh tế (SEV).",
-      "b. Hiệp hội các quốc gia Đông Nam Á (ASEAN).",
-      "c. Tổ chức Thương mại Thế giới (WTO).",
-      "d. Diễn đàn Hợp tác Kinh tế châu Á - Thái Bình Dương (APEC)."
-    ],
+    "options": {
+      "a": "Hội đồng Tương trợ kinh tế (SEV).",
+      "b": "Hiệp hội các quốc gia Đông Nam Á (ASEAN).",
+      "c": "Tổ chức Thương mại Thế giới (WTO).",
+      "d": "Diễn đàn Hợp tác Kinh tế châu Á - Thái Bình Dương (APEC)."
+    },
     "answer": "a"
   },
   {
+    "id": 64,
+    "topic": "Ngoại giao 1975-1985",
     "question": "Sự kiện nào diễn ra vào năm 1980 đánh dấu thành tựu trong quan hệ Việt Nam - Liên Xô?",
-    "options": [
-      "a. Ký kết Hiệp ước biên giới.",
-      "b. Việt Nam gia nhập Liên hợp quốc.",
-      "c. Phạm Tuân (Việt Nam) và V. Go-rơ-bát-cô (Liên Xô) cùng bay vào vũ trụ.",
-      "d. Mỹ xóa bỏ cấm vận đối với Việt Nam."
-    ],
+    "options": {
+      "a": "Ký kết Hiệp ước biên giới.",
+      "b": "Việt Nam gia nhập Liên hợp quốc.",
+      "c": "Phạm Tuân (Việt Nam) và V. Go-rơ-bát-cô (Liên Xô) cùng bay vào vũ trụ.",
+      "d": "Mỹ xóa bỏ cấm vận đối với Việt Nam."
+    },
     "answer": "c"
   },
   {
+    "id": 65,
+    "topic": "Ngoại giao 1975-1985",
     "question": "Trong giai đoạn 1977 - 1986, hệ thống Liên hợp quốc đã viện trợ không hoàn lại cho Việt Nam khoảng bao nhiêu?",
-    "options": [
-      "a. 100 triệu USD.",
-      "b. 300,5 triệu USD.",
-      "c. 527,9 triệu USD.",
-      "d. 1 tỷ USD."
-    ],
+    "options": {
+      "a": "100 triệu USD.",
+      "b": "300,5 triệu USD.",
+      "c": "527,9 triệu USD.",
+      "d": "1 tỷ USD."
+    },
     "answer": "c"
   },
   {
+    "id": 66,
+    "topic": "Ngoại giao 1975-1985",
     "question": "Đối với các nước Đông Nam Á, từ năm 1980 Việt Nam chủ trương thực hiện điều gì?",
-    "options": [
-      "a. Đối đầu quân sự.",
-      "b. Thúc đẩy đối thoại, từng bước thiết lập quan hệ ngoại giao với các nước ASEAN.",
-      "c. Cắt đứt hoàn toàn quan hệ.",
-      "d. Gia nhập ASEAN ngay lập tức."
-    ],
+    "options": {
+      "a": "Đối đầu quân sự.",
+      "b": "Thúc đẩy đối thoại, từng bước thiết lập quan hệ ngoại giao với các nước ASEAN.",
+      "c": "Cắt đứt hoàn toàn quan hệ.",
+      "d": "Gia nhập ASEAN ngay lập tức."
+    },
     "answer": "b"
   },
   {
+    "id": 67,
+    "topic": "Ngoại giao 1975-1985",
     "question": "Hội nghị Thượng đỉnh lần thứ 6 Phong trào Không liên kết (1979) mà Thủ tướng Phạm Văn Đồng tham dự diễn ra tại đâu?",
-    "options": [
-      "a. Hà Nội (Việt Nam).",
-      "b. Mát-xcơ-va (Liên Xô).",
-      "c. La Ha-ba-na (Cu-ba).",
-      "d. Băng Cốc (Thái Lan)."
-    ],
+    "options": {
+      "a": "Hà Nội (Việt Nam).",
+      "b": "Mát-xcơ-va (Liên Xô).",
+      "c": "La Ha-ba-na (Cu-ba).",
+      "d": "Băng Cốc (Thái Lan)."
+    },
     "answer": "c"
   },
   {
+    "id": 68,
+    "topic": "Ngoại giao 1975-1985",
     "question": "Một trong những khó khăn lớn nhất của đối ngoại Việt Nam giai đoạn 1975 - 1985 là gì?",
-    "options": [
-      "a. Thiếu hụt lực lượng ngoại giao.",
-      "b. Chính sách bao vây, cấm vận của Mỹ và các thế lực thù địch.",
-      "c. Việt Nam không muốn quan hệ với các nước khác.",
-      "d. Các nước láng giềng từ chối đàm phán."
-    ],
+    "options": {
+      "a": "Thiếu hụt lực lượng ngoại giao.",
+      "b": "Chính sách bao vây, cấm vận của Mỹ và các thế lực thù địch.",
+      "c": "Việt Nam không muốn quan hệ với các nước khác.",
+      "d": "Các nước láng giềng từ chối đàm phán."
+    },
     "answer": "b"
   },
   {
+    "id": 69,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Tại Đại hội lần thứ VII (1991), Đảng Cộng sản Việt Nam đưa ra định hướng đối ngoại như thế nào?",
-    "options": [
-      "a. Chỉ quan hệ với các nước xã hội chủ nghĩa.",
-      "b. Đóng cửa để tự lực cánh sinh.",
-      "c. Hợp tác, bình đẳng và cùng có lợi với tất cả các nước, không phân biệt chế độ chính trị - xã hội.",
-      "d. Chỉ ưu tiên quan hệ với các nước láng giềng."
-    ],
+    "options": {
+      "a": "Chỉ quan hệ với các nước xã hội chủ nghĩa.",
+      "b": "Đóng cửa để tự lực cánh sinh.",
+      "c": "Hợp tác, bình đẳng và cùng có lợi với tất cả các nước, không phân biệt chế độ chính trị - xã hội.",
+      "d": "Chỉ ưu tiên quan hệ với các nước láng giềng."
+    },
     "answer": "c"
   },
   {
+    "id": 70,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Việt Nam bình thường hóa quan hệ với Trung Quốc và Mỹ vào các năm nào?",
-    "options": [
-      "a. Trung Quốc (1991), Mỹ (1995).",
-      "b. Trung Quốc (1995), Mỹ (1991).",
-      "c. Trung Quốc (1975), Mỹ (1995).",
-      "d. Trung Quốc (1991), Mỹ (2000)."
-    ],
+    "options": {
+      "a": "Trung Quốc (1991), Mỹ (1995).",
+      "b": "Trung Quốc (1995), Mỹ (1991).",
+      "c": "Trung Quốc (1975), Mỹ (1995).",
+      "d": "Trung Quốc (1991), Mỹ (2000)."
+    },
     "answer": "a"
   },
   {
+    "id": 71,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Sự kiện nào đánh dấu Việt Nam hội nhập sâu rộng vào khu vực Đông Nam Á năm 1995?",
-    "options": [
-      "a. Ký hiệp định thương mại với Mỹ.",
-      "b. Gia nhập ASEAN.",
-      "c. Gia nhập WTO.",
-      "d. Giải quyết xong vấn đề Cam-pu-chia."
-    ],
+    "options": {
+      "a": "Ký hiệp định thương mại với Mỹ.",
+      "b": "Gia nhập ASEAN.",
+      "c": "Gia nhập WTO.",
+      "d": "Giải quyết xong vấn đề Cam-pu-chia."
+    },
     "answer": "b"
   },
   {
+    "id": 72,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Việt Nam đã bao nhiêu lần được bầu làm Ủy viên không thường trực Hội đồng Bảo an Liên hợp quốc?",
-    "options": [
-      "a. 1 lần.",
-      "b. 2 lần (nhiệm kỳ 2008-2009 và 2020-2021).",
-      "c. 3 lần.",
-      "d. Chưa lần nào."
-    ],
+    "options": {
+      "a": "1 lần.",
+      "b": "2 lần (nhiệm kỳ 2008-2009 và 2020-2021).",
+      "c": "3 lần.",
+      "d": "Chưa lần nào."
+    },
     "answer": "b"
   },
   {
+    "id": 73,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Hiện nay, quan hệ giữa Việt Nam và Mỹ đã được nâng lên cấp độ nào?",
-    "options": [
-      "a. Đối tác chiến lược.",
-      "b. Đối tác toàn diện.",
-      "c. Đối tác chiến lược toàn diện (2023).",
-      "d. Quan hệ ngoại giao thông thường."
-    ],
+    "options": {
+      "a": "Đối tác chiến lược.",
+      "b": "Đối tác toàn diện.",
+      "c": "Đối tác chiến lược toàn diện (2023).",
+      "d": "Quan hệ ngoại giao thông thường."
+    },
     "answer": "c"
   },
   {
+    "id": 74,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Việt Nam đã ký kết những hiệp định thương mại tự do (FTA) thế hệ mới nào sau đây?",
-    "options": [
-      "a. CPTPP, EVFTA, RCEP.",
-      "b. SEV, ASEAN, WTO.",
-      "c. APEC, ASEM, UN.",
-      "d. NATO, SEATO, EU."
-    ],
+    "options": {
+      "a": "CPTPP, EVFTA, RCEP.",
+      "b": "SEV, ASEAN, WTO.",
+      "c": "APEC, ASEM, UN.",
+      "d": "NATO, SEATO, EU."
+    },
     "answer": "a"
   },
   {
+    "id": 75,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Để bảo vệ chủ quyền biên giới đất liền, Việt Nam đã ký kết các hiệp ước phân định biên giới với những quốc gia nào?",
-    "options": [
-      "a. Trung Quốc, Lào, Cam-pu-chia.",
-      "b. Thái Lan, Mi-an-ma, Lào.",
-      "c. In-đô-nê-xi-a, Phi-líp-pin, Trung Quốc.",
-      "d. Cam-pu-chia, Thái Lan, Ma-lai-xi-a."
-    ],
+    "options": {
+      "a": "Trung Quốc, Lào, Cam-pu-chia.",
+      "b": "Thái Lan, Mi-an-ma, Lào.",
+      "c": "In-đô-nê-xi-a, Phi-líp-pin, Trung Quốc.",
+      "d": "Cam-pu-chia, Thái Lan, Ma-lai-xi-a."
+    },
     "answer": "a"
   },
   {
+    "id": 76,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Việt Nam giải quyết các bất đồng về ranh giới trên biển với các nước Ma-lai-xi-a, In-đô-nê-xi-a, Thái Lan bằng con đường nào?",
-    "options": [
-      "a. Sử dụng sức mạnh quân sự.",
-      "b. Đàm phán, thương lượng hòa bình.",
-      "c. Nhờ các nước lớn can thiệp quân sự.",
-      "d. Bỏ mặc không giải quyết."
-    ],
+    "options": {
+      "a": "Sử dụng sức mạnh quân sự.",
+      "b": "Đàm phán, thương lượng hòa bình.",
+      "c": "Nhờ các nước lớn can thiệp quân sự.",
+      "d": "Bỏ mặc không giải quyết."
+    },
     "answer": "b"
   },
   {
+    "id": 77,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Sự kiện nào là minh chứng cho việc Việt Nam tích cực thúc đẩy giao lưu văn hóa và nâng cao vị thế đất nước?",
-    "options": [
-      "a. Lễ hội pháo hoa quốc tế Đà Nẵng.",
-      "b. Ký kết Nghị định thư Ki-ô-tô.",
-      "c. Gia nhập WTO.",
-      "d. Bình thường hóa quan hệ với Mỹ."
-    ],
+    "options": {
+      "a": "Lễ hội pháo hoa quốc tế Đà Nẵng.",
+      "b": "Ký kết Nghị định thư Ki-ô-tô.",
+      "c": "Gia nhập WTO.",
+      "d": "Bình thường hóa quan hệ với Mỹ."
+    },
     "answer": "a"
   },
   {
+    "id": 78,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Trong đại dịch COVID-19, hoạt động đối ngoại của Việt Nam được quốc tế đánh giá cao?",
-    "options": [
-      "a. Đóng cửa biên giới hoàn toàn.",
-      "b. Hỗ trợ thiết bị, vật tư y tế cho nhiều quốc gia trên thế giới.",
-      "c. Chỉ tập trung tự chữa trị trong nước.",
-      "d. Mua độc quyền vaccine."
-    ],
+    "options": {
+      "a": "Đóng cửa biên giới hoàn toàn.",
+      "b": "Hỗ trợ thiết bị, vật tư y tế cho nhiều quốc gia trên thế giới.",
+      "c": "Chỉ tập trung tự chữa trị trong nước.",
+      "d": "Mua độc quyền vaccine."
+    },
     "answer": "b"
   },
   {
+    "id": 79,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Việt Nam đã tham gia ký kết văn bản quốc tế nào để ứng phó với biến đổi khí hậu?",
-    "options": [
-      "a. Hiệp ước ASEAN.",
-      "b. Nghị định thư Ki-ô-tô.",
-      "c. Hiệp định Pa-ri 1973.",
-      "d. Hiến chương Liên hợp quốc."
-    ],
+    "options": {
+      "a": "Hiệp ước ASEAN.",
+      "b": "Nghị định thư Ki-ô-tô.",
+      "c": "Hiệp định Pa-ri 1973.",
+      "d": "Hiến chương Liên hợp quốc."
+    },
     "answer": "b"
   },
   {
+    "id": 80,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Mục tiêu trọng tâm của hoạt động đối ngoại trong thời kỳ Đổi mới là gì?",
-    "options": [
-      "a. Phục vụ mục tiêu phát triển kinh tế và nâng cao vị thế đất nước.",
-      "b. Chuẩn bị cho các cuộc chiến tranh mới.",
-      "c. Tìm kiếm viện trợ quân sự.",
-      "d. Chỉ để quảng bá du lịch."
-    ],
+    "options": {
+      "a": "Phục vụ mục tiêu phát triển kinh tế và nâng cao vị thế đất nước.",
+      "b": "Chuẩn bị cho các cuộc chiến tranh mới.",
+      "c": "Tìm kiếm viện trợ quân sự.",
+      "d": "Chỉ để quảng bá du lịch."
+    },
     "answer": "a"
   },
   {
+    "id": 81,
+    "topic": "Mối quan hệ đặc biệt",
     "question": "Quan hệ giữa Việt Nam với Lào và Cam-pu-chia được mô tả là gì?",
-    "options": [
-      "a. Quan hệ hữu nghị, tình đoàn kết chiến đấu và hợp tác.",
-      "b. Quan hệ đối đầu căng thẳng.",
-      "c. Chỉ là quan hệ buôn bán đơn thuần.",
-      "d. Quan hệ đồng minh quân sự tấn công."
-    ],
+    "options": {
+      "a": "Quan hệ hữu nghị, tình đoàn kết chiến đấu và hợp tác.",
+      "b": "Quan hệ đối đầu căng thẳng.",
+      "c": "Chỉ là quan hệ buôn bán đơn thuần.",
+      "d": "Quan hệ đồng minh quân sự tấn công."
+    },
     "answer": "a"
   },
   {
+    "id": 82,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Việt Nam đã tổ chức thành công các hội nghị quốc tế quan trọng nào?",
-    "options": [
-      "a. ASEAN, ASEM và APEC.",
-      "b. Hội nghị các nước tư bản.",
-      "c. Hội nghị G7 và G20.",
-      "d. Hội nghị NATO."
-    ],
+    "options": {
+      "a": "ASEAN, ASEM và APEC.",
+      "b": "Hội nghị các nước tư bản.",
+      "c": "Hội nghị G7 và G20.",
+      "d": "Hội nghị NATO."
+    },
     "answer": "a"
   },
   {
+    "id": 83,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Việc Việt Nam gia nhập WTO (2007) có ý nghĩa gì đối với nền kinh tế?",
-    "options": [
-      "a. Việt Nam không cần sản xuất hàng hóa nữa.",
-      "b. Đánh dấu sự hội nhập hoàn toàn vào hệ thống thương mại toàn cầu.",
-      "c. Mỹ sẽ cung cấp toàn bộ hàng hóa cho Việt Nam.",
-      "d. Việt Nam được quyền áp đặt luật lệ kinh tế lên các nước khác."
-    ],
+    "options": {
+      "a": "Việt Nam không cần sản xuất hàng hóa nữa.",
+      "b": "Đánh dấu sự hội nhập hoàn toàn vào hệ thống thương mại toàn cầu.",
+      "c": "Mỹ sẽ cung cấp toàn bộ hàng hóa cho Việt Nam.",
+      "d": "Việt Nam được quyền áp đặt luật lệ kinh tế lên các nước khác."
+    },
     "answer": "b"
   },
   {
+    "id": 84,
+    "topic": "Mối quan hệ đặc biệt",
     "question": "Bức ảnh \"Lễ chào cột mốc và chứng kiến tuần tra chung ba nước Việt Nam - Lào - Cam-pu-chia (2018)\" thể hiện điều gì?",
-    "options": [
-      "a. Sự tranh chấp biên giới quyết liệt.",
-      "b. Sự hợp tác chặt chẽ trong việc bảo vệ an ninh, biên giới hòa bình, hữu nghị.",
-      "c. Việc chuẩn bị cho một cuộc tập trận quy mô lớn.",
-      "d. Các nước không quan tâm đến biên giới."
-    ],
+    "options": {
+      "a": "Sự tranh chấp biên giới quyết liệt.",
+      "b": "Sự hợp tác chặt chẽ trong việc bảo vệ an ninh, biên giới hòa bình, hữu nghị.",
+      "c": "Việc chuẩn bị cho một cuộc tập trận quy mô lớn.",
+      "d": "Các nước không quan tâm đến biên giới."
+    },
     "answer": "b"
   },
   {
+    "id": 85,
+    "topic": "Biển Đảo",
     "question": "Nguyên tắc cốt lõi trong giải quyết các tranh chấp về biển đảo của Việt Nam là gì?",
-    "options": [
-      "a. Dùng vũ lực ngay khi có tranh chấp.",
-      "b. Thông qua biện pháp hòa bình, tuân thủ luật pháp quốc tế (như UNCLOS 1982).",
-      "c. Nhượng bộ toàn bộ lãnh thổ để giữ hòa bình.",
-      "d. Không đàm phán với bất kỳ nước nào."
-    ],
+    "options": {
+      "a": "Dùng vũ lực ngay khi có tranh chấp.",
+      "b": "Thông qua biện pháp hòa bình, tuân thủ luật pháp quốc tế (như UNCLOS 1982).",
+      "c": "Nhượng bộ toàn bộ lãnh thổ để giữ hòa bình.",
+      "d": "Không đàm phán với bất kỳ nước nào."
+    },
     "answer": "b"
   },
   {
+    "id": 86,
+    "topic": "Tổng kết",
     "question": "Hoạt động đối ngoại của Việt Nam từ 1975 đến nay đóng vai trò gì?",
-    "options": [
-      "a. Chỉ là hoạt động hình thức.",
-      "b. Góp phần quan trọng vào việc xây dựng hình ảnh đất nước đẹp, thân thiện và nâng cao vị thế trên trường quốc tế.",
-      "c. Làm cho Việt Nam phụ thuộc hoàn toàn vào nước ngoài.",
-      "d. Chỉ phục vụ cho mục đích tham quan, du lịch."
-    ],
+    "options": {
+      "a": "Chỉ là hoạt động hình thức.",
+      "b": "Góp phần quan trọng vào việc xây dựng hình ảnh đất nước đẹp, thân thiện và nâng cao vị thế trên trường quốc tế.",
+      "c": "Làm cho Việt Nam phụ thuộc hoàn toàn vào nước ngoài.",
+      "d": "Chỉ phục vụ cho mục đích tham quan, du lịch."
+    },
     "answer": "b"
   },
   {
+    "id": 87,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Sau khi bình thường hóa quan hệ với Mỹ (1995), tính chất của quan hệ này chuyển sang giai đoạn nào?",
-    "options": [
-      "a. Từ đối đầu sang đối thoại và hợp tác.",
-      "b. Vẫn tiếp tục cấm vận nhưng bí mật.",
-      "c. Mỹ trở thành nước thuộc địa của Việt Nam.",
-      "d. Việt Nam từ bỏ con đường xã hội chủ nghĩa."
-    ],
+    "options": {
+      "a": "Từ đối đầu sang đối thoại và hợp tác.",
+      "b": "Vẫn tiếp tục cấm vận nhưng bí mật.",
+      "c": "Mỹ trở thành nước thuộc địa của Việt Nam.",
+      "d": "Việt Nam từ bỏ con đường xã hội chủ nghĩa."
+    },
     "answer": "a"
   },
   {
+    "id": 88,
+    "topic": "Nhân đạo & Quốc tế",
     "question": "Một trong những thành tựu đối ngoại nổi bật nhất về lĩnh vực nhân đạo của Việt Nam là?",
-    "options": [
-      "a. Xuất khẩu gạo nhiều nhất thế giới.",
-      "b. Hỗ trợ cứu trợ thiên tai và giúp đỡ y tế cho nhiều quốc gia (như trong đại dịch COVID-19).",
-      "c. Tổ chức các giải đấu thể thao.",
-      "d. Xây dựng các tòa nhà chọc trời."
-    ],
+    "options": {
+      "a": "Xuất khẩu gạo nhiều nhất thế giới.",
+      "b": "Hỗ trợ cứu trợ thiên tai và giúp đỡ y tế cho nhiều quốc gia (như trong đại dịch COVID-19).",
+      "c": "Tổ chức các giải đấu thể thao.",
+      "d": "Xây dựng các tòa nhà chọc trời."
+    },
     "answer": "b"
   },
   {
+    "id": 89,
+    "topic": "Đổi mới & Hội nhập (1986-nay)",
     "question": "Theo tư liệu hình 4 (trang 84), ai là người đại diện Việt Nam ký Nghị định thư chính thức thiết lập quan hệ ngoại giao với Mỹ năm 1995?",
-    "options": [
-      "a. Chủ tịch nước Việt Nam.",
-      "b. Bộ trưởng Bộ Ngoại giao Việt Nam.",
-      "c. Thủ tướng Chính phủ Việt Nam.",
-      "d. Đại sứ Việt Nam tại Liên hợp quốc."
-    ],
+    "options": {
+      "a": "Chủ tịch nước Việt Nam.",
+      "b": "Bộ trưởng Bộ Ngoại giao Việt Nam.",
+      "c": "Thủ tướng Chính phủ Việt Nam.",
+      "d": "Đại sứ Việt Nam tại Liên hợp quốc."
+    },
     "answer": "b"
   },
   {
+    "id": 90,
+    "topic": "Trục thời gian",
     "question": "Trục thời gian nào sau đây phản ánh đúng trình tự gia nhập các tổ chức quốc tế của Việt Nam?",
-    "options": [
-      "a. ASEAN -> UN -> WTO.",
-      "b. UN (1977) -> ASEAN (1995) -> WTO (2007).",
-      "c. WTO -> UN -> ASEAN.",
-      "d. ASEAN -> WTO -> UN."
-    ],
+    "options": {
+      "a": "ASEAN -> UN -> WTO.",
+      "b": "UN (1977) -> ASEAN (1995) -> WTO (2007).",
+      "c": "WTO -> UN -> ASEAN.",
+      "d": "ASEAN -> WTO -> UN."
+    },
     "answer": "b"
   }
 ]
