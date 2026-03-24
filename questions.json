@@ -1,1432 +1,903 @@
 [
   {
-    "id": 1,
-    "topic": "HTML Elements",
-    "level": "Biết",
-    "question": "Dựa trên cách hiển thị mặc định, các thẻ HTML được chia thành mấy loại chính?",
-    "options": {
-      "a": "1 loại.",
-      "b": "2 loại: phần tử khối và phần tử nội tuyến.",
-      "c": "3 loại: khối, nội tuyến và hỗn hợp.",
-      "d": "4 loại: tĩnh, động, khối và nội tuyến."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 2,
-    "topic": "HTML Elements",
-    "level": "Hiểu",
-    "question": "Đặc điểm nào sau đây mô tả đúng về phần tử khối (Block-level)?",
-    "options": {
-      "a": "Luôn bắt đầu trên một dòng mới và chiếm hết toàn bộ chiều rộng có sẵn.",
-      "b": "Chỉ chiếm chiều rộng vừa đủ chứa nội dung bên trong.",
-      "c": "Có thể nằm cùng một hàng với các phần tử khác mà không cần chỉnh CSS.",
-      "d": "Không thể thiết lập các thuộc tính về chiều cao (height)."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 3,
-    "topic": "HTML Elements",
-    "level": "Hiểu",
-    "question": "Phần tử nội tuyến (Inline-level) có đặc điểm gì nổi bật?",
-    "options": {
-      "a": "Luôn tự động xuống dòng sau mỗi thẻ.",
-      "b": "Chiếm toàn bộ chiều rộng của trình duyệt.",
-      "c": "Chỉ chiếm không gian vừa đủ nội dung và có thể nằm cạnh các phần tử khác trên cùng một hàng.",
-      "d": "Có thể chứa được các phần tử khối bên trong nó."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 4,
-    "topic": "HTML Elements",
-    "level": "Biết",
-    "question": "Thẻ nào sau đây là ví dụ điển hình nhất của phần tử khối (Block-level)?",
-    "options": {
-      "a": "<span>",
-      "b": "<a>",
-      "c": "<div>",
-      "d": "<img>"
-    },
-    "answer": "c"
-  },
-  {
-    "id": 5,
-    "topic": "HTML Elements",
-    "level": "Vận dụng",
-    "question": "Nhóm thẻ nào sau đây đều là phần tử nội tuyến (Inline-level)?",
-    "options": {
-      "a": "<h1>, <p>, <ul>",
-      "b": "<span>, <a>, <strong>",
-      "c": "<div>, <header>, <nav>",
-      "d": "<table>, <form>, <li>"
-    },
-    "answer": "b"
-  },
-  {
-    "id": 6,
-    "topic": "HTML Elements",
-    "level": "Biết",
-    "question": "Thẻ <a> (liên kết) mặc định là loại phần tử nào?",
-    "options": {
-      "a": "Phần tử khối.",
-      "b": "Phần tử nội tuyến.",
-      "c": "Phần tử ẩn.",
-      "d": "Phần tử danh sách."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 7,
-    "topic": "HTML Elements",
-    "level": "Hiểu",
-    "question": "Điểm khác biệt cơ bản giữa thẻ <div> và thẻ <span> là gì?",
-    "options": {
-      "a": "<div> dùng để định dạng chữ, <span> dùng để tạo khối.",
-      "b": "<div> là phần tử khối, <span> là phần tử nội tuyến.",
-      "c": "<div> không thể chứa thẻ khác, <span> có thể chứa thẻ khác.",
-      "d": "Không có sự khác biệt về cách hiển thị."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 8,
-    "topic": "HTML Elements",
-    "level": "Vận dụng",
-    "question": "Thẻ nào sau đây được sử dụng để định dạng một phần nhỏ văn bản trong cùng một dòng mà không làm thay đổi cấu trúc dòng đó?",
-    "options": {
-      "a": "<div>",
-      "b": "<p>",
-      "c": "<span>",
-      "d": "<h1>"
-    },
-    "answer": "c"
-  },
-  {
-    "id": 9,
-    "topic": "HTML Elements",
-    "level": "Hiểu",
-    "question": "Thẻ <img> (hình ảnh) có đặc điểm đặc biệt gì trong cách hiển thị?",
-    "options": {
-      "a": "Là phần tử khối hoàn toàn.",
-      "b": "Là phần tử nội tuyến nhưng có thể thiết lập được width và height.",
-      "c": "Không thể nằm cùng hàng với chữ.",
-      "d": "Luôn bắt đầu ở đầu trang web."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 10,
-    "topic": "HTML Elements",
-    "level": "Biết",
-    "question": "Các thẻ tiêu đề từ <h1> đến <h6> thuộc loại phần tử nào?",
-    "options": {
-      "a": "Nội tuyến.",
-      "b": "Khối.",
-      "c": "Đặc biệt.",
-      "d": "Ẩn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 11,
-    "topic": "HTML Elements",
-    "level": "Biết",
-    "question": "Phần tử khối có thể chứa những gì bên trong nó?",
-    "options": {
-      "a": "Chỉ chứa văn bản.",
-      "b": "Chỉ chứa phần tử nội tuyến.",
-      "c": "Có thể chứa cả phần tử nội tuyến và các phần tử khối khác.",
-      "d": "Không thể chứa thêm thẻ nào khác."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 12,
-    "topic": "HTML Elements",
-    "level": "Hiểu",
-    "question": "Khi một thẻ <p> (đoạn văn) được tạo ra, nó sẽ hiển thị như thế nào so với đoạn văn trước đó?",
-    "options": {
-      "a": "Nằm ngay sau đoạn văn trước trên cùng một hàng.",
-      "b": "Luôn xuống dòng và bắt đầu ở một hàng mới.",
-      "c": "Nằm đè lên đoạn văn trước.",
-      "d": "Cách đoạn văn trước một khoảng trống bên phải."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 13,
-    "topic": "HTML Elements",
-    "level": "Biết",
-    "question": "Thẻ <li> (danh sách) mặc định là phần tử gì?",
-    "options": {
-      "a": "Phần tử khối (Block).",
-      "b": "Phần tử nội tuyến (Inline).",
-      "c": "Phần tử bảng.",
-      "d": "Phần tử ảnh."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 14,
-    "topic": "HTML Elements",
-    "level": "Vận dụng",
-    "question": "Thẻ nào thường được dùng để tạo ra các khu vực lớn (như Banner, Sidebar, Footer) trên một trang web?",
-    "options": {
-      "a": "<a>",
-      "b": "<span>",
-      "c": "<div>",
-      "d": "<strong>"
-    },
-    "answer": "c"
-  },
-  {
-    "id": 15,
-    "topic": "CSS Display",
-    "level": "Biết",
-    "question": "Thuộc tính CSS nào dùng để thay đổi cách hiển thị của một phần tử (ví dụ biến Inline thành Block)?",
-    "options": {
-      "a": "visibility",
-      "b": "position",
-      "c": "float",
-      "d": "display"
-    },
-    "answer": "d"
-  },
-  {
-    "id": 16,
-    "topic": "CSS Display",
-    "level": "Hiểu",
-    "question": "Khi thiết lập display: none; cho một phần tử, kết quả sẽ như thế nào?",
-    "options": {
-      "a": "Phần tử biến mất hoàn toàn và không để lại khoảng trống trên trang web.",
-      "b": "Phần tử mờ đi nhưng vẫn chiếm chỗ.",
-      "c": "Phần tử chỉ bị ẩn nội dung bên trong, khung vẫn giữ nguyên.",
-      "d": "Phần tử chuyển sang màu trắng."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 17,
-    "topic": "CSS Display",
-    "level": "Hiểu",
-    "question": "Giá trị nào của thuộc tính display giúp phần tử vừa có thể nằm cùng hàng, vừa có thể thiết lập chiều rộng và chiều cao?",
-    "options": {
-      "a": "block",
-      "b": "inline",
-      "c": "inline-block",
-      "d": "flex"
-    },
-    "answer": "c"
-  },
-  {
-    "id": 18,
-    "topic": "CSS Display",
-    "level": "Vận dụng",
-    "question": "Để hai thẻ <div> nằm cùng một hàng với nhau, ta cần thực hiện điều gì?",
-    "options": {
-      "a": "Không cần làm gì vì mặc định chúng đã nằm cùng hàng.",
-      "b": "Thay đổi thuộc tính display của chúng thành inline hoặc inline-block.",
-      "c": "Sử dụng thẻ <span> bao quanh chúng.",
-      "d": "Xóa bỏ nội dung bên trong thẻ <div>."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 19,
-    "topic": "CSS Display",
-    "level": "Hiểu",
-    "question": "Mục đích chính của việc hiểu rõ Block và Inline trong thiết kế web là gì?",
-    "options": {
-      "a": "Để biết cách tô màu cho đẹp.",
-      "b": "Để kiểm soát bố cục và cách sắp xếp các thành phần trên trang web.",
-      "c": "Để máy tính chạy nhanh hơn.",
-      "d": "Để bảo mật thông tin tốt hơn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 20,
-    "topic": "CSS Display",
-    "level": "Vận dụng",
-    "question": "Nếu ta đặt chiều rộng width: 50% cho một phần tử nội tuyến (Inline), điều gì sẽ xảy ra?",
-    "options": {
-      "a": "Chiều rộng của nó sẽ bằng một nửa trình duyệt.",
-      "b": "Thuộc tính width sẽ bị trình duyệt bỏ qua (không có tác dụng).",
-      "c": "Nó sẽ tự động biến thành phần tử khối.",
-      "d": "Văn bản bên trong sẽ bị mất một nửa."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 21,
-    "topic": "CSS Properties",
-    "level": "Biết",
-    "question": "Trong CSS, thuộc tính nào được dùng để thay đổi khoảng cách giữa các chữ cái bên trong nội dung của một hộp?",
-    "options": {
-      "a": "padding-left.",
-      "b": "letter-spacing.",
-      "c": "margin-right.",
-      "d": "line-height."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 22,
-    "topic": "CSS Basics",
-    "level": "Biết",
-    "question": "\"External CSS\" thường được nhúng vào trang HTML thông qua thẻ nào và nằm ở đâu?",
-    "options": {
-      "a": "Thẻ <link> nằm trong thẻ <head>.",
-      "b": "Thẻ <style> nằm trong thẻ <body>.",
-      "c": "Thẻ <a> nằm trong thẻ <head>.",
-      "d": "Thẻ <script> nằm cuối trang."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 23,
-    "topic": "CSS Selectors",
-    "level": "Vận dụng",
-    "question": "Để xóa bỏ hoàn toàn khoảng cách mặc định giữa các phần tử trên toàn bộ trang web, người ta thường dùng bộ chọn nào?",
-    "options": {
-      "a": "body { margin: 0; padding: 0; }",
-      "b": "* { margin: 0; padding: 0; }",
-      "c": "#all { margin: 0; }",
-      "d": ".container { margin: 0; }"
-    },
-    "answer": "b"
-  },
-  {
-    "id": 24,
-    "topic": "CSS Pseudo-classes",
-    "level": "Hiểu",
-    "question": "Lớp giả (Pseudo-class) trong CSS được dùng để làm gì?",
-    "options": {
-      "a": "Để tạo ra các thẻ HTML hoàn toàn mới.",
-      "b": "Định dạng các phần tử dựa trên trạng thái đặc biệt của chúng (như khi di chuột qua, đã click).",
-      "c": "Để thay đổi tên của các lớp (class) trong file HTML.",
-      "d": "Để tăng tốc độ xử lý của trình duyệt."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 25,
-    "topic": "CSS Pseudo-classes",
-    "level": "Biết",
-    "question": "Ký hiệu nào dùng để bắt đầu một lớp giả (Pseudo-class)?",
-    "options": {
-      "a": "Dấu chấm (.)",
-      "b": "Dấu thăng (#)",
-      "c": "Dấu hai chấm (:)",
-      "d": "Dấu phẩy (,)"
-    },
-    "answer": "c"
-  },
-  {
-    "id": 26,
-    "topic": "CSS Pseudo-classes",
-    "level": "Vận dụng",
-    "question": "Để thay đổi màu sắc của một liên kết khi người dùng di chuột qua, ta dùng lớp giả nào?",
-    "options": {
-      "a": ":link",
-      "b": ":visited",
-      "c": ":hover",
-      "d": ":active"
-    },
-    "answer": "c"
-  },
-  {
-    "id": 27,
-    "topic": "CSS Pseudo-classes",
-    "level": "Hiểu",
-    "question": "Lớp giả :active đại diện cho trạng thái nào của phần tử?",
-    "options": {
-      "a": "Khi phần tử vừa được tải xong.",
-      "b": "Khi người dùng đang nhấn giữ chuột trên phần tử đó.",
-      "c": "Khi người dùng đã từng nhấn vào liên kết đó trong quá khứ.",
-      "d": "Khi phần tử bị ẩn khỏi trang web."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 28,
-    "topic": "CSS Pseudo-classes",
-    "level": "Biết",
-    "question": "Lớp giả :visited thường được áp dụng cho loại thẻ nào?",
-    "options": {
-      "a": "Thẻ <img>",
-      "b": "Thẻ <a> (liên kết)",
-      "c": "Thẻ <input>",
-      "d": "Thẻ <table>"
-    },
-    "answer": "b"
-  },
-  {
-    "id": 29,
-    "topic": "CSS Pseudo-elements",
-    "level": "Hiểu",
-    "question": "Phần tử giả (Pseudo-element) khác lớp giả ở điểm nào về mặt ý nghĩa?",
-    "options": {
-      "a": "Lớp giả dùng để tạo hiệu ứng, phần tử giả dùng để tính toán.",
-      "b": "Lớp giả định dạng trạng thái, phần tử giả định dạng một phần cụ thể của phần tử (như dòng đầu, chữ đầu).",
-      "c": "Lớp giả có độ ưu tiên cao hơn phần tử giả.",
-      "d": "Không có sự khác biệt nào."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 30,
-    "topic": "CSS Pseudo-elements",
-    "level": "Biết",
-    "question": "Theo chuẩn CSS3, ký hiệu nào thường được dùng để phân biệt Phần tử giả với Lớp giả?",
-    "options": {
-      "a": "Dấu hai chấm kép (::)",
-      "b": "Dấu chấm phẩy (;)",
-      "c": "Dấu gạch ngang (-)",
-      "d": "Dấu ngoặc nhọn ({})"
-    },
-    "answer": "a"
-  },
-  {
-    "id": 31,
-    "topic": "CSS Pseudo-elements",
-    "level": "Vận dụng",
-    "question": "Muốn định dạng riêng cho chữ cái đầu tiên của một đoạn văn, ta sử dụng phần tử giả nào?",
-    "options": {
-      "a": "::first-line",
-      "b": "::first-letter",
-      "c": "::before",
-      "d": "::selection"
-    },
-    "answer": "b"
-  },
-  {
-    "id": 32,
-    "topic": "CSS Pseudo-elements",
-    "level": "Hiểu",
-    "question": "Phần tử giả ::selection có tác dụng gì?",
-    "options": {
-      "a": "Định dạng phần văn bản khi người dùng bôi đen (chọn).",
-      "b": "Định dạng phần văn bản khi người dùng nhấn nút xóa.",
-      "c": "Chọn ngẫu nhiên một phần tử để định dạng.",
-      "d": "Định dạng phần tử nằm cuối cùng của trang."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 33,
-    "topic": "CSS Box Model",
-    "level": "Hiểu",
-    "question": "Nếu một phần tử có khai báo margin: 20px 10px;, giá trị 10px sẽ được áp dụng cho những hướng nào?",
-    "options": {
-      "a": "Chỉ hướng bên phải.",
-      "b": "Chỉ hướng bên trái.",
-      "c": "Hai hướng trái và phải.",
-      "d": "Hai hướng trên và dưới."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 34,
-    "topic": "CSS Box Model",
-    "level": "Biết",
-    "question": "Để viền của phần tử có nét đứt, ta sử dụng giá trị nào cho thuộc tính border-style?",
-    "options": {
-      "a": "solid.",
-      "b": "double.",
-      "c": "dashed.",
-      "d": "dotted."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 35,
-    "topic": "CSS Box Model",
-    "level": "Hiểu",
-    "question": "Thuộc tính box-sizing: border-box; có tác dụng gì quan trọng nhất?",
-    "options": {
-      "a": "Làm cho viền của hộp biến mất.",
-      "b": "Tính toán chiều rộng của hộp bao gồm cả padding và border, giúp kiểm soát kích thước chính xác hơn.",
-      "c": "Chỉ áp dụng màu nền cho phần nội dung (content).",
-      "d": "Làm cho margin tự động căn giữa."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 36,
-    "topic": "CSS Box Model",
-    "level": "Hiểu",
-    "question": "Khi thiết lập margin: auto; cho một khối (block) đã có chiều rộng cố định, kết quả sẽ là gì?",
-    "options": {
-      "a": "Khối đó sẽ biến mất khỏi trang web.",
-      "b": "Khối đó sẽ được căn giữa theo chiều ngang trong phần tử cha.",
-      "c": "Khoảng cách bên trong khối sẽ tự động tăng lên.",
-      "d": "Khối đó sẽ tràn ra ngoài màn hình."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 37,
-    "topic": "CSS Box Model",
-    "level": "Biết",
-    "question": "Khai báo nào sau đây là đúng để đặt màu viền là màu đỏ, độ dày 2px và nét liền?",
-    "options": {
-      "a": "border: 2px red solid;",
-      "b": "border: red 2px;",
-      "c": "border-style: 2px solid;",
-      "d": "border-color: 2px solid red;"
-    },
-    "answer": "a"
-  },
-  {
-    "id": 38,
-    "topic": "CSS Box Model",
-    "level": "Hiểu",
-    "question": "Vùng nào trong Box Model sẽ hiển thị hình ảnh nền (background-image) của phần tử?",
-    "options": {
-      "a": "Chỉ vùng Content.",
-      "b": "Vùng Content và vùng Padding.",
-      "c": "Vùng Content, Padding và Border.",
-      "d": "Cả 4 vùng: Content, Padding, Border và Margin."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 39,
-    "topic": "CSS Box Model",
-    "level": "Hiểu",
-    "question": "Thuộc tính padding có thể nhận giá trị là số âm không?",
-    "options": {
-      "a": "Có, để thu nhỏ nội dung.",
-      "b": "Không, giá trị padding phải luôn lớn hơn hoặc bằng 0.",
-      "c": "Chỉ có padding-top là được dùng số âm.",
-      "d": "Tùy thuộc vào trình duyệt sử dụng."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 40,
-    "topic": "CSS Box Model",
-    "level": "Biết",
-    "question": "Trong mô hình hộp (Box Model), khoảng cách từ nội dung (content) đến viền (border) được gọi là gì?",
-    "options": {
-      "a": "Margin.",
-      "b": "Padding.",
-      "c": "Spacing.",
-      "d": "Outline."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 41,
-    "topic": "CSS Box Model",
-    "level": "Biết",
-    "question": "Đặc điểm chính của Margin trong CSS là gì?",
-    "options": {
-      "a": "Tạo khoảng cách giữa viền và nội dung bên trong.",
-      "b": "Tạo khoảng cách giữa phần tử này với các phần tử khác xung quanh (bên ngoài viền).",
-      "c": "Thay đổi độ dày của đường viền phần tử.",
-      "d": "Làm cho nội dung bên trong hộp to hơn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 42,
-    "topic": "CSS Box Model",
-    "level": "Hiểu",
-    "question": "Nếu thiết lập padding: 5px; border: 1px solid black;, phát biểu nào sau đây là ĐÚNG?",
-    "options": {
-      "a": "Khoảng cách từ nội dung tới viền là 5px.",
-      "b": "Khoảng cách giữa hai thẻ div cạnh nhau là 5px.",
-      "c": "Viền sẽ nằm sát vào nội dung.",
-      "d": "Tổng chiều rộng phần tử không thay đổi."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 43,
-    "topic": "CSS Box Model",
-    "level": "Biết",
-    "question": "Thứ tự các giá trị trong thuộc tính viết tắt padding: 10px 20px 30px 40px; tương ứng với các hướng nào?",
-    "options": {
-      "a": "Trái - Phải - Trên - Dưới.",
-      "b": "Trên - Phải - Dưới - Trái (Theo chiều kim đồng hồ).",
-      "c": "Trên - Dưới - Trái - Phải.",
-      "d": "Dưới - Trái - Trên - Phải."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 44,
-    "topic": "CSS Specificity",
-    "level": "Hiểu",
-    "question": "Độ ưu tiên (trọng số) của bộ chọn được trình duyệt dùng để làm gì?",
-    "options": {
-      "a": "Để xác định thẻ nào chạy trước, thẻ nào chạy sau.",
-      "b": "Để quyết định quy tắc CSS nào sẽ được áp dụng khi có nhiều quy tắc cùng tác động lên một phần tử.",
-      "c": "Để nén dung lượng file CSS.",
-      "d": "Để kiểm tra lỗi cú pháp trong HTML."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 45,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Trong các bộ chọn sau, bộ chọn nào có trọng số (độ ưu tiên) CAO NHẤT?",
-    "options": {
-      "a": "Bộ chọn phần tử (Element selector - ví dụ: p).",
-      "b": "Bộ chọn lớp (Class selector - ví dụ: .text).",
-      "c": "Bộ chọn mã định danh (ID selector - ví dụ: #header).",
-      "d": "Bộ chọn toàn cục (Universal selector - ví dụ: *)."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 46,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Trọng số của bộ chọn Lớp (Class) thường được quy ước là bao nhiêu điểm?",
-    "options": {
-      "a": "1 điểm.",
-      "b": "10 điểm.",
-      "c": "100 điểm.",
-      "d": "0 điểm."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 47,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Bộ chọn phần tử (như thẻ div, p, h1) có trọng số là bao nhiêu?",
-    "options": {
-      "a": "1 điểm.",
-      "b": "10 điểm.",
-      "c": "100 điểm.",
-      "d": "1000 điểm."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 48,
-    "topic": "CSS Specificity",
-    "level": "Hiểu",
-    "question": "Từ khóa !important có ý nghĩa gì trong CSS?",
-    "options": {
-      "a": "Làm cho dòng code đó không hoạt động.",
-      "b": "Ép buộc trình duyệt ưu tiên thuộc tính đó ở mức cao nhất, bất chấp mọi trọng số.",
-      "c": "Dùng để đánh dấu các dòng code quan trọng để lập trình viên dễ đọc.",
-      "d": "Chỉ có tác dụng khi dùng với thẻ <div>."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 49,
-    "topic": "CSS Specificity",
-    "level": "Hiểu",
-    "question": "Nếu hai bộ chọn có CÙNG trọng số cùng trỏ đến một phần tử, quy tắc nào sẽ được áp dụng?",
-    "options": {
-      "a": "Quy tắc nào viết trước sẽ thắng.",
-      "b": "Quy tắc nào viết sau (cuối cùng) sẽ thắng.",
-      "c": "Trình duyệt sẽ bỏ qua cả hai.",
-      "d": "Trình duyệt chọn ngẫu nhiên."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 50,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Thứ tự ưu tiên ĐÚNG từ thấp đến cao của các bộ chọn là gì?",
-    "options": {
-      "a": "ID < Class < Thẻ.",
-      "b": "Thẻ < Class < ID.",
-      "c": "Class < ID < Thẻ.",
-      "d": "Thẻ < ID < Class."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 51,
-    "topic": "CSS Specificity",
-    "level": "Vận dụng",
-    "question": "Tổng trọng số của bộ chọn phức hợp nav .menu-item a là bao nhiêu?",
-    "options": {
-      "a": "3",
-      "b": "12",
-      "c": "21",
-      "d": "102"
-    },
-    "answer": "b"
-  },
-  {
-    "id": 52,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Khi tính trọng số, bộ chọn toàn cục (ký hiệu *) đóng góp bao nhiêu điểm?",
-    "options": {
-      "a": "0 điểm.",
-      "b": "1 điểm.",
-      "c": "10 điểm.",
-      "d": "100 điểm."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 53,
-    "topic": "CSS Specificity",
-    "level": "Hiểu",
-    "question": "Tại sao việc lạm dụng !important được coi là một thói quen không tốt khi viết CSS?",
-    "options": {
-      "a": "Vì nó làm cho file CSS nặng hơn.",
-      "b": "Vì nó làm hỏng cấu trúc HTML.",
-      "c": "Vì nó gây khó khăn cho việc bảo trì và ghi đè code sau này.",
-      "d": "Vì trình duyệt Chrome không hỗ trợ !important."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 54,
-    "topic": "CSS Specificity",
-    "level": "Hiểu",
-    "question": "Quy tắc \"Thứ tự cuối cùng\" (Rule Order) chỉ có ý nghĩa khi nào?",
-    "options": {
-      "a": "Khi các bộ chọn có trọng số khác nhau.",
-      "b": "Khi các bộ chọn có cùng trọng số.",
-      "c": "Khi sử dụng mã định danh ID.",
-      "d": "Khi file CSS quá dài."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 55,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Trong CSS Specificity (Trọng số ưu tiên), bộ chọn (selector) nào dưới đây có độ ưu tiên cao nhất?",
-    "options": {
-      "a": "Class selector (Ví dụ: .noidung).",
-      "b": "Element selector (Ví dụ: p, div).",
-      "c": "ID selector (Ví dụ: #header).",
-      "d": "Universal selector (Ví dụ: *)."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 56,
-    "topic": "CSS Specificity",
-    "level": "Hiểu",
-    "question": "Nếu một phần tử <p> vừa được định nghĩa màu chữ trong file .css bên ngoài, vừa được định nghĩa trong thẻ <style> ở đầu trang HTML với cùng độ ưu tiên, trình duyệt sẽ chọn màu nào?",
-    "options": {
-      "a": "Luôn chọn màu trong file .css bên ngoài.",
-      "b": "Luôn chọn màu trong thẻ <style>.",
-      "c": "Chọn màu của quy tắc nào xuất hiện sau cùng trong tài liệu HTML.",
-      "d": "Trình duyệt sẽ chọn màu mặc định là đen."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 57,
-    "topic": "CSS Specificity",
-    "level": "Vận dụng",
-    "question": "Cho đoạn mã: <div style=\"color: blue !important;\"> và trong file CSS có .box { color: red; }. Màu của div sẽ là gì?",
-    "options": {
-      "a": "Màu đỏ.",
-      "b": "Màu xanh (blue).",
-      "c": "Màu đen mặc định.",
-      "d": "Cả hai màu trộn lại."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 58,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Khi cùng một phần tử được định nghĩa bởi nhiều nguồn CSS khác nhau, thứ tự ưu tiên nào sau đây là ĐÚNG (từ cao xuống thấp)?",
-    "options": {
-      "a": "External CSS > Internal CSS > Inline CSS.",
-      "b": "Inline CSS > Internal CSS > External CSS.",
-      "c": "Browser default > External CSS > Inline CSS.",
-      "d": "Internal CSS > Inline CSS > External CSS."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 59,
-    "topic": "CSS Specificity",
-    "level": "Biết",
-    "question": "Từ khóa nào được dùng để ép buộc trình duyệt ưu tiên một quy tắc CSS tuyệt đối, bất kể trọng số của bộ chọn?",
-    "options": {
-      "a": "@priority",
-      "b": "#important",
-      "c": "!important",
-      "d": ":force"
-    },
-    "answer": "c"
-  },
-  {
-    "id": 60,
-    "topic": "CSS Specificity",
-    "level": "Hiểu",
-    "question": "Nếu file CSS ngoài (External) và thẻ <style> (Internal) có cùng trọng số và cùng trỏ vào một thẻ <h1>, trình duyệt sẽ ưu tiên cái nào?",
-    "options": {
-      "a": "Luôn ưu tiên file CSS ngoài.",
-      "b": "Luôn ưu tiên thẻ <style>.",
-      "c": "Ưu tiên cái nào được viết/khai báo sau cùng trong tệp HTML.",
-      "d": "Trình duyệt sẽ tự động bỏ qua cả hai."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 61,
-    "topic": "Dịch vụ CNTT",
-    "level": "Hiểu",
-    "question": "Mục tiêu chung của các nghề dịch vụ trong ngành CNTT là gì?",
-    "options": {
-      "a": "Chỉ tập trung vào việc sản xuất linh kiện điện tử.",
-      "b": "Hỗ trợ, phát triển và duy trì các hệ thống CNTT hoạt động ổn định và hiệu quả.",
-      "c": "Thay thế con người thực hiện các công việc thủ công.",
-      "d": "Chỉ bán các thiết bị máy tính tại cửa hàng."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 62,
-    "topic": "Dịch vụ máy tính",
-    "level": "Biết",
-    "question": "Công việc nào sau đây thuộc nhóm nhiệm vụ \"Liên quan đến phần cứng\"?",
-    "options": {
-      "a": "Cài đặt hệ điều hành Windows.",
-      "b": "Quét mã độc và virus cho máy tính.",
-      "c": "Lắp đặt, sửa chữa hoặc thay thế các linh kiện như RAM, CPU, Bo mạch chủ.",
-      "d": "Hướng dẫn nhân viên sử dụng phần mềm kế toán."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 63,
-    "topic": "Dịch vụ máy tính",
-    "level": "Hiểu",
-    "question": "Việc nâng cấp ổ cứng từ HDD lên SSD để máy tính chạy nhanh hơn được xếp vào loại công việc nào?",
-    "options": {
-      "a": "Bảo trì phần mềm.",
-      "b": "Nâng cấp thiết bị phần cứng.",
-      "c": "Quản trị cơ sở dữ liệu.",
-      "d": "Đào tạo nhân sự."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 64,
-    "topic": "Dịch vụ máy tính",
-    "level": "Biết",
-    "question": "Nhiệm vụ \"Cài đặt và cập nhật các trình điều khiển (driver) cho thiết bị ngoại vi\" thuộc nhóm nào?",
-    "options": {
-      "a": "Liên quan tới phần mềm.",
-      "b": "Liên quan tới phần cứng.",
-      "c": "Quản trị mạng cục bộ.",
-      "d": "Thiết kế đồ họa."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 65,
-    "topic": "Dịch vụ máy tính",
-    "level": "Hiểu",
-    "question": "Hoạt động \"Kiểm tra, rà soát an toàn hệ thống và quét mã độc định kỳ\" nhằm mục đích gì?",
-    "options": {
-      "a": "Tăng dung lượng lưu trữ cho ổ cứng.",
-      "b": "Bảo trì phần mềm và bảo mật hệ thống.",
-      "c": "Làm sạch bụi bẩn bên trong máy tính.",
-      "d": "Thay đổi diện mạo của vỏ máy tính."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 66,
-    "topic": "Dịch vụ máy tính",
-    "level": "Vận dụng",
-    "question": "Công việc \"Thay thế màn hình có độ phân giải cao hơn\" cho nhân viên thiết kế thuộc nhóm nào?",
-    "options": {
-      "a": "Bảo trì phần mềm hệ thống.",
-      "b": "Nâng cấp thiết bị phần cứng theo nhu cầu tổ chức.",
-      "c": "Sửa chữa lỗi mạng nội bộ.",
-      "d": "Cài đặt ứng dụng văn phòng."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 67,
-    "topic": "Dịch vụ máy tính",
-    "level": "Biết",
-    "question": "Công việc nào dưới đây thuộc về \"Bảo trì phần mềm\"?",
-    "options": {
-      "a": "Vệ sinh bụi bẩn trong thùng máy.",
-      "b": "Tra keo tản nhiệt cho CPU.",
-      "c": "Cập nhật các bản vá lỗi cho hệ điều hành và phần mềm ứng dụng.",
-      "d": "Thay thế dây cáp nguồn bị hỏng."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 68,
-    "topic": "Dịch vụ máy tính",
-    "level": "Hiểu",
-    "question": "Sự khác biệt giữa \"Sửa chữa\" và \"Bảo trì\" máy tính là gì?",
-    "options": {
-      "a": "Sửa chữa là khắc phục lỗi khi máy đã hỏng; Bảo trì là chăm sóc định kỳ để ngăn ngừa hỏng hóc.",
-      "b": "Sửa chữa là việc của thợ, Bảo trì là việc của người dùng.",
-      "c": "Sửa chữa chỉ làm với phần cứng, Bảo trì chỉ làm với phần mềm.",
-      "d": "Hai khái niệm này hoàn toàn giống nhau."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 69,
-    "topic": "Hỗ trợ kỹ thuật",
-    "level": "Biết",
-    "question": "Nhóm công việc \"Hỗ trợ người dùng\" (Help Desk) thường thực hiện nhiệm vụ gì?",
-    "options": {
-      "a": "Lập trình ra các hệ điều hành mới.",
-      "b": "Giải đáp thắc mắc và hướng dẫn khách hàng sử dụng các ứng dụng, thiết bị công nghệ.",
-      "c": "Giao hàng linh kiện từ kho đến cửa hàng bán lẻ.",
-      "d": "Thiết kế các mạch điện tử tích hợp trên CPU."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 70,
-    "topic": "Quản trị CNTT",
-    "level": "Biết",
-    "question": "Mục tiêu chính của nhóm nghề quản trị trong ngành CNTT là gì?",
-    "options": {
-      "a": "Lập trình và phát triển các trò chơi điện tử trực tuyến.",
-      "b": "Đảm bảo các hệ thống, dịch vụ và hạ tầng CNTT hoạt động ổn định, an toàn và hiệu quả.",
-      "c": "Chỉ thực hiện việc bán và phân phối các thiết bị phần cứng.",
-      "d": "Thiết kế các sản phẩm đồ họa truyền thông cho doanh nghiệp."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 71,
-    "topic": "Quản trị hệ thống",
-    "level": "Biết",
-    "question": "Vị trí \"Quản trị hệ thống\" (System Administrator) chịu trách nhiệm chính về công việc nào?",
-    "options": {
-      "a": "Thiết kế giao diện người dùng cho các ứng dụng di động.",
-      "b": "Cài đặt, cấu hình, duy trì và đảm bảo sự vận hành của máy chủ và hệ điều hành.",
-      "c": "Nghiên cứu xu hướng mua sắm của khách hàng trên Internet.",
-      "d": "Thay thế linh kiện cho các máy tính cá nhân lẻ."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 72,
-    "topic": "Quản trị hệ thống",
-    "level": "Biết",
-    "question": "Việc thiết lập quyền truy cập (phân quyền) cho từng nhân viên trong hệ thống là nhiệm vụ của:",
-    "options": {
-      "a": "Quản trị hệ thống hoặc Quản trị an ninh.",
-      "b": "Nhân viên bảo vệ tòa nhà.",
-      "c": "Bộ phận kế toán công ty.",
-      "d": "Người dùng cuối (End-user)."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 73,
-    "topic": "Quản trị hệ thống",
-    "level": "Hiểu",
-    "question": "Thuật ngữ \"Hạ tầng CNTT\" (IT Infrastructure) bao gồm những gì?",
-    "options": {
-      "a": "Chỉ bao gồm các phần mềm ứng dụng văn phòng.",
-      "b": "Bao gồm phần cứng, phần mềm, mạng và các dịch vụ cần thiết để vận hành hệ thống.",
-      "c": "Chỉ bao gồm bàn ghế và các thiết bị văn phòng.",
-      "d": "Chỉ bao gồm các tài liệu hướng dẫn sử dụng máy tính."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 74,
-    "topic": "Quản trị hệ thống",
-    "level": "Hiểu",
-    "question": "Tại sao nghề quản trị CNTT lại quan trọng đối với các ngân hàng?",
-    "options": {
-      "a": "Để giúp nhân viên ngân hàng đánh máy nhanh hơn.",
-      "b": "Để đảm bảo các giao dịch tài chính và dữ liệu khách hàng luôn an toàn, liên tục.",
-      "c": "Để ngân hàng có thể bán được nhiều máy tính hơn.",
-      "d": "Để trang trí website của ngân hàng thêm đẹp mắt."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 75,
-    "topic": "Quản trị mạng",
-    "level": "Biết",
-    "question": "Nhiệm vụ nào sau đây thuộc về người làm \"Quản trị mạng\" (Network Administrator)?",
-    "options": {
-      "a": "Chỉnh sửa nội dung hình ảnh trên trang web công ty.",
-      "b": "Thiết kế, triển khai và quản lý các kết nối mạng nội bộ (LAN) và mạng diện rộng (WAN).",
-      "c": "Viết mã nguồn cho các phần mềm ứng dụng văn phòng.",
-      "d": "Sửa chữa lỗi vật lý của màn hình máy tính."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 76,
-    "topic": "Quản trị mạng",
-    "level": "Biết",
-    "question": "Chứng chỉ quốc tế nào sau đây thường dành cho những người theo đuổi nghề quản trị mạng?",
-    "options": {
-      "a": "IELTS (International English Language Testing System).",
-      "b": "CCNA (Cisco Certified Network Associate).",
-      "c": "Chứng chỉ sư phạm hoặc tâm lý học.",
-      "d": "Chứng chỉ quản lý khách sạn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 77,
-    "topic": "Quản trị cơ sở dữ liệu",
-    "level": "Biết",
-    "question": "\"Quản trị cơ sở dữ liệu\" (Database Administrator) đóng vai trò gì trong doanh nghiệp?",
-    "options": {
-      "a": "Soạn thảo các văn bản hành chính cho bộ phận kỹ thuật.",
-      "b": "Lưu trữ, tổ chức, bảo mật và đảm bảo tính toàn vẹn của dữ liệu.",
-      "c": "Cài đặt các phần mềm giải trí cho nhân viên trong công ty.",
-      "d": "Chụp ảnh và quản lý kho hình ảnh sản phẩm."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 78,
-    "topic": "Quản trị cơ sở dữ liệu",
-    "level": "Hiểu",
-    "question": "Hoạt động \"Sao lưu dữ liệu\" (Backup) thường xuyên được thực hiện nhằm mục đích gì?",
-    "options": {
-      "a": "Để chiếm hết dung lượng lưu trữ của máy chủ dự phòng.",
-      "b": "Đảm bảo có thể khôi phục hệ thống và dữ liệu khi gặp sự cố hoặc bị tấn công.",
-      "c": "Để xóa bỏ các dữ liệu cũ không còn giá trị sử dụng.",
-      "d": "Để chia sẻ dữ liệu mật của công ty ra bên ngoài."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 79,
-    "topic": "Quản trị cơ sở dữ liệu",
-    "level": "Hiểu",
-    "question": "Một người quản trị cơ sở dữ liệu cần đảm bảo \"tính toàn vẹn của dữ liệu\", nghĩa là:",
-    "options": {
-      "a": "Dữ liệu phải được in ra đầy đủ trên giấy.",
-      "b": "Dữ liệu phải chính xác, không bị thay đổi trái phép hoặc mất mát.",
-      "c": "Dữ liệu phải được chia sẻ cho tất cả mọi người cùng xem.",
-      "d": "Dữ liệu phải luôn được lưu dưới dạng hình ảnh."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 80,
-    "topic": "An ninh mạng",
-    "level": "Biết",
-    "question": "Công việc bảo vệ hệ thống thông tin khỏi các truy cập trái phép và các cuộc tấn công mạng là nhiệm vụ của ai?",
-    "options": {
-      "a": "Quản trị viên dịch vụ (Service Administrator).",
-      "b": "Quản trị viên an ninh mạng (Security Administrator).",
-      "c": "Chuyên viên thiết kế web (Web Designer).",
-      "d": "Nhân viên hỗ trợ bán hàng."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 81,
-    "topic": "An ninh mạng",
-    "level": "Hiểu",
-    "question": "\"Quản trị viên an ninh mạng\" cần cập nhật kiến thức về điều gì thường xuyên nhất?",
-    "options": {
-      "a": "Các mẫu thiết kế quần áo mới nhất.",
-      "b": "Các loại mã độc (malware) và lỗ hổng bảo mật mới xuất hiện.",
-      "c": "Các phương pháp nấu ăn công nghiệp.",
-      "d": "Các xu hướng văn học cổ điển."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 82,
-    "topic": "Quản trị dịch vụ",
-    "level": "Hiểu",
-    "question": "Vai trò của \"Quản trị dịch vụ CNTT\" (IT Service Management) là gì?",
-    "options": {
-      "a": "Đảm bảo các dịch vụ công nghệ đáp ứng đúng nhu cầu và sự hài lòng của người dùng.",
-      "b": "Chỉ tập trung vào việc đi giao thiết bị tận nhà cho khách.",
-      "c": "Tổ chức các sự kiện vui chơi giải trí cho phòng kỹ thuật.",
-      "d": "Dọn dẹp vệ sinh bụi bẩn cho các phòng máy tính."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 83,
-    "topic": "Đặc điểm nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Đặc điểm nào sau đây mô tả đúng về môi trường làm việc của nghề quản trị CNTT?",
-    "options": {
-      "a": "Công việc rất nhẹ nhàng, chỉ làm việc trong giờ hành chính.",
-      "b": "Đòi hỏi sự cẩn trọng, tỉ mỉ và sẵn sàng ứng trực xử lý sự cố bất kể thời gian.",
-      "c": "Không cần cập nhật kiến thức mới vì các hệ thống luôn giống nhau.",
-      "d": "Không cần quan tâm đến các quy định về bảo mật dữ liệu."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 84,
-    "topic": "Xu hướng công nghệ",
-    "level": "Hiểu",
-    "question": "Xu hướng quản trị hiện đại ngày nay tập trung mạnh mẽ vào lĩnh vực nào?",
-    "options": {
-      "a": "Quản trị các máy tính thế hệ cũ sử dụng đĩa mềm.",
-      "b": "Quản trị điện toán đám mây (Cloud Management) và hạ tầng ảo hóa.",
-      "c": "Chỉ quản trị các thiết bị máy đánh chữ điện tử đời đầu.",
-      "d": "Quay về sử dụng các phương thức lưu trữ dữ liệu bằng giấy tờ."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 85,
-    "topic": "Quản trị CNTT",
-    "level": "Vận dụng",
-    "question": "Công việc nào sau đây KHÔNG thuộc nhóm nghề quản trị CNTT?",
-    "options": {
-      "a": "Cấu hình thiết bị phát sóng Wi-Fi cho công ty.",
-      "b": "Sửa chữa bo mạch chủ cho khách hàng lẻ tại cửa hàng.",
-      "c": "Cấp phát tài khoản email cho nhân viên mới.",
-      "d": "Giám sát hoạt động của máy chủ (Server)."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 86,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Tại sao người làm nghề sửa chữa máy tính cần có kiến thức cơ bản về mạng máy tính?",
-    "options": {
-      "a": "Để có thể tự xây dựng website cho riêng mình.",
-      "b": "Để biết cách kết nối, cấu hình IP và xử lý sự cố mạng Internet cho người dùng.",
-      "c": "Để thay thế cho nhân viên lắp đặt điện lưới quốc gia.",
-      "d": "Để có thể chơi trò chơi trực tuyến nhanh hơn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 87,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Kỹ năng \"Giải quyết vấn đề\" (Problem-solving) quan trọng như thế nào trong nghề này?",
-    "options": {
-      "a": "Giúp thợ sửa chữa đoán mò lỗi mà không cần kiểm tra.",
-      "b": "Giúp phân tích nguyên nhân sự cố một cách logic và tìm ra giải pháp khắc phục hiệu quả nhất.",
-      "c": "Giúp hoàn thành công việc nhanh hơn mà không cần quy trình.",
-      "d": "Chỉ cần thiết khi máy tính bị hỏa hoạn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 88,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Người thợ sửa chữa cần kỹ năng giao tiếp tốt để làm gì?",
-    "options": {
-      "a": "Để thuyết phục khách hàng mua máy mới với giá cao hơn.",
-      "b": "Để lắng nghe yêu cầu và giải thích các vấn đề kỹ thuật cho khách hàng một cách dễ hiểu.",
-      "c": "Để có thể làm việc một mình mà không cần đồng nghiệp hỗ trợ.",
-      "d": "Để viết các chương trình quảng cáo tự động trên mạng."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 89,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Kỹ năng \"Quản lý thời gian\" đóng vai trò gì trong dịch vụ bảo trì máy tính?",
-    "options": {
-      "a": "Giúp thợ sửa chữa có thêm thời gian để nghỉ ngơi.",
-      "b": "Giúp hoàn thành công việc đúng thời hạn cam kết và đáp ứng kịp thời nhu cầu khách hàng.",
-      "c": "Chỉ dùng để tính tiền công dựa trên số giờ làm việc.",
-      "d": "Để báo cáo lịch trình với các cơ quan quản lý lao động."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 90,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Việc nắm vững kiến thức về an toàn điện có ý nghĩa gì đối với người thợ sửa chữa?",
-    "options": {
-      "a": "Để có thể sửa chữa cả các đồ điện gia dụng khác.",
-      "b": "Đảm bảo an toàn tính mạng cho chính mình và tránh gây cháy nổ thiết bị của khách hàng.",
-      "c": "Để tăng giá thành dịch vụ sửa chữa.",
-      "d": "Không thực sự cần thiết vì nguồn điện máy tính rất thấp."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 91,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Kỹ năng \"Troubleshooting\" (Chẩn đoán và giải quyết sự cố) được coi là gì trong nghề quản trị?",
-    "options": {
-      "a": "Là một kỹ năng phụ, không bắt buộc phải có.",
-      "b": "Là kỹ năng \"xương sống\" để xác định nguyên nhân và khắc phục lỗi hệ thống kịp thời.",
-      "c": "Chỉ cần thiết đối với những người quản lý cấp cao nhất.",
-      "d": "Chỉ dùng khi cần cài đặt các máy tính mới hoàn toàn."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 92,
-    "topic": "Kỹ năng nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Tại sao kỹ năng giao tiếp lại cần thiết đối với một người quản trị CNTT?",
-    "options": {
-      "a": "Để thuyết phục khách hàng mua thêm các thiết bị đắt tiền.",
-      "b": "Để giải thích các vấn đề kỹ thuật phức tạp cho người dùng và phối hợp với các bộ phận khác.",
-      "c": "Để viết các bài blog cá nhân về công nghệ hàng ngày.",
-      "d": "Để có thể làm việc độc lập mà không cần tương tác với ai."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 93,
-    "topic": "Hướng nghiệp CNTT",
-    "level": "Hiểu",
-    "question": "Cuộc Cách mạng công nghiệp 4.0 có tác hưởng như thế nào đến nhu cầu nhân lực của nghề này?",
-    "options": {
-      "a": "Làm cho nghề này trở nên lỗi thời và bị thay thế.",
-      "b": "Làm tăng nhu cầu về nhân lực chất lượng cao do sự bùng nổ của các thiết bị kết nối.",
-      "c": "Giúp máy tính tự động sửa chữa mà không cần con người.",
-      "d": "Làm giảm số lượng thiết bị cần được bảo trì."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 94,
-    "topic": "Hướng nghiệp CNTT",
-    "level": "Biết",
-    "question": "Đâu là tên một ngành đào tạo phổ biến tại Việt Nam liên quan trực tiếp đến nghề này?",
-    "options": {
-      "a": "Kỹ thuật sửa chữa, lắp ráp máy tính.",
-      "b": "Quản trị kinh doanh du lịch.",
-      "c": "Ngôn ngữ học ứng dụng.",
-      "d": "Tâm lý học hành vi."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 95,
-    "topic": "Hướng nghiệp CNTT",
-    "level": "Biết",
-    "question": "Tại Việt Nam, người theo nghề sửa chữa máy tính có thể học tập ở những cấp bậc nào?",
-    "options": {
-      "a": "Chỉ học ở các trung tâm dạy nghề ngắn hạn.",
-      "b": "Chỉ học ở bậc Đại học.",
-      "c": "Đa dạng các bậc: Sơ cấp nghề, Trung cấp, Cao đẳng và Đại học.",
-      "d": "Chỉ học theo hình thức tự học tại nhà."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 96,
-    "topic": "Hướng nghiệp CNTT",
-    "level": "Hiểu",
-    "question": "Tại sao nhân lực nghề sửa chữa máy tính ngày nay cần trình độ chuyên môn cao hơn trước?",
-    "options": {
-      "a": "Vì các thiết bị ngày càng rẻ và dễ hỏng.",
-      "b": "Vì sự phức tạp của các hệ thống máy tính hiện đại và các yêu cầu khắt khe về bảo mật.",
-      "c": "Vì người dùng không còn muốn tự học cách sử dụng máy tính.",
-      "d": "Vì luật pháp yêu cầu thợ sửa máy phải có bằng đại học."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 97,
-    "topic": "Đạo đức nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Phẩm chất quan trọng nhất của một thợ bảo trì máy tính chuyên nghiệp là gì?",
-    "options": {
-      "a": "Sự vội vàng để sửa được thật nhiều máy trong ngày.",
-      "b": "Sự tỉ mỉ, cẩn thận, trung thực và tính kiên nhẫn khi tìm lỗi.",
-      "c": "Chỉ chọn làm những việc dễ và bỏ qua những lỗi khó.",
-      "d": "Không cần quan tâm đến các quy tắc an toàn về điện."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 98,
-    "topic": "Đạo đức nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Một người thợ sửa chữa máy tính \"có tâm\" cần lưu ý điều gì về dữ liệu của khách hàng?",
-    "options": {
-      "a": "Có thể tự ý xem và sao chép dữ liệu của khách hàng.",
-      "b": "Phải tôn trọng quyền riêng tư và đảm bảo an toàn dữ liệu cho khách hàng trong quá trình sửa chữa.",
-      "c": "Xóa hết dữ liệu của khách hàng cho máy chạy nhanh hơn.",
-      "d": "Chia sẻ dữ liệu của khách hàng lên mạng xã hội."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 99,
-    "topic": "Đạo đức nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Phẩm chất \"trung thực\" đặc biệt quan trọng đối với nghề quản trị vì:",
-    "options": {
-      "a": "Họ thường xuyên tiếp cận với các thông tin nhạy cảm và dữ liệu quan trọng của tổ chức.",
-      "b": "Họ phải báo cáo giờ làm việc chính xác cho cấp trên.",
-      "c": "Họ cần trung thực để máy tính không bị hỏng.",
-      "d": "Họ phải thanh toán hóa đơn tiền điện đúng hạn."
-    },
-    "answer": "a"
-  },
-  {
-    "id": 100,
-    "topic": "Đạo đức nghề nghiệp",
-    "level": "Hiểu",
-    "question": "Tầm quan trọng của việc học tập suốt đời đối với nghề quản trị CNTT là gì?",
-    "options": {
-      "a": "Để lấy được thật nhiều bằng cấp treo trong phòng.",
-      "b": "Để bắt kịp tốc độ thay đổi chóng mặt của công nghệ và các phương thức tấn công mạng.",
-      "c": "Để có thể thay đổi nghề nghiệp sang lĩnh vực khác dễ dàng hơn.",
-      "d": "Để không phải làm việc với các hệ thống máy tính hiện đại."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 101,
-    "topic": "CSS Selectors",
-    "level": "Biết",
-    "question": "Ký hiệu nào dùng để khai báo Bộ chọn định danh (ID Selector) trong CSS?",
-    "options": {
-      "a": "Dấu chấm (.)",
-      "b": "Dấu sao (*)",
-      "c": "Dấu thăng (#)",
-      "d": "Dấu ngoặc vuông ([ ])"
-    },
-    "answer": "c"
-  },
-  {
-    "id": 102,
-    "topic": "CSS Selectors",
-    "level": "Biết",
-    "question": "Bộ chọn lớp (Class Selector) được nhận diện bằng ký hiệu nào phía trước tên lớp?",
-    "options": {
-      "a": "Dấu chấm (.)",
-      "b": "Dấu phẩy (,)",
-      "c": "Dấu hai chấm (:)",
-      "d": "Dấu chấm phẩy (;)"
-    },
-    "answer": "a"
-  },
-  {
-    "id": 103,
-    "topic": "CSS Selectors",
-    "level": "Hiểu",
-    "question": "Quy tắc nào sau đây ĐÚNG khi đặt tên cho một Class hoặc ID?",
-    "options": {
-      "a": "Có thể bắt đầu bằng chữ số (ví dụ: .12A1).",
-      "b": "Không được chứa khoảng trắng (dấu cách).",
-      "c": "Không phân biệt chữ hoa và chữ thường.",
-      "d": "Có thể dùng các ký tự đặc biệt như @, $, %."
-    },
-    "answer": "b"
-  },
-  {
-    "id": 104,
-    "topic": "CSS Selectors",
-    "level": "Vận dụng",
-    "question": "Trong HTML, nếu muốn một phần tử có ID là \"logo\", ta viết như thế nào?",
-    "options": {
-      "a": "<div class=\"logo\">",
-      "b": "<div id=\"#logo\">",
-      "c": "<div id=\"logo\">",
-      "d": "<div select=\"logo\">"
-    },
-    "answer": "c"
-  },
-  {
-    "id": 105,
-    "topic": "CSS Selectors",
-    "level": "Hiểu",
-    "question": "Để chọn tất cả các thẻ <img> có thuộc tính alt (mô tả ảnh), ta dùng bộ chọn nào?",
-    "options": {
-      "a": "img.alt",
-      "b": "img#alt",
-      "c": "img[alt]",
-      "d": "img:alt"
-    },
-    "answer": "c"
-  },
-  {
-    "id": 106,
-    "topic": "CSS Selectors",
-    "level": "Hiểu",
-    "question": "Một phần tử HTML có thể thuộc về nhiều lớp (Class) khác nhau không?",
-    "options": {
-      "a": "Không, chỉ được chọn 1 lớp duy nhất.",
-      "b": "Có, các tên lớp viết cách nhau bởi dấu phẩy.",
-      "c": "Có, các tên lớp viết cách nhau bởi dấu cách.",
-      "d": "Có, mỗi lớp viết trong một thuộc tính class riêng."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 107,
-    "topic": "CSS Selectors",
-    "level": "Hiểu",
-    "question": "Điểm khác biệt lớn nhất giữa ID và Class là gì?",
-    "options": {
-      "a": "ID bắt đầu bằng dấu chấm, Class bắt đầu bằng dấu thăng.",
-      "b": "ID có thể dùng cho nhiều phần tử, Class chỉ dùng cho 1 phần tử.",
-      "c": "ID là duy nhất cho 1 phần tử trên trang, Class có thể dùng cho nhiều phần tử.",
-      "d": "Class có độ ưu tiên cao hơn ID."
-    },
-    "answer": "c"
-  },
-  {
-    "id": 108,
-    "topic": "CSS Selectors",
-    "level": "Vận dụng",
-    "question": "Bộ chọn nào sau đây chọn các thẻ input có thuộc tính type mang giá trị là \"password\"?",
-    "options": {
-      "a": "input(type=password)",
-      "b": "input[type=\"password\"]",
-      "c": "input.password",
-      "d": "input#password"
-    },
-    "answer": "b"
-  },
-  {
-    "id": 109,
-    "topic": "CSS Selectors",
-    "level": "Hiểu",
-    "question": "Tên bộ chọn nào sau đây là KHÔNG hợp lệ?",
-    "options": {
-      "a": ".menu_top",
-      "b": "#MainContent",
-      "c": ".nav-item",
-      "d": ".3-cot"
-    },
-    "answer": "d"
-  },
-  {
-    "id": 110,
-    "topic": "CSS Selectors",
-    "level": "Vận dụng",
-    "question": "Khi viết p.special { color: red; }, trình duyệt sẽ làm gì?",
-    "options": {
-      "a": "Tô đỏ tất cả các thẻ <p>.",
-      "b": "Tô đỏ tất cả các phần tử có lớp special.",
-      "c": "Chỉ tô đỏ những thẻ <p> có thuộc tính class=\"special\".",
-      "d": "Tô đỏ tất cả các thẻ <p> và tất cả các lớp special."
-    },
-    "answer": "c"
+    "question": "Câu 1: Đầu năm 1905, Phan Bội Châu sang Nhật Bản nhằm mục đích chính là gì?",
+    "options": [
+      "A. Kêu gọi vốn đầu tư cho kinh tế Việt Nam.",
+      "B. Nhờ giúp đỡ về khí giới và đào tạo nhân lực cứu nước.",
+      "C. Tham quan mô hình giáo dục của Nhật Bản.",
+      "D. Thành lập chi bộ Đảng tại Tokyo."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 2: Phong trào \"Đông Du\" gắn liền với hoạt động của ai tại Nhật Bản?",
+    "options": [
+      "A. Phan Châu Trinh.",
+      "B. Nguyễn Ái Quốc.",
+      "C. Phan Bội Châu.",
+      "D. Huỳnh Thúc Kháng."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 3: Năm 1908, Phan Bội Châu tham gia thành lập tổ chức quốc tế nào để hợp sức chống đế quốc?",
+    "options": [
+      "A. Việt Nam Quang phục hội.",
+      "B. Hội Liên hiệp thuộc địa.",
+      "C. Đông Á đồng minh.",
+      "D. Hội Duy tân."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 4: Tổ chức cách mạng nào được Phan Bội Châu thành lập tại Trung Quốc vào năm 1912?",
+    "options": [
+      "A. Hội Duy tân.",
+      "B. Việt Nam Quang phục hội.",
+      "C. Hội Liên hiệp các dân tộc bị áp bức Á Đông.",
+      "D. Việt Nam Thanh niên Cách mạng Đồng chí hội."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 5: Hoạt động đối ngoại của Phan Châu Trinh (từ năm 1911) chủ yếu diễn ra tại quốc gia nào?",
+    "options": [
+      "A. Nhật Bản.",
+      "B. Trung Quốc.",
+      "C. Pháp.",
+      "D. Thái Lan."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 6: Mục đích chính trong các hoạt động đối ngoại của Phan Châu Trinh là gì?",
+    "options": [
+      "A. Vận động cải cách cho Việt Nam và thức tỉnh dư luận Pháp.",
+      "B. Tìm kiếm sự hỗ trợ quân sự để lật đổ chính quyền thực dân.",
+      "C. Thành lập liên minh quân sự với các nước Đông Nam Á.",
+      "D. Truyền bá chủ nghĩa Mác - Lênin vào Việt Nam."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 7: Trong giai đoạn 1911 - 1922, Nguyễn Ái Quốc đã có hoạt động đối ngoại nổi bật nào tại Pháp?",
+    "options": [
+      "A. Thành lập Việt Nam Quang phục hội.",
+      "B. Tham gia sáng lập Đảng Cộng sản Pháp (1920).",
+      "C. Thành lập Hội Việt Nam Cách mạng Thanh niên.",
+      "D. Tổ chức phong trào Đông Du."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 8: Hội Liên hiệp thuộc địa (sáng lập năm 1921) do Nguyễn Ái Quốc làm nòng cốt nhằm mục đích gì?",
+    "options": [
+      "A. Liên kết các dân tộc bị áp bức trong cuộc đấu tranh chống chủ nghĩa thực dân.",
+      "B. Xây dựng quân đội chung cho các nước Đông Dương.",
+      "C. Đào tạo cán bộ quân sự cho các nước Đông Nam Á.",
+      "D. Vận động chính phủ Pháp trao trả độc lập cho thuộc địa."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 9: Tháng 6 - 1923, Nguyễn Ái Quốc rời Pháp để sang quốc gia nào?",
+    "options": [
+      "A. Nhật Bản.",
+      "B. Trung Quốc.",
+      "C. Liên Xô.",
+      "D. Thái Lan."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 10: Tại Liên Xô, Nguyễn Ái Quốc đã xác lập mối quan hệ gì cho cách mạng Việt Nam?",
+    "options": [
+      "A. Quan hệ đồng minh với Mỹ.",
+      "B. Quan hệ giữa cách mạng Việt Nam với Quốc tế Cộng sản và cách mạng thế giới.",
+      "C. Quan hệ ngoại giao chính thức với chính phủ Nga.",
+      "D. Quan hệ kinh tế với các nước Đông Âu."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 11: Tháng 7 - 1925, tại Quảng Châu (Trung Quốc), Nguyễn Ái Quốc đã tham gia thành lập tổ chức nào?",
+    "options": [
+      "A. Hội Liên hiệp các dân tộc bị áp bức Á Đông.",
+      "B. Việt Nam Quang phục hội.",
+      "C. Đảng Cộng sản Trung Quốc.",
+      "D. Tâm tâm xã."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 12: Hoạt động đối ngoại của Đảng Cộng sản Đông Dương giai đoạn 1930 - 1945 nhằm mục đích chủ yếu là?",
+    "options": [
+      "A. Phục vụ cuộc đấu tranh chống thực dân, phát xít, giành độc lập.",
+      "B. Mở rộng giao thương với các nước tư bản phương Tây.",
+      "C. Tìm kiếm nguồn viện trợ tài chính từ các tổ chức quốc tế.",
+      "D. Kêu gọi các nước đầu tư vào công nghiệp khai khoáng."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 13: Đảng Cộng sản Đông Dương là một bộ phận (phân bộ) của tổ chức nào?",
+    "options": [
+      "A. Hội Liên minh các dân tộc.",
+      "B. Quốc tế Cộng sản.",
+      "C. Khối Đồng minh chống phát xít.",
+      "D. Mặt trận nhân dân thế giới."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 14: Trong giai đoạn chiến tranh thế giới thứ hai, Đảng Cộng sản Đông Dương đã có hoạt động nào để ủng hộ Liên Xô?",
+    "options": [
+      "A. Gửi quân đội sang giúp Liên Xô đánh Đức.",
+      "B. Tổ chức phong trào đấu tranh ủng hộ Liên Xô chống phát xít.",
+      "C. Cung cấp lương thực cho Hồng quân Liên Xô.",
+      "D. Thành lập chi bộ Đảng tại Mát-xcơ-va."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 15: Để chống lại quân phiệt Nhật ở Đông Nam Á, Đảng Cộng sản Đông Dương đã liên lạc với phong trào dân tộc ở các nước nào?",
+    "options": [
+      "A. Anh, Pháp, Đức.",
+      "B. Miến Điện, Mã Lai, Phi-líp-pin, Thái Lan, In-đô-nê-xi-a.",
+      "C. Ấn Độ, Ai Cập, Nam Phi.",
+      "D. Triều Tiên, Mông Cổ."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 16: Thông qua Mặt trận nào, Đảng Cộng sản Đông Dương đã thể hiện chủ trương đứng về phía lực lượng Đồng minh?",
+    "options": [
+      "A. Mặt trận Thống nhất nhân dân phản đế Đông Dương.",
+      "B. Mặt trận Việt Minh.",
+      "C. Mặt trận Dân chủ Đông Dương.",
+      "D. Mặt trận Liên Việt."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 17: Cuối tháng 4 - 1945, Việt Minh đã thiết lập quan hệ hợp tác với cơ quan nào của Mỹ tại châu Á?",
+    "options": [
+      "A. CIA.",
+      "B. FBI.",
+      "C. Cơ quan Tình báo chiến lược (OSS).",
+      "D. Bộ Ngoại giao Mỹ."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 18: Sự khác biệt về hướng đi tìm đường cứu nước của Phan Bội Châu và Phan Châu Trinh là?",
+    "options": [
+      "A. Phan Bội Châu dựa vào Nhật, Phan Châu Trinh dựa vào Pháp để cải cách.",
+      "B. Phan Bội Châu sang Pháp, Phan Châu Trinh sang Nhật.",
+      "C. Phan Bội Châu sang Mỹ, Phan Châu Trinh sang Trung Quốc.",
+      "D. Cả hai đều cùng sang Liên Xô tìm đường cứu nước."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 19: Ý nghĩa của việc Nguyễn Ái Quốc tham dự các hội nghị của Quốc tế Cộng sản tại Liên Xô là gì?",
+    "options": [
+      "A. Để tìm kiếm việc làm tại Nga.",
+      "B. Trình bày quan điểm về vai trò cách mạng thuộc địa và gắn kết cách mạng Việt Nam với thế giới.",
+      "C. Để học cách sử dụng vũ khí hiện đại.",
+      "D. Để vận động Liên Xô đưa quân sang đánh Pháp."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 20: Việc Việt Minh hợp tác với \"Biệt đội Con Nai\" của Mỹ (1945) nhằm mục đích gì?",
+    "options": [
+      "A. Chuẩn bị cho cuộc kháng chiến chống Mỹ sau này.",
+      "B. Hợp tác huấn luyện quân sự và phối hợp chống phát xít Nhật.",
+      "C. Nhờ Mỹ công nhận nền độc lập của Việt Nam tại Liên Hợp Quốc.",
+      "D. Vay tiền để mua sắm vũ khí từ Anh."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 21: Trong giai đoạn ở Nhật (1905-1908), Phan Bội Châu đã đưa bao nhiêu thanh niên Việt Nam sang học tập tại các trường tư thục?",
+    "options": [
+      "A. 50 thanh niên.",
+      "B. 100 thanh niên.",
+      "C. 200 thanh niên.",
+      "D. 500 thanh niên."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 22: Tổ chức \"Điền - Quế - Việt liên minh\" do Phan Bội Châu tham gia thành lập năm 1908 là sự liên minh giữa Việt Nam với các tỉnh nào của Trung Quốc?",
+    "options": [
+      "A. Quảng Đông và Quảng Tây.",
+      "B. Vân Nam và Quảng Tây.",
+      "C. Vân Nam và Phúc Kiến.",
+      "D. Tứ Xuyên và Vân Nam."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 23: Năm 1912, ngoài Việt Nam Quang phục hội, Phan Bội Châu còn tham gia thành lập tổ chức nào tại Trung Quốc?",
+    "options": [
+      "A. Hội Phục Việt.",
+      "B. Chấn Hoa Hưng Á.",
+      "C. Đảng Lập hiến.",
+      "D. Hội Phản đế đồng minh."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 24: Phan Bội Châu đã cử người liên lạc với những cơ quan ngoại giao nào tại Trung Quốc để tìm sự giúp đỡ chống Pháp?",
+    "options": [
+      "A. Công sứ Đức và Đại sứ quán Nga.",
+      "B. Đại sứ quán Anh và Mỹ.",
+      "C. Tổng lãnh sự Nhật và Ý.",
+      "D. Phái đoàn Thái Lan."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 25: Phan Châu Trinh đã đóng vai trò quan trọng trong việc thành lập tổ chức nào tại Pháp?",
+    "options": [
+      "A. Hội người Việt Nam yêu nước tại Pháp.",
+      "B. Đảng Cộng sản Pháp.",
+      "C. Hội Liên hiệp thuộc địa.",
+      "D. Một số tổ chức yêu nước Việt Nam tại Pháp."
+    ],
+    "answer": "D"
+  },
+  {
+    "question": "Câu 26: Trên cương vị nào Nguyễn Ái Quốc đã tích cực xây dựng mối quan hệ giữa người cộng sản Pháp với nhân dân các thuộc địa?",
+    "options": [
+      "A. Trưởng ban Nghiên cứu về Đông Dương của Đảng Cộng sản Pháp.",
+      "B. Tổng thư ký Hội Liên hiệp thuộc địa.",
+      "C. Đại diện Quốc tế Cộng sản tại châu Á.",
+      "D. Chủ tịch Hội Liên hiệp các dân tộc bị áp bức."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 27: Theo nội dung phần \"Em có biết\", Tuyên ngôn của Hội Liên hiệp các dân tộc bị áp bức (1925) khẳng định con đường duy nhất để xóa bỏ áp bức là gì?",
+    "options": [
+      "A. Kêu gọi sự giúp đỡ của các nước lớn.",
+      "B. Liên hiệp các dân tộc nhỏ yếu bị áp bức và giai cấp vô sản thế giới.",
+      "C. Chờ đợi sự cải cách từ chính quyền thực dân.",
+      "D. Đấu tranh nghị trường tại chính quốc."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 28: Trong các bài giảng tại Quảng Châu (Trung Quốc), Nguyễn Ái Quốc nhấn mạnh sự cần thiết của điều gì?",
+    "options": [
+      "A. Phải mua thật nhiều vũ khí hiện đại.",
+      "B. Phải đoàn kết và tập hợp lực lượng quốc tế.",
+      "C. Phải sang Mỹ để học cách làm kinh tế.",
+      "D. Phải liên lạc với các nước phát xít."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 29: Đảng Cộng sản Đông Dương đã phối hợp với các tổ chức của người Pháp và người Hoa để làm gì trong giai đoạn 1930 - 1945?",
+    "options": [
+      "A. Quyên góp giúp đỡ nạn nhân chiến tranh ở Trung Quốc.",
+      "B. Thành lập chính phủ liên hiệp tại Pháp.",
+      "C. Buôn bán vũ khí xuyên quốc gia.",
+      "D. Tổ chức các cuộc thi văn hóa quốc tế."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 30: Địa điểm diễn ra sự hợp tác giữa Việt Minh và \"Biệt đội Con Nai\" của OSS Mỹ năm 1945 là ở đâu?",
+    "options": [
+      "A. Pác Bó (Cao Bằng).",
+      "B. Tân Trào (Tuyên Quang).",
+      "C. Đình Bảng (Bắc Ninh).",
+      "D. Ba Đình (Hà Nội)."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 31 (Câu 1 - Phần 2): Chỉ thị \"Kháng chiến kiến quốc\" (25-11-1945) xác định nguyên tắc đối ngoại nào?",
+    "options": [
+      "A. Dựa hoàn toàn vào các nước lớn.",
+      "B. \"Bình đẳng và tương trợ\".",
+      "C. Đối đầu với tất cả các nước tư bản.",
+      "D. Chỉ quan hệ với các nước xã hội chủ nghĩa."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 32 (Câu 2 - Phần 2): Thuật ngoại giao được nêu trong chỉ thị ngày 25-11-1945 là gì?",
+    "options": [
+      "A. Làm cho nước mình nhiều bạn đồng minh hơn hết.",
+      "B. Làm cho nước mình ít kẻ thù và nhiều bạn đồng minh hơn hết.",
+      "C. Sử dụng quân sự để gây áp lực ngoại giao.",
+      "D. Kêu gọi sự can thiệp của Liên Hợp Quốc."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 33 (Câu 3 - Phần 2): Mục đích của việc ký Hiệp định Sơ bộ (6-3-1946) với Pháp là gì?",
+    "options": [
+      "A. Để công nhận Việt Nam là quốc gia độc lập hoàn toàn.",
+      "B. Để quân Pháp thay quân Trung Hoa Dân quốc giải giáp quân Nhật và kéo dài thời gian hòa bình.",
+      "C. Để kết thúc cuộc kháng chiến chống Pháp.",
+      "D. Để nhờ Pháp đánh quân Trung Hoa Dân quốc."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 34 (Câu 4 - Phần 2): Sau Hiệp định Sơ bộ, Chủ tịch Hồ Chí Minh đã ký bản tài liệu nào vào ngày 14-9-1946?",
+    "options": [
+      "A. Hiệp định Giơ-ne-vơ.",
+      "B. Hiệp định Pa-ri.",
+      "C. Tạm ước Việt - Pháp.",
+      "D. Lời kêu gọi toàn quốc kháng chiến."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 35 (Câu 5 - Phần 2): Ý nghĩa của việc ký Tạm ước (14-9-1946) là gì?",
+    "options": [
+      "A. Chấm dứt hoàn toàn chiến tranh.",
+      "B. Buộc Pháp phải rút quân về nước.",
+      "C. Kéo dài thời gian hòa bình để chuẩn bị kháng chiến.",
+      "D. Thiết lập quan hệ ngoại giao với Mỹ."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 36 (Câu 6 - Phần 2): Bước ngoặt đối ngoại quan trọng nhất của Việt Nam vào năm 1950 là gì?",
+    "options": [
+      "A. Ký hiệp định với Mỹ.",
+      "B. Trung Quốc, Liên Xô và các nước xã hội chủ nghĩa thiết lập quan hệ ngoại giao với Việt Nam.",
+      "C. Việt Nam gia nhập Liên Hợp Quốc.",
+      "D. Pháp công nhận Việt Nam độc lập."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 37 (Câu 7 - Phần 2): Liên minh nhân dân Việt - Miên - Lào được thành lập vào năm nào?",
+    "options": [
+      "A. 1945.",
+      "B. 1950.",
+      "C. 1951.",
+      "D. 1954."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 38 (Câu 8 - Phần 2): Hiệp định Giơ-ne-vơ về Đông Dương được ký kết vào ngày tháng năm nào?",
+    "options": [
+      "A. 6 - 3 - 1946.",
+      "B. 19 - 12 - 1946.",
+      "C. 7 - 5 - 1954.",
+      "D. 21 - 7 - 1954."
+    ],
+    "answer": "D"
+  },
+  {
+    "question": "Câu 39 (Câu 9 - Phần 2): Nội dung quan trọng nhất của Hiệp định Giơ-ne-vơ là gì?",
+    "options": [
+      "A. Chia cắt lâu dài đất nước Việt Nam.",
+      "B. Các nước tham dự cam kết tôn trọng các quyền dân tộc cơ bản của ba nước Đông Dương.",
+      "C. Quân đội Pháp được ở lại miền Bắc Việt Nam.",
+      "D. Việt Nam phải tham gia vào khối liên minh quân sự."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 40 (Câu 10 - Phần 2): Ý nghĩa pháp lý quốc tế của Hiệp định Giơ-ne-vơ (1954) là gì?",
+    "options": [
+      "A. Là văn bản đầu tiên ghi nhận các quyền dân tộc cơ bản của nhân dân các nước Đông Dương.",
+      "B. Là văn bản kết thúc hoàn toàn sự can thiệp của Mỹ.",
+      "C. Giúp Việt Nam gia nhập ASEAN.",
+      "D. Khẳng định chủ quyền của Việt Nam tại Biển Đông."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 41 (Câu 11 - Phần 2): Sau năm 1954, hoạt động đối ngoại của Việt Nam tập trung vào mục tiêu nào?",
+    "options": [
+      "A. Đòi thi hành Hiệp định Giơ-ne-vơ và củng cố quan hệ với các nước xã hội chủ nghĩa.",
+      "B. Kêu gọi Mỹ đầu tư vào miền Bắc.",
+      "C. Gia nhập khối quân sự NATO.",
+      "D. Cắt đứt quan hệ với Trung Quốc."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 42 (Câu 12 - Phần 2): Trong cuộc kháng chiến chống Mỹ, Việt Nam đã khéo léo cân bằng quan hệ với hai cường quốc nào?",
+    "options": [
+      "A. Mỹ và Anh.",
+      "B. Liên Xô và Trung Quốc.",
+      "C. Pháp và Đức.",
+      "D. Nhật Bản và Ấn Độ."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 43 (Câu 13 - Phần 2): Phương châm ngoại giao được Chính phủ Việt Nam Dân chủ Cộng hòa kết hợp với đấu tranh quân sự là gì?",
+    "options": [
+      "A. \"Đánh nhanh thắng nhanh\".",
+      "B. \"Vừa đánh, vừa đàm\".",
+      "C. \"Ngoại giao tâm công\".",
+      "D. \"Hòa hoãn vô điều kiện\"."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 44 (Câu 14 - Phần 2): Việt Nam đã tích cực vận động quốc tế công nhận tổ chức nào ở miền Nam Việt Nam?",
+    "options": [
+      "A. Việt Nam Quang phục hội.",
+      "B. Mặt trận Dân tộc giải phóng miền Nam Việt Nam.",
+      "C. Đảng Lập hiến.",
+      "D. Việt Nam Quốc dân Đảng."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 45 (Câu 15 - Phần 2): Tại Hội nghị Pa-ri, phía Việt Nam gồm những đại diện nào tham gia đàm phán?",
+    "options": [
+      "A. Chỉ có Việt Nam Dân chủ Cộng hòa.",
+      "B. Chỉ có Chính phủ Cách mạng lâm thời Cộng hòa miền Nam Việt Nam.",
+      "C. Việt Nam Dân chủ Cộng hòa và Chính phủ Cách mạng lâm thời Cộng hòa miền Nam Việt Nam.",
+      "D. Mặt trận Việt Minh."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 46 (Câu 16 - Phần 2): Hiệp định Pa-ri về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam được ký kết vào ngày nào?",
+    "options": [
+      "A. 21 - 7 - 1954.",
+      "B. 14 - 9 - 1946.",
+      "C. 27 - 1 - 1973.",
+      "D. 30 - 4 - 1975."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 47 (Câu 17 - Phần 2): Một trong những điều khoản quan trọng của Hiệp định Pa-ri (1973) là?",
+    "options": [
+      "A. Mỹ tiếp tục duy trì quân đội ở miền Nam Việt Nam.",
+      "B. Mỹ và các nước cam kết tôn trọng độc lập, chủ quyền, thống nhất và toàn vẹn lãnh thổ của Việt Nam.",
+      "C. Việt Nam phải bồi thường chiến phí cho Mỹ.",
+      "D. Miền Bắc phải giải tán quân đội."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 48 (Câu 18 - Phần 2): Theo phần \"Em có biết\", tại sao cuối cùng các bên lại chọn chiếc bàn tròn lớn để đàm phán tại Pa-ri?",
+    "options": [
+      "A. Vì nó rẻ tiền hơn bàn chữ nhật.",
+      "B. Để thể hiện tính bình đẳng, hai bên đi đến quyết định chọn chiếc bàn tròn lớn.",
+      "C. Vì phòng họp quá nhỏ.",
+      "D. Vì sở thích của đại diện phía Mỹ."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 49 (Câu 19 - Phần 2): Cuộc đấu tranh ngoại giao tại Hội nghị Pa-ri kéo dài bao nhiêu năm?",
+    "options": [
+      "A. 2 năm.",
+      "B. 3 năm.",
+      "C. gần 5 năm (1968-1973).",
+      "D. 10 năm."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 50 (Câu 20 - Phần 2): Ý nghĩa lớn nhất của Hiệp định Pa-ri (1973) đối với cuộc kháng chiến chống Mỹ là gì?",
+    "options": [
+      "A. Giải phóng hoàn toàn miền Nam ngay lập tức.",
+      "B. Buộc Mỹ phải rút quân về nước, tạo điều kiện thuận lợi để tiến tới thắng lợi hoàn toàn.",
+      "C. Khiến Mỹ phải sụp đổ hoàn toàn về kinh tế.",
+      "D. Giúp Việt Nam nhận được viện trợ không hoàn lại từ Liên hợp quốc."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 51 (Câu 21 - Phần 2): Sau Cách mạng tháng Tám, Việt Nam gửi thư đến Liên hợp quốc và các nước lớn nhằm mục đích gì?",
+    "options": [
+      "A. Xin vay vốn phát triển kinh tế.",
+      "B. Đề nghị công nhận Nhà nước Việt Nam Dân chủ Cộng hòa.",
+      "C. Xin tham gia lực lượng giữ gìn hòa bình.",
+      "D. Yêu cầu Mỹ rút khỏi Nhật Bản."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 52 (Câu 22 - Phần 2): Đối với quân Trung Hoa Dân quốc ở miền Bắc sau 1945, Đảng ta chủ trương gì?",
+    "options": [
+      "A. Đấu tranh quân sự tiêu diệt ngay.",
+      "B. Chủ động bắt liên lạc và ký hiệp ước đồng minh.",
+      "C. Đấu tranh chính trị kết hợp vận động ngoại giao, thực hiện các hoạt động hữu nghị để tranh thủ thời gian.",
+      "D. Bỏ mặc không quan tâm."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 53 (Câu 23 - Phần 2): Hình ảnh Chủ tịch Hồ Chí Minh tiếp đoàn nhà báo của Đảng Cộng sản I-ta-li-a (1959) thể hiện điều gì?",
+    "options": [
+      "A. Việt Nam chỉ quan hệ với các nước châu Á.",
+      "B. Việt Nam tranh thủ sự ủng hộ của nhân dân tiến bộ trên thế giới.",
+      "C. Bác Hồ muốn sang I-ta-li-a du lịch.",
+      "D. Ngoại giao Việt Nam chỉ phục vụ mục đích thương mại."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 54 (Câu 24 - Phần 2): Việt Nam Dân chủ Cộng hòa đã phối hợp với cơ quan quốc tế nào để yêu cầu chính quyền Sài Gòn hiệp thương tổng tuyển cử?",
+    "options": [
+      "A. WHO.",
+      "B. UNESCO.",
+      "C. Ủy ban Giám sát quốc tế về Hiệp định Giơ-ne-vơ.",
+      "D. Hội Chữ thập đỏ quốc tế."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 55 (Câu 25 - Phần 2): Trong kháng chiến chống Mỹ, Việt Nam thiết lập quan hệ ngoại giao với các nước nào ở khu vực khác?",
+    "options": [
+      "A. Chỉ các nước trong khối SEATO.",
+      "B. Các nước Á, Phi, Mỹ La-tinh.",
+      "C. Chỉ các nước Tây Âu.",
+      "D. Chỉ các nước thuộc địa của Anh."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 56 (Câu 26 - Phần 2): Nội dung nào sau đây KHÔNG phải là hoạt động đối ngoại trong kháng chiến chống Mỹ?",
+    "options": [
+      "A. Cân bằng quan hệ với Liên Xô và Trung Quốc.",
+      "B. Đấu tranh tại bàn đàm phán Pa-ri.",
+      "C. Ký Hiệp định Sơ bộ 6-3.",
+      "D. Vận động quốc tế công nhận Mặt trận Dân tộc giải phóng miền Nam Việt Nam."
+    ],
+    "answer": "C",
+    "explanation": "Đây là hoạt động thuộc thời kỳ kháng chiến chống Pháp."
+  },
+  {
+    "question": "Câu 57 (Câu 27 - Phần 2): Hoạt động đối ngoại của Việt Nam giai đoạn 1945 - 1975 có vai trò như thế nào?",
+    "options": [
+      "A. Là nhân tố duy nhất quyết định thắng lợi.",
+      "B. Góp phần quan trọng đưa cuộc kháng chiến đến thắng lợi cuối cùng.",
+      "C. Chỉ mang tính hình thức, không có tác dụng thực tế.",
+      "D. Làm suy yếu lực lượng quân sự trong nước."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 58 (Câu 28 - Phần 2): Tại Hội nghị Pa-ri, phía Mỹ ban đầu đòi dùng loại bàn nào?",
+    "options": [
+      "A. Bàn tròn lớn.",
+      "B. Bàn hình chữ nhật hoặc hình tròn chia đôi.",
+      "C. Bàn hình ngôi sao.",
+      "D. Không dùng bàn, chỉ đứng nói chuyện."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 59 (Câu 29 - Phần 2): Việc ký kết Hiệp định Giơ-ne-vơ (1954) đã phản ánh điều gì trong quan hệ quốc tế?",
+    "options": [
+      "A. Mỹ hoàn toàn ủng hộ Việt Nam.",
+      "B. Xu thế giải quyết các tranh chấp bằng thương lượng hòa bình khi có điều kiện.",
+      "C. Sự sụp đổ hoàn toàn của chủ nghĩa tư bản.",
+      "D. Pháp muốn tiếp tục chiến tranh lâu dài."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 60 (Câu 30 - Phần 2): Trục thời gian nào sau đây đúng về các văn bản đối ngoại quan trọng?",
+    "options": [
+      "A. Tạm ước (1946) -> Hiệp định Pa-ri (1954) -> Hiệp định Giơ-ne-vơ (1973).",
+      "B. Hiệp định Sơ bộ (1946) -> Hiệp định Giơ-ne-vơ (1954) -> Hiệp định Pa-ri (1973).",
+      "C. Hiệp định Giơ-ne-vơ (1954) -> Tạm ước (1946) -> Hiệp định Pa-ri (1973).",
+      "D. Hiệp định Pa-ri (1973) -> Hiệp định Giơ-ne-vơ (1954) -> Hiệp định Sơ bộ (1946)."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 61 (Câu 1 - Phần 3): Việt Nam chính thức trở thành thành viên của Liên hợp quốc vào thời gian nào?",
+    "options": [
+      "A. Tháng 9 - 1945.",
+      "B. Tháng 7 - 1954.",
+      "C. Ngày 20 - 9 - 1977.",
+      "D. Tháng 12 - 1986."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 62 (Câu 2 - Phần 3): Trong giai đoạn 1975 - 1985, Việt Nam thực hiện hợp tác toàn diện với các nước thuộc khối nào?",
+    "options": [
+      "A. Các nước tư bản chủ nghĩa.",
+      "B. Các nước xã hội chủ nghĩa.",
+      "C. Các nước trong khối ASEAN.",
+      "D. Các nước Tây Âu."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 63 (Câu 3 - Phần 3): Năm 1978, Việt Nam gia nhập tổ chức kinh tế nào dưới đây?",
+    "options": [
+      "A. Hội đồng Tương trợ kinh tế (SEV).",
+      "B. Hiệp hội các quốc gia Đông Nam Á (ASEAN).",
+      "C. Tổ chức Thương mại Thế giới (WTO).",
+      "D. Diễn đàn Hợp tác Kinh tế châu Á - Thái Bình Dương (APEC)."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 64 (Câu 4 - Phần 3): Sự kiện nào diễn ra vào năm 1980 đánh dấu thành tựu trong quan hệ Việt Nam - Liên Xô?",
+    "options": [
+      "A. Ký kết Hiệp ước biên giới.",
+      "B. Việt Nam gia nhập Liên hợp quốc.",
+      "C. Phạm Tuân (Việt Nam) và V. Go-rơ-bát-cô (Liên Xô) cùng bay vào vũ trụ.",
+      "D. Mỹ xóa bỏ cấm vận đối với Việt Nam."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 65 (Câu 5 - Phần 3): Trong giai đoạn 1977 - 1986, hệ thống Liên hợp quốc đã viện trợ không hoàn lại cho Việt Nam khoảng bao nhiêu?",
+    "options": [
+      "A. 100 triệu USD.",
+      "B. 300,5 triệu USD.",
+      "C. 527,9 triệu USD.",
+      "D. 1 tỷ USD."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 66 (Câu 6 - Phần 3): Đối với các nước Đông Nam Á, từ năm 1980 Việt Nam chủ trương thực hiện điều gì?",
+    "options": [
+      "A. Đối đầu quân sự.",
+      "B. Thúc đẩy đối thoại, từng bước thiết lập quan hệ ngoại giao với các nước ASEAN.",
+      "C. Cắt đứt hoàn toàn quan hệ.",
+      "D. Gia nhập ASEAN ngay lập tức."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 67 (Câu 7 - Phần 3): Hội nghị Thượng đỉnh lần thứ 6 Phong trào Không liên kết (1979) mà Thủ tướng Phạm Văn Đồng tham dự diễn ra tại đâu?",
+    "options": [
+      "A. Hà Nội (Việt Nam).",
+      "B. Mát-xcơ-va (Liên Xô).",
+      "C. La Ha-ba-na (Cu-ba).",
+      "D. Băng Cốc (Thái Lan)."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 68 (Câu 8 - Phần 3): Một trong những khó khăn lớn nhất của đối ngoại Việt Nam giai đoạn 1975 - 1985 là gì?",
+    "options": [
+      "A. Thiếu hụt lực lượng ngoại giao.",
+      "B. Chính sách bao vây, cấm vận của Mỹ và các thế lực thù địch.",
+      "C. Việt Nam không muốn quan hệ với các nước khác.",
+      "D. Các nước láng giềng từ chối đàm phán."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 69 (Câu 9 - Phần 3): Tại Đại hội lần thứ VII (1991), Đảng Cộng sản Việt Nam đưa ra định hướng đối ngoại như thế nào?",
+    "options": [
+      "A. Chỉ quan hệ với các nước xã hội chủ nghĩa.",
+      "B. Đóng cửa để tự lực cánh sinh.",
+      "C. Hợp tác, bình đẳng và cùng có lợi với tất cả các nước, không phân biệt chế độ chính trị - xã hội.",
+      "D. Chỉ ưu tiên quan hệ với các nước láng giềng."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 70 (Câu 10 - Phần 3): Việt Nam bình thường hóa quan hệ với Trung Quốc và Mỹ vào các năm nào?",
+    "options": [
+      "A. Trung Quốc (1991), Mỹ (1995).",
+      "B. Trung Quốc (1995), Mỹ (1991).",
+      "C. Trung Quốc (1975), Mỹ (1995).",
+      "D. Trung Quốc (1991), Mỹ (2000)."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 71 (Câu 11 - Phần 3): Sự kiện nào đánh dấu Việt Nam hội nhập sâu rộng vào khu vực Đông Nam Á năm 1995?",
+    "options": [
+      "A. Ký hiệp định thương mại với Mỹ.",
+      "B. Gia nhập ASEAN.",
+      "C. Gia nhập WTO.",
+      "D. Giải quyết xong vấn đề Cam-pu-chia."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 72 (Câu 12 - Phần 3): Việt Nam đã bao nhiêu lần được bầu làm Ủy viên không thường trực Hội đồng Bảo an Liên hợp quốc?",
+    "options": [
+      "A. 1 lần.",
+      "B. 2 lần (nhiệm kỳ 2008-2009 và 2020-2021).",
+      "C. 3 lần.",
+      "D. Chưa lần nào."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 73 (Câu 13 - Phần 3): Hiện nay, quan hệ giữa Việt Nam và Mỹ đã được nâng lên cấp độ nào?",
+    "options": [
+      "A. Đối tác chiến lược.",
+      "B. Đối tác toàn diện.",
+      "C. Đối tác chiến lược toàn diện (2023).",
+      "D. Quan hệ ngoại giao thông thường."
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Câu 74 (Câu 14 - Phần 3): Việt Nam đã ký kết những hiệp định thương mại tự do (FTA) thế hệ mới nào sau đây?",
+    "options": [
+      "A. CPTPP, EVFTA, RCEP.",
+      "B. SEV, ASEAN, WTO.",
+      "C. APEC, ASEM, UN.",
+      "D. NATO, SEATO, EU."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 75 (Câu 15 - Phần 3): Để bảo vệ chủ quyền biên giới đất liền, Việt Nam đã ký kết các hiệp ước phân định biên giới với những quốc gia nào?",
+    "options": [
+      "A. Trung Quốc, Lào, Cam-pu-chia.",
+      "B. Thái Lan, Mi-an-ma, Lào.",
+      "C. In-đô-nê-xi-a, Phi-líp-pin, Trung Quốc.",
+      "D. Cam-pu-chia, Thái Lan, Ma-lai-xi-a."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 76 (Câu 16 - Phần 3): Việt Nam giải quyết các bất đồng về ranh giới trên biển với các nước Ma-lai-xi-a, In-đô-nê-xi-a, Thái Lan bằng con đường nào?",
+    "options": [
+      "A. Sử dụng sức mạnh quân sự.",
+      "B. Đàm phán, thương lượng hòa bình.",
+      "C. Nhờ các nước lớn can thiệp quân sự.",
+      "D. Bỏ mặc không giải quyết."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 77 (Câu 17 - Phần 3): Sự kiện nào là minh chứng cho việc Việt Nam tích cực thúc đẩy giao lưu văn hóa và nâng cao vị thế đất nước?",
+    "options": [
+      "A. Lễ hội pháo hoa quốc tế Đà Nẵng.",
+      "B. Ký kết Nghị định thư Ki-ô-tô.",
+      "C. Gia nhập WTO.",
+      "D. Bình thường hóa quan hệ với Mỹ."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 78 (Câu 18 - Phần 3): Trong đại dịch COVID-19, hoạt động đối ngoại nào của Việt Nam được quốc tế đánh giá cao?",
+    "options": [
+      "A. Đóng cửa biên giới hoàn toàn.",
+      "B. Hỗ trợ thiết bị, vật tư y tế cho nhiều quốc gia trên thế giới.",
+      "C. Chỉ tập trung tự chữa trị trong nước.",
+      "D. Mua độc quyền vaccine."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 79 (Câu 19 - Phần 3): Việt Nam đã tham gia ký kết văn bản quốc tế nào để ứng phó với biến đổi khí hậu?",
+    "options": [
+      "A. Hiệp ước ASEAN.",
+      "B. Nghị định thư Ki-ô-tô.",
+      "C. Hiệp định Pa-ri 1973.",
+      "D. Hiến chương Liên hợp quốc."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 80 (Câu 20 - Phần 3): Mục tiêu trọng tâm của hoạt động đối ngoại trong thời kỳ Đổi mới là gì?",
+    "options": [
+      "A. Phục vụ mục tiêu phát triển kinh tế và nâng cao vị thế đất nước.",
+      "B. Chuẩn bị cho các cuộc chiến tranh mới.",
+      "C. Tìm kiếm viện trợ quân sự.",
+      "D. Chỉ để quảng bá du lịch."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 81 (Câu 21 - Phần 3): Quan hệ giữa Việt Nam với Lào và Cam-pu-chia được mô tả là gì?",
+    "options": [
+      "A. Quan hệ hữu nghị, tình đoàn kết chiến đấu và hợp tác.",
+      "B. Quan hệ đối đầu căng thẳng.",
+      "C. Chỉ là quan hệ buôn bán đơn thuần.",
+      "D. Quan hệ đồng minh quân sự tấn công."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 82 (Câu 22 - Phần 3): Việt Nam đã tổ chức thành công các hội nghị quốc tế quan trọng nào?",
+    "options": [
+      "A. ASEAN, ASEM và APEC.",
+      "B. Hội nghị các nước tư bản.",
+      "C. Hội nghị G7 và G20.",
+      "D. Hội nghị NATO."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 83 (Câu 23 - Phần 3): Việc Việt Nam gia nhập WTO (2007) có ý nghĩa gì đối với nền kinh tế?",
+    "options": [
+      "A. Việt Nam không cần sản xuất hàng hóa nữa.",
+      "B. Đánh dấu sự hội nhập hoàn toàn vào hệ thống thương mại toàn cầu.",
+      "C. Mỹ sẽ cung cấp toàn bộ hàng hóa cho Việt Nam.",
+      "D. Việt Nam được quyền áp đặt luật lệ kinh tế lên các nước khác."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 84 (Câu 24 - Phần 3): Bức ảnh \"Lễ chào cột mốc và chứng kiến tuần tra chung ba nước Việt Nam - Lào - Cam-pu-chia (2018)\" thể hiện điều gì?",
+    "options": [
+      "A. Sự tranh chấp biên giới quyết liệt.",
+      "B. Sự hợp tác chặt chẽ trong việc bảo vệ an ninh, biên giới hòa bình, hữu nghị.",
+      "C. Việc chuẩn bị cho một cuộc tập trận quy mô lớn.",
+      "D. Các nước không quan tâm đến biên giới."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 85 (Câu 25 - Phần 3): Nguyên tắc cốt lõi trong giải quyết các tranh chấp về biển đảo của Việt Nam là gì?",
+    "options": [
+      "A. Dùng vũ lực ngay khi có tranh chấp.",
+      "B. Thông qua biện pháp hòa bình, tuân thủ luật pháp quốc tế (như UNCLOS 1982).",
+      "C. Nhượng bộ toàn bộ lãnh thổ để giữ hòa bình.",
+      "D. Không đàm phán với bất kỳ nước nào."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 86 (Câu 26 - Phần 3): Hoạt động đối ngoại của Việt Nam từ 1975 đến nay đóng vai trò gì?",
+    "options": [
+      "A. Chỉ là hoạt động hình thức.",
+      "B. Góp phần quan trọng vào việc xây dựng hình ảnh đất nước đẹp, thân thiện và nâng cao vị thế trên trường quốc tế.",
+      "C. Làm cho Việt Nam phụ thuộc hoàn toàn vào nước ngoài.",
+      "D. Chỉ phục vụ cho mục đích tham quan, du lịch."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 87 (Câu 27 - Phần 3): Sau khi bình thường hóa quan hệ với Mỹ (1995), tính chất của quan hệ này chuyển sang giai đoạn nào?",
+    "options": [
+      "A. Từ đối đầu sang đối thoại và hợp tác.",
+      "B. Vẫn tiếp tục cấm vận nhưng bí mật.",
+      "C. Mỹ trở thành nước thuộc địa của Việt Nam.",
+      "D. Việt Nam từ bỏ con đường xã hội chủ nghĩa."
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Câu 88 (Câu 28 - Phần 3): Một trong những thành tựu đối ngoại nổi bật nhất về lĩnh vực nhân đạo của Việt Nam là?",
+    "options": [
+      "A. Xuất khẩu gạo nhiều nhất thế giới.",
+      "B. Hỗ trợ cứu trợ thiên tai và giúp đỡ y tế cho nhiều quốc gia (như trong đại dịch COVID-19).",
+      "C. Tổ chức các giải đấu thể thao.",
+      "D. Xây dựng các tòa nhà chọc trời."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 89 (Câu 29 - Phần 3): Theo tư liệu hình 4 (trang 84), ai là người đại diện Việt Nam ký Nghị định thư chính thức thiết lập quan hệ ngoại giao với Mỹ năm 1995?",
+    "options": [
+      "A. Chủ tịch nước Việt Nam.",
+      "B. Bộ trưởng Bộ Ngoại giao Việt Nam.",
+      "C. Thủ tướng Chính phủ Việt Nam.",
+      "D. Đại sứ Việt Nam tại Liên hợp quốc."
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Câu 90 (Câu 30 - Phần 3): Trục thời gian nào sau đây phản ánh đúng trình tự gia nhập các tổ chức quốc tế của Việt Nam?",
+    "options": [
+      "A. ASEAN -> UN -> WTO.",
+      "B. UN (1977) -> ASEAN (1995) -> WTO (2007).",
+      "C. WTO -> UN -> ASEAN.",
+      "D. ASEAN -> WTO -> UN."
+    ],
+    "answer": "B"
   }
 ]
