@@ -1,7 +1,7 @@
 [
   {
     "topic": "Sửa chữa và bảo trì máy tính",
-    "question": "Câu 1. Xét về các dịch vụ sửa chữa và bảo trì máy tính:",
+    "question": "Xét về các dịch vụ sửa chữa và bảo trì máy tính:",
     "subQuestions": [
       {
         "content": "Việc thay thế màn hình điện thoại bị nứt thuộc nhóm dịch vụ liên quan tới phần mềm.",
@@ -27,7 +27,7 @@
   },
   {
     "topic": "Sửa chữa và bảo trì máy tính",
-    "question": "Câu 2. Về nhu cầu nhân lực và ngành học liên quan:",
+    "question": "Về nhu cầu nhân lực và ngành học liên quan:",
     "subQuestions": [
       {
         "content": "Trong tương lai, sự phát triển của công nghệ sẽ khiến nhu cầu về thợ sửa chữa máy tính biến mất hoàn toàn.",
@@ -53,7 +53,7 @@
   },
   {
     "topic": "Sửa chữa và bảo trì máy tính",
-    "question": "Câu 3. Về các tình huống thực tế trong dịch vụ máy tính:",
+    "question": "Về các tình huống thực tế trong dịch vụ máy tính:",
     "subQuestions": [
       {
         "content": "Khi máy tính không lên hình, lỗi có thể do card đồ họa (phần cứng) hoặc do thiếu Driver (phần mềm).",
@@ -79,7 +79,7 @@
   },
   {
     "topic": "Sửa chữa và bảo trì máy tính",
-    "question": "Câu 4. Trong quy trình bảo trì và xử lý sự cố:",
+    "question": "Trong quy trình bảo trì và xử lý sự cố:",
     "subQuestions": [
       {
         "content": "Để kiểm tra ổ cứng bị lỗi hay không, kỹ thuật viên có thể dùng các phần mềm kiểm tra thông số S.M.A.R.T.",
@@ -105,7 +105,7 @@
   },
   {
     "topic": "Sửa chữa và bảo trì máy tính",
-    "question": "Câu 5. Khi vận dụng kiến thức vào thực tiễn:",
+    "question": "Khi vận dụng kiến thức vào thực tiễn:",
     "subQuestions": [
       {
         "content": "Nếu máy tính chạy quá nóng, việc bôi thêm keo tản nhiệt vào CPU là phương án xử lý phần cứng đúng đắn.",
@@ -131,7 +131,7 @@
   },
   {
     "topic": "Quản trị mạng và Bảo mật",
-    "question": "Câu 1. Về nhóm nghề quản trị mạng:",
+    "question": "Về nhóm nghề quản trị mạng:",
     "subQuestions": [
       {
         "content": "Quản trị mạng chỉ đơn thuần là việc kéo dây cáp mạng cho các máy tính trong văn phòng.",
@@ -157,7 +157,7 @@
   },
   {
     "topic": "Quản trị mạng và Bảo mật",
-    "question": "Câu 2. Về bảo mật hệ thống thông tin:",
+    "question": "Về bảo mật hệ thống thông tin:",
     "subQuestions": [
       {
         "content": "Bảo mật hệ thống thông tin chỉ bao gồm việc cài đặt phần mềm diệt virus cho máy tính cá nhân.",
@@ -183,7 +183,7 @@
   },
   {
     "topic": "Quản trị mạng và Bảo mật",
-    "question": "Câu 3. Về quản trị và bảo trì hệ thống:",
+    "question": "Về quản trị và bảo trì hệ thống:",
     "subQuestions": [
       {
         "content": "Quản trị hệ thống bao gồm việc quản lý các máy chủ (Server) và các dịch vụ chạy trên đó như Web server, Mail server.",
@@ -209,7 +209,7 @@
   },
   {
     "topic": "Quản trị mạng và Bảo mật",
-    "question": "Câu 4. Về nhu cầu nhân lực và đào tạo:",
+    "question": "Về nhu cầu nhân lực và đào tạo:",
     "subQuestions": [
       {
         "content": "Chứng chỉ quốc tế như CompTIA Security+ là một lợi thế lớn cho người muốn theo nghề bảo mật.",
@@ -235,7 +235,7 @@
   },
   {
     "topic": "Quản trị mạng và Bảo mật",
-    "question": "Câu 5. Trong các tình huống quản trị thực tế:",
+    "question": "Trong các tình huống quản trị thực tế:",
     "subQuestions": [
       {
         "content": "Khi hệ thống mạng bị chậm, bước đầu tiên nên làm là mua thêm máy tính mới cho nhân viên.",
@@ -261,7 +261,7 @@
   },
   {
     "topic": "Tổ chức hội thảo hướng nghiệp",
-    "question": "Câu 1. Trong quá trình lập kế hoạch tổ chức hội thảo hướng nghiệp:",
+    "question": "Trong quá trình lập kế hoạch tổ chức hội thảo hướng nghiệp:",
     "subQuestions": [
       {
         "content": "Mục tiêu của hội thảo chỉ cần tập trung vào việc giới thiệu các loại máy tính hiện đại nhất.",
@@ -287,7 +287,7 @@
   },
   {
     "topic": "Tổ chức hội thảo hướng nghiệp",
-    "question": "Câu 2. Về việc xây dựng bài trình bày:",
+    "question": "Về việc xây dựng bài trình bày:",
     "subQuestions": [
       {
         "content": "Nội dung bài trình bày nên bao gồm các tiêu chí tuyển dụng và cơ hội thăng tiến của nghề nghiệp.",
@@ -313,7 +313,7 @@
   },
   {
     "topic": "Tổ chức hội thảo hướng nghiệp",
-    "question": "Câu 3. Về các nhiệm vụ trong tổ chức hội thảo:",
+    "question": "Về các nhiệm vụ trong tổ chức hội thảo:",
     "subQuestions": [
       {
         "content": "Thư ký hội thảo có nhiệm vụ ghi chép các ý kiến thảo luận và kết quả của buổi làm việc.",
@@ -339,7 +339,7 @@
   },
   {
     "topic": "Tổ chức hội thảo hướng nghiệp",
-    "question": "Câu 4. Đánh giá kết quả hội thảo hướng nghiệp:",
+    "question": "Đánh giá kết quả hội thảo hướng nghiệp:",
     "subQuestions": [
       {
         "content": "Phiếu khảo sát ý kiến là công cụ duy nhất để đánh giá hiệu quả của buổi hội thảo.",
@@ -365,7 +365,7 @@
   },
   {
     "topic": "Tổ chức hội thảo hướng nghiệp",
-    "question": "Câu 5. Khi vận dụng vào thực tiễn hướng nghiệp:",
+    "question": "Khi vận dụng vào thực tiễn hướng nghiệp:",
     "subQuestions": [
       {
         "content": "Hội thảo hướng nghiệp giúp học sinh nhận thức được rằng ngành Tin học chỉ dành cho những người giỏi lập trình.",
@@ -391,7 +391,7 @@
   },
   {
     "topic": "Thiết bị mạng và Máy chủ",
-    "question": "Câu 1. Xét về đặc điểm của máy chủ (Server):",
+    "question": "Xét về đặc điểm của máy chủ (Server):",
     "subQuestions": [
       {
         "content": "Mọi máy tính Server đều phải có hình dáng là những chiếc thùng máy khổng lồ đặt trong phòng lạnh.",
@@ -417,7 +417,7 @@
   },
   {
     "topic": "Thiết bị mạng và Máy chủ",
-    "question": "Câu 2. Về thiết bị kết nối Hub và Switch:",
+    "question": "Về thiết bị kết nối Hub và Switch:",
     "subQuestions": [
       {
         "content": "Switch và Hub đều được sử dụng để kết nối nhiều máy tính lại với nhau trong một mạng cục bộ (LAN).",
@@ -443,7 +443,7 @@
   },
   {
     "topic": "Thiết bị mạng và Máy chủ",
-    "question": "Câu 3. Về vai trò của Router trong mạng:",
+    "question": "Về vai trò của Router trong mạng:",
     "subQuestions": [
       {
         "content": "Router chỉ có tác dụng phát sóng Wi-Fi chứ không có khả năng kết nối bằng dây cáp.",
@@ -469,7 +469,7 @@
   },
   {
     "topic": "Thiết bị mạng và Máy chủ",
-    "question": "Câu 4. Về thiết bị mở rộng vùng phủ sóng (Repeater và Access Point):",
+    "question": "Về thiết bị mở rộng vùng phủ sóng (Repeater và Access Point):",
     "subQuestions": [
       {
         "content": "Repeater cần được đặt ở nơi vẫn còn nhận được tín hiệu tốt từ nguồn phát để có thể phát lại hiệu quả.",
@@ -495,7 +495,7 @@
   },
   {
     "topic": "Thiết bị mạng và Máy chủ",
-    "question": "Câu 5. Khi vận dụng vào thực tế thiết kế mạng:",
+    "question": "Khi vận dụng vào thực tế thiết kế mạng:",
     "subQuestions": [
       {
         "content": "Card mạng (Network Interface Card) là thành phần bắt buộc phải có trên máy tính để kết nối vào mạng.",
@@ -521,7 +521,7 @@
   },
   {
     "topic": "Đường truyền và công nghệ mạng",
-    "question": "Câu 1. Về đặc điểm của các loại đường truyền có dây:",
+    "question": "Về đặc điểm của các loại đường truyền có dây:",
     "subQuestions": [
       {
         "content": "Cáp xoắn đôi có giá thành rẻ và dễ lắp đặt hơn cáp quang.",
@@ -547,7 +547,7 @@
   },
   {
     "topic": "Đường truyền và công nghệ mạng",
-    "question": "Câu 2. Về các công nghệ mạng không dây:",
+    "question": "Về các công nghệ mạng không dây:",
     "subQuestions": [
       {
         "content": "Bluetooth và Wi-Fi đều sử dụng sóng vô tuyến nhưng có mục đích sử dụng khác nhau.",
@@ -573,7 +573,7 @@
   },
   {
     "topic": "Đường truyền và công nghệ mạng",
-    "question": "Câu 3. Tình huống văn phòng dùng cáp quang và Router phát Wi-Fi:",
+    "question": "Tình huống văn phòng dùng cáp quang và Router phát Wi-Fi:",
     "subQuestions": [
       {
         "content": "Đây là sự kết hợp giữa đường truyền có dây và đường truyền không dây.",
@@ -599,7 +599,7 @@
   },
   {
     "topic": "Đường truyền và công nghệ mạng",
-    "question": "Câu 4. So sánh các loại đường truyền mạng:",
+    "question": "So sánh các loại đường truyền mạng:",
     "subQuestions": [
       {
         "content": "Cáp quang có tính bảo mật cao hơn Wi-Fi vì khó thực hiện việc \"nghe lén\" tín hiệu trên đường truyền.",
@@ -625,7 +625,7 @@
   },
   {
     "topic": "Đường truyền và công nghệ mạng",
-    "question": "Câu 5. Tình huống thực tế (Minh dùng Hotspot điện thoại và tai nghe Bluetooth):",
+    "question": "Tình huống thực tế (Minh dùng Hotspot điện thoại và tai nghe Bluetooth):",
     "subQuestions": [
       {
         "content": "Điện thoại của Minh đang sử dụng mạng di động (GSM/4G/5G) để nhận dữ liệu từ Internet.",
@@ -651,7 +651,7 @@
   },
   {
     "topic": "Quy trình thiết kế mạng",
-    "question": "Câu 1 (Biết): Về bước Khảo sát hiện trạng và Phân tích nhu cầu:",
+    "question": "Về bước Khảo sát hiện trạng và Phân tích nhu cầu:",
     "subQuestions": [
       {
         "content": "Mục tiêu của bước này là xác định mạng sẽ dùng để làm gì và quy mô bao nhiêu thiết bị.",
@@ -677,7 +677,7 @@
   },
   {
     "topic": "Quy trình thiết kế mạng",
-    "question": "Câu 2 (Biết): Về bước Thiết kế vật lý trong quy trình thiết kế mạng:",
+    "question": "Về bước Thiết kế vật lý trong quy trình thiết kế mạng:",
     "subQuestions": [
       {
         "content": "Thiết kế vật lý xác định các vị trí đặt bộ thu phát Wi-Fi để đảm bảo vùng phủ sóng.",
@@ -703,7 +703,7 @@
   },
   {
     "topic": "Quy trình thiết kế mạng",
-    "question": "Câu 3 (Hiểu): So sánh giữa Thiết kế logic và Thiết kế vật lý:",
+    "question": "So sánh giữa Thiết kế logic và Thiết kế vật lý:",
     "subQuestions": [
       {
         "content": "Bản thiết kế logic có thể áp dụng cho nhiều hãng thiết bị khác nhau.",
@@ -729,7 +729,7 @@
   },
   {
     "topic": "Quy trình thiết kế mạng",
-    "question": "Câu 4 (Vận dụng): Một kỹ sư đang thiết kế mạng cho một tòa nhà văn phòng 10 tầng.",
+    "question": "Một kỹ sư đang thiết kế mạng cho một tòa nhà văn phòng 10 tầng.",
     "subQuestions": [
       {
         "content": "Kỹ sư quyết định dùng Topology hình sao cho mỗi tầng là đang thực hiện bước Thiết kế vật lý.",
@@ -755,7 +755,7 @@
   },
   {
     "topic": "Quy trình thiết kế mạng",
-    "question": "Câu 5 (Vận dụng): Giả sử bạn được giao thiết kế lại mạng cho một phòng máy tính đã cũ.",
+    "question": "Giả sử bạn được giao thiết kế lại mạng cho một phòng máy tính đã cũ.",
     "subQuestions": [
       {
         "content": "Việc đầu tiên bạn cần làm là kiểm tra xem các dây cáp cũ còn dùng được không (Khảo sát hiện trạng).",
@@ -780,4 +780,3 @@
     ]
   }
 ]
-
