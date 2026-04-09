@@ -1,1 +1,1323 @@
+[
+  {
+    "topic": "Biết",
+    "question": "Hoạt động nào sau đây thuộc nhóm dịch vụ sửa chữa phần cứng?",
+    "options": {
+      "a": "Cài đặt Driver cho máy in.",
+      "b": "Thay thế ổ cứng SSD bị hỏng.",
+      "c": "Quét virus cho toàn bộ hệ thống.",
+      "d": "Hướng dẫn khách hàng sử dụng Office 365."
+    },
+    "answer": "b",
+    "explanation": "Ổ cứng SSD là một linh kiện vật lý (phần cứng)."
+  },
+  {
+    "topic": "Biết",
+    "question": "Dịch vụ bảo trì máy tính thường bao gồm công việc nào dưới đây?",
+    "options": {
+      "a": "Vệ sinh và tra keo tản nhiệt cho CPU.",
+      "b": "Viết một ứng dụng di động mới.",
+      "c": "Thiết kế lại giao diện website doanh nghiệp.",
+      "d": "Xây dựng cơ sở dữ liệu cho khách hàng."
+    },
+    "answer": "a",
+    "explanation": "Vệ sinh và tra keo là hoạt động chăm sóc thiết bị để ngăn ngừa quá nhiệt."
+  },
+  {
+    "topic": "Biết",
+    "question": "Việc hỗ trợ người dùng thiết lập mật khẩu và bảo mật Wi-Fi thuộc nhóm dịch vụ nào?",
+    "options": {
+      "a": "Dịch vụ sửa chữa phần cứng.",
+      "b": "Dịch vụ sản xuất linh kiện.",
+      "c": "Dịch vụ hỗ trợ người dùng.",
+      "d": "Dịch vụ lập trình phần mềm."
+    },
+    "answer": "c",
+    "explanation": "Đây là việc tư vấn và hướng dẫn kỹ thuật cho người sử dụng."
+  },
+  {
+    "topic": "Biết",
+    "question": "Kỹ năng nào sau đây là cần thiết nhất đối với một kỹ thuật viên sửa chữa máy tính?",
+    "options": {
+      "a": "Kỹ năng vẽ sơ đồ tư duy.",
+      "b": "Kỹ năng tháo lắp và thay thế linh kiện thành thạo.",
+      "c": "Kỹ năng biên tập video clip.",
+      "d": "Kỹ năng thuyết trình trước đám đông."
+    },
+    "answer": "b",
+    "explanation": "Đây là kỹ năng thực hành cốt lõi để can thiệp vào máy tính."
+  },
+  {
+    "topic": "Biết",
+    "question": "Nhóm công việc \"Cài đặt lại hệ điều hành sau khi máy bị treo\" thuộc loại dịch vụ nào?",
+    "options": {
+      "a": "Dịch vụ liên quan tới phần mềm.",
+      "b": "Dịch vụ liên quan tới phần cứng.",
+      "c": "Dịch vụ thương mại điện tử.",
+      "d": "Dịch vụ sản xuất chip bán dẫn."
+    },
+    "answer": "a",
+    "explanation": "Hệ điều hành là phần mềm nền tảng của máy tính."
+  },
+  {
+    "topic": "Biết",
+    "question": "Đâu là một ngành học liên quan trực tiếp đến nghề sửa chữa và bảo trì máy tính?",
+    "options": {
+      "a": "Quản trị kinh doanh.",
+      "b": "Kỹ thuật máy tính.",
+      "c": "Sư phạm mầm non.",
+      "d": "Kinh tế quốc tế."
+    },
+    "answer": "b",
+    "explanation": "Ngành này cung cấp kiến thức nền tảng về cấu tạo và kỹ thuật máy tính."
+  },
+  {
+    "topic": "Biết",
+    "question": "Mục đích quan trọng nhất của bảo trì máy tính định kỳ là gì?",
+    "options": {
+      "a": "Để nâng giá trị khi bán máy cũ.",
+      "b": "Giúp máy hoạt động ổn định và hạn chế hỏng hóc đột xuất.",
+      "c": "Để xóa hết dữ liệu của người dùng cũ.",
+      "d": "Để cài đặt thêm các trò chơi mới."
+    },
+    "answer": "b",
+    "explanation": "Bảo trì mang tính chất phòng ngừa để duy trì hiệu suất lâu dài."
+  },
+  {
+    "topic": "Biết",
+    "question": "Khi một máy tính không lên nguồn do hỏng bộ nguồn (PSU), kỹ thuật viên đang thực hiện dịch vụ gì?",
+    "options": {
+      "a": "Bảo trì phần mềm định kỳ.",
+      "b": "Tư vấn mua sắm thiết bị.",
+      "c": "Sửa chữa phần cứng.",
+      "d": "Hướng dẫn sử dụng thiết bị ngoại vi."
+    },
+    "answer": "c",
+    "explanation": "Bộ nguồn là thiết bị phần cứng, thay thế nó là dịch vụ sửa chữa phần cứng."
+  },
+  {
+    "topic": "Biết",
+    "question": "Kiến thức về \"Kiến trúc máy tính\" giúp ích gì cho người thợ sửa chữa?",
+    "options": {
+      "a": "Để biết cách bán hàng hiệu quả hơn.",
+      "b": "Để hiểu sơ đồ kết nối và cách thức các linh kiện phối hợp hoạt động.",
+      "c": "Để thiết kế các mẫu máy tính đẹp mắt hơn.",
+      "d": "Để soạn thảo văn bản kỹ thuật nhanh hơn."
+    },
+    "answer": "b",
+    "explanation": "Kiến trúc máy tính giúp kỹ thuật viên biết vị trí và vai trò của từng bộ phận."
+  },
+  {
+    "topic": "Biết",
+    "question": "Trong tương lai, nhu cầu nhân lực ngành sửa chữa máy tính được dự báo như thế nào?",
+    "options": {
+      "a": "Sẽ giảm mạnh vì máy tính sẽ không bao giờ hỏng.",
+      "b": "Sẽ biến mất do AI tự sửa được phần cứng.",
+      "c": "Luôn duy trì ở mức cao do sự phổ biến của thiết bị số.",
+      "d": "Chỉ còn cần thiết ở những vùng chưa có internet."
+    },
+    "answer": "c",
+    "explanation": "Khi thiết bị số càng nhiều, nhu cầu bảo trì và sửa chữa càng tăng cao."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao người làm dịch vụ sửa chữa máy tính cần có kiến thức về mạng máy tính?",
+    "options": {
+      "a": "Để có thể truy cập internet miễn phí ở khắp mọi nơi.",
+      "b": "Vì nhiều sự cố hiện nay liên quan đến kết nối và tài nguyên trực tuyến.",
+      "c": "Để thay thế hoàn toàn công việc của một lập trình viên.",
+      "d": "Vì mạng máy tính là thành phần duy nhất của phần cứng."
+    },
+    "answer": "b",
+    "explanation": "Máy tính ngày nay hầu hết hoạt động trong môi trường có kết nối mạng."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Sự khác biệt giữa dịch vụ sửa chữa và dịch vụ bảo trì là gì?",
+    "options": {
+      "a": "Sửa chữa chỉ thực hiện khi máy hỏng; bảo trì thực hiện định kỳ để ngăn ngừa hỏng.",
+      "b": "Sửa chữa dành cho phần cứng; bảo trì dành cho phần mềm.",
+      "c": "Bảo trì tốn nhiều chi phí hơn sửa chữa.",
+      "d": "Hai dịch vụ này thực chất là một, không có sự khác biệt."
+    },
+    "answer": "a",
+    "explanation": "Sửa chữa là khắc phục sự cố đã xảy ra; Bảo trì là ngăn ngừa sự cố sẽ xảy ra."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao \"Hỗ trợ người dùng\" lại được coi là một mảng quan trọng của dịch vụ máy tính?",
+    "options": {
+      "a": "Vì giúp giảm bớt gánh nặng cho nhà sản xuất thiết bị.",
+      "b": "Vì giúp người dùng khắc phục các lỗi do thao tác sai và khai thác thiết bị hiệu quả hơn.",
+      "c": "Vì đây là cách duy nhất để kỹ thuật viên thu thêm phí dịch vụ.",
+      "d": "Vì người dùng không bao giờ tự mình bật được máy tính."
+    },
+    "answer": "b",
+    "explanation": "Người dùng thường gặp khó khăn trong việc cấu hình hoặc sử dụng đúng cách."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Một nhân viên kỹ thuật cần có đạo đức nghề nghiệp chủ yếu để làm gì?",
+    "options": {
+      "a": "Để máy tính chạy nhanh hơn sau khi sửa.",
+      "b": "Để bảo vệ dữ liệu và sự riêng tư của khách hàng trong quá trình tiếp cận máy.",
+      "c": "Để có thể cài đặt các phần mềm lậu cho khách hàng.",
+      "d": "Để biết cách tăng giá linh kiện thay thế."
+    },
+    "answer": "b",
+    "explanation": "Kỹ thuật viên thường tiếp cận dữ liệu nhạy cảm nên cần đạo đức để bảo mật thông tin."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Khi tư vấn nâng cấp RAM cho một khách hàng có máy tính chạy chậm, kỹ thuật viên đang thực hiện loại dịch vụ nào?",
+    "options": {
+      "a": "Chỉ thuần túy là sửa chữa phần cứng.",
+      "b": "Kết hợp giữa kiến thức phần cứng và dịch vụ hỗ trợ/tư vấn người dùng.",
+      "c": "Dịch vụ bảo trì phần mềm định kỳ.",
+      "d": "Dịch vụ sản xuất phần cứng chuyên sâu."
+    },
+    "answer": "b",
+    "explanation": "Việc xác định cần nâng cấp linh kiện gì (phần cứng) dựa trên nhu cầu khách (tư vấn)."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Khách hàng báo máy tính khởi động rất lâu và thường xuyên bị treo ứng dụng. Bước xử lý nào nên được thực hiện đầu tiên?",
+    "options": {
+      "a": "Thay toàn bộ màn hình và bàn phím mới.",
+      "b": "Kiểm tra tình trạng sức khỏe ổ cứng và các tiến trình chạy ngầm trong phần mềm.",
+      "c": "Đem máy đi rửa bằng nước xà phòng để làm sạch.",
+      "d": "Khuyên khách hàng mua máy tính mới ngay lập tức."
+    },
+    "answer": "b",
+    "explanation": "Treo máy thường do lỗi ổ cứng hoặc xung đột phần mềm, cần kiểm tra logic trước."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Nếu một doanh nghiệp muốn đảm bảo hệ thống máy tính luôn sẵn sàng cho công việc, họ nên chọn phương án nào?",
+    "options": {
+      "a": "Chỉ sửa khi máy hỏng nặng không dùng được nữa.",
+      "b": "Tự nhân viên văn phòng tháo máy ra sửa khi có lỗi.",
+      "c": "Ký hợp đồng bảo trì định kỳ với các đơn vị dịch vụ chuyên nghiệp.",
+      "d": "Không cần quan tâm vì máy tính hiện đại không bao giờ lỗi."
+    },
+    "answer": "c",
+    "explanation": "Bảo trì chuyên nghiệp giúp giảm thiểu rủi ro gián đoạn công việc."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Bạn được giao nhiệm vụ nâng cấp một máy tính để làm đồ họa. Bạn sẽ ưu tiên kiểm tra và đề xuất thay thế linh kiện nào?",
+    "options": {
+      "a": "Vỏ máy (Case) có đèn LED nhiều màu.",
+      "b": "Chuột và lót chuột chuyên dụng.",
+      "c": "Card đồ họa (GPU) và dung lượng bộ nhớ RAM.",
+      "d": "Cáp nguồn của màn hình."
+    },
+    "answer": "c",
+    "explanation": "Làm đồ họa đòi hỏi khả năng xử lý hình ảnh (GPU) và bộ nhớ tạm (RAM) lớn."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Một chiếc laptop bị đổ nước vào bàn phím. Hành động nào sau đây của kỹ thuật viên là đúng quy trình nhất?",
+    "options": {
+      "a": "Cắm sạc để sấy khô bằng điện.",
+      "b": "Ngắt nguồn điện, tháo pin ngay lập tức và tiến hành vệ sinh, sấy khô linh kiện.",
+      "c": "Tiếp tục sử dụng xem máy có bị chập không.",
+      "d": "Đổ thêm nước sạch vào để rửa trôi nước bẩn."
+    },
+    "answer": "b",
+    "explanation": "Cần ngắt điện ngay để tránh chập mạch trước khi xử lý làm khô."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Khi khách hàng yêu cầu cài đặt một phần mềm không rõ nguồn gốc, kỹ thuật viên nên làm gì?",
+    "options": {
+      "a": "Cài đặt ngay vì khách hàng trả tiền.",
+      "b": "Cảnh báo về nguy cơ mã độc và tư vấn sử dụng các phần mềm có bản quyền hoặc nguồn gốc an toàn.",
+      "c": "Tự ý cài thêm các phần mềm theo dõi vào máy khách.",
+      "d": "Từ chối sửa chữa và trả máy ngay lập tức."
+    },
+    "answer": "b",
+    "explanation": "Trách nhiệm của kỹ thuật viên là đảm bảo an toàn hệ thống cho khách hàng."
+  },
+  {
+    "topic": "Biết",
+    "question": "Công việc nào sau đây là nhiệm vụ chính của người làm Quản trị mạng?",
+    "options": {
+      "a": "Viết code cho các trò chơi di động.",
+      "b": "Thiết kế giao diện đồ họa cho website.",
+      "c": "Cấu hình và duy trì hoạt động của các thiết bị mạng.",
+      "d": "Biên tập nội dung cho mạng xã hội."
+    },
+    "answer": "c",
+    "explanation": "Đây là mô tả cốt lõi của nghề quản trị mạng: đảm bảo hạ tầng kết nối hoạt động thông suốt."
+  },
+  {
+    "topic": "Biết",
+    "question": "Hoạt động nào thuộc về bảo mật hệ thống thông tin?",
+    "options": {
+      "a": "Thay màn hình mới cho máy tính bị vỡ.",
+      "b": "Cài đặt tường lửa để ngăn chặn truy cập trái phép.",
+      "c": "Hướng dẫn nhân viên cách soạn thảo văn bản.",
+      "d": "Lắp ráp vỏ máy tính cho khách hàng."
+    },
+    "answer": "b",
+    "explanation": "Tường lửa (Firewall) là công cụ ngăn chặn xâm nhập trái phép từ bên ngoài."
+  },
+  {
+    "topic": "Biết",
+    "question": "Việc sao lưu (backup) dữ liệu định kỳ là nhiệm vụ của vị trí nào?",
+    "options": {
+      "a": "Nhân viên bán hàng điện tử.",
+      "b": "Người quản trị hệ thống.",
+      "c": "Biên tập viên video.",
+      "d": "Nhân viên nhập liệu."
+    },
+    "answer": "b",
+    "explanation": "Quản trị hệ thống chịu trách nhiệm đảm bảo an toàn và tính toàn vẹn của dữ liệu thông qua việc backup."
+  },
+  {
+    "topic": "Biết",
+    "question": "Kỹ năng cấu hình Router và Switch là cần thiết nhất cho nghề nào?",
+    "options": {
+      "a": "Quản trị mạng.",
+      "b": "Lập trình Web.",
+      "c": "Thiết kế 3D.",
+      "d": "Kiểm thử phần mềm."
+    },
+    "answer": "a",
+    "explanation": "Router và Switch là hai thiết bị trung tâm và quan trọng nhất của một mạng máy tính."
+  },
+  {
+    "topic": "Biết",
+    "question": "Đâu là kiến thức quan trọng đối với chuyên gia bảo mật?",
+    "options": {
+      "a": "Kiến thức về lịch sử mỹ thuật.",
+      "b": "Kiến thức về lỗ hổng bảo mật và mã độc.",
+      "c": "Kỹ năng tư vấn bảo hiểm.",
+      "d": "Kiến thức về nuôi trồng thủy sản."
+    },
+    "answer": "b",
+    "explanation": "Để phòng thủ hệ thống, chuyên gia bảo mật phải hiểu rõ về các mối đe dọa và cách mã độc tấn công."
+  },
+  {
+    "topic": "Biết",
+    "question": "Ngành học nào cung cấp kiến thức chuyên sâu về bảo vệ dữ liệu khỏi hacker?",
+    "options": {
+      "a": "Kế toán doanh nghiệp.",
+      "b": "An toàn thông tin.",
+      "c": "Marketing kỹ thuật số.",
+      "d": "Ngôn ngữ Anh."
+    },
+    "answer": "b",
+    "explanation": "An toàn thông tin (Cybersecurity) là ngành đào tạo chuyên biệt về bảo mật dữ liệu."
+  },
+  {
+    "topic": "Biết",
+    "question": "Thiết bị mạng phổ biến mà người quản trị mạng thường xuyên làm việc là?",
+    "options": {
+      "a": "Máy in 3D.",
+      "b": "Bộ định tuyến (Router).",
+      "c": "Loa Bluetooth.",
+      "d": "Kính thực tế ảo."
+    },
+    "answer": "b",
+    "explanation": "Router là thiết bị dùng để định tuyến và chuyển giao dữ liệu trên mạng."
+  },
+  {
+    "topic": "Biết",
+    "question": "\"Phân quyền truy cập dữ liệu cho nhân viên\" thuộc nhóm công việc nào?",
+    "options": {
+      "a": "Sửa chữa phần cứng máy tính.",
+      "b": "Quản trị hệ thống.",
+      "c": "Sản xuất linh kiện điện tử.",
+      "d": "Dạy tin học văn phòng."
+    },
+    "answer": "b",
+    "explanation": "Quản trị hệ thống bao gồm việc quản lý tài khoản người dùng và cấp quyền sử dụng tài nguyên."
+  },
+  {
+    "topic": "Biết",
+    "question": "Chứng chỉ quốc tế nào sau đây thường dành cho người làm quản trị mạng?",
+    "options": {
+      "a": "IELTS.",
+      "b": "CCNA.",
+      "c": "HSK.",
+      "d": "JLPT."
+    },
+    "answer": "b",
+    "explanation": "CCNA (Cisco Certified Network Associate) là chứng chỉ uy tín toàn cầu về quản trị mạng."
+  },
+  {
+    "topic": "Biết",
+    "question": "Tại sao nhu cầu nhân lực ngành An toàn thông tin lại tăng cao trong tương lai?",
+    "options": {
+      "a": "Vì internet sẽ không còn được sử dụng.",
+      "b": "Vì các cuộc tấn công mạng ngày càng phức tạp và tinh vi.",
+      "c": "Vì máy tính sẽ tự bảo vệ mình mà không cần con người.",
+      "d": "Vì dữ liệu số sẽ mất đi giá trị."
+    },
+    "answer": "b",
+    "explanation": "Tấn công mạng gia tăng khiến các vị trí bảo mật trở thành nhu cầu thiết yếu của mọi tổ chức."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao người quản trị mạng cần hiểu về giao thức TCP/IP?",
+    "options": {
+      "a": "Để biết cách lắp ráp ổ cứng máy tính.",
+      "b": "Vì đây là ngôn ngữ chung để các thiết bị có thể liên lạc với nhau trên mạng.",
+      "c": "Để thiết kế các hình ảnh đồ họa đẹp hơn.",
+      "d": "Để tăng tốc độ đánh máy văn bản."
+    },
+    "answer": "b",
+    "explanation": "TCP/IP là bộ giao thức nền tảng của internet và các mạng máy tính hiện đại."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Sự khác biệt giữa quản trị hệ thống và bảo mật hệ thống là gì?",
+    "options": {
+      "a": "Quản trị hệ thống tập trung vào vận hành ổn định; bảo mật tập trung vào chống lại các mối đe dọa.",
+      "b": "Quản trị hệ thống chỉ làm với phần cứng; bảo mật chỉ làm với phần mềm.",
+      "c": "Bảo mật hệ thống chỉ cần thiết cho ngân hàng, các tổ chức khác thì không.",
+      "d": "Quản trị hệ thống là công việc bán thời gian, bảo mật là công việc toàn thời gian."
+    },
+    "answer": "a",
+    "explanation": "Một bên thiên về duy trì hiệu suất hoạt động, một bên thiên về phòng thủ và bảo vệ."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao \"tư duy phân tích lỗi\" lại cực kỳ quan trọng trong quản trị hệ thống?",
+    "options": {
+      "a": "Để đổ lỗi cho người sử dụng máy tính.",
+      "b": "Để nhanh chóng xác định nguyên nhân gốc rễ của sự cố và đưa ra giải pháp khắc phục.",
+      "c": "Để viết hướng dẫn sử dụng phần mềm dài hơn.",
+      "d": "Để có thể thay thế tất cả linh kiện dù không hỏng."
+    },
+    "answer": "b",
+    "explanation": "Tư duy tốt giúp rút ngắn thời gian hệ thống ngừng hoạt động (Downtime)."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Vai trò của \"Mã hóa dữ liệu\" trong bảo mật thông tin là gì?",
+    "options": {
+      "a": "Làm cho dung lượng dữ liệu lớn hơn để khó bị đánh cắp.",
+      "b": "Chuyển thông tin thành dạng không thể đọc được nếu không có khóa giải mã, tránh lộ bí mật.",
+      "c": "Để dữ liệu trông đẹp mắt hơn khi hiển thị.",
+      "d": "Để xóa dữ liệu của khách hàng nhanh hơn."
+    },
+    "answer": "b",
+    "explanation": "Mã hóa đảm bảo nếu dữ liệu bị đánh cắp, kẻ trộm cũng không thể xem được nội dung bên trong."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao quản trị mạng thường đi kèm với quản trị bảo trì hệ thống?",
+    "options": {
+      "a": "Vì hai nghề này đều sử dụng chung một loại tuốc nơ vít.",
+      "b": "Vì mạng và hệ thống (máy chủ, phần mềm) gắn kết chặt chẽ, hỗ trợ lẫn nhau để vận hành dịch vụ IT.",
+      "c": "Vì doanh nghiệp muốn tiết kiệm tiền thuê hai người khác nhau.",
+      "d": "Vì cả hai nghề này đều không cần học đại học."
+    },
+    "answer": "b",
+    "explanation": "Hạ tầng mạng và hệ thống phần mềm luôn tác động qua lại lẫn nhau trong thực tế."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Công ty bạn bị hacker tấn công chiếm quyền điều khiển website. Chuyên gia bảo mật nên thực hiện hành động nào đầu tiên?",
+    "options": {
+      "a": "Xóa bỏ hoàn toàn website đó.",
+      "b": "Cô lập hệ thống bị tấn công, kiểm tra lỗ hổng và khôi phục từ bản sao lưu an toàn.",
+      "c": "Gọi điện cho tất cả khách hàng để xin lỗi ngay lập tức.",
+      "d": "Mua một chiếc máy tính mới để thay cho máy chủ."
+    },
+    "answer": "b",
+    "explanation": "Cô lập sự cố là bước đầu tiên để ngăn chặn thiệt hại lan rộng sang các phần khác."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Một văn phòng có 20 nhân viên nhưng Wi-Fi thường xuyên bị chậm và rớt mạng. Người quản trị mạng nên ưu tiên xử lý thế nào?",
+    "options": {
+      "a": "Yêu cầu nhân viên không được sử dụng internet nữa.",
+      "b": "Kiểm tra lưu lượng mạng, cấu hình lại các điểm truy cập (Access Point) và giới hạn băng thông không cần thiết.",
+      "c": "Thay toàn bộ dây điện trong văn phòng.",
+      "d": "Cài đặt lại bộ gõ tiếng Việt trên tất cả máy tính."
+    },
+    "answer": "b",
+    "explanation": "Tối ưu hóa cấu hình thiết bị và quản lý băng thông là giải pháp kỹ thuật đúng đắn."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Nếu bạn muốn theo đuổi nghề bảo mật thông tin chuyên nghiệp, lộ trình nào sau đây là hợp lý nhất?",
+    "options": {
+      "a": "Học toán cao cấp và lý thuyết kinh tế.",
+      "b": "Học về mạng căn bản, hệ điều hành Linux, các kỹ thuật tấn công/phòng thủ và thi lấy chứng chỉ CEH.",
+      "c": "Chỉ cần học cách sử dụng Photoshop và Illustrator.",
+      "d": "Học cách sửa chữa các loại điện thoại thông minh."
+    },
+    "answer": "b",
+    "explanation": "Đây là các nền tảng kỹ thuật và chứng chỉ thiết yếu của nghề Cybersecurity."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Trong trường hợp xảy ra sự cố cháy nổ tại phòng máy chủ, quy trình bảo mật dữ liệu nào là quan trọng nhất?",
+    "options": {
+      "a": "Chụp ảnh hiện trường để báo cáo.",
+      "b": "Đảm bảo dữ liệu đã được sao lưu ở một vị trí khác (Offsite backup) và có kế hoạch phục hồi sau thảm họa.",
+      "c": "Cố gắng bê máy chủ ra ngoài dù đang có lửa.",
+      "d": "Ngắt kết nối internet toàn bộ khu vực xung quanh."
+    },
+    "answer": "b",
+    "explanation": "Backup từ xa (Offsite backup) là cách duy nhất để cứu vãn dữ liệu khi có thảm họa vật lý xảy ra."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Một nhân viên mới vào làm việc cần truy cập vào thư mục kế toán. Người quản trị hệ thống nên cấp quyền như thế nào?",
+    "options": {
+      "a": "Cấp toàn quyền (Full control) để nhân viên làm việc thoải mái.",
+      "b": "Cấp quyền truy cập tối thiểu (Least Privilege) đủ để thực hiện nhiệm vụ được giao.",
+      "c": "Cho nhân viên dùng chung tài khoản của giám đốc.",
+      "d": "Yêu cầu nhân viên tự cài đặt phần mềm bẻ khóa để vào thư mục."
+    },
+    "answer": "b",
+    "explanation": "Nguyên tắc \"quyền tối thiểu\" là quy tắc vàng để đảm bảo an toàn thông tin."
+  },
+  {
+    "topic": "Biết",
+    "question": "Mục tiêu chính của một buổi hội thảo hướng nghiệp Tin học trong trường phổ thông là gì?",
+    "options": {
+      "a": "Để bán các thiết bị máy tính mới nhất.",
+      "b": "Để học sinh giải trí sau những giờ học căng thẳng.",
+      "c": "Giúp học sinh tìm hiểu về đặc điểm các nhóm nghề và lựa chọn nghề phù hợp.",
+      "d": "Để dạy học sinh cách lập trình một trang web hoàn chỉnh."
+    },
+    "answer": "c",
+    "explanation": "Đây là ý nghĩa cốt lõi của hội thảo hướng nghiệp."
+  },
+  {
+    "topic": "Biết",
+    "question": "Bước đầu tiên cần thực hiện khi tổ chức một buổi hội thảo hướng nghiệp là gì?",
+    "options": {
+      "a": "Viết báo cáo tổng kết.",
+      "b": "Xây dựng bài thuyết trình.",
+      "c": "Lập kế hoạch và xác định mục tiêu.",
+      "d": "Thu dọn hội trường."
+    },
+    "answer": "c",
+    "explanation": "Kế hoạch là nền tảng để triển khai mọi hoạt động sau đó."
+  },
+  {
+    "topic": "Biết",
+    "question": "Trong nhiệm vụ chuẩn bị hội thảo, việc phân công nhân sự thường bao gồm những vị trí nào?",
+    "options": {
+      "a": "Đội ngũ y tế và cứu hỏa.",
+      "b": "Người trình bày, thư ký, nhóm hậu cần/kỹ thuật.",
+      "c": "Các vận động viên thi đấu.",
+      "d": "Người sản xuất linh kiện máy tính."
+    },
+    "answer": "b",
+    "explanation": "Đây là bộ khung nhân sự cơ bản để vận hành một sự kiện nhóm."
+  },
+  {
+    "topic": "Biết",
+    "question": "Một bài trình bày hội thảo hướng nghiệp hiệu quả nên có yếu tố nào sau đây?",
+    "options": {
+      "a": "Chỉ toàn chữ và số để trông chuyên nghiệp.",
+      "b": "Các thông tin về nhu cầu nhân lực, yêu cầu năng lực và hình ảnh minh họa.",
+      "c": "Các đoạn phim hoạt hình không liên quan đến nghề nghiệp.",
+      "d": "Chỉ nói về mức lương mà không nói về khó khăn của nghề."
+    },
+    "answer": "b",
+    "explanation": "Thông tin đa dạng giúp người nghe có cái nhìn toàn diện về nghề."
+  },
+  {
+    "topic": "Biết",
+    "question": "Hoạt động nào thường diễn ra cuối buổi hội thảo để thu thập ý kiến từ người tham gia?",
+    "options": {
+      "a": "Khai mạc hội thảo.",
+      "b": "Đánh giá và lấy thông tin phản hồi (khảo sát).",
+      "c": "Phân công nhiệm vụ chuẩn bị.",
+      "d": "Cài đặt hệ điều hành cho máy tính."
+    },
+    "answer": "b",
+    "explanation": "Đánh giá giúp xác định mức độ đạt được của mục tiêu hội thảo."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao cần phải lựa chọn nội dung hội thảo hướng nghiệp bám sát thực tế thị trường lao động?",
+    "options": {
+      "a": "Để bài trình bày trông dài và đẹp mắt hơn.",
+      "b": "Để học sinh có cái nhìn chính xác về cơ hội và thách thức của nghề nghiệp trong tương lai.",
+      "c": "Vì giáo viên yêu cầu như vậy.",
+      "d": "Để thay thế hoàn toàn các chương trình hướng nghiệp trên tivi."
+    },
+    "answer": "b",
+    "explanation": "Thông tin thực tế giúp học sinh chọn nghề không bị mông lung hay ảo tưởng."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Việc đánh giá kết quả sau buổi hội thảo có ý nghĩa gì đối với ban tổ chức?",
+    "options": {
+      "a": "Để tìm ra người có lỗi trong buổi hội thảo.",
+      "b": "Để rút kinh nghiệm và nâng cao chất lượng cho các buổi sinh hoạt chuyên đề sau.",
+      "c": "Để tính toán số tiền đã chi tiêu cho hội thảo.",
+      "d": "Để yêu cầu học sinh làm lại bài tập trên lớp."
+    },
+    "answer": "b",
+    "explanation": "Phản hồi giúp cải thiện kỹ năng tổ chức và nội dung trong tương lai."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao việc sử dụng các video minh họa trong bài trình bày hướng nghiệp lại được khuyến khích?",
+    "options": {
+      "a": "Vì video giúp kéo dài thời gian hội thảo.",
+      "b": "Vì video giúp học sinh hình dung sinh động về môi trường làm việc thực tế của ngành nghề đó.",
+      "c": "Vì ban tổ chức không muốn nói nhiều nên để video chạy thay.",
+      "d": "Vì máy tính của trường chỉ có tác dụng xem video."
+    },
+    "answer": "b",
+    "explanation": "Trực quan hóa giúp truyền tải thông điệp nhanh và hiệu quả hơn lời nói."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Nếu được phân công xây dựng bài trình bày về nghề \"An toàn thông tin\", bạn nên bổ sung thông tin nào để thu hút các bạn học sinh giỏi Toán?",
+    "options": {
+      "a": "Các phần mềm chỉnh sửa ảnh nghệ thuật.",
+      "b": "Các thuật toán mã hóa dữ liệu và tư duy giải quyết sự cố bảo mật.",
+      "c": "Lịch sử của các loại máy in.",
+      "d": "Cách lắp đặt dây cáp mạng trong văn phòng."
+    },
+    "answer": "b",
+    "explanation": "An toàn thông tin đòi hỏi tư duy logic và toán học rất cao cho việc mã hóa/giải mã."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Sau khi nghe hội thảo về nghề \"Phát triển phần mềm\", một bạn học sinh muốn biết mình có phù hợp không. Bạn ấy nên làm hành động nào là đúng đắn nhất?",
+    "options": {
+      "a": "Đăng ký đi làm ngay mà không cần học đại học.",
+      "b": "Đối chiếu sở thích, năng lực cá nhân với các yêu cầu của nghề đã được nêu trong hội thảo.",
+      "c": "Bỏ học các môn khác để chỉ học lập trình.",
+      "d": "Đợi đến khi có người mời đi làm mới tìm hiểu tiếp."
+    },
+    "answer": "b",
+    "explanation": "Hội thảo cung cấp dữ liệu, việc còn lại là tự đánh giá (self-assessment)."
+  },
+  {
+    "topic": "Biết",
+    "question": "Thiết bị nào sau đây đóng vai trò là \"máy phục vụ\", chuyên cung cấp tài nguyên cho các máy khác?",
+    "options": {
+      "a": "Router.",
+      "b": "Server.",
+      "c": "Switch.",
+      "d": "Hub."
+    },
+    "answer": "b",
+    "explanation": "Server cung cấp dịch vụ và tài nguyên cho các máy Client."
+  },
+  {
+    "topic": "Biết",
+    "question": "Dịch vụ nào của Server giúp người dùng có thể truy cập vào các trang web qua trình duyệt?",
+    "options": {
+      "a": "Mail Server.",
+      "b": "File Server.",
+      "c": "Web Server.",
+      "d": "Print Server."
+    },
+    "answer": "c",
+    "explanation": "Web Server lưu trữ và chuyển tải nội dung web (HTTP/HTTPS)."
+  },
+  {
+    "topic": "Biết",
+    "question": "Thiết bị mạng nào làm việc ở lớp 2 và chuyển dữ liệu dựa trên địa chỉ MAC của thiết bị nhận?",
+    "options": {
+      "a": "Hub.",
+      "b": "Repeater.",
+      "c": "Switch.",
+      "d": "Router."
+    },
+    "answer": "c",
+    "explanation": "Switch sử dụng bảng địa chỉ MAC để chuyển mạch chính xác."
+  },
+  {
+    "topic": "Biết",
+    "question": "Router là thiết bị dùng để làm gì?",
+    "options": {
+      "a": "Khuếch đại sóng Wi-Fi.",
+      "b": "Kết nối các máy tính trong một mạng LAN đơn giản.",
+      "c": "Kết nối các mạng khác nhau và định tuyến dữ liệu.",
+      "d": "Lưu trữ dữ liệu trang web."
+    },
+    "answer": "c",
+    "explanation": "Router định tuyến gói tin giữa các mạng khác nhau (lớp 3)."
+  },
+  {
+    "topic": "Biết",
+    "question": "Chức năng chính của Repeater là gì?",
+    "options": {
+      "a": "Chia sẻ dữ liệu dùng chung.",
+      "b": "Khuếch đại và làm mới tín hiệu truyền dẫn.",
+      "c": "Chuyển đổi mạng có dây thành mạng không dây.",
+      "d": "Cấp địa chỉ IP cho máy tính."
+    },
+    "answer": "b",
+    "explanation": "Repeater giúp khắc phục sự suy hao tín hiệu trên đường truyền dài."
+  },
+  {
+    "topic": "Biết",
+    "question": "Thiết bị Access Point thường được dùng để làm gì?",
+    "options": {
+      "a": "Kết nối mạng có dây thành mạng Wi-Fi.",
+      "b": "Diệt virus cho toàn hệ thống mạng.",
+      "c": "Thay thế hoàn toàn cho máy chủ Web.",
+      "d": "Tăng dung lượng lưu trữ cho máy tính."
+    },
+    "answer": "a",
+    "explanation": "Access Point tạo ra vùng phủ sóng Wi-Fi từ mạng dây."
+  },
+  {
+    "topic": "Biết",
+    "question": "Dịch vụ Server nào giúp lưu trữ tập trung các tệp tin để nhiều người có thể cùng sử dụng?",
+    "options": {
+      "a": "Web Server.",
+      "b": "Database Server.",
+      "c": "File Server.",
+      "d": "Mail Server."
+    },
+    "answer": "c",
+    "explanation": "File Server dùng để lưu trữ và quản lý tập tin dùng chung."
+  },
+  {
+    "topic": "Biết",
+    "question": "Nhược điểm lớn nhất của Hub so với Switch là gì?",
+    "options": {
+      "a": "Giá thành đắt hơn.",
+      "b": "Khó cài đặt hơn.",
+      "c": "Gây nghẽn mạng do gửi dữ liệu tới tất cả các cổng (broadcast).",
+      "d": "Không hỗ trợ kết nối dây cáp mạng."
+    },
+    "answer": "c",
+    "explanation": "Hub gửi dữ liệu đi tất cả các cổng, gây xung đột và nghẽn mạng."
+  },
+  {
+    "topic": "Biết",
+    "question": "\"Mail Server\" là loại máy chủ chuyên trách việc gì?",
+    "options": {
+      "a": "Lưu trữ mã nguồn website.",
+      "b": "Quản lý việc gửi và nhận thư điện tử.",
+      "c": "Chụp ảnh màn hình người dùng.",
+      "d": "Cung cấp trò chơi trực tuyến."
+    },
+    "answer": "b",
+    "explanation": "Mail Server đóng vai trò như một bưu điện điện tử."
+  },
+  {
+    "topic": "Biết",
+    "question": "Thiết bị mạng nào thường tích hợp cả chức năng định tuyến và phát sóng Wi-Fi trong gia đình?",
+    "options": {
+      "a": "Wireless Router.",
+      "b": "Hub cơ bản.",
+      "c": "Card mạng (NIC).",
+      "d": "Repeater."
+    },
+    "answer": "a",
+    "explanation": "Wireless Router là thiết bị phổ biến nhất trong các hộ gia đình."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao một tổ chức cần sử dụng Database Server thay vì chỉ lưu file Excel thông thường?",
+    "options": {
+      "a": "Vì Database Server rẻ hơn.",
+      "b": "Vì giúp quản lý dữ liệu lớn, có cấu trúc và hỗ trợ nhiều người truy cập đồng thời an toàn hơn.",
+      "c": "Vì Database Server không cần dùng đến điện.",
+      "d": "Vì nó giúp máy tính chạy nhanh hơn gấp đôi."
+    },
+    "answer": "b",
+    "explanation": "Database Server tối ưu cho việc truy vấn và bảo mật dữ liệu lớn."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Sự khác biệt về cách thức xử lý dữ liệu giữa Hub và Switch là gì?",
+    "options": {
+      "a": "Hub chỉ làm việc với sóng Wi-Fi, Switch làm việc với dây cáp.",
+      "b": "Hub gửi dữ liệu cho tất cả mọi người, Switch chỉ gửi cho đúng người nhận.",
+      "c": "Switch làm chậm mạng hơn Hub.",
+      "d": "Hub có thể thay thế cho Router, còn Switch thì không."
+    },
+    "answer": "b",
+    "explanation": "Đây là sự khác biệt về độ \"thông minh\" giữa hai thiết bị kết nối."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Khi một gói tin đi từ mạng này sang mạng khác, tại sao phải cần đến Router?",
+    "options": {
+      "a": "Để gói tin có thể được nén lại nhỏ hơn.",
+      "b": "Để Router xác định đường đi tốt nhất dựa trên địa chỉ IP.",
+      "c": "Để Router chuyển đổi tín hiệu thành âm thanh.",
+      "d": "Để lưu trữ gói tin đó vĩnh viễn."
+    },
+    "answer": "b",
+    "explanation": "Router tìm đường (routing) dựa trên địa chỉ IP đích."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Trong tình huống nào bạn nên lắp thêm một Repeater?",
+    "options": {
+      "a": "Khi muốn máy tính chạy phần mềm nhanh hơn.",
+      "b": "Khi tín hiệu mạng bị suy yếu do khoảng cách truyền dẫn quá xa.",
+      "c": "Khi muốn ngăn chặn hacker tấn công.",
+      "d": "Khi muốn đổi tên mạng Wi-Fi."
+    },
+    "answer": "b",
+    "explanation": "Repeater được dùng để mở rộng khoảng cách kết nối vật lý."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Việc tích hợp Access Point vào hệ thống mạng có dây mang lại lợi ích gì?",
+    "options": {
+      "a": "Giảm chi phí tiền điện hàng tháng.",
+      "b": "Cho phép các thiết bị di động (smartphone, laptop) kết nối linh hoạt không cần dây.",
+      "c": "Giúp máy tính có thể in ấn mà không cần máy in.",
+      "d": "Tự động sửa lỗi phần cứng cho máy tính."
+    },
+    "answer": "b",
+    "explanation": "Giúp mạng trở nên linh động và tiện dụng cho thiết bị di động."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Một quán cà phê có 2 tầng, Router đặt ở tầng 1 nhưng khách ở tầng 2 không bắt được sóng. Thiết bị nào là giải pháp phù hợp nhất?",
+    "options": {
+      "a": "Lắp thêm một Hub ở tầng 2.",
+      "b": "Lắp thêm một Repeater hoặc Access Point ở tầng 2.",
+      "c": "Mua thêm một Web Server.",
+      "d": "Thay đổi toàn bộ máy tính của khách hàng."
+    },
+    "answer": "b",
+    "explanation": "Giúp chuyển tiếp hoặc mở rộng vùng phủ sóng lên tầng cao."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Doanh nghiệp của bạn muốn xây dựng một hệ thống bán hàng trực tuyến cho hàng triệu người truy cập mỗi ngày. Bạn cần chú trọng đầu tư vào loại thiết bị nào?",
+    "options": {
+      "a": "Hub công suất lớn.",
+      "b": "Hệ thống Web Server và Database Server mạnh mẽ.",
+      "c": "Thật nhiều Repeater quanh văn phòng.",
+      "d": "Chỉ cần một chiếc Router gia đình là đủ."
+    },
+    "answer": "b",
+    "explanation": "Đây là hai thành phần cốt lõi để vận hành một website thương mại điện tử."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Khi cắm dây mạng từ máy tính vào một thiết bị, bạn thấy máy tính khác trong phòng cũng nhận được gói tin rác đó gây chậm mạng. Thiết bị đó khả năng cao là?",
+    "options": {
+      "a": "Switch.",
+      "b": "Router.",
+      "c": "Hub.",
+      "d": "Server."
+    },
+    "answer": "c",
+    "explanation": "Hiện tượng này gọi là xung đột (collision) do cơ chế hoạt động của Hub."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Để kết nối mạng LAN của trường học với mạng Internet toàn cầu, thiết bị bắt buộc phải có là?",
+    "options": {
+      "a": "Repeater.",
+      "b": "Router.",
+      "c": "Access Point.",
+      "d": "File Server."
+    },
+    "answer": "b",
+    "explanation": "Router là \"cửa ngõ\" nối mạng nội bộ với mạng công cộng."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Bạn đang ngồi ở phòng khách và muốn gửi một file tài liệu lên máy chủ của công ty. Quy trình truyền dữ liệu qua các thiết bị mạng nào là hợp lý?",
+    "options": {
+      "a": "Laptop -> Wi-Fi Access Point -> Switch -> Router -> Internet -> Server công ty.",
+      "b": "Laptop -> Repeater -> Hub -> Laptop khác.",
+      "c": "Laptop -> Web Server -> Mail Server.",
+      "d": "Laptop -> Router -> Repeater -> Hub."
+    },
+    "answer": "a",
+    "explanation": "Đây là sơ đồ truyền tin điển hình từ thiết bị đầu cuối ra internet."
+  },
+  {
+    "topic": "Biết",
+    "question": "Loại đường truyền nào sau đây sử dụng xung ánh sáng để truyền dữ liệu?",
+    "options": {
+      "a": "Cáp xoắn đôi.",
+      "b": "Cáp quang.",
+      "c": "Bluetooth.",
+      "d": "Wi-Fi."
+    },
+    "answer": "b",
+    "explanation": "Cáp quang truyền dữ liệu bằng tín hiệu ánh sáng (photon) qua các sợi thủy tinh hoặc nhựa."
+  },
+  {
+    "topic": "Biết",
+    "question": "Đặc điểm chính của cáp xoắn đôi là gì?",
+    "options": {
+      "a": "Truyền dữ liệu bằng sóng radio.",
+      "b": "Các cặp dây đồng xoắn lại để giảm nhiễu.",
+      "c": "Làm từ sợi thủy tinh.",
+      "d": "Chỉ dùng cho mạng vệ tinh."
+    },
+    "answer": "b",
+    "explanation": "Việc xoắn các cặp dây giúp triệt tiêu nhiễu điện từ giữa các cặp dây và từ môi trường bên ngoài."
+  },
+  {
+    "topic": "Biết",
+    "question": "Công nghệ nào sau đây là kết nối không dây tầm ngắn?",
+    "options": {
+      "a": "Cáp quang.",
+      "b": "GSM.",
+      "c": "Bluetooth.",
+      "d": "Vệ tinh."
+    },
+    "answer": "c",
+    "explanation": "Bluetooth là chuẩn kết nối cá nhân tầm ngắn (PAN - Personal Area Network)."
+  },
+  {
+    "topic": "Biết",
+    "question": "Mạng vệ tinh có ưu điểm nổi bật nhất là gì?",
+    "options": {
+      "a": "Giá thành rẻ nhất.",
+      "b": "Tốc độ cao hơn cáp quang.",
+      "c": "Khả năng phủ sóng toàn cầu.",
+      "d": "Không bị trễ tín hiệu."
+    },
+    "answer": "c",
+    "explanation": "Vệ tinh có thể phủ sóng tới những nơi có địa hình hiểm trở mà dây dẫn hoặc trạm BTS không tới được."
+  },
+  {
+    "topic": "Biết",
+    "question": "Hệ thống GSM chủ yếu phục vụ cho loại hình kết nối nào?",
+    "options": {
+      "a": "Mạng cục bộ có dây.",
+      "b": "Mạng thông tin di động.",
+      "c": "Kết nối chuột không dây.",
+      "d": "Truyền hình cáp."
+    },
+    "answer": "b",
+    "explanation": "GSM là nền tảng cho mạng di động (các thế hệ 2G, 3G, 4G...)."
+  },
+  {
+    "topic": "Biết",
+    "question": "Thiết bị nào sau đây thường phát sóng Wi-Fi trong gia đình?",
+    "options": {
+      "a": "Switch có dây.",
+      "b": "Bộ định tuyến không dây (Wireless Router).",
+      "c": "Cáp xoắn đôi.",
+      "d": "Tai nghe Bluetooth."
+    },
+    "answer": "b",
+    "explanation": "Wireless Router nhận tín hiệu Internet có dây và chuyển đổi thành sóng không dây (Wi-Fi)."
+  },
+  {
+    "topic": "Biết",
+    "question": "Đâu là ví dụ về đường truyền có dây?",
+    "options": {
+      "a": "Sóng vô tuyến.",
+      "b": "Cáp quang.",
+      "c": "Hồng ngoại.",
+      "d": "Sóng cực ngắn."
+    },
+    "answer": "b",
+    "explanation": "Cáp quang là phương tiện truyền dẫn hữu tuyến (có dây)."
+  },
+  {
+    "topic": "Biết",
+    "question": "Phạm vi hoạt động hiệu quả của Bluetooth thường là bao nhiêu?",
+    "options": {
+      "a": "Hàng trăm km.",
+      "b": "Toàn thế giới.",
+      "c": "Trong phạm vi vài mét đến vài chục mét.",
+      "d": "Không giới hạn."
+    },
+    "answer": "c",
+    "explanation": "Bluetooth được thiết kế cho kết nối các thiết bị ngoại vi trong khoảng cách gần."
+  },
+  {
+    "topic": "Biết",
+    "question": "Loại cáp nào thường dùng đầu kết nối RJ45?",
+    "options": {
+      "a": "Cáp quang.",
+      "b": "Cáp xoắn đôi.",
+      "c": "Cáp đồng trục.",
+      "d": "Dây điện thoại."
+    },
+    "answer": "b",
+    "explanation": "RJ45 là đầu bấm tiêu chuẩn cho cáp xoắn đôi dùng trong mạng LAN."
+  },
+  {
+    "topic": "Biết",
+    "question": "Mạng 5G là sự phát triển của công nghệ nào?",
+    "options": {
+      "a": "Wi-Fi 6.",
+      "b": "Bluetooth 5.0.",
+      "c": "Mạng di động GSM.",
+      "d": "Mạng vệ tinh."
+    },
+    "answer": "c",
+    "explanation": "5G là thế hệ thứ 5 của mạng thông tin di động toàn cầu."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao cáp quang được ưu tiên sử dụng cho các đường truyền Internet xuyên đại dương?",
+    "options": {
+      "a": "Vì nó nhẹ và dễ nổi trên mặt nước.",
+      "b": "Vì băng thông rất lớn và ít bị suy hao tín hiệu trên khoảng cách xa.",
+      "c": "Vì cáp quang rẻ hơn cáp đồng rất nhiều.",
+      "d": "Vì nó không cần trạm lặp tín hiệu."
+    },
+    "answer": "b",
+    "explanation": "Cáp quang có suy hao cực thấp, cho phép truyền dữ liệu tốc độ cao đi hàng nghìn km."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Sự khác biệt cơ bản giữa Wi-Fi và Bluetooth là gì?",
+    "options": {
+      "a": "Wi-Fi dùng sóng radio, Bluetooth dùng ánh sáng.",
+      "b": "Wi-Fi có tốc độ và phạm vi hoạt động lớn hơn Bluetooth.",
+      "c": "Wi-Fi chỉ dùng cho điện thoại, Bluetooth chỉ dùng cho loa.",
+      "d": "Bluetooth bảo mật hơn Wi-Fi."
+    },
+    "answer": "b",
+    "explanation": "Wi-Fi dùng cho mạng quy mô gia đình/văn phòng, trong khi Bluetooth dùng cho kết nối cá nhân phạm vi hẹp."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao trong các văn phòng cố định, người ta vẫn ưu tiên dùng cáp xoắn đôi thay vì Wi-Fi cho các máy tính để bàn?",
+    "options": {
+      "a": "Để tiết kiệm chi phí mua bộ phát.",
+      "b": "Vì kết nối có dây ổn định và bảo mật tốt hơn.",
+      "c": "Vì Wi-Fi không thể kết nối được với máy tính để bàn.",
+      "d": "Vì cáp xoắn đôi có tốc độ cao hơn cáp quang."
+    },
+    "answer": "b",
+    "explanation": "Đường truyền có dây không bị ảnh hưởng bởi vật cản và khó bị xâm nhập từ xa hơn Wi-Fi."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Hạn chế lớn nhất của mạng vệ tinh khi sử dụng để chơi game trực tuyến là gì?",
+    "options": {
+      "a": "Không có đủ băng thông.",
+      "b": "Độ trễ (latency) cao do quãng đường truyền tín hiệu rất xa.",
+      "c": "Dễ bị đứt dây cáp.",
+      "d": "Chỉ hoạt động được vào ban ngày."
+    },
+    "answer": "b",
+    "explanation": "Tín hiệu phải đi từ đất liền lên vệ tinh (cách ~36.000km) và ngược lại nên gây ra độ trễ lớn."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Khi bạn đi tàu cao tốc và vẫn giữ được kết nối Internet liên tục, đó là nhờ đặc tính nào của mạng GSM?",
+    "options": {
+      "a": "Khả năng xuyên thấu vật cản của sóng Wi-Fi.",
+      "b": "Hệ thống các trạm thu phát sóng (BTS) phủ khắp và khả năng chuyển vùng.",
+      "c": "Dây cáp quang được kéo theo dọc đường ray.",
+      "d": "Sóng Bluetooth công suất lớn."
+    },
+    "answer": "b",
+    "explanation": "Thiết bị di động tự động chuyển đổi kết nối giữa các cột sóng (BTS) khi bạn di chuyển."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Một quán cà phê có 3 tầng, nhiều phòng vách kính. Phương án nào tối ưu để khách hàng có mạng ổn định ở mọi vị trí?",
+    "options": {
+      "a": "Lắp 1 bộ phát Wi-Fi mạnh ở tầng 1.",
+      "b": "Dùng mạng vệ tinh.",
+      "c": "Lắp đặt hệ thống Wi-Fi Mesh (nhiều bộ phát kết nối nhau).",
+      "d": "Yêu cầu khách dùng Bluetooth."
+    },
+    "answer": "c",
+    "explanation": "Hệ thống Mesh giúp loại bỏ \"điểm chết\" sóng trong nhà nhiều tầng hoặc có nhiều vách ngăn."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Nếu cần truyền một tệp tin lớn giữa hai máy tính trong cùng một phòng mà không có Internet, cách nào nhanh nhất?",
+    "options": {
+      "a": "Gửi qua Bluetooth.",
+      "b": "Dùng cáp xoắn đôi kết nối trực tiếp hoặc qua Switch.",
+      "c": "Phát Hotspot từ điện thoại.",
+      "d": "Chờ mạng vệ tinh."
+    },
+    "answer": "b",
+    "explanation": "Kết nối có dây (như LAN Gigabit) có tốc độ thực tế cao hơn hẳn Wi-Fi hay Bluetooth."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Bạn đang ở trên một hòn đảo hoang sơ không có trạm phát sóng di động, công nghệ nào giúp bạn liên lạc cứu hộ?",
+    "options": {
+      "a": "Wi-Fi.",
+      "b": "Bluetooth.",
+      "c": "Điện thoại vệ tinh.",
+      "d": "Cáp quang."
+    },
+    "answer": "c",
+    "explanation": "Điện thoại vệ tinh kết nối trực tiếp với vệ tinh, không cần trạm BTS mặt đất."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Hiện tượng \"nhiễu Wi-Fi\" thường xảy ra khi nào?",
+    "options": {
+      "a": "Khi có quá nhiều bộ phát Wi-Fi ở gần nhau sử dụng cùng tần số.",
+      "b": "Khi trời mưa to làm ướt dây cáp.",
+      "c": "Khi điện thoại hết pin.",
+      "d": "Khi sử dụng cáp quang quá dài."
+    },
+    "answer": "a",
+    "explanation": "Sự chồng lấn tần số (đặc biệt băng tần 2.4GHz) gây nhiễu và làm giảm tốc độ mạng."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Tại sao các bệnh viện lớn thường dùng cáp quang để truyền hình ảnh chẩn đoán từ phòng chụp X-quang sang phòng bác sĩ?",
+    "options": {
+      "a": "Để trang trí cho đẹp.",
+      "b": "Vì hình ảnh y tế có dung lượng lớn, cần băng thông rộng của cáp quang để truyền tải tức thời.",
+      "c": "Vì cáp quang không dẫn điện, an toàn cho thiết bị y tế.",
+      "d": "Cả B và C đều đúng."
+    },
+    "answer": "d",
+    "explanation": "Cáp quang đáp ứng tốt cả về tốc độ truyền tải hình ảnh dung lượng cao và tính an toàn điện từ."
+  },
+  {
+    "topic": "Biết",
+    "question": "Quy trình thiết kế mạng cơ bản gồm bao nhiêu bước?",
+    "options": {
+      "a": "2 bước.",
+      "b": "3 bước.",
+      "c": "4 bước.",
+      "d": "5 bước."
+    },
+    "answer": "c",
+    "explanation": "Quy trình chuẩn gồm 4 bước: Khảo sát hiện trạng, Thiết kế logic, Thiết kế vật lý và Chọn hệ điều hành mạng."
+  },
+  {
+    "topic": "Biết",
+    "question": "Bước đầu tiên trong quy trình thiết kế mạng là gì?",
+    "options": {
+      "a": "Thiết kế vật lý.",
+      "b": "Thiết kế logic.",
+      "c": "Chọn hệ điều hành mạng.",
+      "d": "Khảo sát hiện trạng và phân tích nhu cầu."
+    },
+    "answer": "d",
+    "explanation": "Trước khi thiết kế, kỹ sư phải hiểu rõ môi trường triển khai và yêu cầu của người dùng để tránh sai sót về sau."
+  },
+  {
+    "topic": "Biết",
+    "question": "Việc xác định số lượng máy tính và vị trí lắp đặt thuộc bước nào?",
+    "options": {
+      "a": "Bước 1.",
+      "b": "Bước 2.",
+      "c": "Bước 3.",
+      "d": "Bước 4."
+    },
+    "answer": "a",
+    "explanation": "Đây là một phần của hoạt động khảo sát hiện trạng nhằm tìm hiểu thực tế nơi triển khai hệ thống mạng."
+  },
+  {
+    "topic": "Biết",
+    "question": "Việc lựa chọn sơ đồ hình học (Topology) cho mạng thuộc bước nào?",
+    "options": {
+      "a": "Bước 1.",
+      "b": "Bước 2 (Thiết kế logic).",
+      "c": "Bước 3.",
+      "d": "Bước 4."
+    },
+    "answer": "b",
+    "explanation": "Topology là cấu trúc hình học trừu tượng, mô tả cách các thiết bị kết nối về mặt lý thuyết, nên thuộc bước thiết kế logic."
+  },
+  {
+    "topic": "Biết",
+    "question": "Việc lựa chọn loại cáp cụ thể (ví dụ cáp Cat6) để đi dây thuộc bước nào?",
+    "options": {
+      "a": "Thiết kế logic.",
+      "b": "Thiết kế vật lý.",
+      "c": "Khảo sát nhu cầu.",
+      "d": "Chọn hệ điều hành."
+    },
+    "answer": "b",
+    "explanation": "Thiết kế vật lý tập trung vào các thiết bị hữu hình như loại cáp, sơ đồ đi dây và vị trí đặt tủ mạng."
+  },
+  {
+    "topic": "Biết",
+    "question": "Đâu là một ví dụ về hệ điều hành mạng?",
+    "options": {
+      "a": "Microsoft Word.",
+      "b": "Windows Server.",
+      "c": "Google Chrome.",
+      "d": "Photoshop."
+    },
+    "answer": "b",
+    "explanation": "Windows Server là hệ điều hành chuyên dụng cung cấp các dịch vụ quản lý và vận hành cho máy chủ mạng."
+  },
+  {
+    "topic": "Biết",
+    "question": "Trong thiết kế mạng, \"Topology\" dùng để chỉ điều gì?",
+    "options": {
+      "a": "Tốc độ mạng.",
+      "b": "Sơ đồ hình học kết nối các thiết bị.",
+      "c": "Giá tiền thiết bị.",
+      "d": "Tên người quản trị."
+    },
+    "answer": "b",
+    "explanation": "Topology định nghĩa cách sắp xếp và kết nối các thành phần trong mạng (như hình sao, hình vòng, tuyến tính)."
+  },
+  {
+    "topic": "Biết",
+    "question": "Mục đích chính của việc khảo sát hiện trạng là gì?",
+    "options": {
+      "a": "Để mua thiết bị rẻ nhất.",
+      "b": "Để hiểu rõ môi trường triển khai và yêu cầu người dùng.",
+      "c": "Để cài đặt phần mềm.",
+      "d": "Để vẽ sơ đồ IP."
+    },
+    "answer": "b",
+    "explanation": "Khảo sát kỹ giúp thiết kế bám sát thực tế, đáp ứng đúng nhu cầu và tránh lãng phí ngân sách."
+  },
+  {
+    "topic": "Biết",
+    "question": "Bước nào xác định các chính sách bảo mật và phân chia mạng con (VLAN)?",
+    "options": {
+      "a": "Bước 1.",
+      "b": "Bước 2.",
+      "c": "Bước 3.",
+      "d": "Bước 4."
+    },
+    "answer": "b",
+    "explanation": "Việc phân chia VLAN và thiết lập bảo mật thuộc về quy tắc vận hành hệ thống, nằm trong tầng thiết kế logic."
+  },
+  {
+    "topic": "Biết",
+    "question": "Thiết kế vật lý tập trung vào yếu tố nào sau đây?",
+    "options": {
+      "a": "Thuật toán định tuyến.",
+      "b": "Hạ tầng thiết bị và sơ đồ đi dây thực tế.",
+      "c": "Phân quyền người dùng.",
+      "d": "Phân tích tâm lý người dùng."
+    },
+    "answer": "b",
+    "explanation": "Thiết kế vật lý giải quyết các vấn đề hữu hình: thiết bị cụ thể là gì, đi dây qua các phòng ban như thế nào."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao bước Thiết kế logic nên thực hiện trước Thiết kế vật lý?",
+    "options": {
+      "a": "Vì thiết bị luôn có sẵn.",
+      "b": "Để có khung cấu trúc tổng thể trước khi chọn mua thiết bị cụ thể giúp tránh lãng phí.",
+      "c": "Vì thiết kế logic dễ vẽ hơn.",
+      "d": "Không nhất thiết phải thực hiện theo thứ tự."
+    },
+    "answer": "b",
+    "explanation": "Thiết kế logic là bản vẽ \"kiến trúc\", thiết kế vật lý là chọn \"vật liệu\". Có bản vẽ trước mới chọn đúng vật liệu cần thiết."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Sự khác biệt lớn nhất giữa Thiết kế logic và Thiết kế vật lý là gì?",
+    "options": {
+      "a": "Logic là thực tế, vật lý là lý thuyết.",
+      "b": "Logic tập trung vào cấu trúc và quy tắc; Vật lý tập trung vào thiết bị cụ thể và hạ tầng.",
+      "c": "Chỉ có thiết kế vật lý mới cần vẽ sơ đồ.",
+      "d": "Thiết kế logic chỉ dành cho mạng lớn."
+    },
+    "answer": "b",
+    "explanation": "Logic mô tả \"mạng hoạt động thế nào\", Vật lý mô tả \"mạng được lắp đặt bằng cái gì và ở đâu\"."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Nếu không khảo sát hiện trạng kỹ (Bước 1), hệ thống mạng dễ gặp vấn đề gì?",
+    "options": {
+      "a": "Thiếu thiết bị hoặc thiết bị không đáp ứng đủ nhu cầu thực tế.",
+      "b": "Máy tính không lên nguồn.",
+      "c": "Không cài được Windows.",
+      "d": "Người dùng không biết sử dụng chuột."
+    },
+    "answer": "a",
+    "explanation": "Thiếu dữ liệu thực tế dẫn đến việc mua sắm sai quy mô, gây lãng phí hoặc không đủ năng lực xử lý."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Việc chọn hệ điều hành mạng (Bước 4) phụ thuộc chủ yếu vào yếu tố nào?",
+    "options": {
+      "a": "Màu sắc của máy chủ.",
+      "b": "Các dịch vụ mạng cần cung cấp và trình độ của quản trị viên.",
+      "c": "Chiều dài dây cáp.",
+      "d": "Sơ đồ hình sao hay hình vòng."
+    },
+    "answer": "b",
+    "explanation": "Hệ điều hành phải hỗ trợ được các ứng dụng doanh nghiệp cần và phù hợp với năng lực vận hành của nhân sự kỹ thuật."
+  },
+  {
+    "topic": "Hiểu",
+    "question": "Tại sao sơ đồ địa chỉ IP lại thuộc về thiết kế logic?",
+    "options": {
+      "a": "Vì IP là địa chỉ ảo, không thể cầm nắm hay nhìn thấy trên phần cứng.",
+      "b": "Vì địa chỉ IP rất đắt tiền.",
+      "c": "Vì chỉ có máy tính mới hiểu được IP.",
+      "d": "Vì IP thuộc về nhà mạng cung cấp."
+    },
+    "answer": "a",
+    "explanation": "Địa chỉ IP là các thông số cài đặt phần mềm, không gắn cố định vào phần cứng nên thuộc phạm vi logic."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Một công ty yêu cầu mạng phải hoạt động liên tục ngay cả khi một đoạn dây bị đứt. Khi thiết kế logic, kỹ sư nên chọn Topology nào?",
+    "options": {
+      "a": "Hình sao (Star).",
+      "b": "Hình tuyến tính (Bus).",
+      "c": "Hình vòng (Ring) hoặc dạng lưới (Mesh).",
+      "d": "Không có Topology nào đáp ứng."
+    },
+    "answer": "c",
+    "explanation": "Các sơ đồ như Mesh (lưới) cung cấp nhiều đường truyền dự phòng, giúp hệ thống không bị gián đoạn khi có sự cố tại một điểm."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Khi lập bảng dự toán kinh phí để mua Router và Switch, bạn đang thực hiện công việc của bước nào?",
+    "options": {
+      "a": "Bước 1.",
+      "b": "Bước 2.",
+      "c": "Bước 3 (Thiết kế vật lý).",
+      "d": "Bước 4."
+    },
+    "answer": "c",
+    "explanation": "Việc chọn model thiết bị cụ thể và tính toán chi phí mua sắm là nội dung trọng tâm của thiết kế vật lý."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Bạn được giao thiết kế mạng cho một quán Game 100 máy. Việc bạn quyết định dùng cáp quang để nối giữa các Switch tầng thay vì dùng cáp đồng thể hiện bước nào?",
+    "options": {
+      "a": "Thiết kế vật lý.",
+      "b": "Chọn hệ điều hành.",
+      "c": "Phân tích nhu cầu.",
+      "d": "Thiết kế logic."
+    },
+    "answer": "a",
+    "explanation": "Quyết định về vật liệu truyền dẫn (cáp quang hay cáp đồng) là triển khai hạ tầng thực tế, thuộc thiết kế vật lý."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Trong bước chọn hệ điều hành, nếu doanh nghiệp ưu tiên tính miễn phí và khả năng tùy biến cao, họ nên chọn:",
+    "options": {
+      "a": "Windows Server 2022.",
+      "b": "Linux (ví dụ Ubuntu Server).",
+      "c": "Windows 11 Home.",
+      "d": "macOS."
+    },
+    "answer": "b",
+    "explanation": "Linux là hệ điều hành mã nguồn mở, không tốn phí bản quyền và cho phép can thiệp sâu vào hệ thống để tùy biến."
+  },
+  {
+    "topic": "Vận dụng",
+    "question": "Kỹ sư vẽ một sơ đồ mô tả cách các máy tính trao đổi dữ liệu với nhau qua các Router mà không ghi tên nhãn hiệu thiết bị. Bản vẽ này là:",
+    "options": {
+      "a": "Sơ đồ khảo sát.",
+      "b": "Sơ đồ vật lý.",
+      "c": "Sơ đồ logic.",
+      "d": "Sơ đồ hệ điều hành."
+    },
+    "answer": "c",
+    "explanation": "Sơ đồ chỉ tập trung vào luồng dữ liệu và cấu trúc kết nối mà bỏ qua chi tiết nhãn hiệu phần cứng thì đó là sơ đồ logic."
+  }
+]
 
