@@ -87,6 +87,7 @@ function escapeHtml(text) {
 async function init() {
     initTheme();
     showUpdateNotification();
+    initQRModal(); // Khởi tạo tính năng phóng to QR
 
     try {
         const response = await fetch('questions.json');
@@ -105,7 +106,26 @@ async function init() {
 init();
 
 // ==========================================
-// 4. LOGIC TRÒ CHƠI
+// 4. LOGIC MODAL QR MOMO
+// ==========================================
+function initQRModal() {
+    const qrTrigger = document.getElementById('qr-trigger');
+    const qrModal = document.getElementById('qr-modal');
+    const qrClose = document.getElementById('qr-close');
+
+    if (qrTrigger && qrModal && qrClose) {
+        qrTrigger.onclick = () => qrModal.classList.remove('hidden');
+        qrClose.onclick = () => qrModal.classList.add('hidden');
+        
+        // Đóng khi click ra ngoài vùng trắng
+        qrModal.onclick = (e) => {
+            if (e.target === qrModal) qrModal.classList.add('hidden');
+        };
+    }
+}
+
+// ==========================================
+// 5. LOGIC TRÒ CHƠI
 // ==========================================
 async function startGame(fileName) {
     hideToastTemporarily(); 
@@ -150,7 +170,6 @@ function renderAllQuestions() {
         qBlock.dataset.subFinished = 0; 
         
         let questionTitle = "";
-        // Bổ sung hiển thị Topic nếu có (giúp UI sinh động hơn)
         if(data.topic) {
             questionTitle = `<span style="color: #666; font-size: 0.85em; display: block; margin-bottom: 4px;">[${escapeHtml(data.topic)}]</span>`;
         }
@@ -158,7 +177,7 @@ function renderAllQuestions() {
 
         let contentHtml = "";
         
-        // Vẫn giữ lại logic subQuestions đề phòng bạn có file dungsai.json dùng cấu trúc khác
+        // Chế độ Đúng/Sai (subQuestions)
         if (data.subQuestions && Array.isArray(data.subQuestions)) {
             contentHtml = data.subQuestions.map((sub, subIdx) => {
                 const explainHtml = sub.explanation ? `<div class="explanation explanation-box hidden"><strong>Giải thích:</strong> ${escapeHtml(sub.explanation)}</div>` : '';
@@ -171,11 +190,12 @@ function renderAllQuestions() {
                     ${explainHtml}
                 </div>`;
             }).join('');
-        } else {
+        } 
+        // Chế độ Trắc nghiệm (options)
+        else {
             const opts = data.options;
             let optionsHtml = "";
             
-            // --- CẬP NHẬT CHÍNH: Render Options từ dạng object {"a": "...", "b": "..."} ---
             if (opts && typeof opts === 'object' && !Array.isArray(opts)) {
                 optionsHtml = Object.entries(opts).map(([key, val]) => {
                     return `<div class="option-item" onclick="handleSelect(this, ${index}, '${key}')">
@@ -184,7 +204,6 @@ function renderAllQuestions() {
                             </div>`;
                 }).join('');
             } else if (Array.isArray(opts)) {
-                // Fallback nếu bạn vẫn dùng mảng ở file khác
                 const keys = ['a', 'b', 'c', 'd', 'e', 'f'];
                 optionsHtml = opts.map((opt, i) => {
                     const key = keys[i] || 'z';
@@ -218,9 +237,6 @@ function handleSelect(element, qIndex, selectedKey) {
     if(radio) radio.checked = true;
     
     const data = userQuestions[qIndex];
-    
-    // --- CẬP NHẬT CHÍNH: So sánh trực tiếp key ---
-    // Vì JSON mới đã lưu `answer: "b"` nên chỉ cần so sánh trực tiếp selectedKey với answer
     const correctKey = String(data.answer).toLowerCase();
     
     if (selectedKey === correctKey) {
@@ -235,7 +251,6 @@ function handleSelect(element, qIndex, selectedKey) {
     }
 }
 
-// Hàm này giữ nguyên để tương thích với câu hỏi đúng/sai
 function handleSubSelect(element, qIndex, subIdx, selectedValue) {
     const subContainer = document.getElementById(`sub-container-${qIndex}-${subIdx}`);
     if (subContainer.classList.contains('sub-completed')) return;
@@ -283,3 +298,7 @@ function showFinalResults() {
     resultScreen.classList.remove('hidden');
     document.getElementById('final-score').innerText = score + "/" + userQuestions.length;
 }
+
+function restartQuiz() {
+    location.reload();
+        }
