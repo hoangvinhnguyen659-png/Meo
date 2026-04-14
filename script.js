@@ -195,24 +195,37 @@ function renderAllQuestions() {
         else {
             const opts = data.options;
             let optionsHtml = "";
-            
+            let optionsArray = [];
+
+            // 1. Chuyển đổi options từ JSON thành một mảng để dễ xáo trộn
             if (opts && typeof opts === 'object' && !Array.isArray(opts)) {
-                optionsHtml = Object.entries(opts).map(([key, val]) => {
-                    return `<div class="option-item" onclick="handleSelect(this, ${index}, '${key}')">
-                                <input type="radio" name="q${index}">
-                                <span><strong>${key.toUpperCase()}.</strong> ${escapeHtml(val)}</span>
-                            </div>`;
-                }).join('');
+                optionsArray = Object.entries(opts).map(([key, val]) => ({ 
+                    originalKey: key, 
+                    text: val 
+                }));
             } else if (Array.isArray(opts)) {
                 const keys = ['a', 'b', 'c', 'd', 'e', 'f'];
-                optionsHtml = opts.map((opt, i) => {
-                    const key = keys[i] || 'z';
-                    return `<div class="option-item" onclick="handleSelect(this, ${index}, '${key}')">
-                                <input type="radio" name="q${index}">
-                                <span>${escapeHtml(opt)}</span>
-                            </div>`;
-                }).join('');
+                optionsArray = opts.map((opt, i) => ({ 
+                    originalKey: keys[i] || 'z', 
+                    text: opt 
+                }));
             }
+
+            // 2. Thuật toán Fisher-Yates để xáo trộn ngẫu nhiên vị trí các đáp án
+            for (let i = optionsArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [optionsArray[i], optionsArray[j]] = [optionsArray[j], optionsArray[i]];
+            }
+
+            // 3. Render HTML với nhãn hiển thị mới (A, B, C, D) 
+            const displayLabels = ['A', 'B', 'C', 'D', 'E', 'F'];
+            optionsHtml = optionsArray.map((opt, i) => {
+                const label = displayLabels[i] || '';
+                return `<div class="option-item" onclick="handleSelect(this, ${index}, '${opt.originalKey}')">
+                            <input type="radio" name="q${index}">
+                            <span><strong>${label}.</strong> ${escapeHtml(opt.text)}</span>
+                        </div>`;
+            }).join('');
             
             const explainHtml = data.explanation ? `<div class="explanation explanation-box hidden"><strong>Giải thích:</strong> ${escapeHtml(data.explanation)}</div>` : '';
             contentHtml = `<div class="option-list">${optionsHtml}</div>${explainHtml}`;
