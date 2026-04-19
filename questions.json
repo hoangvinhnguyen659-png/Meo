@@ -1074,7 +1074,7 @@
       "a": "Để trang trí cho đẹp.",
       "b": "Vì hình ảnh y tế có dung lượng lớn, cần băng thông rộng của cáp quang để truyền tải tức thời.",
       "c": "Vì cáp quang không dẫn điện, an toàn cho thiết bị y tế.",
-      "d": "Cả B và C đều đúng."
+      "d": "Vì cáp quang không dẫn điện, an toàn cho thiết bị y tế và hình ảnh y tế có dung lượng lớn, cần băng thông rộng của cáp quang để truyền tải tức thời."
     },
     "answer": "d",
     "explanation": "Cáp quang đáp ứng tốt cả về tốc độ truyền tải hình ảnh dung lượng cao và tính an toàn điện từ."
